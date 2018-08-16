@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<MainMenu>
+	<Menu Name="&amp;System" zh-CN="系统(&amp;S)" EventHandler="DefaultSelectMenuItem" Shortcut=""
+		Icon="" Checked="False" Radio="False" Enabled="True">
+		<Menu Name="&amp;SetPassword" zh-CN="设置个人信息" EventHandler="OnSetPassword" Shortcut="" Icon=""
+			Checked="False" Radio="False" Enabled="True" />
+		<Menu Name="-" zh-CN="-" EventHandler="DefaultSelectMenuItem" Shortcut="" Icon="" Checked="False"
+			Radio="False" Enabled="True" />
+		<Menu Name="E&amp;xit" zh-CN="退出" EventHandler="OnExit" Shortcut="" Icon="" Checked="False"
+			Radio="False" Enabled="True" />
+	</Menu>
+	<Menu Name="&amp;Display" zh-CN="显示(&amp;D)" EventHandler="DefaultSelectMenuItem" Shortcut=""
+		Icon="" Checked="False" Radio="False" Enabled="True">
+		<Menu Name="&amp;Folder" zh-CN="文件夹(&amp;F)" EventHandler="ShowFolder" Shortcut="" Icon="Folder"
+			Checked="False" Radio="False" Enabled="True" />
+		<Menu Name="My  &amp;Search" zh-CN="我的搜索(&amp;S)" EventHandler="ShowMySearch" Shortcut="" Icon="ICO_SCH_SEARCH"
+			Checked="False" Radio="False" Enabled="True" />
+		<Menu Name="My  &amp;ResultView" zh-CN="查询结果(&amp;R)" EventHandler="ShowMyResultView" Shortcut="" Icon=""
+			Checked="False" Radio="False" Enabled="True" />
+	</Menu>
+	<Menu Name="&amp;Tool" zh-CN="工具(&amp;T)" EventHandler="DefaultSelectMenuItem" Shortcut=""
+		Icon="" Checked="False" Radio="False" Enabled="True">
+		<Menu Name="PSOption" zh-CN="全局产品数据选项" EventHandler="PSOptionMenuSelect" Shortcut="" Icon="SetPSOption"
+			Checked="False" Radio="False" Enabled="True" />
+		<Menu Name="-" zh-CN="-" EventHandler="DefaultSelectMenuItem" Shortcut="" Icon="" Checked="False"
+			Radio="False" Enabled="True" />
+		<Menu Name="Mail Management" zh-CN="邮件管理" EventHandler="ActivateMail" Shortcut="" Icon=""
+			Checked="False" Radio="False" Enabled="True" />
+		<Menu Name="Send Message" zh-CN="发送消息" EventHandler="SendMessage" Shortcut="" Icon=""
+			Checked="False" Radio="False" Enabled="True" />
+		<Menu Name="-" zh-CN="-" EventHandler="DefaultSelectMenuItem" Shortcut="" Icon="" Checked="False"
+			Radio="False" Enabled="True" />
+		<Menu Name="Search" zh-CN="查询" EventHandler="IntegrateSearch" Shortcut="" Icon="ICO_SCH_SEARCH"
+			Checked="False" Radio="False" Enabled="True" />			
+		<Menu Name="-" zh-CN="-" EventHandler="DefaultSelectMenuItem" Shortcut="" Icon="" Checked="False"
+			Radio="False" Enabled="True" />
+		<Menu Name="Option" zh-CN="选项" EventHandler="OnUserOption" Shortcut="" Icon="" Checked="False"
+			Radio="False" Enabled="True" />
+	</Menu>
+	<Menu Name="&amp;Window" zh-CN="窗口(&amp;W)" EventHandler="DefaultSelectMenuItem" Shortcut="" Icon="" Checked="False" Radio="False" Enabled="True">
+	</Menu>
+	<Menu Name="&amp;Help" zh-CN="帮助(&amp;H)" EventHandler="DefaultSelectMenuItem" Shortcut=""
+		Icon="" Checked="False" Radio="False" Enabled="True">
+		
+		<Menu Name="-" zh-CN="-" EventHandler="DefaultSelectMenuItem" Shortcut="" Icon="" Checked="False"
+			Radio="False" Enabled="True" />
+		<Menu Name="About…" zh-CN="关于…" EventHandler="OnAbout" Shortcut="" Icon="" Checked="False"
+			Radio="False" Enabled="True" />
+	</Menu>
+</MainMenu>

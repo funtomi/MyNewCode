@@ -1,0 +1,4274 @@
+***POP0
+[捕捉模式]
+[中 心 点]center
+[端    点]endp
+[插 入 点]ins
+[交    点]int
+[中 间 点]mid
+[最 近 点]nea
+[节    点]nod
+[垂 直 点]per
+[四分圆点]qua
+[切    点]tan
+[取消捕捉]non
+[->过 滤 符]
+  [.X].X
+  [.Y].Y
+  [<-.XY].XY
+
+***POP1
+[文件&F]
+ID_New			[新建文件... \tNew]^C^Cnew
+ID_Open			[打开文件... \tOpen]^C^Copen
+ID_NewDocument	[新建文档窗口... \tNewdoc]^C^Cnewdoc
+ID_OpenDocument	[打开文档窗口... \tOpendoc]^C^Copendoc
+ID_CloseDocument[关闭文档窗口 \tClosedoc]^C^Cclosedoc
+				[--]
+ID_Save			[文件存盘... \tQSave]^C^Cqsave
+ID_Saveas		[赋名存盘&A... \tSaveAs]^C^Csaveas
+ID_Wblock		[块存盘... \tWBlock]^C^Cwblock
+				[--]
+				[->文件交换]
+ID_Import			[输入... \tImport]^C^Cimport
+ID_Export			[输出... \tExport]^C^Cexport
+					[--]
+ID_Loadwg			[输入DWG文件... \tLoadwg]^C^Cloadwg
+ID_Savedwg			[输出DWG文件... \tSaveDwg]^C^Csavedwg
+					[--]
+ID_Dxfin			[输入DXF文件... \tDXFIn]^C^Cdxfin
+ID_Dxfout			[<-输出DXF文件... \tDXFOut]^C^Cdxfout
+				[->外部引用 \tXref]
+ID_Xattach			[附加... \tAttatch]^C^C-xref attach;
+ID_Xdetach			[分离 \tDetach]^C^C-xref detach
+ID_Xbind			[绑定 \tBind]^C^Cxbind
+ID_Xreload			[更新 \tReload]^C^C-xref reload
+ID_Xlist			[列表 \tList]^C^C-xref;?;*;
+ID_Xpath			[<-更改路径 \tPath]^C^C-xref;path
+				[--]
+ID_Plotcfg		[绘图仪配置... \tPlotCFG]^C^Cplotcfg
+ID_Preview		[打印预览 \tPreview]^C^Cpreview
+ID_Print		[绘图输出... \tPlot]^C^Cplot
+				[--]
+ID_MRU			[最近的图文件]
+				[--]
+ID_Quit			[退出系统 \tQuit]^C^Cquit
+
+
+***POP2
+[编辑&E]
+ID_Ctrlc		[取消 \tEsc]^C^C^C
+ID_Undo			[退回 \tUndo]U
+ID_Redo			[恢复 \tRedo]^C^Credo
+				[--]
+ID_Cutclip		[剪切 \tCutClip]$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,4),GRIP),cutclip,^C^Ccutclip)
+ID_Copyclip		[复制 \tCopyClip]$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,4),GRIP),copyclip,^C^Ccopyclip)
+ID_Copylink		[复制链接 \tCopyLink]^C^Ccopylink
+ID_Pasteclip	[粘贴 \tPasteClip]^C^Cpasteclip
+ID_Pastesp		[选择性粘贴 \tPasteSpec]^C^Cpastespec
+				[--]
+ID_Erase		[清除 \tErase]$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,4),GRIP),erase,^C^Cerase)
+ID_Delobj		[删除OLE对象 \tDelObj]^C^Cdelobj
+ID_Oops!		[OOPS!]^C^Coops
+				[--]
+ID_MatchProp	[属性匹配 \tMatchProp]^C^Cmatchprop
+
+***POP3
+[显示&V]
+ID_RedrawAll	[重画 \tRedraw]'redraw
+ID_Regen		[重新生成 \tRegen]^C^Cregen
+				[--]
+ID_MnZoom		[->缩放 \tZoom]
+ID_ZoomRealt		[实时缩放]'zoom r 
+					[--]
+ID_ZoomPrevi		[先前 \tPrevious]'zoom p
+ID_ZoomWindo		[窗口 \tWindow]'zoom w
+ID_ZoomDynam		[动态 \tDynamic]'zoom d
+ID_ZoomScale		[比例 \tScale]'zoom s
+ID_ZoomCente		[中心 \tCenter]'zoom c
+					[--]
+ID_ZoomIn			[放大 \tIn]'zoom 2x
+ID_ZoomOut			[缩小 \tOut]'zoom .5x
+					[--]
+ID_ZoomAll			[显示界限 \tAll]'zoom all
+ID_ZoomExten		[<-全部实体 \tExtents]'zoom e
+ID_MnPan		[->平移 \tPan]
+ID_Pan				[实时平移]'pan
+ID_PanPick			[指定点]'-pan
+					[--]
+ID_PanLeft			[左平移 \tLeft]^P'-pan (trans (list (* -0.2 (getvar "viewsize")) 0) 0 1) ;^P
+ID_PanRight			[右平移 \tRight]^P'-pan (trans (list (* 0.2 (getvar "viewsize")) 0) 0 1) ;^P
+ID_PanUp			[上平移 \tUp]^P'-pan (trans (list 0 (* 0.2 (getvar "viewsize"))) 0 1) ;^P
+ID_PanDown			[<-下平移 \tDown]^P'-pan (trans (list 0 (* -0.2 (getvar "viewsize"))) 0 1) ;^P
+ID_Dsviewer		[鹰眼 \tDsviewer]'dsviewer
+				[--]
+ID_MnHide		[->消隐]
+ID_Part				[零件集成 \tPart]^C^Cpart
+ID_Unpart			[图元还原 \tUnPart]^C^Cunpart
+ID_Above			[遮挡定义 \tAbove]^C^Cabove
+ID_Hide				[消隐 \tHide]^C^Chide
+ID_Unhide			[取消消隐 \tUnHide]^C^Cunhide
+ID_HideChar			[字符消隐 \tHideChar]^C^Chidechar
+ID_UnhideChar		[<-取消字符消隐 \tUnHideChar]^C^Cunhidechar
+				[--]
+ID_MnUCSicon	[->UCS图标 \tUcsicon]
+ID_UcsiconOn		[打开 \tOn]^C^Cucsicon on
+ID_UcsiconOff		[关闭 \tOff]^C^Cucsicon off
+ID_UcsiconOr		[显示原点 \tOrigin]^C^Cucsicon origin
+ID_UcsiconNoor		[<-不显示原点 \tNoorigin]^C^Cucsicon noorigin
+ID_MnAttribu	[->属性显示]
+ID_AttdispNo		[正常 \tNormal]'attdisp n
+					[--]
+ID_AttdispOn		[打开 \tOn]'attdisp on
+ID_AttdispOf		[<-关闭 \tOff]'attdisp off
+
+***POP4
+[绘图&D]
+ID_Point		[点 \tPoint]^C^Cpoint
+ID_Line			[直线 \tLine]^C^Cline
+ID_LL			[智能画线 \tLL]^C^Cll
+				[--]
+				[->圆 \tCircle]
+ID_CircleRad		[圆心，半径]^C^C_circle
+ID_CircleDia		[圆心，直径]^C^C_circle \d
+					[--]
+ID_Circle2pt		[两点画圆]^C^Ccircle 2p
+ID_Circle3pt		[三点画圆]^C^Ccircle 3p
+					[--]
+ID_CircleTTR		[指定半径公切圆]^C^Ccircle ttr
+ID_CircleTTT		[<-公切圆]^C^Ccircle 3p tan \tan \tan \
+				[->圆弧 \tArc]
+ID_Arc3point		[三点]^C^Carc
+					[--]
+ID_ArcStCeEn		[起点，圆心，终点]^C^Carc \c
+ID_ArcStCeAn		[起点，圆心，包含角]^C^Carc \c \a
+ID_ArcStCeLe		[起点，圆心，弦长]^C^Carc \c \l
+					[--]
+ID_ArcStEnAg		[起点，终点，包含角]^C^Carc \e \a
+ID_ArcStEnDi		[起点，终点，方向]^C^Carc \e \d
+ID_ArcStEnRa		[起点，终点，半径]^C^Carc \e \r
+					[--]
+ID_ArcCeStEn		[圆心，起点，终点]^C^Carc c
+ID_ArcCeStAn		[圆心，起点，包含角]^C^Carc c \\a
+ID_ArcCeStLe		[圆心，起点，弦长]^C^Carc c \\l
+					[--]
+ID_ArcContin		[<-连续]^C^Carc ;
+ID_Donut			[圆环 \tDonut]^C^C_donut
+					[->椭圆 \tEllipse]
+ID_EllipseCe			[中心]^C^Cellipse c
+ID_EllipseAx			[轴, 端点]^C^Cellipse
+						[--]
+ID_EllipseAr			[<-椭圆弧]^C^Cellipse a
+					[--]
+ID_Pline			[多义线 \tPline]^C^Cpline
+ID_SPline			[样条曲线 \tSPline]^C^Cspline
+ID_Polygon			[多边形 \tPolygon]^C^Cpolygon
+ID_Solid			[实心域 \tSolid]^C^Csolid
+ID_Trace			[轨迹 \tTrace]^C^Ctrace
+ID_Rectang			[矩形 \tRectang]^C^Crectang
+					[--]
+					[->块和插入]
+ID_Block				[创建块 \tBlock]^C^Cblock
+						[--]
+ID_Insert				[插入块 \tDDInsert]^C^Cddinsert
+ID_Minsert				[<-多次插入 \tMinsert]^C^Cminsert
+ID_Insertobj		[OLE对象 \tInsertObj]^C^Cinsertobj
+					[--]
+ID_Bhatch			[填充 \tBHatch]^C^Cbhatch
+ID_Bpoly			[边界 \tBPoly]^C^Cbpoly
+ID_Image			[光栅图像 \tIMAGE]^C^Cimage
+					[--]
+					[->文字]
+ID_Text				[单行文字 \tText]^C^Ctext
+ID_Dtext			[动态文字 \tDText]^C^Cdtext
+ID_Mtext			[多行文字 \tMText]^C^Cmtext
+ID_Ctext			[<-曲线文字 \tCText]^C^Cctext
+
+***POP5
+[修改&M]
+ID_Properties		[实体修改 \tDDModify]$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,4),GRIP),ddmodify,^C^Cddmodify)
+ID_ImageClip			[图像裁剪 \tImageClip]^C^Cimageclip
+ID_findTxt			[文字查找 \tfindTxt]^C^Cfind
+ID_Ddedit			[文字编辑 \tDDEdit]^C^Cddedit
+					[文字打开 \tCUTTEXT]^C^Ccuttext
+					[文字合并 \tMERGTEXT]^C^Cmergtext	
+ID_EMT				[排列多行文字 \tEMT]^C^Cemt
+					[--]
+ID_Pedit			[多义线编辑 \tPEdit]^C^Cpedit
+ID_Ddatte			[属性编辑 \tDDAtte]^C^Cddatte
+ID_Splinedit			[样条曲线编辑 \tSplinedit]^C^Csplinedit
+ID_SPLTOPL				[样条曲线转换为多义线 \tSPLTOPL]^C^Cspltopl
+ID_EditFcurve			[公式曲线编辑 \tEditFCurve]^C^CeditFCurve
+ID_ModRough			[粗糙度符号编辑 \tModRough]^C^CModRough
+ID_ESP				[形位公差编辑 \tEsp]^C^CEsp
+ID_ModWeld			[焊接符号编辑 \tModWeld]^C^CModWeld
+ID_EditJSYQ			[技术要求编辑 \tEditJSYQ]^C^CEditJSYQ
+ID_CHANGEDIMLAYER				[切换已有标注到08层 \tCHANGEDIMLAYER]^C^Cchangedimlayer
+					[--]
+ID_Erase			[删除 \tErase]$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,4),GRIP),erase,^C^Cerase)
+ID_Copy				[复制 \tCopy]$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,4),GRIP),copy,^C^Ccopy)
+ID_Mirror			[镜像 \tMirror]$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,4),GRIP),mirror,^C^Cmirror)
+ID_Offset			[偏移 \tOffset]$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,4),GRIP),offset,^C^Coffset)
+ID_Array			[阵列 \tArray]$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,4),GRIP),array,^C^Carray)
+					[--]
+ID_Move				[移动 \tMove]$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,4),GRIP),move,^C^Cmove)
+ID_Rotate			[旋转 \tRotate]$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,4),GRIP),rotate,^C^Crotate)
+ID_Scale			[缩放 \tScale]$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,4),GRIP),scale,^C^Cscale)
+ID_Stretch			[拉伸 \tStretch]$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,4),GRIP),stretch,^C^Cstretch)
+ID_Lengthen			[延长 \tLengthen]^C^Clengthen
+					[--]
+ID_Trim				[裁剪 \tTrim]^C^Ctrim
+ID_qTrim				[快速裁剪 \tqTrim]^C^Cqtrim
+ID_Extend			[延伸 \tExtend]^C^Cextend
+ID_Break			[打断 \tBreak]^C^Cbreak
+ID_Chamfer			[倒角 \tChamfer]^C^Cchamfer
+ID_Fillet			[倒圆角 \tFillet]^C^Cfillet
+					[--]
+ID_Explode			[炸开 \tExplode]$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,4),GRIP),explode,^C^Cexplode)
+
+***POP6
+[标注&I]
+ID_DIMTO08			[是否标注到08层  \tDIMTO08]^c^cdimto08
+ID_HIDEDIM			[即时消隐标注  \tHIDEDIM]^c^chidedim
+ID_Dimstyle			[标注模式... \tDDim]^C^Cddim
+					[--]
+ID_Ndim				[智能标注 \tNDim]^C^CNdim
+ID_Cdim				[连续标注... \tCDim]^C^CCDIM
+					[->普通标注 \tDIM]
+						[->长度]
+ID_DimHorizo				[水平 \tHor]^C^CDIM hor
+ID_DimVertic				[垂直 \tVer]^C^CDIM ver
+ID_Dimaligne				[对齐 \tAli]^C^CDIM aligned
+ID_DimRotate				[旋转 \tRot]^C^CDIM rotated
+ID_Dimbaseli				[基线标注 \tBase]*^C^CDIM baseline
+ID_Dimcontin				[<-连续标注 \tCon]*^C^CDIM continue
+						[->圆弧]
+ID_Dimdiamet				[直径标注 \tDia]^C^CDIM diameter
+ID_Dimradius				[半径标注 \tRad]^C^CDIM radius
+ID_Dimcenter				[<-中心记号 \tCen]^C^CDIM center
+						[->座标标注]
+ID_Dimordina				[自动 \tOrd]^C^CDIM $S=X $S=dimord ordinate
+ID_Dimordix					[X-标注 \tOrd/X]^C^CDIM $S=X $S=dimord ordinate;\x
+ID_Dimordiy					[<-Y-标注 \tOrd/Y]^C^CDIM $S=X $S=dimord ordinate;\y
+ID_Dimangula			[角度标注 \tAng]^C^CDIM angular
+ID_Dimarclen			[弧长标注 \tzzarclen]^C^CDIM zzarclen
+ID_Leader				[<-引线 \tLea]^C^CDIM leader
+ID_Intedim			[特殊标注... \tInteDim]^C^Cintedim
+ID_bh				[板厚标注 \tBhdim]^C^Cbhdim
+ID_UDIM				[孔径、深标注 \tUdim]^C^Cudim
+					[--]
+					[->尺寸编辑]
+ID_Dimnewtex			[更改尺寸文字 \tDim/Newtext]^C^Cdim $S=X $S=dimed newtext
+ID_Dimtedit				[移动尺寸文字 \tDim/Tedit]^C^Cdim $S=X $S=tedit0 tedit
+ID_Dimtrota				[旋转尺寸文字 \tDim/Trotate]^C^Cdim $S=X $S=dimed trotate
+ID_Dimhome				[尺寸文字归位 \tDim/Hometext]^C^Cdim $S=X $S=dimed hometext
+						[--]
+ID_Dimobliq				[倾斜尺寸界线 \tDim/Oblique]^C^Cdim $S=X $S=dimed oblique
+ID_Dimupdate			[<-尺寸标注更新 \tDim/Update]^C^Cdim $S=X $S=dimed update
+					[--]
+ID_Tolerance		[尺寸公差... \tToler]^C^Ctoler
+ID_Sp				[形位公差... \tSP]^c^csp
+ID_Rought			[粗糙度... \tRough]^c^crough
+ID_Weld				[焊接符号... \tWeld]^c^cweld
+ID_HANFEN				[画焊缝  \tHANFEN]^c^chanfen
+					[--]
+ID_JSYQ				[技术要求库 \tJSYQ]^C^CJSYQ
+
+***POP7
+[设置&O]
+ID_Layer			[图层 \tLayer]'layer
+ID_Setlayer			[设置当前层 \tSetLayer]^C^Csetlayer
+ID_SetGB			[设置图层国标 \tSelGB]^C^CselGB
+					[->改变实体的层]
+ID_Layer01				[粗实线 \t01]^C^C01
+ID_Layer02				[细实线 \t02]^C^C02
+ID_Layer04				[虚线 \t04]^C^C04
+ID_Layer05				[点划线 \t05]^C^C05
+ID_Layer07				[双点划线 \t07]^C^C07
+ID_Layer11				[文字 \t11]^C^C11
+ID_Layer12				[<-尺寸线 \t12]^C^C12
+					[->改变线宽]
+ID_LP1					[指定实体 \tLP1]^C^Clp1
+ID_LP					[指定层 \tLP]^C^Clp
+ID_CP					[<-指定颜色 \tCLP]^C^Cclp
+					[--]
+ID_Ddcolor			[颜色 \tDDColor]'ddcolor
+ID_Linetype			[线型 \tLinetype]'linetype
+					[--]
+ID_ZH				[文本字号 \tZH]^C^CZH
+ID_Style			[字型设置... \tDDStyle]'style
+					[--]
+//ID_Ddptype			[点类型... \tDDPtype]'ddptype
+ID_Ddrmodes			[作图辅助... \tDDRmodes]'ddrmodes
+ID_Ddosnap			[捕捉方式... \tDDosnap]'ddosnap
+ID_Ddgrips			[夹点设置... \tDDGrips]'ddgrips
+ID_Ddselect			[拾取设置... \tDDSelect]'ddselect
+ID_Ddunits			[单位控制... \tDDUnits]'ddunits
+ID_Grid				[网格 \tGrid]'grid
+ID_Ortho			[正交 \tOrtho]'ortho
+					[--]
+ID_Base				[插入基点 \tBase]'base
+					[--]
+					[->用户座标 \tUCS]
+ID_Dducs				[定座标系... \tDDUCS]^C^C$S=ucs dducs
+ID_UcsOrigin			[移动原点 \tOrigin]^C^Cucs o
+ID_UcsZAxRot			[旋转]^C^Cucs z
+ID_UcsEntity			[以实体为轴]^C^Cucs e
+ID_UcsWorld				[世界坐标系 \tWorld]^C^Cucs w
+ID_UcsPrevio			[<-前一个 \tPrevious]^C^Cucs p
+ID_Ltscale			[线型比例 \tLTScale]'ltscale
+ID_Limits			[图形界限 \tLimits]'limits
+					[--]
+ID_Ddrename			[重命名 \tRename]^C^Crename
+
+***POP8
+[工具&T]
+ID_Appload		[应用程序... \tAppLoad]^C^Cappload
+ID_Script		[运行宏 \tScript]^C^Cscript
+				[--]
+				[->清理 \tPurge]
+ID_PurgeAll			[全部清理 \tAll]^C^Cpurge a
+					[--]
+ID_PurgeLay			[层 \tLayer]^C^Cpurge la
+ID_PurgeLin			[线型 \tLtype]^C^Cpurge lt
+ID_PurgeTxt			[字体 \tStyle]^C^Cpurge st
+ID_PurgeDim			[标注样式 \tDimstyle]^C^Cpurge d
+ID_PurgeBlk			[块 \tBlock]^C^C_purge b
+ID_PurgeShp			[<-字型 \tShape]^C^Cpurge sh
+				[--]
+ID_Textscr		[文本窗口 \tF2]'textscr
+ID_ScreenMenu	[屏幕菜单 \tScrMenu]'scrmenu
+ID_Doctab		[文档条 \tDocTab]'doctab
+ID_NavToolbar	[导航工具条 \tNavTool]'navtool
+ID_Toolbar		[工具条... \tToolbar]^C^Ctoolbar
+ID_CHBAR		[特殊符号工具条 \tCHBAR]^C^Cchbar
+				[--]
+ID_List			[列表 \tList]$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,4),GRIP),list,^C^Clist)
+ID_Area			[面积 \tArea]^C^Cbarea
+ID_Dist			[距离 \tDist]^C^Cdist
+ID_Weight		[重量 \tWeight]^C^Cweight
+ID_Id			[定位点 \tId]^C^Cid
+ID_Paper		[换算图纸数值 \tPaper]'paper
+				[--]
+ID_Setvar		[系统变量 \tSetVar]'setvar
+ID_Status		[系统状态 \tStatus]'status
+				[--]
+ID_Preferences	[环境设置... \tPreferences]^C^Cpreferences
+
+***POP9
+[制图&G]
+ID_DHOLE		[画(光,螺纹,沉)孔 \tNewHOLE]^C^Cnewhole
+ID_DCONCIR		[画同心圆 \tConCir]^C^Cconcir
+//ID_DTANARC		[圆上一点画切线 \tTanArc]^c^ctanarc
+//ID_ALINE  		[三视图辅助线 \tALine]^C^Caline
+ID_ENLARGE		[局部放大 \tEnlarge]^C^Cenlarge
+ID_RTHLN		[剖视符号 \tRTHLN]^C^Crthln
+ID_DIRLN		[方向符号 \tDirLN]^C^Cdirln
+ID_CROSS		[十字线 \tCenter]^C^Ccenter
+ID_CURVE		[两点波浪线 \tCurve]^C^Ccurve
+ID_MUTICUR		[任意波浪线 \tMutiCur]^C^Cmuticur
+\\ID_BOX1		[画矩形 \tBox]^C^Cbox
+ID_TRAP		[画梯形 \tTrap]^C^Ctrap
+ID_SECTOR		[画扇形 \tSector]^C^Csector
+ID_XGX			[相贯线 \tXGX]^C^CXGX
+ID_DCEN		[中分线 \tDcen]^C^Cdcen
+ID_DTANL		[指定线垂线 \tTANL]^C^Ctanl
+ID_DTANARC		[圆上一点切线 \tTANARC]^c^ctanarc
+ID_KEY			[画键槽\tKey]^C^CKey
+ID_OF			[对称线 \tOF]^C^Cof
+			[--]
+ID_RL			[截交 \tRL]^C^Crl
+ID_EXT			[无边界延伸 \tEXT]^C^Cext
+ID_FLT			[倒工艺圆角 \tFLT]^C^Cflt
+ID_CHS			[轴倒角 \tCHS]^C^Cchs
+ID_CHH			[孔倒角 \tCHH]^C^Cchh
+ID_CUTENT		[切断 \tCut]^C^CCUT
+ID_GY		[工艺槽构造 \tGY]^C^CGY
+ID_GYZXKDIMw		[中心孔标注 \tZXKDIM]^C^CZXKDIM
+			[--]
+			[->参数化表格]
+ID_Table			[表格生成 \tTable]^C^Ctable
+ID_Tabledim			[关联尺寸与表格 \tTable_Dim]^C^Ctable_dim
+ID_Ghtable			[关联参数化表格 \tGHTable]^C^Cghtable
+ID_Putdim			[设置尺寸变量值 \tPut_Dim]^C^Cput_dim
+ID_Deldim			[删除关联尺寸 \tDel_Dim]^C^Cdel_dim
+ID_Adddim			[添加关联尺寸 \tAdd_Dim]^C^Cadd_dim
+ID_Moddim			[修改关联尺寸 \tMod_Dim]^C^Cmod_dim
+ID_Newdim			[重建关联尺寸 \tNew_Dim]^C^Cnew_dim
+ID_Editcell			[表格单元编辑 \tEdit_Cell]^C^Cedit_cell
+					[->行编辑]
+ID_Copyrow				[复制 \tCpy_Row]^C^Ccpy_row
+ID_Ovrrow				[覆盖 \tOvr_Row]^C^Covr_row
+ID_Pasterow				[粘贴 \tPst_Row]^C^Cpst_row
+ID_Delrow				[删除 \tDel_Row]^C^Cdel_row
+ID_Insrow				[插入 \tIns_Row]^C^Cins_row
+ID_Cutrow				[<-剪切 \tCut_Row]^C^Ccut_row
+					[->列编辑]
+ID_Copycol				[复制 \tCpy_Col]^C^Ccpy_col
+ID_Ovrcol				[覆盖 \tOvr_Col]^C^Covr_col
+ID_Pastecol				[粘贴 \tPst_Col]^C^Cpst_col
+ID_Delcol				[删除 \tDel_Col]^C^Cdel_col
+ID_Inscol				[插入 \tIns_Col]^C^Cins_col
+ID_Cutcol				[<-<-剪切 \tCut_Col]^C^Ccut_col
+			[--]
+ID_XLIST		[数据查询 \tXList]^C^Cxlist
+ID_DCURVE		[数据曲线 \tDatCurve]^C^Cdatcurve
+ID_CURVE		[公式曲线 \tFCurve]^C^CFcurve
+ID_DJCURVE	[带坐标曲线 \t DJCURVE]^c^cdjcurve
+
+***POP10
+[表格工具&B]
+ID_def     [栏框定义 \tdef]^C^Cdef
+ID_mb      [模板定义 \tmb]^C^Cmb
+ID_cdd     [表格定义 \tcdd]^C^Ccdd
+ID_cds     [表格绘制 \tcds]^C^Ccds
+ID_cde     [表格编辑 \tcde]^C^Ccde
+ID_mod     [修改定义栏框 \tmod]^C^Cmod
+
+
+***POP11
+[机械&J]
+ID_DTF			[画图框 \tTF]^c^ctf
+ID_DFORM		[填写栏框 \tFORM]^C^Cform
+ID_DH			[复制代号栏 \tDH]^C^Cdh
+				[->表格及标题栏定制]
+ID_Datatable		[数据表格 \tTbl]^C^Ctbl
+ID_Lhead			[调入标题栏 \tLHead]^C^Clhead
+ID_Shead			[<-表格定制 \tSHead]^C^Cshead
+			[--]
+ID_BOMlabel		[标注零件序号 \tLabel]^C^C$S=X $S=BILL label
+ID_BOMbill		[明细表输入与编辑 \tBill]^C^C$S=X $S=BILL bill
+ID_WT			[明细表重量汇总 \tWT]^C^CWT
+ID_BOM 		[->明细表处理]
+ID_BOMtextscale			[设置明细表文字宽度系数 \tbomtextscale]^C^C$S=X $S=BILL bomtextscale
+ID_BOMdel			[删除序号或者明细表 \tDel_Item]^C^C$S=X $S=BILL del_item
+ID_Copy_label		[复制序号或者明细表 \tCopy_label]^C^C$S=X $S=BILL copy_label
+ID_BOMCH			[交换序号 \tCH_Item]^C^C$S=X $S=BILL ch_item
+ID_BOMoutput			[明细表内容输出 \tOutput]^C^C$S=X $S=BILL output
+ID_BOMlaybill			[明细表重排 \tLayBill]^C^C$S=X $S=BILL laybill
+ID_BOMrebill			[明细表修复 \tReBill]^C^C$S=X $S=BILL rebill
+ID_BOMFSH			[明细表刷新 \tFSHBill]^C^C$S=X $S=BILL fshbill
+ID_BOMmdcode			[明细表屏幕编辑 \tMDCode]^C^C$S=X $S=BILL mdcode
+ID_BOMintestat		[明细表汇总 \tStat]^C^C$S=X $S=BILL stat
+				[--]
+ID_BOMoldbom			[旧表转换 \tOldBom]^C^C$S=X $S=BILL oldbom
+ID_BOMload			[读入明细表 \tLoadBom]^C^C$S=X $S=BILL loadbom
+ID_BOMerase			[删除明细表所有内容 \tEBill]^C^C$S=X $S=BILL ebill
+ID_BOMheight			[设定明细表的高度 \tBom_Height]^C^C$S=X $S=BILL bom_height
+ID_BOMpara			[明细表参数 \tBomPara]^C^Cbompara
+				[--]
+ID_BOMstatdraw		[汇总表绘制 \tStatDraw]^C^C$S=X $S=BILL statdraw
+ID_BOMstatdef			[<-汇总表格式定义 \tStatDef]^C^C$S=X $S=BILL statdef
+//ID_BOMbomdlg			[明细表格式定义 \tBomDLG]^C^C$S=X $S=BILL bomdlg
+			[--]
+ID_Shaft		[轴 \tSHAFT]^C^CSHAFT
+ID_Gear		[圆柱齿轮 \tGEAR]^C^CGEAR
+ID_Zcl 		[锥齿轮 \tZCL]^C^CZCL
+ID_Worm		[蜗    轮 \tWORM]^C^CWORM
+ID_Chain		[链    轮 \tCHAIN]^C^CCHAIN
+ID_Belt		[皮带轮 \tBELT]^C^CBELT
+ID_Flange		[法兰盘 \tFLANGE]^C^CFLANGE
+ID_HUAJIAN		[花键 \tHUAJIAN]^C^CHUAJIAN
+			[--]
+//ID_Login		[管理员登录 \tLogin]^C^CLOGIN
+//ID_Logout		[管理员注销 \tLogout]^C^CLOGOUT
+//ID_Password		[修改口令 \tPassword]^C^CPASSWORD
+ID_Userdict		[字典维护... \tUserDict]^C^CUserDict
+ID_Tkopen		[打开图纸 \tTKOpen]^C^Ctkopen
+ID_Tksave		[保存图纸 \tTKSave]^C^Ctksave
+
+***POP12
+[TiPLM集成&K]
+ID_CHECKOUTDOC 	[检索修改 \tCheckoutDoc]^c^cCheckoutDoc
+ID_CHECKINCUR	[提交当前文件 \tCheckinCur]^C^CCheckinCur
+ID_CHECKINCURDIR	[提交当前目录 \tCheckinCurDir]^C^CCheckinCurDir
+ID_CHECKINALL	[提交全部文件 \tCheckinAll]^C^CCheckinAll
+ID_DESKTOPTIPLM	[TiPLM工作桌面 \tDesktopTiPLM]^C^CDesktopTiPLM
+[--]
+ID_CATCHINFOCUR	[提取当前文件 \tCatchInfoCur]^C^CCatchInfoCur
+ID_CATCHINFOCURDIR	[提取当前目录 \tCatchInfoCurDir]^C^CCatchInfoCurDir
+ID_CATCHINFOALL	[提取全部文件 \tCatchInfoAll]^C^CCatchInfoAll
+			
+***POP13
+[图库&L]
+[图库管理工具 \tpdatabase]^C^Cpdatabase
+[--]
+[->滚动轴承库 95.6]
+	[深沟球轴承 \t60000型]^C^C^P(if (NULL partlibrun) (xload "plib"))stdbear6 ^P
+	[调心球轴承 \t10000型]^C^C^P(if (NULL partlibrun) (xload "plib"))stdbear1 ^P
+	[圆柱滚子轴承 \tN*型]^C^C^P(if (NULL partlibrun) (xload "plib"))stdbearn ^P
+	[双列圆柱滚子轴承 \tNN*型]^C^C^P(if (NULL partlibrun) (xload "plib"))stdbearnn ^P
+	[调心滚子轴承 \t20000型]^C^C^P(if (NULL partlibrun) (xload "plib"))stdbear2 ^P
+	[冲压外圈滚针轴承 \tHK,BK型]^C^C^P(if (NULL partlibrun) (xload "plib"))stdbeark ^P
+	[角接触球轴承 \t70000型]^C^C^P(if (NULL partlibrun) (xload "plib"))stdbear7 ^P
+	[三点和四点接触球轴承 \tQ*型]^C^C^P(if (NULL partlibrun) (xload "plib"))stdbearq ^P
+	[双列角接触球轴承 \t00000型]^C^C^P(if (NULL partlibrun) (xload "plib"))stdbear0 ^P
+	[圆锥滚子轴承 \t30000型]^C^C^P(if (NULL partlibrun) (xload "plib"))stdbear3 ^P
+	[双列圆锥滚子轴承]^C^C^P(if (NULL partlibrun) (xload "plib"))stdbear35 ^P
+	[推力球轴承 \t50000型]^C^C^P(if (NULL partlibrun) (xload "plib"))stdbear5 ^P
+	[推力圆柱滚子轴承 \t80000型]^C^C^P(if (NULL partlibrun) (xload "plib"))stdbear8 ^P
+	[凸缘外圈微型深沟球轴承]^C^C^P(if (NULL partlibrun) (xload "plib"))stdbear80 ^P
+	[凸缘外圈微型角接触球轴承]^C^C^P(if (NULL partlibrun) (xload "plib"))stdbear06 ^P
+	[<-冲压外圈滚针轴承]^C^C^P(if (NULL partlibrun) (xload "plib"))stdbear12 ^P
+	[--]
+[->螺栓库]
+	[六角头螺栓]^C^C^P(if (NULL partlibrun) (xload "plib"))stdbolt ^P
+	[六角头带孔螺栓]^C^C^P(if (NULL partlibrun) (xload "plib"))stdbolt_h ^P
+	[<-其它螺栓]^C^C^P(if (NULL partlibrun) (xload "plib"))stdbolt_o ^P
+[螺柱库]^C^C^P(if (NULL partlibrun) (xload "plib"))stdhelix ^P
+[->螺钉库]
+	[开槽、十字槽螺钉]^C^C^P(if (NULL partlibrun) (xload "plib"))stdscrew_c ^P
+	[紧定、定位螺钉]^C^C^P(if (NULL partlibrun) (xload "plib"))stdscrew_p ^P
+	[内六角螺钉及其他]^C^C^P(if (NULL partlibrun) (xload "plib"))stdscrew_i ^P
+	[自攻螺钉]^C^C^P(if (NULL partlibrun) (xload "plib"))stdscrew_u ^P
+	[<-木螺钉]^C^C^P(if (NULL partlibrun) (xload "plib"))stdscrew_t ^P
+[->螺母库]
+	[六角螺母]^C^C^P(if (NULL partlibrun) (xload "plib"))stdnut ^P
+	[开槽螺母]^C^C^P(if (NULL partlibrun) (xload "plib"))stdnut_c ^P
+	[锁紧螺母]^C^C^P(if (NULL partlibrun) (xload "plib"))stdnut_l ^P
+	[<-其它螺母]^C^C^P(if (NULL partlibrun) (xload "plib"))stdnut_o ^P
+[--]
+	[垫圈库]^C^C^P(if (NULL partlibrun) (xload "plib"))stdwasher ^P
+	[挡圈库]^C^C^P(if (NULL partlibrun) (xload "plib"))stdring ^P
+	[销库]^C^C^P(if (NULL partlibrun) (xload "plib"))stdpin ^P
+	[铆钉库]^C^C^P(if (NULL partlibrun) (xload "plib"))stdrivet_new ^P
+[--]
+	[键库]^C^C^P(if (NULL partlibrun) (xload "plib"))stdkeylib ^P
+	[键槽库]^C^C^P(if (NULL partlibrun) (xload "plib"))stdkeyway ^P
+	[中心孔]^C^C^P(if (NULL partlibrun) (xload "plib"))stdcenhole ^P
+[--]
+	[弹簧库]^C^C^P(if (NULL partlibrun) (xload "plib"))stdspring ^P
+	[型钢库]^C^C^P(if (NULL partlibrun) (xload "plib"))stdsect ^P
+[--]
+[->夹具库 91]
+	[定位元件]^C^C^P(if (NULL partlibrun) (xload "plib"))stddingwei ^P
+	[<-对定元件]^C^C^P(if (NULL partlibrun) (xload "plib"))stdduiding ^P
+[--]
+[->液压气动符号库 93]
+	[管路连接口和接头]^C^C^P(if (NULL partlibrun) (xload "plib"))stdjoint ^P
+	[泵和马达]^C^C^P(if (NULL partlibrun) (xload "plib"))stdpump ^P
+	[气缸和液压缸]^C^C^P(if (NULL partlibrun) (xload "plib"))stdcyln ^P
+	[特殊能量转换器]^C^C^P(if (NULL partlibrun) (xload "plib"))stdconvert ^P
+	[能量贮存器]^C^C^P(if (NULL partlibrun) (xload "plib"))stdstocker ^P
+	[动力源符号]^C^C^P(if (NULL partlibrun) (xload "plib"))stdpower ^P
+	[方向控制阀]^C^C^P(if (NULL partlibrun) (xload "plib"))stddirection ^P
+	[压力控制阀]^C^C^P(if (NULL partlibrun) (xload "plib"))stdpressure ^P
+	[流量控制阀]^C^C^P(if (NULL partlibrun) (xload "plib"))stdflow ^P
+	[油箱符号]^C^C^P(if (NULL partlibrun) (xload "plib"))stdoilbox ^P
+	[流体调节器(件)]^C^C^P(if (NULL partlibrun) (xload "plib"))stdfilter ^P
+	[<-检测器和其它元器件]^C^C^P(if (NULL partlibrun) (xload "plib"))stdtest ^P
+[--]
+[->电气符号库 GB4728]
+	[常用符号]^C^C^P(if (NULL partlibrun) (xload "plib"))stdcommon ^P
+	[无源元件符号]^C^C^P(if (NULL partlibrun) (xload "plib"))stdnosource ^P
+	[半导体管、电子管符号]^C^C^P(if (NULL partlibrun) (xload "plib"))stdsemimain ^P
+	[电能的发生和转换符号]^C^C^P(if (NULL partlibrun) (xload "plib"))stdenergy ^P
+	[开关、控制和保护装置图形符号]^C^C^P(if (NULL partlibrun) (xload "plib"))stdswitchcon ^P
+	[测量仪表、灯和信号器件符号]^C^C^P(if (NULL partlibrun) (xload "plib"))stdmeasurelamp ^P
+	[<-电力照明一般符号,变电站、所符号]^C^C^P(if (NULL partlibrun) (xload "plib"))stdsubstation ^P
+[--]
+[旧标准件库...	Mainicon]^C^C^P(if (null pgopen) (xload "pgmstdb"))(if (null bear) (xload "bear")) ^P mainicon
+[旧液压气动符号库...]^C^C^P(if (null pgopen) (xload "pgmstdb"))(progn (menucmd "I=HYDB") (menucmd "I=*")) ^P
+[旧夹具库...]^C^C^P(if (null pgopen) (xload "pgmstdb"))(progn (menucmd "I=FDB") (menucmd "I=*")) ^P
+[打开老图库... \tPGop]^C^C$S=x $S=pgms1 PGOP
+[运行老图库 \tPGS]^C^C$S=x $S=pgms1 PGS
+
+***POP14
+[参数化&P]
+ID_Pmanmod	[管理参数化块 \tPMNGModels]^C^CPMNGMODELS
+ID_PDRAG	[拖动参数化块 \tPDrag]^C^CPDRAG
+ID_PADD	    [实体加入 \tPAddEnt]^C^CPADDENT
+ID_Premove	[实体移除 \tPRMVEnt]^C^CPRMVENT
+			[--]
+ID_Pmirror	[实体镜像 \tPMirror]^C^CPMIRROR
+			[--]
+ID_PADDCON	[加约束 \tPAddCon]^C^CPADDCON
+ID_Delcon	[删除约束 \tPDelCon]^C^CPDELCON
+			[--]
+ID_PSETPAR	[设置尺寸名 \tPMNGDimName]^C^CPMNGDIMNAME
+ID_PCHGDIM	[修改尺寸 \tPDimNewVal]^C^CPDIMNEWVAL
+ID_PEQUAT	[管理方程 \tPMNGEqu]^C^CPMNGEQU
+			[--]
+ID_Prestore	[恢复到上一个状态 \tPRestore]^C^CPRESTORE
+
+//***POP15
+//[安全&S]
+//[远程文件管理... \tremote]^C^Cremote
+//[旧文件升级... \tupdfile]^C^Cupdfile
+//[用户密码... \tuserPWD]^C^CuserPWD
+//[图纸信息... \tdrawInfo]^C^CdrawInfo
+
+***POP16
+[窗口&W]
+ID_WINDOW_CASCADE    [层叠]
+ID_WINDOW_TILE_HORZ  [水平平铺]
+ID_WINDOW_TILE_VERT  [垂直平铺]
+ID_WINDOW_ARRANGE    [排列图标]
+
+***POP17
+[帮助&H]
+ID_Help		[帮助目录 \tHelp]'help
+//ID_Search	[查找 \tSearch]'search
+			[--]
+ID_About	[关于MDS \tAbout]'about
+***POP500
+**CMDEFAULT
+[默认模式的上下文菜单]
+ID_CMNonLast [重复%s(&R)]^C^C;
+             [--]
+ID_Cutclip   [剪切(&T)]^C^C_cutclip
+ID_Copyclip  [复制(&C)]^C^C_copyclip
+//ID_Copybase  [带基点复制(&B)]^C^C_copybase
+ID_Pasteclip [粘贴(&P)]^C^C_pasteclip
+ID_Pastebloc [粘贴为块(&K)]^C^C_pasteblock
+//ID_Pasteorig [粘贴到原坐标(&D)]^C^C_pasteorig
+             [--]
+ID_U         [放弃(&U)]^C^C_u
+ID_Redo      [重做(&D)]^C^C_redo
+ID_Pan	     [平移(&A)]'_pan
+ID_ZoomRealt [缩放(&Z)]'_zoom ;
+             [--]
+//ID_Filter    [快速选择(&Q)...]^C^C_qselect
+ID_TextFind  [查找(&F)...]^C^C_find
+ID_preferences [选项(&O)...]^C^C_preferences
+***POP501
+**CMDEFAULT
+[默认模式的上下文菜单]
+ID_CMNonLast [重复%s(&R)]^C^C;
+             [--]
+ID_Cutclip   [剪切(&T)]^C^C_cutclip
+ID_Copyclip  [复制(&C)]^C^C_copyclip
+//ID_Copybase  [带基点复制(&B)]^C^C_copybase
+ID_Pasteclip [粘贴(&P)]^C^C_pasteclip
+ID_Pastebloc [粘贴为块(&K)]^C^C_pasteblock
+//ID_Pasteorig [粘贴到原坐标(&D)]^C^C_pasteorig
+             [--]
+ID_U         [放弃(&U)]^C^C_u
+ID_Redo      [重做(&D)]^C^C_redo
+ID_Pan	     [平移(&A)]'_pan
+ID_ZoomRealt [缩放(&Z)]'_zoom ;
+             [--]
+//ID_Filter    [快速选择(&Q)...]^C^C_qselect
+ID_TextFind  [查找(&F)...]^C^C_find
+ID_preferences [选项(&O)...]^C^C_preferences
+
+***POP502
+**CMEDIT
+[编辑模式的上下文菜单]
+ID_CMSelLast [重复%s(&R)]^C^C;
+             [--]
+ID_Cutclip   [剪切(&T)]^C^C_cutclip
+ID_Copyclip  [复制(&C)]^C^C_copyclip
+//ID_Copybase  [带基点复制(&B)]^C^C_copybase
+ID_Pasteclip [粘贴(&P)]^C^C_pasteclip
+ID_Pastebloc [粘贴为块(&K)]^C^C_pasteblock
+//ID_Pasteorig [粘贴到原坐标(&D)]^C^C_pasteorig
+             [--]
+ID_Erase     [删除(&E)]^C^C_erase
+ID_Move      [移动(&M)]$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,4),GRIP),_move,^C^C_move)
+ID_Copy      [复制选择(&Y)]$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,4),GRIP),_copy,^C^C_copy)
+ID_Scale     [缩放(&L)]$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,4),GRIP),_scale,^C^C_scale)
+ID_Rotate    [旋转(&O)]$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,4),GRIP),_rotate,^C^C_rotate)
+
+             [--]
+ID_Deselectall [全部不选(&A)]^C^C^P(ai_deselect) ^P
+             [--]
+//ID_Filter    [快速选择(&Q)...]^C^C_qselect
+ID_TextFind  [查找(&F)...]^C^C_find
+//ID_Ai_propch [特性(&S)]^C^C_properties
+ID_Properties		[特性(&S)]$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,4),GRIP),ddmodify,^C^Cddmodify)
+
+//screen menu
+***SCREEN
+**S
+[MDS7.0  ]^C^C$S=S
+[* * * * ]$S=OSNAP
+[文件    ]$S=01_FILE
+[编辑    ]$S=02_EDIT
+[显示    ]$S=03_VIEW1
+[消隐    ]$S=04_VIEW2
+[绘图 1  ]$S=09_DRAW1
+[绘图 2  ]$S=10_DRAW2
+[修改 1  ]$S=12_MODIFY1
+[修改 2  ]$S=13_MODIFY2
+[标注 1  ]$S=11_DIMENSION1
+[标注 2  ]$S=15_DIMENSION2
+[设置    ]$S=06_FORMAT
+[工具    ]$S=21_TOOL
+[制图 1  ]$S=16_DRAWING1
+[制图 2  ]$S=17_DRAWING2
+[机械设计]$S=18_MECHANICAL
+[图库    ]$S=19_LIBRARY
+[参数化  ]$S=20_PDA
+[帮助    ]$S=14_HELP
+
+
+
+
+
+
+[辅助工具]$S=ASSIST
+[前一页  ]$S=
+// The SNAP_TO menu can be called on high resolution displays to paint the snap
+// options on the bottom of the screen menu.  
+// To add lines to the bottom of the Root menu delete the next line.
+**SNAP_TO 28
+[端点    ]endp
+[中点    ]mid
+[交点    ]int
+
+
+[中心    ]cen
+[四分点  ]qua
+[切点    ]tan
+
+[垂足    ]per
+[孤立点  ]nod
+[插入点  ]ins
+
+[最近点  ]nea
+[取消捕捉]non
+
+
+
+
+
+
+**X 3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[上一页]$S= $S=
+[绘  图]^C^C $S=X $S=09_DRAW1
+[编  辑]^C^C $S=X 12_MODIFY1
+**ASSIST 3
+[最后一个]l
+[前一个  ]p
+[全部    ]all
+[交叉多边形]cp
+[窗口多边形]wp
+[栅栏    ]f
+
+[增加    ]a
+[删除    ]r
+[Undo    ]u
+
+[.X      ].x
+[.Y      ].y
+[.Z      ].z
+[.XY     ].xy
+[.XZ     ].xz
+[.YZ     ].yz
+[捕捉设置]'ddosnap
+[作图辅助]'ddrmodes
+[图层    ]'layer
+
+[捕捉菜单]$S=OSNAP
+**GRIP_EDIT 3
+[预拾取  ]
+[编辑    ]
+
+[平移    ]move
+[镜像    ]mirror
+[旋转    ]rotate
+[缩放    ]scale
+[拉伸    ]stretch
+
+[基点    ]base
+[复制    ]copy
+
+[Undo    ]u
+
+
+
+
+[退出    ]exit
+[撤消    ]^C
+
+
+
+**01_FILE 3
+[新建文档]^C^Cnewdoc
+[新建文件]^C^Cnew
+[打开文件]^C^Copen
+[关闭文档]^C^Cclosedoc
+
+[文件存盘]^C^Cqsave
+[赋名存盘]^C^Csaveas
+
+[输出]^C^Cexport
+[输入DWG]^C^Cloadwg
+[输入DXF]^C^Cdxfin
+[输出DXF]^C^Cdxfout
+[外部引用]^C^Cxref
+
+[绘图仪配置]^C^Cplotcfg
+[打印预览]^C^Cpreview
+[绘图输出]^C^Cplot
+
+
+[退出系统]^C^Cquit
+
+
+**02_EDIT 3
+[取消    ]^C^C^C
+[退回    ]U
+[恢复    ]^C^Credo
+
+[剪切    ]$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,4),GRIP),cutclip,^C^Ccutclip)
+[复制    ]$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,4),GRIP),copyclip,^C^Ccopyclip)
+[复制链接]^C^Ccopylink
+[粘贴    ]^C^Cpasteclip
+[选择粘贴]^C^Cpastespec
+
+[清除    ]$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,4),GRIP),erase,^C^Cerase)
+
+
+
+
+
+
+
+
+
+
+
+**03_VIEW1 3
+[重画    ]'redraw
+[重新生成]^C^Cregen
+
+[缩放    ]'zoom
+[平移    ]'pan
+
+[鹰眼    ]'dsviewer
+
+[UCS图标 ]'ucsicon
+[属性显示]'attdisp
+
+
+
+
+
+
+
+
+
+
+
+
+**04_VIEW2 3
+[零件集成]^C^CPART
+[遮挡定义]^C^CABOVE
+[消隐    ]^C^CHIDE
+[图元还原]^C^CUNPART
+[字符消隐]^C^CHIDECHAR
+[取消字符消隐]^C^CUNHIDE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**06_FORMAT 3
+[图层    ]'layer
+[设置当前层]^C^Csetlayer
+[颜色    ]'ddcolor
+[线型    ]'linetype
+
+[文本字号]^C^CZH
+[字型设置]'style
+
+//[点类型  ]'ddptype
+[作图辅助]'ddrmodes
+[捕捉方式]'ddosnap
+[预拾取  ]'ddgrips
+[单位控制]'ddunits
+[网格    ]'grid
+[正交    ]'ortho
+
+[用户座标]^C^Cucs
+[线型比例]'ltscale
+[图形界限]'limits
+
+[重命名  ]^C^Crename
+
+**09_DRAW1 3
+[点      ]^C^Cpoint
+[直线    ]^C^Cline
+[智能画线]^C^Cll
+
+
+[圆      ]^C^Ccircle
+[圆弧    ]^C^Carc
+[椭圆    ]^C^Cellipse
+[圆环    ]^C^Cdonut
+
+[多义线  ]^C^Cpline
+[多边形  ]^C^Cpolygon
+[实心域  ]^C^Csolid
+[轨迹    ]^C^Ctrace
+
+
+
+
+
+
+
+
+**10_DRAW2 3
+[创建块  ]^C^Cblock
+
+[插入块  ]^C^Cddinsert
+[OLE对象 ]^C^Cinsertobj
+
+[填充    ]^C^Cbhatch
+[边界    ]^C^Cbpoly
+
+
+[单行文字]^C^Ctext
+[动态文字]^C^Cdtext
+[多行文字]^C^Cmtext
+[曲线文字]^C^Cctext
+
+
+
+
+
+
+
+
+
+**11_DIMENSION1 3
+[水平    ]^C^CDIM hor
+[垂直    ]^C^CDIM ver
+
+[对齐    ]^C^CDIM aligned
+[旋转    ]^C^CDIM rotated
+
+[基线标注]*^C^CDIM baseline
+[连续标注]*^C^CDIM continue
+
+[直径标注]^C^CDIM diameter
+[半径标注]^C^CDIM radius
+[中心记号]^C^CDIM center
+
+[自动坐标]^C^CDIM ordinate
+[-X-标注 ]^C^CDIM ordinate;\x
+[-Y-标注 ]^C^CDIM ordinate;\y
+
+[角度标注]^C^CDIM angular
+[引线    ]^C^CDIM leader
+
+
+
+**15_DIMENSION2 3
+[标注模式]^C^Cddim
+
+[智能标注]^C^CNdim
+
+
+[连续标注]^C^CCDIM
+
+[特殊标注]^C^Cintedim
+
+
+[尺寸公差]^C^Ctoler
+[形位公差]^c^csp
+[编辑形位公差]^c^cesp
+[粗糙度  ]^c^crough
+[编辑粗糙度  ]^c^cModRough
+
+[焊接符号]^c^cweld
+[编辑焊接符号]^c^cmodweld
+
+[技术要求库]^C^CJSYQ
+[编辑技术要求]^C^CeditJSYQ
+ 
+**16_DRAWING1 3
+
+[画图框  ]^c^ctf
+
+
+[填写栏框]^C^Cform
+
+[复制代号栏]^C^Cdh
+
+
+
+[数据表格]^C^Ctbl
+
+[调标题栏]^C^Clhead
+
+[表格定制]^C^Cshead
+
+
+
+
+[参数表格]$S=PARATABLE
+
+
+**17_DRAWING2 3
+
+[孔      ]^C^Cnewhole
+[同心圆  ]^C^Cconcir
+[圆上切线]^c^ctanarc
+//[辅助线  ]^C^Caline
+[局部放大]^C^Cenlarge
+[剖视符号]^C^Crthln
+[方向符号]^C^Cdirln
+[十字线  ]^C^Ccenter
+
+[两点波浪]^C^Ccurve
+[任意波浪]^C^Cmuticur
+
+[矩形    ]^C^Cbox
+[梯形    ]^C^Ctrap
+[扇形    ]^C^Csector
+[相贯线  ]^C^CXGX
+[切断    ]^C^CCUT
+
+[数据查询]^C^Cxlist
+[数据曲线]^C^Cdatacurve
+[公式曲线]^C^Ccurve
+
+**BILL 3
+[明细表  ]
+[标注零件序号]^C^Clabel
+[内容生成编辑]^C^Cbill
+[删除序号或表]^C^Cdel_item
+[交换序号]^C^Cch_item
+[表输出  ]^C^Coutput
+[表重排  ]^C^Claybill
+[表修复  ]^C^Crebill
+[表刷新  ]^C^Cfshbill
+[屏幕编辑]^C^Cmdcode
+[汇总    ]^C^Cstat
+[旧表转换]^C^Coldbom
+[读入表  ]^C^Cloadbom
+[删除内容]^C^Cebill
+[设定高度]^C^Cbom_height
+[参数设置]^C^Cbompara
+[汇总表绘制]^C^Cstatdraw
+[汇总表格式]^C^Cstatdef
+//[明细表格式]^C^Cbomdlg
+
+**18_MECHANICAL 3
+[明细表  ]$=X $S=BILL
+
+
+[轴      ]^C^CSHAFT
+[圆柱齿轮]^C^CGEAR
+[锥齿轮]^C^CZCL
+[蜗    轮]^C^CWORM
+[链    轮]^C^CCHAIN
+[皮带轮  ]^C^CBELT
+[法兰盘  ]^C^CFLANGE
+
+
+[管理员登录]$S=X $S=MANAGE ^C^CLOGIN
+[管理员注销]$S=X $S=MANAGE ^C^CLOGOUT
+[修改口令]$S=X $S=MANAGE ^C^CPASSWORD
+[字典维护]$S=X $S=MANAGE ^C^CUserDict
+[打开图纸]$S=X $S=MANAGE ^C^Ctkopen
+[保存图纸]$S=X $S=MANAGE ^C^Ctksave
+
+
+
+
+
+**19_LIBRARY 3
+[标准件库]
+
+[代号调用标准件]
+
+
+[电气图形符号库]
+
+[液压气动符号库]
+
+[夹具库]
+
+
+[创建图库]
+[打开图库]
+
+[重建图标]
+[创建菜单图标]
+[删除图库零件]
+
+[采图入库]
+[运行图库]
+
+**20_PDA 3
+[管理参数块]^C^CPMNGMODELS
+[拖动参数块]^C^CPDRAG
+
+
+[实体加入]^C^CPADDENT
+[实体移除]^C^CPRMVENT
+
+
+[实体镜像]^C^CPMIRROR
+
+
+[加约束  ]^C^CPADDCON
+[删除约束]^C^CPDELCON
+
+
+[尺寸设名]^C^CPMNGDIMNAME
+[修改尺寸]^C^CPDIMNEWVAL
+[管理方程]^C^CPMNGEQU
+
+
+[恢复状态]^C^CPRESTORE
+
+**12_MODIFY1 3
+
+[实体修改]$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,4),GRIP),ddmodify,^C^Cddmodify)
+
+[外部绑定]^C^Cxbind
+
+
+
+
+[多义线编辑]^C^Cpedit
+
+[属性编辑]^C^Cddatte
+
+[文字编辑]^C^Cddedit
+
+
+
+[删除    ]$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,4),GRIP),erase,^C^Cerase)
+[复制    ]$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,4),grip),copy,^C^Ccopy)
+[镜像    ]$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,4),grip),mirror,^C^Cmirror)
+[偏移    ]$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,4),GRIP),offset,^C^Coffset)
+[阵列    ]$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,4),GRIP),array,^C^Carray)
+
+**13_MODIFY2 3
+
+
+[移动    ]$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,4),grip),move,^C^Cmove)
+[旋转    ]$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,4),grip),rotate,^C^Crotate)
+[缩放    ]$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,4),grip),scale,^C^Cscale)
+[拉伸    ]$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,4),grip),stretch,^C^Cstretch)
+
+[裁剪    ]^C^Ctrim
+[快速裁剪    ]^C^Cqtrim
+[延伸    ]^C^Cextend
+[打断    ]^C^Cbreak
+[倒角    ]^C^Cchamfer
+[倒圆角  ]^C^Cfillet
+
+[炸开    ]$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,4),GRIP),explode,^C^Cexplode)
+
+[OOPS!   ]^C^Coops
+
+
+
+
+
+
+**14_HELP 3
+[帮助目录]'help
+[查找    ]'search
+
+[关于    ]'about
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**21_TOOL 3
+[应用程序]^C^Cappload
+
+[运行宏  ]^C^Cscript
+
+
+[清理    ]^C^Cpurge
+
+
+[列表    ]$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,4),GRIP),list,^C^Clist)
+[面积    ]^C^Carea
+[距离    ]^C^Cdist
+[定位点  ]^C^Cid
+[换算图纸]'paper
+
+
+[系统变量]'setvar
+[系统状态]'status
+
+
+[环境设置]^C^Cpreferences
+
+
+**PARATABLE 3
+[表格生成]^C^Ctable
+[关联表格]^C^Cghtable
+[关联尺寸]^C^Ctable_dim
+[设置尺寸]^C^Cput_dim
+[删除尺寸]^C^Cdel_dim
+[添加尺寸]^C^Cadd_dim
+[修改尺寸]^C^Cmod_dim
+[重建尺寸]^C^Cnew_dim
+[单元编辑]^C^Cedit_cell
+
+[复制行  ]^C^Ccpy_row
+[覆盖行  ]^C^Covr_row
+[粘贴行  ]^C^Cpst_row
+[删除行  ]^C^Cdel_row
+[插入行  ]^C^Cins_row
+[剪切行  ]^C^Ccut_row
+[复制列  ]^C^Ccpy_col
+[覆盖列  ]^C^Covr_col
+[粘贴列  ]^C^Cpst_col
+[删除列  ]^C^Cdel_col
+[插入列  ]^C^Cins_col
+[剪切列  ]^C^Ccut_col
+**BILL 3
+
+[标注零件序号]^C^Clabel
+[内容生成编辑]^C^Cbill
+[删除序号或表]^C^Cdel_item
+[交换序号]^C^Cch_item
+[内容输出]^C^Coutput
+[重排    ]^C^Claybill
+[修复    ]^C^Crebill
+[刷新    ]^C^Cfshbill
+[屏幕编辑]^C^Cmdcode
+[汇总    ]^C^Cstat
+[旧表转换]^C^Coldbom
+[读入    ]^C^Cloadbom
+[删除所有内容]^C^Cebill
+[设定高度]^C^Cbom_height
+[参数设置]^C^Cbompara
+[汇总表格式]^C^Cstatdef
+[汇总表绘制]^C^Cstatdraw
+//[明细表格式]^C^Cbomdlg
+
+
+
+**MANAGE 3
+
+[管理员登录]^C^CLOGIN
+
+[管理员注销]^C^CLOGOUT		
+
+
+
+[修改口令]^C^CPASSWORD
+
+
+
+[字典维护]^C^CUserDict
+
+
+
+[打开图纸]^C^Ctkopen
+
+[保存图纸]^C^Ctksave
+
+
+
+
+//
+//  Here begins the command options menus
+//  Only commands that have command line options are included here.
+//  - Commands that immediately call dialog boxes do not havre screen menus.
+//  - Commands with no options (example: Ray) do not have screen menus.
+//  Commands are listed in alphabetical order.
+//  Commands and system variables are followed by a colon.
+//  Command options and sub-options do not have colons.
+//
+**ARC 3
+[ARC:   ]^C^Carc
+
+[3 点    ]\\
+[起点圆心终点]\c \
+[起点圆心包含角]\c \a
+[起点圆心弦长]\c \l
+[起点终点包含角]\e \a
+[起点终点方向]\e \d
+[起点终点半径]\e \r
+[圆心起点终点]c \\
+[圆心起点包含角]c \\a
+[圆心起点弦长]c \\l
+
+
+
+
+
+
+
+
+
+
+**AREA 3
+[AREA:   ]^C^Carea
+
+[对象    ]o
+[增加    ]a
+[减少    ]s
+
+[边界:   ]^C^Cbpoly
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**ARRAY 3
+[ARRAY:  ]$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,4),GRIP),array,^C^Carray)
+
+
+
+[矩形    ]r
+[环形    ]p
+
+[是Yes   ]y
+[否No    ]n
+
+
+
+
+
+
+
+
+
+
+
+
+
+**ATTDISP 3
+[ATTDISP:]'attdisp
+
+[正常    ]n
+[打开ON  ]on
+[关闭OFF ]off
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**ATTEDIT 3
+[属性编辑]^C^Cattedit
+
+
+
+[是Yes   ]y
+[否No    ]n
+
+[值      ]v
+[位置    ]p
+[高度    ]h
+[角度    ]a
+[字体    ]s
+[层      ]l
+[颜色    ]c
+[下一个  ]n
+
+[颜色对话框]ddcolor
+
+
+
+
+
+**BREAK 3
+[BREAK:  ]^C^Cbreak
+
+[第一个  ]f
+
+
+[选择,第二]\\
+[选择点  ]\
+[选择,两点]\f\
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**CHAMFER 3
+[CHAMFER:]^C^Cchamfer
+
+[多义线  ]p
+[距离    ]d \\chamfer
+[距离 = 0]d 0 0 chamfer
+[角度    ]a \\ chamfer
+
+[裁剪    ]t
+[不裁剪  ]n
+
+[方式    ]m
+[距离    ]d
+[角度    ]a
+
+
+
+
+
+
+
+
+
+**CIRCLE 3
+[CIRCLE: ]^C^Ccircle
+
+[圆心半径]\\
+
+[圆心直径]\d
+
+[两点    ]2p \
+[三点    ]3p \\
+
+[TTR     ]ttr
+[公切圆  ]3p tan \tan \tan \
+
+
+
+
+
+
+
+
+
+
+
+**COPY 3
+[COPY:   ]^C^Ccopy
+
+
+
+[多重    ]m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**DIMALIGNED 3
+[沿线标注]^C^Cdim aligned
+
+[文字    ]t
+[角度    ]a
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**DIMANGULAR 3
+[角度标注]^C^Cdim angular
+
+[文字    ]t
+[角度    ]a
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**DIMEDIT 3
+[编辑标注]^C^Cdim tedit
+
+[归位    ]h
+[新      ]n
+[旋转    ]r
+[倾斜    ]o
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**DIMLINEAR 3
+[线性标注]^C^Cdim linear
+
+[水平    ]h
+[竖直    ]v
+
+[文字    ]t
+[角度    ]a
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**DIMORDINATE 3
+[坐标标注]^C^Cdim ordinate
+
+[X坐标   ]x
+[Y坐标   ]y
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**DIMOVERRIDE 3
+[标注覆盖]^C^Cdim override
+
+[清除    ]c
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**DIMTEDIT 3
+[标注文字编辑]^C^Cdimtedit
+
+[居左    ]l
+[居右    ]r
+[归位    ]h
+[角度    ]a
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**DIVIDE 3
+[DIVIDE: ]^C^Cdivide
+
+[块      ]b
+
+[是Yes   ]y
+[否No    ]n
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**TEXT 3
+[TEXT:   ]^C^Ctext
+
+[对齐方式]
+
+[字型]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**DTEXT 3
+[DTEXT:  ]^C^Cdtext
+[MTEXT:  ]^C^C-mtext
+
+[字型    ]s
+
+[对齐方式]j
+[对齐    ]a
+[中心    ]c
+[适合    ]f
+[中间    ]m
+[右边    ]r
+[左上    ]tl
+[上中    ]tc
+[右上    ]tr
+[左中    ]ml
+[正中    ]mc
+[右中    ]mr
+[左下    ]bl
+[下中    ]bc
+[右下    ]br
+
+[字型设置]'style
+**ELLIPSE 3
+[ELLIPSE:]^C^Cellipse
+
+[弧      ]a
+[中心    ]c
+[旋转    ]r
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**ERASE 3
+[ERASE:  ]$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,4),GRIP),erase,^C^Cerase)
+
+[Oops:   ]^C^Coops
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**EXTEND 3
+[EXTEND: ]^C^Cextend
+
+[边      ]e
+[ 延伸   ]e
+[ 不延伸 ]n
+
+
+
+
+
+
+[Undo    ]u
+
+
+
+
+
+
+
+
+
+
+**FILLET 3
+[FILLET: ]^C^Cfillet
+
+[多义线  ]p
+
+[半径    ]r
+[半径   0]r 0
+
+[裁剪    ]t
+[不裁剪  ]n
+
+
+
+
+
+
+
+
+
+
+
+
+**LENGTHEN 3
+[LENGTHEN]^C^Clengthen
+
+[变量    ]de
+[百分比  ]p
+[总量    ]t
+[动态决定]dy
+
+[角度    ]a
+[长度    ]l
+[Undo    ]u
+
+
+
+
+
+
+
+
+
+
+
+
+**CHPROP 3
+[CHPROP:]$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,4),GRIP),chprop,^C^CCHPROP)
+
+
+[颜色]COLOR $S=X $S=CHCOLOR \$S=CHPROP
+
+[图层]LAYER
+
+[线型]LT $S=X $S=CHLT \$S=CHPROP
+
+
+
+
+
+[重画]^C^CREDRAW
+
+[上一页]$S=
+
+
+
+
+**CHCOLOR 3
+[颜色]
+
+[随图层]BYLAYER
+[随图块]BYBLOCK
+
+[红]RED
+[黄]YELLOW
+[绿]GREEN
+[青]CYAN
+[蓝]BLUE
+[洋红]MAGENTA
+[白]WHITE
+**CHLT 3
+[线型]
+
+[随图层]BYLAYER
+[随图块]BYBLOCK
+
+[contin.]CONTINUOUS
+[dashed]dashed
+[hidden]hidden
+[center]center
+[phantom]phantom
+[dot]dot
+[dashdot]dashdot
+[border]border
+[divide]divide
+
+
+**LL 3
+[LL:]^C^CLL
+
+[角平分线]EA
+[中垂线]CV
+
+[角度]Angle
+[镜象]Mirror
+
+[闭合]CLOSE
+[退回]U
+
+.x
+.y
+.xy
+
+
+
+[上一页]$S=
+
+
+
+
+**LINE 3
+[LINE:   ]^C^Cline
+
+[一条线  ]^C^Cline \\;
+
+[继续画线];
+[Undo    ]u
+[封闭    ]c
+
+
+[圆弧接续]^C^Carc ;
+
+
+
+
+
+
+
+
+
+
+
+
+**MEASURE 3
+[MEASURE:]^C^Cmeasure
+
+[块      ]b
+
+[Yes     ]y
+[No      ]n
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**MIRROR 3
+[MIRROR: ]^C^Cmirror
+
+
+
+[Yes     ]y
+[No      ]n
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**OFFSET 3
+[OFFSET:]^C^Coffset
+
+[通过   ]t
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**OSNAP 3
+[OSNAP:  ]'-osnap
+
+[端点    ]endp
+[中点    ]mid
+[交点    ]int
+
+
+
+
+[中心    ]cen
+[四分点  ]qua
+[切点    ]tan
+[垂足    ]per
+[孤立点  ]nod
+[插入点  ]ins
+[最近点  ]nea
+[关闭捕捉]non
+
+[捕捉设置]'ddosnap
+**PEDIT 3
+[Pedit:  ]^C^Cpedit
+[打断    ]b
+[闭合    ]c
+[减少    ]d
+[编辑节点]e
+[Fit     ]f
+[Go      ]g
+[插入    ]i
+[拼接    ]j
+[连续线型]l
+
+
+
+[前一个  ]p
+[重新生成]r
+[重新显示]re
+
+[切线    ]t
+[Undo/Up ]u
+[宽度    ]w
+[退出    ]x
+
+**PLINE 3
+[Pline:  ]^C^Cpline
+
+[圆弧    ]a
+[闭合    ]c
+[半宽度  ]h
+[长度    ]l
+[Undo    ]u
+[宽度    ]w
+
+[角度    ]a
+[中心    ]ce
+[闭合    ]cl
+[方向    ]d \
+[直线    ]l
+[半径    ]r
+[第二点  ]s \
+
+[编辑    ]^C^Cpedit
+
+
+
+
+**POINT 3
+[Point:  ]*^C^Cpoint
+
+//[Ddptype:]'ddptype
+
+[Pdmode: ]'pdmode
+[Pdsize: ]'pdsize
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**POLYGON 3
+[Polygon:]^C^Cpolygon
+
+[边      ]e
+
+[内接    ]i
+[外切    ]c
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**PURGE 3
+[Purge:  ]^C^Cpurge
+
+[块      ]b
+[标注模式]d
+[层      ]la
+[线型    ]lt
+
+[字型    ]st
+[全部    ]a
+
+[Yes     ]y
+[No      ]n
+
+
+
+
+
+
+
+
+
+
+**ROTATE 3
+[Rotate: ]^C^Crotate
+
+[移去实体]r
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**SCALE 3
+[Scale:  ]^C^Cscale
+
+[参考角  ]r
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**SETVAR 3
+[Setvar: ]'setvar
+
+[列表    ]?
+*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**TRIM 3
+[Trim:   ]^C^Ctrim
+[qTrim:   ]^C^Cqtrim
+
+[ 延伸   ]e
+[ 不延伸 ]n
+
+
+
+
+
+
+[Undo    ]u
+
+
+
+
+
+
+
+
+
+
+**UCS 3
+[UCS:    ]^C^Cucs
+
+[原点    ]o
+[绕Z旋转 ]z
+
+
+
+
+[实体为轴]e
+
+[前一个  ]p
+[载入    ]r
+[保存    ]s
+[删除    ]d
+[列表    ]?
+[世界坐标]w
+
+
+
+
+[UCSicon:]^C^Cucsicon
+
+**UCSICON 3
+[UCSicon:]^C^Cucsicon
+
+[打开On  ]on
+[关闭Off ]off
+
+[全视区  ]all
+[显示原点]or
+[不显原点]n
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**VIEW 3
+[View:   ]'-view
+
+[列表    ]?
+[删除    ]d
+[恢复    ]r
+[保存    ]s
+[窗口    ]w
+
+
+[Pan:    ]'pan
+[Zoom:   ]'zoom
+
+
+
+
+
+
+
+
+
+
+
+**ZOOM 3
+[Zoom:   ]'zoom
+
+[实时    ];
+
+[前一个  ]p
+[窗口    ]w
+[动态    ]d
+[比例    ]s
+[中心    ]c
+
+[放大    ]2x
+[缩小    ].5x
+
+[全部    ]a
+[界限    ]e
+
+
+
+
+
+
+
+
+**PGMS
+[Standard Elements Table]
+[main(BEAR)]^c^cbearc
+[main(BOLT)]^c^cboltc
+[main(DSCREW)]^c^cdscrewc
+[main(SCREW)]^c^cscrewc
+[main(NUT)]^c^cnutc
+[main(WASHERS)]^c^cwashersc
+[main(RING)]^c^cringc
+[main(PINS)]^c^cpinsc
+[main(SPRING)]^c^cspringc
+[main(SECTION)]^c^csectionc
+[ Exit]^c^c
+
+
+**BEAR
+[This is the table of bears]
+[stdb(BEAR0000)]^C^CBEAR0
+[stdb(BEAR1000)]^C^CBEAR1
+[stdb(BEAR2000)]^C^CBEAR2
+[stdb(BEAR3000)]^C^CBEAR3
+[stdb(BEAR4000)]^C^CBEAR4
+[stdb(BEAR6000)]^C^CBEAR6
+[stdb(BEAR7000)]^C^CBEAR7
+[stdb(BEAR8000)]^C^CBEAR8
+[stdb(BEAR9000)]^C^CBEAR9
+[ Beginning]^C$I=PGMS $I=*
+
+**BEAR0000
+[The BEAR TYPE is 0000]
+[stdb(0000)]^C^C(bear"0000")
+[stdb(50000)]^C^C(bear"50000")
+[stdb(150000)]^C^C(bear"150000")
+[stdb(60000)]^C^C(bear"60000")
+[stdb(80000)]^C^C(bear"80000")
+[stdb(180000)]^C^C(bear"180000")
+[stdb(160000k)]^C^C(bear"160000k")
+[ Previous]^C$I=BEAR $I=*
+[ Beginning]^C$I=PGMS $I=*
+
+**BEAR1000
+[The BEAR TYPE is 1000]
+[stdb(1000)]^C^C(bear"1000")
+[stdb(111000)]^C^C(bear"111000")
+[ Previous]^C$I=BEAR $I=*
+[ Beginning]^C$I=PGMS $I=*
+
+**BEAR2000
+[The BEAR TYPE is 2000 -1-]
+[stdb(2000)]^C^C(bear"2000")
+[stdb(62000)]^C^C(bear"62000")
+[stdb(12000)]^C^C(bear"12000")
+[stdb(32000)]^C^C(bear"32000")
+[stdb(42000)]^C^C(bear"42000")
+[stdb(92000)]^C^C(bear"92000")
+[stdb(292000)]^C^C(bear"292000")
+[stdb(502000)]^C^C(bear"502000")
+[stdb(482000-1)]^C^C(bear"482000-1")
+[stdb(482000-2)]^C^C(bear"482000-2")
+[stdb(382000-1)]^C^C(bear"382000-1")
+[stdb(382000-2)]^C^C(bear"382000-2")
+[stdb(182000-1)]^C^C(bear"182000-1")
+[stdb(182000-2)]^C^C(bear"182000-2")
+[ Previous]^C$I=BEAR $I=*
+[ Beginning]^C$I=PGMS $I=*
+
+**BEAR3000
+[The BEAR TYPE is 3000]
+[stdb(53000)]^C^C(bear"53000")
+[stdb(153000)]^C^C(bear"153000")
+[stdb(453000)]^C^C(bear"453000")
+[ Previous]^C$I=BEAR $I=*
+[ Beginning]^C$I=PGMS $I=*
+
+**BEAR4000
+[The type is 4000]
+[stdb(544000)]^C^C(bear"544000")
+[stdb(644000)]^C^C(bear"644000")
+[stdb(254000)]^C^C(bear"254000")
+[stdb(354000)]^C^C(bear"354000")
+[ Previous]^C$I=BEAR $I=*
+[ Beginning]^C$I=PGMS $I=*
+
+**BEAR6000
+[The type is 6000]
+[stdb(6000)]^C^C(bear"6000")
+[stdb(146000)]^C^C(bear"146000")
+[stdb(136000)]^C^C(bear"136000")
+[stdb(176000)]^C^C(bear"176000")
+[stdb(3056000)]^C^C(bear"3056000")
+[stdb(36000)]^C^C(bear"36000")
+[stdb(46000)]^C^C(bear"46000")
+[stdb(66000)]^C^C(bear"66000")
+[ Previous]^C$I=BEAR $I=*
+[ Beginning]^C$I=PGMS $I=*
+
+**BEAR7000
+[The type is 7000]
+[stdb(7000)]^C^C(bear"7000")
+[stdb(97000)]^C^C(bear"97000")
+[ Previous]^C$I=BEAR $I=*
+[ Beginning]^C$I=PGMS $I=*
+
+**BEAR8000
+[The type is 8000]
+[stdb(8000)]^C^C(bear"8000")
+[stdb(38000)]^C^C(bear"38000")
+[ Previous]^C$I=BEAR $I=*
+[ Beginning]^C$I=PGMS $I=*
+
+**BEAR9000
+[The type is 9000]
+[stdb(9000)]^C^C(bear"9000")
+[ Previous]^C$I=BEAR $I=*
+[ Beginning]^C$I=PGMS $I=*
+
+**BOLT
+[This is the table of BOLTs ]
+[stdb1(BOLT-6A)]^C$i=BOLT-6A $i=*
+[stdb1(BOLT-6AH)]^C$i=BOLT-6AH $i=*
+[stdb1(BOLT-CT)]^C$i=BOLT-CT $i=*
+[stdb1(BOLT-TS)]^C$i=BOLT-TS $i=*
+[ Beginning]^C$I=PGMS $I=*
+
+**BOLT-6A
+[This is list of BOLT-6A]
+[stdb1(GB5780)]^C^C(stdrun"GB5780")
+[stdb1(GB5781)]^C^C(stdrun"GB5781")
+[stdb1(GB5782A)]^C^C(stdrun"GB5782A")
+[stdb1(GB5782B)]^C^C(stdrun"GB5782B")
+[stdb1(GB5783A)]^C^C(stdrun"GB5783A")
+[stdb1(GB5783B)]^C^C(stdrun"GB5783B")
+[stdb1(GB5784)]^C^C(stdrun"GB5784")
+[stdb1(GB5785A)]^C^C(stdrun"GB5785A")
+[stdb1(GB5785B)]^C^C(stdrun"GB5785B")
+[stdb1(GB5786A)]^C^C(stdrun"GB5786A")
+[stdb1(GB5786B)]^C^C(stdrun"GB5786B")
+[stdb1(GB27A)]^C^C(stdrun"GB27A")
+[stdb1(GB27B)]^C^C(stdrun"GB27B")
+[stdb1(GB1228)]^C^C(stdrun"GB1228")
+[ Previous]^C^C$I=BOLT $I=*
+[ Beginning]^C$I=PGMS $I=*
+
+**BOLT-6AH
+[This is list of BOLT-6AH]
+[stdb1(GB313)]^C^C(stdrun"GB313")
+[stdb1(GB311)]^C^C(stdrun"GB311")
+[stdb1(GB321)]^C^C(stdrun"GB321")
+[stdb1(GB323)]^C^C(stdrun"GB323")
+[ Previous]^C^C$I=BOLT $I=*
+[ Beginning]^C$I=PGMS $I=*
+
+**BOLT-CT
+[This is list of BOLT-CT]
+[stdb1(GB10)]^C^C(stdrun"GB10")
+[stdb1(GB11)]^C^C(stdrun"GB11")
+[stdb1(GB800)]^C^C(stdrun"GB800")
+[ Previous]^C^C$I=BOLT $I=*
+[ Beginning]^C$I=PGMS $I=*
+
+**BOLT-TS
+[This is list of BOLT-TS]
+[stdb1(GB37)]^C^C(stdrun"GB37")
+[stdb1(GB798)]^C^C(stdrun"GB798")
+[stdb1(GB799)]^C^C(stdrun"GB799")
+[stdb1(JB4321)]^C^C(stdrun"JB4321")
+[stdb1(JB4363A)]^C^C(stdrun"JB4363A")
+[stdb1(JB4363B)]^C^C(stdrun"JB4363B")
+[stdb1(JB4363C)]^C^C(stdrun"JB4363C")
+[ Previous]^C^C$I=BOLT $I=*
+[ Beginning]^C$I=PGMS $I=*
+
+**DSCREW
+[This is list of DSCREW ]
+[stdb1(GB897)]^C^C(stdrun"GB897")
+[stdb1(GB898)]^C^C(stdrun"GB898")
+[stdb1(GB899)]^C^C(stdrun"GB898")
+[stdb1(GB900)]^C^C(stdrun"GB898")
+[stdb1(GB901)]^C^C(stdrun"GB901")
+[stdb1(GB902A)]^C^C(stdrun"GB902A")
+[stdb1(GB902B)]^C^C(stdrun"GB902B")
+[stdb1(GB953)]^C^C(stdrun"GB953")
+[ Beginning]^C$I=PGMS $I=*
+
+**SCREW
+[This is the table of SCREW]
+[stdb2(SCREW-KC)]^C$i=SCREW-KC $i=*
+[stdb2(SCREW-SZ)]^C$i=SCREW-SZ $i=*
+[stdb2(SCREW-6A)]^C$i=SCREW-6A $i=*
+[stdb2(SCREW-JD)]^C$i=SCREW-JD $i=*
+[stdb2(SCREW-ZG)]^C$i=SCREW-ZG $i=*
+[stdb2(SCREW-QY)]^C$i=SCREW-QY $i=*
+[ Beginning]^C$I=PGMS $I=*
+
+**SCREW-KC
+[This is list of SCREW-KC ]
+[stdb2(GB65A)]^C^C(stdrun"gb65A")
+[stdb2(GB65B)]^C^C(stdrun"gb65B")
+[stdb2(GB67A)]^C^C(stdrun"gb67A")
+[stdb2(GB67B)]^C^C(stdrun"gb67B")
+[stdb2(GB68A)]^C^C(stdrun"gb68A")
+[stdb2(GB68B)]^C^C(stdrun"gb68B")
+[stdb2(GB69A)]^C^C(stdrun"gb69A")
+[stdb2(GB69B)]^C^C(stdrun"gb69B")
+[ Previous]^C^C$I=SCREW $I=*
+[ Beginning]^C$I=PGMS $I=*
+
+**SCREW-SZ
+[This is list of SCREW-SZ ]
+[stdb2(GB818A)]^C^C(stdrun"gb818A")
+[stdb2(GB818B)]^C^C(stdrun"gb818B")
+[stdb2(GB819A)]^C^C(stdrun"gb819A")
+[stdb2(GB819B)]^C^C(stdrun"gb819B")
+[stdb2(GB820A)]^C^C(stdrun"gb820A")
+[stdb2(GB820B)]^C^C(stdrun"gb820B")
+[stdb2(GB822A)]^C^C(stdrun"gb822A")
+[stdb2(GB822B)]^C^C(stdrun"gb822B")
+[stdb2(GB823A)]^C^C(stdrun"gb823A")
+[stdb2(GB823B)]^C^C(stdrun"gb823B")
+[ Previous]^C^C$I=SCREW $I=*
+[ Beginning]^C$I=PGMS $I=*
+
+**SCREW-ZG
+[This is list of SCREW-ZG]
+[stdb2(GB845)]^C^C(stdrun"gb845")
+[stdb2(GB846)]^C^C(stdrun"gb846")
+[stdb2(GB847)]^C^C(stdrun"gb847")
+[stdb2(GB5282)]^C^C(stdrun"gb5282")
+[stdb2(GB5283)]^C^C(stdrun"gb5283")
+[stdb2(GB5284)]^C^C(stdrun"gb5284")
+[stdb2(GB5285)]^C^C(stdrun"gb5285")
+[ Previous]^C^C$I=SCREW $I=*
+[ Beginning]^C$I=PGMS $I=*
+
+**SCREW-QY
+[This is list of SCREW-TS]
+[stdb2(JB4110)]^C^C(stdrun"jb4110")
+[stdb2(GB825A)]^C^C(stdrun"gb825A")
+[stdb2(GB825B)]^C^C(stdrun"gb825b")
+[stdb2(GB72)]^C^C(stdrun"gb72")
+[ Previous]^C^C$I=SCREW $I=*
+[ Beginning]^C$I=PGMS $I=*
+
+**SCREW-6A
+[This is list of SCREW-6A]
+[stdb2(GB70)]^C^C(stdrun"gb70")
+[stdb2(GB6190A)]^C^C(stdrun"gb6190A")
+[stdb2(GB6190B)]^C^C(stdrun"gb6190B")
+[stdb2(GB6191)]^C^C(stdrun"gb6191")
+[stdb2(GB2672A)]^C^C(stdrun"gb2672A")
+[stdb2(GB2672B)]^C^C(stdrun"gb2672B")
+[stdb2(GB2673A)]^C^C(stdrun"gb2673A")
+[stdb2(GB2673B)]^C^C(stdrun"gb2673b")
+[stdb2(GB2674A)]^C^C(stdrun"gb2674A")
+[stdb2(GB2674B)]^C^C(stdrun"gb2674b")
+[ Previous]^C^C$I=SCREW $I=*
+[ Beginning]^C$I=PGMS $I=*
+
+**SCREW-JD
+[This is list of SCREW-JD ]
+[stdb2(GB71)]^C^C(stdrun"GB71")
+[stdb2(GB73)]^C^C(stdrun"GB73")
+[stdb2(GB74)]^C^C(stdrun"GB74")
+[stdb2(GB75)]^C^C(stdrun"GB75")
+[stdb2(GB77)]^C^C(stdrun"GB77")
+[stdb2(GB78)]^C^C(stdrun"GB78")
+[stdb2(GB79)]^C^C(stdrun"GB79")
+[stdb2(GB80)]^C^C(stdrun"GB80")
+[stdb2(GB83)]^C^C(stdrun"GB83")
+[stdb2(GB85)]^C^C(stdrun"GB85")
+[stdb2(GB86)]^C^C(stdrun"GB86")
+[stdb2(GB821)]^C^C(stdrun"GB821")
+[ Previous]^C^C$I=SCREW $I=*
+[ Beginning]^C$I=PGMS $I=*
+
+**NUT
+[This is the table of NUTS]
+[stdb3(NUT-6A)]^C$i=NUT-6A $i=*
+[stdb3(NUT-KC)]^C$i=NUT-KC $i=*
+[stdb3(NUT-SJ)]^C$i=NUT-SJ $i=*
+[stdb3(NUT-Y)]^C$i=NUT-Y $i=*
+[stdb3(NUT-TS)]^C$i=NUT-TS $i=*
+[stdb3(NUT-ZS)]^C$i=NUT-ZS $i=*
+[ Beginning]^C$I=PGMS $I=*
+
+**NUT-6A
+[This is list of NUT-6A ]
+[stdb3(GB41)]^C^C(stdrun"GB41")
+[stdb3(GB6170A)]^C^C(stdrun"GB6170a")
+[stdb3(GB6170B)]^C^C(stdrun"GB6170b")
+[stdb3(GB6172)]^C^C(stdrun"GB6172")
+[stdb3(GB6174)]^C^C(stdrun"GB6174")
+[stdb3(GB6175A)]^C^C(stdrun"GB6175a")
+[stdb3(GB6175B)]^C^C(stdrun"GB6175b")
+[stdb3(GB56)]^C^C(stdrun"GB56")
+[stdb3(GB804)]^C^C(stdrun"GB804")
+[stdb3(GB808)]^C^C(stdrun"GB808")
+[stdb3(GB1229A)]^C^C(stdrun"GB1229a")
+[stdb3(GB1229B)]^C^C(stdrun"GB1229b")
+[stdb3(GB3632A)]^C^C(stdrun"GB3632a")
+[stdb3(GB3632B)]^C^C(stdrun"GB3632b")
+[ Previous]^C$I=NUT $I=*
+[ Beginning]^C$I=PGMS $I=*
+
+**NUT-KC
+[This is list of NUT-KC]
+[stdb3(GB6178A)]^C^C(stdrun"GB6178a")
+[stdb3(GB6178B)]^C^C(stdrun"GB6178b")
+[stdb3(GB6180A)]^C^C(stdrun"GB6180a")
+[stdb3(GB6180B)]^C^C(stdrun"GB6180b")
+[stdb3(GB6181A)]^C^C(stdrun"GB6181a")
+[stdb3(GB6181B)]^C^C(stdrun"GB6181b")
+[stdb3(GB9457A)]^C^C(stdrun"GB9457a")
+[stdb3(GB9457B)]^C^C(stdrun"GB9457b")
+[stdb3(GB9458A)]^C^C(stdrun"GB9458a")
+[stdb3(GB9458B)]^C^C(stdrun"GB9458b")
+[stdb3(GB9459A)]^C^C(stdrun"GB9459a")
+[stdb3(GB9459B)]^C^C(stdrun"GB9459b")
+[stdb3(GB6179)]^C^C(stdrun"GB6179")
+[ Previous]^C$I=NUT $I=*
+[ Beginning]^C$I=PGMS $I=*
+
+**NUT-SJ
+[This is list of NUT-SJ]
+[stdb3(GB889)]^C^C(stdrun"GB889")
+[stdb3(GB6182)]^C^C(stdrun"GB6182")
+[stdb3(GB6184)]^C^C(stdrun"GB6184")
+[stdb3(GB6185)]^C^C(stdrun"GB6185")
+[stdb3(GB6186)]^C^C(stdrun"GB6186")
+[ Previous]^C$I=NUT $I=*
+[ Beginning]^C$I=PGMS $I=*
+
+**NUT-Y
+[This is list of NUT-Y]
+[stdb3(GB810)]^C^C(stdrun"GB810")
+[stdb3(GB812)]^C^C(stdrun"GB812")
+[stdb3(GB815A)]^C^C(stdrun"GB815a")
+[stdb3(GB815B)]^C^C(stdrun"GB815b")
+[stdb3(GB816)]^C^C(stdrun"GB816")
+[stdb3(GB817A)]^C^C(stdrun"GB817a")
+[stdb3(GB817B)]^C^C(stdrun"GB817b")
+[ Previous]^C$I=NUT $I=*
+[ Beginning]^C$I=PGMS $I=*
+
+**NUT-TS
+[This is list of NUT-TS]
+[stdb3(GB802)]^C^C(stdrun"GB802")
+[stdb3(GB923)]^C^C(stdrun"GB923")
+[stdb3(GB62A)]^C^C(stdrun"GB62a")
+[stdb3(GB62B)]^C^C(stdrun"GB62b")
+[stdb3(GB63)]^C^C(stdrun"GB63")
+[stdb3(GB806)]^C^C(stdrun"GB806")
+[stdb3(GB807)]^C^C(stdrun"GB807")
+[ Previous]^C$I=NUT $I=*
+[ Beginning]^C$I=PGMS $I=*
+
+**NUT-ZS
+[This is list of NUT-ZS]
+[stdb3(GB1337)]^C^C(stdrun"GB1337")
+[stdb3(GB1338)]^C^C(stdrun"GB1338")
+[stdb3(GB1339)]^C^C(stdrun"GB1339")
+[ Previous]^C$I=NUT $I=*
+[ Beginning]^C$I=PGMS $I=*
+
+**WASHERS
+[This is the table of WASHERS ]
+[stdb4(WASH-P)]^C$i=WASHER-P $i=*
+[stdb4(WASH-TH)]^C$i=WASHER-TH $i=*
+[stdb4(WASH-TS)]^C$i=WASHER-TS $i=*
+[ Beginning]^C$I=PGMS $I=*
+
+**WASHER-P
+[This is list of WASHER-P ]
+[stdb4(GB95)]^C^C(stdrun"GB95")
+[stdb4(GB971)]^C^C(stdrun"GB971")
+[stdb4(GB972)]^C^C(stdrun"GB972")
+[stdb4(GB5287)]^C^C(stdrun"GB5287")
+[stdb4(GB96)]^C^C(stdrun"GB96")
+[stdb4(GB848)]^C^C(stdrun"GB848")
+[ Previous]^C^C$I=WASHERS $I=*
+[ Beginning]^C$I=PGMS $I=*
+
+**WASHER-TH
+[This is list of WASHER-TH ]
+[stdb4(GB93)]^C^C(stdrun"GB93")
+[stdb4(GB859)]^C^C(stdrun"GB859")
+[stdb4(GB7244)]^C^C(stdrun"GB7244")
+[stdb4(GB7245)]^C^C(stdrun"GB7245")
+[stdb4(GB7246)]^C^C(stdrun"GB7246")
+[ Previous]^C^C$I=WASHERS $I=*
+[ Beginning]^C$I=PGMS $I=*
+
+**WASHER-TS
+[This is list of WASHER-ZD ]
+[stdb4(GB849)]^C^C(stdrun"GB849")
+[stdb4(GB850)]^C^C(stdrun"GB850")
+[stdb4(GB851A)]^C^C(stdrun"GB851a")
+[stdb4(GB851B)]^C^C(stdrun"GB851b")
+[stdb4(GB852)]^C^C(stdrun"GB852")
+[stdb4(GB853)]^C^C(stdrun"GB853")
+[stdb4(GB854)]^C^C(stdrun"GB854")
+[stdb4(GB855)]^C^C(stdrun"GB855")
+[stdb4(GB961)]^C^C(stdrun"GB961")
+[stdb4(GB962)]^C^C(stdrun"GB962")
+[stdb4(GB963)]^C^C(stdrun"GB963")
+[ Previous]^C^C$I=WASHERS $I=*
+[ Beginning]^C$I=PGMS $I=*
+
+**RING
+[This is the table of RING ]
+[stdb5(RING-SJ)]^C$i=RING-SJ $i=*
+[stdb5(RING-TX)]^C$i=RING-TX $i=*
+[stdb5(RING-TS)]^C$i=RING-TS $i=*
+[ Beginning]^C$I=PGMS $I=*
+
+**RING-SJ
+[This is list of RING-SJ ]
+[stdb5(GB883)]^C^C(stdrun"GB883")
+[stdb5(GB884A)]^C^C(stdrun"GB884a")
+[stdb5(GB884B)]^C^C(stdrun"GB884b")
+[stdb5(GB885A)]^C^C(stdrun"GB885a")
+[stdb5(GB885B)]^C^C(stdrun"GB885b")
+[stdb5(GB886A)]^C^C(stdrun"GB886a")
+[stdb5(GB886B)]^C^C(stdrun"GB886b")
+[stdb5(GB886C)]^C^C(stdrun"GB886c")
+[stdb5(GB891A)]^C^C(stdrun"GB891a")
+[stdb5(GB891B)]^C^C(stdrun"GB891b")
+[stdb5(GB892A)]^C^C(stdrun"GB892a")
+[stdb5(GB892B)]^C^C(stdrun"GB892b")
+[ Previous]^C^C$I=RING $I=*
+[ Beginning]^C$I=PGMS $I=*
+
+**RING-TX
+[This is list of RING-TX ]
+[stdb5(GB8931)]^C^C(stdrun"GB8931")
+[stdb5(GB8932)]^C^C(stdrun"GB8932")
+[stdb5(GB8941A)]^C^C(stdrun"GB8941a")
+[stdb5(GB8941B)]^C^C(stdrun"GB8941b")
+[stdb5(GB8942)]^C^C(stdrun"GB8942")
+[ Previous]^C^C$I=RING $I=*
+[ Beginning]^C$I=PGMS $I=*
+
+**RING-TS
+[This is list of RING-TS ]
+[stdb5(GB8951)]^C^C(stdrun"GB8951")
+[stdb5(GB8952)]^C^C(stdrun"GB8952")
+[stdb5(GB896)]^C^C(stdrun"GB896")
+[stdb5(GB960)]^C^C(stdrun"GB960")
+[stdb5(GB921)]^C^C(stdrun"GB921")
+[ Previous]^C^C$I=RING $I=*
+[ Beginning]^C$I=PGMS $I=*
+
+**PINS
+[This is list of PINS]
+[stdb5(GB119A)]^C^C(stdrun"GB119a")
+[stdb5(GB119B)]^C^C(stdrun"GB119b")
+[stdb5(GB119C)]^C^C(stdrun"GB119c")
+[stdb5(GB119D)]^C^C(stdrun"GB119d")
+[stdb5(GB120)]^C^C(stdrun"GB120")
+[stdb5(GB878)]^C^C(stdrun"GB878")
+[stdb5(GB880)]^C^C(stdrun"GB880")
+[stdb5(GB879)]^C^C(stdrun"GB879")
+[stdb5(GB117)]^C^C(stdrun"GB117")
+[stdb5(GB118)]^C^C(stdrun"GB118")
+[stdb5(GB881)]^C^C(stdrun"GB881")
+[stdb5(GB877)]^C^C(stdrun"GB877")
+[stdb5(GB91)]^C^C(stdrun"GB91")
+[stdb5(GB882A)]^C^C(stdrun"GB882a")
+[stdb5(GB882B)]^C^C(stdrun"GB882b")
+[ Beginning]^C$I=PGMS $I=*
+
+**SPRING
+[This is list of SPRING]
+[stdb5(GB2089)]^C^C(stdrun"GB2089")
+[stdb5(GB1992A)]^C^C(stdrun"GB1992a")
+[stdb5(GB1992B)]^C^C(stdrun"GB1992B")
+[stdb5(GB1992C)]^C^C(stdrun"GB1992C")
+[stdb5(GB1992A1)]^C^C(stdrun"GB1992A1")
+[stdb5(GB1992B1)]^C^C(stdrun"GB1992B1")
+[stdb5(GB1992C1)]^C^C(stdrun"GB1992C1")
+[ Beginning]^C$I=PGMS $I=*
+
+**SECTION
+[This is list of SECTION ]
+[stdb5(GB9787)]^C^C(stdrun"GB9787")
+[stdb5(GB707)]^C^C(stdrun"GB707")
+[stdb5(GB706)]^C^C(stdrun"GB706")
+[ Beginning]^C$I=PGMS $I=*
+
+**FDB
+[FDB]
+[FDB(LUOMU)]^C^C^P(pgopen"luomu-1") ^P$I=LUOMU $I=*
+[FDB(LDSD)]^C^C^P(pgopen"luomu-2") ^P$I=LDSD $I=*
+[FDB(DXDJ)]^C^C^P(pgopen"ld1") ^P$I=DXDJ $I=*
+[FDB(YBYK)]^C^C$I=YBYK $I=*
+[FDB(CTCD)]^C^C^P(pgopen"zt") ^P$I=CTCD $I=*
+[FDB(DBDB)]^C^C^P(pgopen"DBAN") ^P$I=DBDB $I=*
+[FDB(ZCZZ)]^C^C^P(pgopen"zcheng") ^P$I=ZCZZ $I=*
+[FDB(DDK)]^C^C^P(pgopen"ddk") ^P$I=DDK $I=*
+[FDB(QGT)]^C^C^P(pgopen"QGT") ^P$I=QGT $I=*
+[FDB(CFT)]^C^C^P(pgopen"cft") ^P$I=CFT $I=*
+[FDB(TXT)]^C^C^P(pgopen"TXT") ^P$I=TXT $I=*
+[FDB(VXT)]^C^C^P(pgopen"VXT") ^P$I=VXT $I=*
+[FDB(SBBS)]^C^C^P(pgopen"ld") ^P$I=SBBS $I=*
+[FDB(QT)]^C^C$I=QT $I=*
+
+**LUOMU
+[LUOMU]
+[LUOMU-1(T2148_Z)]^C^C^P(pgrun"T2148_Z") ^P
+[LUOMU-1(T2148_Y)]^C^C^P(pgrun"T2148_Y") ^P
+[LUOMU-1(T2148_F)]^C^C^P(pgrun"T2148_F") ^P
+[LUOMU-1(T2149_Z)]^C^C^P(pgrun"T2149_Z") ^P
+[LUOMU-1(T2149_F)]^C^C^P(pgrun"T2149_F") ^P
+[LUOMU-1(T2151_Z)]^C^C^P(pgrun"T2151_Z") ^P
+[LUOMU-1(T2152_Z)]^C^C^P(pgrun"T2152_Z") ^P
+[LUOMU-1(T2153_Z)]^C^C^P(pgrun"T2153_Z") ^P
+[LUOMU-1(T2153_Y)]^C^C^P(pgrun"T2153_Y") ^P
+[LUOMU-1(T2153_F)]^C^C^P(pgrun"T2153_F") ^P
+[LUOMU-1(T2154_Z)]^C^C^P(pgrun"T2154_Z") ^P
+[LUOMU-1(T2154_Y)]^C^C^P(pgrun"T2154_Y") ^P
+[LUOMU-1(T2155_Z)]^C^C^P(pgrun"T2155_Z") ^P
+[LUOMU-1(T2156_Z)]^C^C^P(pgrun"T2156_Z") ^P
+[LUOMU-1(T2156_F)]^C^C^P(pgrun"T2156_F") ^P
+[LUOMU-1(GB62_Z)]^C^C^P(pgrun"GB62_Z") ^P
+[LUOMU-1(GB62_Y)]^C^C^P(pgrun"GB62_Y") ^P
+[LUOMU-1(GB62_F)]^C^C^P(pgrun"GB62_F") ^P
+[FDB(Return)]^C^C$I=FDB $I=*
+
+**LDSD
+[LDSD]
+[LD(T2256)]^C^C(progn (pgopen"LD")(pgrun"T2256"))
+[LUOMU-2(T2160_Z)]^C^C^P(pgrun"T2160_Z") ^P
+[LUOMU-2(T2161_Z)]^C^C^P(pgrun"T2161_Z") ^P
+[LUOMU-2(T2162_Z)]^C^C^P(pgrun"T2162_Z") ^P
+[LUOMU-2(T2162_F)]^C^C^P(pgrun"T2162_F") ^P
+[LUOMU-2(T2163_Z)]^C^C^P(pgrun"T2163_Z") ^P
+[LUOMU-2(T2164_Z)]^C^C^P(pgrun"T2164_Z") ^P
+[LUOMU-2(T2165_Z)]^C^C^P(pgrun"T2165_Z") ^P
+[LUOMU-2(T2167_Z)]^C^C^P(pgrun"T2167_Z") ^P
+[LD1(T2268)]^C^C^P(pgopen"LD1")(pgrun"T2268") ^P
+[LUOMU-2(T2170_Z)]^C^C^P(pgrun"T2170_Z") ^P
+[LUOMU-2(YT7372Z)]^C^C^P(pgrun"YT7372Z") ^P
+[LUOMU-2(YT7372F)]^C^C^P(pgrun"YT7372F") ^P
+[LUOMU-2(YT7376Z)]^C^C^P(pgrun"YT7376Z") ^P
+[LUOMU-2(YT7376Y)]^C^C^P(pgrun"YT7376Y") ^P
+[LUOMU-2(T12871Z)]^C^C^P(pgrun"T12871Z") ^P
+[LUOMU-2(T12871Y)]^C^C^P(pgrun"T12871Y") ^P
+[LD1(B830)]^C^C(progn (pgopen"LD1")(pgrun"B830"))
+[LUOMU-2(GB798_Z)]^C^C^P(pgrun"GB798_Z") ^P
+[LUOMU-2(GB798_Y)]^C^C^P(pgrun"GB798_Y") ^P
+[FDB(Return)]^C^C$I=FDB $I=*
+
+**DXDJ
+[DXDJ]
+[zhiding(T2203AA)]^C^C(progn (pgopen"zhiding")(pgrun"T2203AA"))
+[zhiding(T2203AB)]^C^C(progn (pgopen"zhiding")(pgrun"T2203AB"))
+[zhiding(T2203AC)]^C^C(progn (pgopen"zhiding")(pgrun"T2203AC"))
+[zhiding(T2203AF)]^C^C(progn (pgopen"zhiding")(pgrun"T2203AF"))
+[LD1(T2203A1)]^C^C^P(pgrun"T2203A1") ^P
+[LD1(T2203A2)]^C^C^P(pgrun"T2203A2") ^P
+[LD1(T2203B1)]^C^C^P(pgrun"T2203B1") ^P
+[LD1(T2204B)]^C^C^P(pgrun"T2204B") ^P
+[LD1(T2205)]^C^C^P(pgrun"T2205") ^P
+[DINGWEI(T2206_Z)]^C^C^P(pgopen"DINGWEI")(pgrun"T2206_Z") ^P
+[DINGWEI(T2206_F)]^C^C^P(pgopen"DINGWEI")(pgrun"T2206_F") ^P
+[FDB(Return)]^C^C$I=FDB $I=*
+
+**YBYK
+[YBYK]
+[YB(T2171)]^^C^C^P(pgopen"YB")(pgrun"T2171") ^P
+[YB(T2172)]^^C^C^P(pgopen"YB")(pgrun"T2172") ^P
+[YB(T2173)]^^C^C^P(pgopen"YB")(pgrun"T2173") ^P
+[YB(T2174)]^^C^C^P(pgopen"YB")(pgrun"T2174") ^P
+[YB(T2175M)]^^C^C^P(pgopen"YB")(pgrun"T2175M") ^P
+[YB(T2175F)]^^C^C^P(pgopen"YB")(pgrun"T2175F") ^P
+[YB(T2176M)]^^C^C^P(pgopen"YB")(pgrun"T2176M") ^P
+[YB(T2176F)]^^C^C^P(pgopen"YB")(pgrun"T2176F") ^P
+[YB(T2177M)]^^C^C^P(pgopen"YB")(pgrun"T2177M") ^P
+[YB(T2177F)]^^C^C^P(pgopen"YB")(pgrun"T2177F") ^P
+[YB(T2178M)]^^C^C^P(pgopen"YB")(pgrun"T2178M") ^P
+[YB(T2178F)]^^C^C^P(pgopen"YB")(pgrun"T2178F") ^P
+[YABAN2(T2179ZA)]^C^C^P(pgopen"YABAN2")(pgrun"T2179ZA") ^P
+[YABAN2(T2179FA)]^C^C^P(pgopen"YABAN2")(pgrun"T2179FA") ^P
+[YABAN2(T2179FB)]^C^C^P(pgopen"YABAN2")(pgrun"T2179FB") ^P
+[YABAN2(T2181_Z)]^C^C^P(pgopen"YABAN2")(pgrun"T2181_Z") ^P
+[YABAN2(T2181_F)]^C^C^P(pgopen"YABAN2")(pgrun"T2181_F") ^P
+[YABAN2(T2185_Z)]^C^C^P(pgopen"YABAN2")(pgrun"T2185_Z") ^P
+[YABAN2(T2185_F)]^C^C^P(pgopen"YABAN2")(pgrun"T2185_F") ^P
+[YABAN2(T2187_Z)]^C^C^P(pgopen"YABAN2")(pgrun"T2187_Z") ^P
+[YABAN2(T2187_F)]^C^C^P(pgopen"YABAN2")(pgrun"T2187_F") ^P
+[YABAN2(T2188AZ)]^C^C^P(pgopen"YABAN2")(pgrun"T2188AZ") ^P
+[YABAN2(T2188AF)]^C^C^P(pgopen"YABAN2")(pgrun"T2188AF") ^P
+[YABAN2(T2188BZ)]^C^C^P(pgopen"YABAN2")(pgrun"T2188BZ") ^P
+[YABAN2(T2188BF)]^C^C^P(pgopen"YABAN2")(pgrun"T2188BF") ^P
+[YABAN2(T2180_Z)]^C^C^P(pgopen"YABAN2")(pgrun"T2180_Z") ^P
+[YABAN2(T2180_F)]^C^C^P(pgopen"YABAN2")(pgrun"T2180_F") ^P
+[YABAN2(T2182_Z)]^C^C^P(pgopen"YABAN2")(pgrun"T2182_Z") ^P
+[YABAN2(T2182_F)]^C^C^P(pgopen"YABAN2")(pgrun"T2182_F") ^P
+[YABAN2(T2189_Z)]^C^C^P(pgopen"YABAN2")(pgrun"T2189_Z") ^P
+[YABAN2(T2189_F)]^C^C^P(pgopen"YABAN2")(pgrun"T2189_F") ^P
+[YABAN2(T2190_Z)]^C^C^P(pgopen"YABAN2")(pgrun"T2190_Z") ^P
+[YABAN3(T2196_Z)]^C^C^P(pgopen"YABAN3")(pgrun"T2196_Z") ^P
+[YABAN3(T2196_F)]^C^C^P(pgopen"YABAN3")(pgrun"T2196_F") ^P
+[YABAN3(T2197_Z)]^C^C^P(pgopen"YABAN3")(pgrun"T2197_Z") ^P
+[YABAN3(T2197_F)]^C^C^P(pgopen"YABAN3")(pgrun"T2197_F") ^P
+[YABAN3(T2198_Z)]^C^C^P(pgopen"YABAN3")(pgrun"T2198_Z") ^P
+[YABAN3(T2198_F)]^C^C^P(pgopen"YABAN3")(pgrun"T2198_F") ^P
+[YABAN3(T2200_Z)]^C^C^P(pgopen"YABAN3")(pgrun"T2200_Z") ^P
+[YABAN3(T2200_Y)]^C^C^P(pgopen"YABAN3")(pgrun"T2200_Y") ^P
+[YABAN3(T2200_F)]^C^C^P(pgopen"YABAN3")(pgrun"T2200_F") ^P
+[YABAN3(YT7473Z)]^C^C^P(pgopen"YABAN3")(pgrun"YT7473Z") ^P
+[FDB(Return)]^C^C$I=FDB $I=*
+
+**CTCD
+[CTCD]
+[LCT(LCT_1)]^C^C^P(pgopen"lct")(pgrun"LCT_1") ^P
+[LCT(LCT_2M)]^C^C^P(pgopen"lct")(pgrun"LCT_2M") ^P
+[LCT(LCT_2R)]^C^C^P(pgopen"lct")(pgrun"LCT_2R") ^P
+[ZT(T2262AZ)]^C^C^P(pgrun"T2262AZ") ^P
+[ZT(T2262BZ)]^C^C^P(pgrun"T2262BZ") ^P
+[ZT(T2263AZ)]^C^C^P(pgrun"T2263AZ") ^P
+[ZT(T2263BZ)]^C^C^P(pgrun"T2263BZ") ^P
+[ZT(T2264_Z)]^C^C^P(pgrun"T2264_Z") ^P
+[ZT(T2264_F)]^C^C^P(pgrun"T2264_F") ^P
+[ZT(T2265_Z)]^C^C^P(pgrun"T2265_Z") ^P
+[DINGWEI(T2201_A)]^C^C^P(pgopen"dingwei")(pgrun"T2201_A") ^P
+[DINGWEI(T2201_B)]^C^C^P(pgopen"dingwei")(pgrun"T2201_B") ^P
+[FDB(Return)]^C^C$I=FDB $I=*
+
+**DBDB
+[DBDB]
+[DBAN(D_1M)]^C^C^P(pgrun"D_1M") ^P
+[DBAN(D_1F)]^C^C^P(pgrun"D_1F") ^P
+[DBAN(D_2M)]^C^C^P(pgrun"D_2M") ^P
+[DBAN(D_2F)]^C^C^P(pgrun"D_2F") ^P
+[DBAN(D_3M)]^C^C^P(pgrun"D_3M") ^P
+[DBAN(D_3F)]^C^C^P(pgrun"D_3F") ^P
+[FDB(Return)]^C^C$I=FDB $I=*
+
+**ZCZZ
+[ZCZZ]
+[zcheng(W_33MA)]^C^C^P(pgrun"W_33MA") ^P
+[zcheng(W_33MB)]^C^C^P(pgrun"W_33MB") ^P
+[zcheng(GB_1M)]^C^C^P(pgrun"GB_1M") ^P
+[zcheng(GB_2M)]^C^C^P(pgrun"GB_2M") ^P
+[zcheng(GB_3M)]^C^C^P(pgrun"GB_3M") ^P
+[zcheng(GB_4M)]^C^C^P(pgrun"GB_4M") ^P
+[zcheng(GB_5M)]^C^C^P(pgrun"GB_5M") ^P
+[zcheng(GB_6M)]^C^C^P(pgrun"GB_6M") ^P
+[zcheng(GB_7M)]^C^C^P(pgrun"GB_7M") ^P
+[zcheng(GB_8M)]^C^C^P(pgrun"GB_8M") ^P
+[zcheng(GB_9M)]^C^C^P(pgrun"GB_9M") ^P
+[zcheng(GB_10M)]^C^C^P(pgrun"GB_10M") ^P
+[zj(ZJ_Z)]^C^C^P(pgopen"zj")(pgrun"ZJ_Z") ^P
+[zj(ZJ_Y)]^C^C^P(pgopen"zj")(pgrun"ZJ_Y") ^P
+[zj(ZJ_F)]^C^C^P(pgopen"zj")(pgrun"ZJ_F") ^P
+[zz(T2247_Z)]^C^C^P(pgopen"zz")(pgrun"T2247_Z") ^P
+[zz(T2247_Y)]^C^C^P(pgopen"zz")(pgrun"T2247_Y") ^P
+[zz(T2248_Y)]^C^C^P(pgopen"zz")(pgrun"T2248_Y") ^P
+[zz(T2248_Z)]^C^C^P(pgopen"zz")(pgrun"T2248_Z") ^P
+[y(Y_2)]^C^C^P(pgopen"y")(pgrun"Y_2") ^P
+[y(Y_2R)]^C^C^P(pgopen"y")(pgrun"Y_2R") ^P
+[FDB(Return)]^C^C$I=FDB $I=*
+
+**DDK
+[DDK]
+[ddk(DD_1M)]^C^C^P(pgrun"DD_1M") ^P
+[ddk(DD_2M)]^C^C^P(pgrun"DD_2M") ^P
+[ddk(DD_2F)]^C^C^P(pgrun"DD_2F") ^P
+[ddk(DD_3M)]^C^C^P(pgrun"DD_3M") ^P
+[ddk(DD_3F)]^C^C^P(pgrun"DD_3F") ^P
+[ddk(DD_4M)]^C^C^P(pgrun"DD_4M") ^P
+[ddk(DD_4F)]^C^C^P(pgrun"DD_4F") ^P
+[ddk(W_35M)]^C^C^P(pgrun"W_35M") ^P
+[ddk(W_36M)]^C^C^P(pgrun"W_36M") ^P
+[FDB(Return)]^C^C$I=FDB $I=*
+
+**QGT
+[QGT]
+[QGT(QGT_SZ)]^C^C^P(pgrun"QGT_SZ") ^P
+[QGT(QGT_SF)]^C^C^P(pgrun"QGT_SF") ^P
+[QGT(QGT_SY)]^C^C^P(pgrun"QGT_SY") ^P
+[QGT(QGT_DZ)]^C^C^P(pgrun"QGT_DZ") ^P
+[QGT(QGT_DF)]^C^C^P(pgrun"QGT_DF") ^P
+[QGT(QGT_DY)]^C^C^P(pgrun"QGT_DY") ^P
+[FDB(Return)]^C^C$I=FDB $I=*
+
+**CFT
+[CFT]
+[cft(CFT_F)]^C^C^P(pgrun"CFT_F") ^P
+[cft(CFT_Z)]^C^C^P(pgrun"CFT_Z") ^P
+[cft(CFT_Y)]^C^C^P(pgrun"CFT_Y") ^P
+[FDB(Return)]^C^C$I=FDB $I=*
+
+**TXT
+[TXT]
+[TXT(TXT_ZZ)]^C^C^P(pgrun"TXT_ZZ") ^P
+[TXT(TXT_ZF)]^C^C^P(pgrun"TXT_ZF") ^P
+[TXT(TXT_YZ)]^C^C^P(pgrun"TXT_YZ") ^P
+[TXT(TXT_YF)]^C^C^P(pgrun"TXT_YF") ^P
+[FDB(Return)]^C^C$I=FDB $I=*
+
+**VXT
+[VXT]
+[VXT(V_1M)]^C^C^P(pgrun"V_1M") ^P
+[VXT(V_1F)]^C^C^P(pgrun"V_1F") ^P
+[VXT(V_2M)]^C^C^P(pgrun"V_2M") ^P
+[VXT(V_2F)]^C^C^P(pgrun"V_2F") ^P
+[VXT(V_3M)]^C^C^P(pgrun"V_3M") ^P
+[VXT(V_4M)]^C^C^P(pgrun"V_4M") ^P
+[FDB(Return)]^C^C$I=FDB $I=*
+
+**SBBS
+[SBBS]
+[ld(T2218)]^C^C^P(pgrun"T2218") ^P
+[ld(T2220)]^C^C^P(pgrun"T2220") ^P
+[ld(T2221)]^C^C^P(pgrun"T2221") ^P
+[ld(T2223)]^C^C^P(pgrun"T2223") ^P
+[ld(T2224)]^C^C^P(pgrun"T2224") ^P
+[ld(T2224B)]^C^C^P(pgrun"T2224B") ^P
+[FDB(Return)]^C^C$I=FDB $I=*
+
+**QT
+[QT]
+[ld(T2251)]^C^C^P(pgopen"ld")(pgrun"T2251") ^P
+[ld(T2255M)]^C^C^P(pgopen"ld")(pgrun"T2255M") ^P
+[ld(T2255R)]^C^C^P(pgopen"ld")(pgrun"T2255R") ^P
+[ld(T2258)]^C^C^P(pgopen"ld")(pgrun"T2258") ^P
+[ld(T2191)]^C^C^P(pgopen"ld")(pgrun"T2191") ^P
+[ld(T2192)]^C^C^P(pgopen"ld")(pgrun"T2192") ^P
+[ld(T2195M)]^C^C^P(pgopen"ld")(pgrun"T2195M") ^P
+[ld(T2195R)]^C^C^P(pgopen"ld")(pgrun"T2195R") ^P
+[zmb(ZMB_F)]^C^C^P(pgopen"zmb")(pgrun"ZMB_F") ^P
+[zmb(ZMB_Z)]^C^C^P(pgopen"zmb")(pgrun"ZMB_F") ^P
+[hzzm(HZZM_Y)]^C^C^P(pgopen"hzzm")(pgrun"HZZM_Y") ^P
+[hzzm(HZZM_Z)]^C^C^P(pgopen"hzzm")(pgrun"HZZM_Z") ^P
+[hzzm(HZZM_F)]^C^C^P(pgopen"hzzm")(pgrun"HZZM_F") ^P
+[hzzm(HZZMS_Z)]^C^C^P(pgopen"hzzm")(pgrun"HZZMS_Z") ^P
+[hzzm(HZZMS_F)]^C^C^P(pgopen"hzzm")(pgrun"HZZMS_F") ^P
+[huakuai(YT747_Z)]^C^C^P(pgopen"huakuai")(pgrun"YT747_Z") ^P
+[y(Y_1)]^C^C^P(pgopen"y")(pgrun"Y_1") ^P
+[y(Y_3A)]^C^C^P(pgopen"y")(pgrun"Y_3A") ^P
+[y(Y_4)]^C^C^P(pgopen"y")(pgrun"Y_4") ^P
+[y(Y_5)]^C^C^P(pgopen"y")(pgrun"Y_5") ^P
+[FDB(Return)]^C^C$I=FDB $I=*
+
+**HYDB
+[HYDB]
+[HYDB(PUMP)]^C^C^P(pgopen"pump") ^P$I=HYD_PUMP $I=*
+[HYDB(PCVALV)]^C^C^P(pgopen"PCVALV") ^P$I=HYD_PCVALV $I=*
+[HYDB(QCVALV)]^C^C^P(pgopen"QCVALV") ^P$I=HYD_QCVALV $I=*
+[HYDB(34)]^C^C^P(pgopen"34") ^P$I=HYD_34 $I=*
+[HYDB(34E)]^C^C^P(pgopen"34e") ^P$I=HYD_34E $I=*
+[HYDB(34H)]^C^C^P(pgopen"34h") ^P$I=HYD_34H $I=*
+[HYDB(34EH)]^C^C^P(pgopen"34eh") ^P$I=HYD_34EH $I=*
+[HYDB(DIRV)]^C^C^P(pgopen"dirv") ^P$I=HYD_DIRV $I=*
+[HYDB(DIRV1)]^C^C^P(pgopen"dirv1") ^P$I=HYD_DIRV1 $I=*
+[HYDB(PIPJ)]^C^C^P(pgopen"pipj") ^P$I=HYD_PIPJ $I=*
+[HYDB(AID)]^C^C^P(pgopen"AID") ^P$I=HYD_AID $I=*
+[HYDB(--------)]^C^C
+[HYDB(CYLIND)]^C^C^P(pgopen"cylind") ^P$I=HYD_CYLIND $I=*
+[HYDB(CM)]^C^C^P(pgopen"cm") ^P$I=HYD_CM $I=*
+[HYDB(PNMT)]^C^C^P(pgopen "PNMT") ^P$I=HYD_PNMT $I=*
+
+
+**HYD_PUMP
+[PUMP]
+[PUMP(P1)]^C^C^P(pgrun"P1") ^P
+[PUMP(P2)]^C^C^P(pgrun"P2") ^P
+[PUMP(P3)]^C^C^P(pgrun"P3") ^P
+[PUMP(P4)]^C^C^P(pgrun"P4") ^P
+[PUMP(M1)]^C^C^P(pgrun"M1") ^P
+[PUMP(M2)]^C^C^P(pgrun"M2") ^P
+[PUMP(M3)]^C^C^P(pgrun"M3") ^P
+[PUMP(M4)]^C^C^P(pgrun"M4") ^P
+[PUMP(PM1)]^C^C^P(pgrun"PM1") ^P
+[PUMP(PM2)]^C^C^P(pgrun"PM2") ^P
+[PUMP(M5)]^C^C^P(pgrun"M5") ^P
+[PUMP(P5)]^C^C^P(pgrun"P5") ^P
+[PUMP(P6)]^C^C^P(pgrun"P6") ^P
+[PUMP(P7)]^C^C^P(pgrun"P7") ^P
+[PUMP(P8)]^C^C^P(pgrun"P8") ^P
+
+**HYD_PCVALV
+[PCVALV]
+[PCVALV(PCV01)]^C^C^P(pgrun"PCV01") ^P
+[PCVALV(PCV02)]^C^C^P(pgrun"PCV02") ^P
+[PCVALV(PCV03)]^C^C^P(pgrun"PCV03") ^P
+[PCVALV(PCV04)]^C^C^P(pgrun"PCV04") ^P
+[PCVALV(PCV05)]^C^C^P(pgrun"PCV05") ^P
+[PCVALV(PCV06)]^C^C^P(pgrun"PCV06") ^P
+[PCVALV(PCV07)]^C^C^P(pgrun"PCV07") ^P
+[PCVALV(PCV08)]^C^C^P(pgrun"PCV08") ^P
+[PCVALV(PCV09)]^C^C^P(pgrun"PCV09") ^P
+[PCVALV(PCV10)]^C^C^P(pgrun"PCV10") ^P
+[PCVALV(PCV11)]^C^C^P(pgrun"PCV11") ^P
+[PCVALV(PCV12)]^C^C^P(pgrun"PCV12") ^P
+[PCVALV(PCV13)]^C^C^P(pgrun"PCV13") ^P
+[PCVALV(PCV14)]^C^C^P(pgrun"PCV14") ^P
+[PCVALV(PCV15)]^C^C^P(pgrun"PCV15") ^P
+[PCVALV(PCV16)]^C^C^P(pgrun"PCV16") ^P
+[PCVALV(PCV17)]^C^C^P(pgrun"PCV17") ^P
+[PCVALV(PCV18)]^C^C^P(pgrun"PCV18") ^P
+[PCVALV(PCV19)]^C^C^P(pgrun"PCV19") ^P
+[PCVALV(PCV20)]^C^C^P(pgrun"PCV20") ^P
+
+**HYD_QCVALV
+[QCVALV]
+[QCVALV(QCV01)]^C^C^P(pgrun"QCV01") ^P
+[QCVALV(QCV02)]^C^C^P(pgrun"QCV02") ^P
+[QCVALV(QCV03)]^C^C^P(pgrun"QCV03") ^P
+[QCVALV(QCV04)]^C^C^P(pgrun"QCV04") ^P
+[QCVALV(QCV05)]^C^C^P(pgrun"QCV05") ^P
+[QCVALV(QCV06)]^C^C^P(pgrun"QCV06") ^P
+[QCVALV(QCV07)]^C^C^P(pgrun"QCV07") ^P
+[QCVALV(QCV08)]^C^C^P(pgrun"QCV08") ^P
+[QCVALV(QCV09)]^C^C^P(pgrun"QCV09") ^P
+[QCVALV(QCV10)]^C^C^P(pgrun"QCV10") ^P
+[QCVALV(QCV11)]^C^C^P(pgrun"QCV11") ^P
+[QCVALV(QCV12)]^C^C^P(pgrun"QCV12") ^P
+[QCVALV(QCV13)]^C^C^P(pgrun"QCV13") ^P
+[QCVALV(QCV14)]^C^C^P(pgrun"QCV14") ^P
+[QCVALV(QCV15)]^C^C^P(pgrun"QCV15") ^P
+[QCVALV(QCV16)]^C^C^P(pgrun"QCV16") ^P
+
+**HYD_34
+[34]
+[34(O34)]^C^C^P(pgrun"O34") ^P
+[34(U34)]^C^C^P(pgrun"U34") ^P
+[34(H34)]^C^C^P(pgrun"H34") ^P
+[34(K34)]^C^C^P(pgrun"K34") ^P
+[34(M34)]^C^C^P(pgrun"M34") ^P
+[34(P34)]^C^C^P(pgrun"P34") ^P
+[34(J34)]^C^C^P(pgrun"J34") ^P
+[34(C34)]^C^C^P(pgrun"C34") ^P
+[34(N34)]^C^C^P(pgrun"N34") ^P
+[34(Y34)]^C^C^P(pgrun"Y34") ^P
+[34(X34)]^C^C^P(pgrun"X34") ^P
+[34(XY34)]^C^C^P(pgrun"XY34") ^P
+
+**HYD_34E
+[34E]
+[34E(O34E)]^C^C^P(pgrun"O34E") ^P
+[34E(U34E)]^C^C^P(pgrun"U34E") ^P
+[34E(H34E)]^C^C^P(pgrun"H34E") ^P
+[34E(K34E)]^C^C^P(pgrun"K34E") ^P
+[34E(M34E)]^C^C^P(pgrun"M34E") ^P
+[34E(P34E)]^C^C^P(pgrun"P34E") ^P
+[34E(J34E)]^C^C^P(pgrun"J34E") ^P
+[34E(C34E)]^C^C^P(pgrun"C34E") ^P
+[34E(N34E)]^C^C^P(pgrun"N34E") ^P
+[34E(Y34E)]^C^C^P(pgrun"Y34E") ^P
+[34E(X34E)]^C^C^P(pgrun"X34E") ^P
+[34E(XY34E)]^C^C^P(pgrun"XY34E") ^P
+
+**HYD_34H
+[34H]
+[34H(O34H)]^C^C^P(pgrun"O34H") ^P
+[34H(U34H)]^C^C^P(pgrun"U34H") ^P
+[34H(H34H)]^C^C^P(pgrun"H34H") ^P
+[34H(K34H)]^C^C^P(pgrun"K34H") ^P
+[34H(M34H)]^C^C^P(pgrun"M34H") ^P
+[34H(P34H)]^C^C^P(pgrun"P34H") ^P
+[34H(J34H)]^C^C^P(pgrun"J34H") ^P
+[34H(C34H)]^C^C^P(pgrun"C34H") ^P
+[34H(N34H)]^C^C^P(pgrun"N34H") ^P
+[34H(Y34H)]^C^C^P(pgrun"Y34H") ^P
+[34H(X34H)]^C^C^P(pgrun"X34H") ^P
+[34H(XY34H)]^C^C^P(pgrun"XY34H") ^P
+
+**HYD_34EH
+[34EH]
+[34EH(O34EH)]^C^C^P(pgrun"O34EH") ^P
+[34EH(U34EH)]^C^C^P(pgrun"U34EH") ^P
+[34EH(H34EH)]^C^C^P(pgrun"H34EH") ^P
+[34EH(K34EH)]^C^C^P(pgrun"K34EH") ^P
+[34EH(M34EH)]^C^C^P(pgrun"M34EH") ^P
+[34EH(P34EH)]^C^C^P(pgrun"P34EH") ^P
+[34EH(J34EH)]^C^C^P(pgrun"J34EH") ^P
+[34EH(C34EH)]^C^C^P(pgrun"C34EH") ^P
+[34EH(N34EH)]^C^C^P(pgrun"N34EH") ^P
+[34EH(Y34EH)]^C^C^P(pgrun"Y34EH") ^P
+[34EH(X34EH)]^C^C^P(pgrun"X34EH") ^P
+[34EH(XY34EH)]^C^C^P(pgrun"XY34EH") ^P
+
+**HYD_DIRV
+[DIRV]
+[DIRV(D01)]^C^C^P(pgrun"D01") ^P
+[DIRV(D02)]^C^C^P(pgrun"D02") ^P
+[DIRV(D03)]^C^C^P(pgrun"D03") ^P
+[DIRV(D04)]^C^C^P(pgrun"D04") ^P
+[DIRV(D05)]^C^C^P(pgrun"D05") ^P
+[DIRV(D06)]^C^C^P(pgrun"D06") ^P
+[DIRV(D07)]^C^C^P(pgrun"D07") ^P
+[DIRV(D08)]^C^C^P(pgrun"D08") ^P
+[DIRV(D09)]^C^C^P(pgrun"D09") ^P
+[DIRV(D10)]^C^C^P(pgrun"D10") ^P
+[DIRV(D11)]^C^C^P(pgrun"D11") ^P
+[DIRV(D12)]^C^C^P(pgrun"D12") ^P
+
+**HYD_DIRV1
+[DIRV1]
+[DIRV1(D13)]^C^C^P(pgrun"D13") ^P
+[DIRV1(D14)]^C^C^P(pgrun"D14") ^P
+[DIRV1(D15)]^C^C^P(pgrun"D15") ^P
+[DIRV1(D16)]^C^C^P(pgrun"D16") ^P
+[DIRV1(D17)]^C^C^P(pgrun"D17") ^P
+[DIRV1(D18)]^C^C^P(pgrun"D18") ^P
+[DIRV1(D19)]^C^C^P(pgrun"D19") ^P
+[DIRV1(D20)]^C^C^P(pgrun"D20") ^P
+[DIRV1(D21)]^C^C^P(pgrun"D21") ^P
+[DIRV1(D22)]^C^C^P(pgrun"D22") ^P
+[DIRV1(D23)]^C^C^P(pgrun"D23") ^P
+
+**HYD_PIPJ
+[PIPJ]
+[PIPJ(PJ01)]^C^C^P(pgrun"PJ01") ^P
+[PIPJ(PJ02)]^C^C^P(pgrun"PJ02") ^P
+[PIPJ(PJ03)]^C^C^P(pgrun"PJ03") ^P
+[PIPJ(PJ04)]^C^C^P(pgrun"PJ04") ^P
+[PIPJ(PJ05)]^C^C^P(pgrun"PJ05") ^P
+[PIPJ(PJ06)]^C^C^P(pgrun"PJ06") ^P
+[PIPJ(PJ07)]^C^C^P(pgrun"PJ07") ^P
+[PIPJ(PJ08)]^C^C^P(pgrun"PJ08") ^P
+[PIPJ(PJ09)]^C^C^P(pgrun"PJ09") ^P
+[PIPJ(PJ10)]^C^C^P(pgrun"PJ10") ^P
+[PIPJ(PJ11)]^C^C^P(pgrun"PJ11") ^P
+[PIPJ(PJ12)]^C^C^P(pgrun"PJ12") ^P
+
+**HYD_AID
+[AID]
+[AID(A01)]^C^C^P(pgrun"A01") ^P
+[AID(A02)]^C^C^P(pgrun"A02") ^P
+[AID(A03)]^C^C^P(pgrun"A03") ^P
+[AID(A04)]^C^C^P(pgrun"A04") ^P
+[AID(A05)]^C^C^P(pgrun"A05") ^P
+[AID(A06)]^C^C^P(pgrun"A06") ^P
+[AID(A07)]^C^C^P(pgrun"A07") ^P
+[AID(A08)]^C^C^P(pgrun"A08") ^P
+[AID(A09)]^C^C^P(pgrun"A09") ^P
+[AID(A10)]^C^C^P(pgrun"A10") ^P
+[AID(A11)]^C^C^P(pgrun"A11") ^P
+[AID(A12)]^C^C^P(pgrun"A12") ^P
+[AID(A13)]^C^C^P(pgrun"A13") ^P
+[AID(A14)]^C^C^P(pgrun"A14") ^P
+[AID(A15)]^C^C^P(pgrun"A15") ^P
+[AID(A16)]^C^C^P(pgrun"A16") ^P
+[AID(A17)]^C^C^P(pgrun"A17") ^P
+[AID(A18)]^C^C^P(pgrun"A18") ^P
+[AID(A19)]^C^C^P(pgrun"A19") ^P
+[AID(A20)]^C^C^P(pgrun"A20") ^P
+[AID(A21)]^C^C^P(pgrun"A21") ^P
+[AID(A22)]^C^C^P(pgrun"A22") ^P
+[AID(A23)]^C^C^P(pgrun"A23") ^P
+[AID(A24)]^C^C^P(pgrun"A24") ^P
+[AID(A25)]^C^C^P(pgrun"A25") ^P
+[AID(A26)]^C^C^P(pgrun"A26") ^P
+[AID(A27)]^C^C^P(pgrun"A27") ^P
+[AID(A28)]^C^C^P(pgrun"A28") ^P
+[AID(A29)]^C^C^P(pgrun"A29") ^P
+[AID(A30)]^C^C^P(pgrun"A30") ^P
+[AID(A31)]^C^C^P(pgrun"A31") ^P
+[AID(A32)]^C^C^P(pgrun"A32") ^P
+[AID(A33)]^C^C^P(pgrun"A33") ^P
+[AID(A34)]^C^C^P(pgrun"A34") ^P
+[AID(A35)]^C^C^P(pgrun"A35") ^P
+[AID(A36)]^C^C^P(pgrun"A36") ^P
+[AID(A37)]^C^C^P(pgrun"A37") ^P
+[AID(A38)]^C^C^P(pgrun"A38") ^P
+[AID(A39)]^C^C^P(pgrun"A39") ^P
+[AID(A40)]^C^C^P(pgrun"A40") ^P
+
+**HYD_CYLIND
+[CYLIND]
+[CYLIND(C01)]^C^C^P(pgrun"C01") ^P
+[CYLIND(C02)]^C^C^P(pgrun"C02") ^P
+[CYLIND(C03)]^C^C^P(pgrun"C03") ^P
+[CYLIND(C04)]^C^C^P(pgrun"C04") ^P
+[CYLIND(C05)]^C^C^P(pgrun"C05") ^P
+[CYLIND(C06)]^C^C^P(pgrun"C06") ^P
+[CYLIND(C07)]^C^C^P(pgrun"C07") ^P
+[CYLIND(C08)]^C^C^P(pgrun"C08") ^P
+[CYLIND(C09)]^C^C^P(pgrun"C09") ^P
+[CYLIND(C10)]^C^C^P(pgrun"C10") ^P
+[CYLIND(C11)]^C^C^P(pgrun"C11") ^P
+[CYLIND(C12)]^C^C^P(pgrun"C12") ^P
+[CYLIND(C13)]^C^C^P(pgrun"C13") ^P
+[CYLIND(C14)]^C^C^P(pgrun"C14") ^P
+[CYLIND(C15)]^C^C^P(pgrun"C15") ^P
+
+**HYD_CM
+[CM]
+[CM(C01)]^C^C^P(pgrun"C01") ^P
+[CM(C02)]^C^C^P(pgrun"C02") ^P
+[CM(C03)]^C^C^P(pgrun"C03") ^P
+[CM(C04)]^C^C^P(pgrun"C04") ^P
+[CM(C05)]^C^C^P(pgrun"C05") ^P
+[CM(C06)]^C^C^P(pgrun"C06") ^P
+[CM(C07)]^C^C^P(pgrun"C07") ^P
+[CM(C08)]^C^C^P(pgrun"C08") ^P
+[CM(C09)]^C^C^P(pgrun"C09") ^P
+[CM(C10)]^C^C^P(pgrun"C10") ^P
+[CM(C11)]^C^C^P(pgrun"C11") ^P
+[CM(C12)]^C^C^P(pgrun"C12") ^P
+[CM(C13)]^C^C^P(pgrun"C13") ^P
+[CM(C14)]^C^C^P(pgrun"C14") ^P
+[CM(C15)]^C^C^P(pgrun"C15") ^P
+[CM(C16)]^C^C^P(pgrun"C16") ^P
+[CM(C17)]^C^C^P(pgrun"C17") ^P
+[CM(C18)]^C^C^P(pgrun"C18") ^P
+[CM(C19)]^C^C^P(pgrun"C19") ^P
+[CM(C20)]^C^C^P(pgrun"C20") ^P
+[CM(C21)]^C^C^P(pgrun"C21") ^P
+[CM(C22)]^C^C^P(pgrun"C22") ^P
+[CM(C23)]^C^C^P(pgrun"C23") ^P
+
+**HYD_PNMT
+[PNMT]
+[PNMT(PN01)]^C^C^P(pgrun"PN01") ^P
+[PNMT(PN02)]^C^C^P(pgrun"PN02") ^P
+[PNMT(PN03)]^C^C^P(pgrun"PN03") ^P
+[PNMT(PN04)]^C^C^P(pgrun"PN04") ^P
+[PNMT(PN05)]^C^C^P(pgrun"PN05") ^P
+[PNMT(PN06)]^C^C^P(pgrun"PN06") ^P
+[PNMT(PN07)]^C^C^P(pgrun"PN07") ^P
+[PNMT(PN08)]^C^C^P(pgrun"PN08") ^P
+[PNMT(PN09)]^C^C^P(pgrun"PN09") ^P
+[PNMT(PN10)]^C^C^P(pgrun"PN10") ^P
+[PNMT(PN11)]^C^C^P(pgrun"PN11") ^P
+[PNMT(PN12)]^C^C^P(pgrun"PN12") ^P
+[PNMT(PN13)]^C^C^P(pgrun"PN13") ^P
+[PNMT(PN14)]^C^C^P(pgrun"PN14") ^P
+[PNMT(PN15)]^C^C^P(pgrun"PN15") ^P
+[PNMT(PN16)]^C^C^P(pgrun"PN16") ^P
+[PNMT(PN17)]^C^C^P(pgrun"PN17") ^P
+[PNMT(PN18)]^C^C^P(pgrun"PN18") ^P
+[PNMT(PN19)]^C^C^P(pgrun"PN19") ^P
+[PNMT(PN20)]^C^C^P(pgrun"PN20") ^P
+
+***TOOLBARS
+**TB_DIMENSION
+ID_TbDimensi   [Toolbar("标注", Floating, Hide, 100, 130, 1)]
+ID_NavDim	   [Button("智能标注", ICON_16_NDIM, ICON_32_NDIM)]^C^Cndim
+			   [--]	
+ID_Dimaligne   [Button("沿线标注", ICON_16_DIMALI, ICON_32_DIMALI)]^C^CDIMaligned 
+ID_DimHorizo   [Button("水平标注", ICON_16_DIMLIN, ICON_32_DIMLIN)]^C^CDIMhorizontal
+ID_DimVertic   [Button("垂直标注", ICON_16_DIMVER, ICON_32_DIMVER)]^C^CDIMvertical 
+ID_Dimordina   [Button("坐标标注", ICON_16_DIMORD, ICON_32_DIMORD)]^C^CDIMordinate 
+               [--]
+ID_Dimradius   [Button("半径标注", ICON_16_DIMRAD, ICON_32_DIMRAD)]^C^CDIMradius 
+ID_Dimdiamet   [Button("直径标注", ICON_16_DIMDIA, ICON_32_DIMDIA)]^C^CDIMdiameter 
+ID_Dimangula   [Button("角度标注", ICON_16_DIMANG, ICON_32_DIMANG)]^C^CDIMangular 
+ID_Dimarclen   [Button("弧长标注", ICON_16_ARCLENDIM, ICON_32_ARCLENDIM)]^C^CDIMzzarclen 
+               [--]
+ID_Dimbaseli   [Button("基准线标注", ICON_16_DIMBAS, ICON_32_DIMBAS)]^C^CDIMBASELINE 
+ID_Dimcontin   [Button("连续标注", ICON_16_DIMCON, ICON_32_DIMCON)]^C^CDIMCONTINUE
+               [--]
+ID_Leader      [Button("引出线标注", ICON_16_DIMLEA, ICON_32_DIMLEA)]^C^CDIMleader 
+ID_Dimcenter   [Button("中心线标注", ICON_16_DIMCEN, ICON_32_DIMCEN)]^C^CDIMcenter 
+               [--]
+ID_Dimedit     [Button("标注编辑", ICON_16_DIMNEW, ICON_32_DIMNEW)]^C^CDIMtedit 
+ID_Dimtedit    [Button("缺省标注位置", ICON_16_DIMHOM, ICON_32_DIMHOM)]^C^CDIMhome 
+               [--]
+ID_Ddim        [Button("标注样式", ICON_16_DIMSTY, ICON_32_DIMSTY)]^C^Cddim 
+               [--]
+ID_DimUpdate   [Button("标注更新", ICON_16_DIMUPD, ICON_32_DIMUPD)]^C^CDIMupdate 
+
+**TB_DRAW
+ID_TbDraw      [Toolbar("绘图", Left, Show, 0, 0, 1)]
+ID_Line        [Button("直线", ICON_16_LINE, ICON_32_LINE)]^C^Cline
+ID_LL		   [Button("智能画线", ICON_16_LL, ICON_32_LL)]^C^Cll
+ID_Pline       [Button("多义线", ICON_16_PLINE, ICON_32_PLINE)]^C^Cpline 
+ID_Polygon     [Button("多边形", ICON_16_POLYGO, ICON_32_POLYGO)]^C^Cpolygon 
+ID_Rectang     [Button("长方形", ICON_16_RECTAN, ICON_32_RECTAN)]^C^Crectang 
+ID_Arc         [Button("圆弧", ICON_16_ARC3PT, ICON_32_ARC3PT)]^C^Carc 
+ID_Circle      [Button("圆", ICON_16_CIRRAD, ICON_32_CIRRAD)]^C^Ccircle 
+ID_Ellipse     [Button("椭圆", ICON_16_ELLCEN, ICON_32_ELLCEN)]^C^Cellipse 
+ID_Ddinsert    [Button("插入块", ICON_16_DINSER, ICON_32_DINSER)]^C^Cddinsert
+ID_Point       [Button("点, ICON_16_POINT, ICON_32_POINT)]*^C^Cpoint 
+ID_Bhatch      [Button("填充", ICON_16_BHATCH, ICON_32_BHATCH)]^C^Cbhatch 
+//ID_Bpoly       [Button("边界", ICON_16_REGION, ICON_32_REGION)]^C^Cbpoly
+ID_Mtext       [Button("多行文字", ICON_16_MTEXT, ICON_32_MTEXT)]^C^Cmtext 
+ID_Ctext	   [Button("曲线文字",ICON_16_CTEXT,ICON_32_CTEXT)]^C^Cctext
+ID_Solid	   [Button("实心多边形",ICON_16_SOLID,ICON_32_SOLID)]^C^Csolid
+ID_Trace	   [Button("轨迹线",ICON_16_TRACE,ICON_32_TRACE)]^C^Ctrace
+ID_OF		   [Button("对称线", ICON_16_OF, ICON_32_OF)]^C^COF
+
+**TB_INQUIRY
+ID_TbInquiry   [Toolbar("查询", Floating, Hide, 384, 65, 1)]
+ID_Dist        [Button("距离", ICON_16_DIST, ICON_32_DIST)]'dist 
+ID_Area        [Button("面积", ICON_16_AREA, ICON_32_AREA)]^C^Carea 
+ID_List        [Button("列表", ICON_16_LIST, ICON_32_LIST)]$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,4),GRIP),list,^C^Clist)
+ID_Id          [Button("定位点", ICON_16_ID, ICON_32_ID)]'id 
+
+**TB_INSERT
+ID_TbInsert    [Toolbar("块插入", Floating, Hide, 100, 190, 1)]
+ID_Ddinsert    [Button("插入块", ICON_16_DINSER, ICON_32_DINSER)]^C^Cddinsert 
+ID_Minsert	   [Button("多重块插入",ICON_16_MINSER,ICON_32_MINSER)]^C^C_minsert
+ID_Xref        [Button("外部引用", ICON_16_XREATT, ICON_32_XREATT)]^C^Cxref 
+ID_Insertobj   [Button("OLE对象", ICON_16_INSOLE, ICON_32_INSOLE)]^C^Cinsertobj 
+
+**TB_MODIFY
+ID_TbModify    [Toolbar("修改", Left, Show, 1, 0, 1)]
+ID_Erase       [Button("删除", ICON_16_ERASE, ICON_32_ERASE)]$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,4),GRIP),erase,^C^Cerase) 
+ID_Copy        [Button("复制对象", ICON_16_COPYOB, ICON_32_COPYOB)]$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,4),GRIP),copy,^C^Ccopy)
+ID_Mirror      [Button("镜像", ICON_16_MIRROR, ICON_32_MIRROR)]$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,4),GRIP),mirror,^C^Cmirror)
+ID_Offset      [Button("偏移", ICON_16_OFFSET, ICON_32_OFFSET)]$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,4),GRIP),offset,^C^Coffset)
+ID_Array       [Button("阵列", ICON_16_ARRREC, ICON_32_ARRREC)]$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,4),GRIP),array,^C^Carray)
+ID_Move        [Button("平移", ICON_16_MOVE, ICON_32_MOVE)]$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,4),GRIP),move,^C^Cmove)
+ID_Rotate      [Button("旋转", ICON_16_ROTATE, ICON_32_ROTATE)]$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,4),GRIP),rotate,^C^Crotate)
+ID_Scale       [Button("缩放", ICON_16_SCALE, ICON_32_SCALE)]$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,4),GRIP),scale,^C^Cscale)
+ID_Stretch     [Button("拉伸", ICON_16_STRETC, ICON_32_STRETC)]$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,4),GRIP),stretch,^C^Cstretch)
+ID_Trim        [Button("裁剪", ICON_16_TRIM, ICON_32_TRIM)]^C^Ctrim 
+ID_qTrim        [Button("快速裁剪", ICON_16_qTRIM, ICON_32_qTRIM)]^C^Cqtrim 
+ID_Extend      [Button("延伸", ICON_16_EXTEND, ICON_32_EXTEND)]^C^Cextend 
+//ID_EXT		[Button("无边界延伸", ICON_16_ext.bmp, ICON_32_ext.bmp)]^C^Cext
+ID_Break       [Button("2点分割", ICON_16_BRE2PT, ICON_32_BRE2PT)]^C^Cbreak 
+ID_Chamfer     [Button("倒角", ICON_16_CHAMFE, ICON_32_CHAMFE)]^C^Cch 
+ID_Fillet      [Button("倒圆角", ICON_16_FILLET, ICON_32_FILLET)]^C^Crh 
+ID_Explode     [Button("炸开", ICON_16_EXPLOD, ICON_32_EXPLOD)]$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,4),GRIP),explode,^C^Cexplode)
+
+**TB_MODIFY_II
+ID_TbModifII   [Toolbar("修改 II", Floating, Hide, 100, 270, 1)]
+ID_modrough       [Button("编辑粗糙度", ICON_16_modrough.bmp, ICON_32_modrough.bmp)]^C^Cmodrough 
+ID_modweld       [Button("编辑焊接符号", ICON_16_modweld.bmp, ICON_32_modweld.bmp)]^C^Cmodweld
+ID_editjsyq       [Button("编辑技术要求库", ICON_16_editisyq.BMP, ICON_32_editisyq.BMP)]^C^Ceditjsyq
+ID_ESP       [Button("编辑形位公差", ICON_16_esp.bmp, ICON_32_esp.bmp)]^C^Cesp 
+ID_Pedit       [Button("编辑多义线", ICON_16_PEDIT, ICON_32_PEDIT)]^C^Cpedit 
+ID_Ddatte      [Button("属性编辑", ICON_16_ATTEDI, ICON_32_ATTEDI)]^C^Cddatte 
+ID_Ddedit      [Button("编辑文字", ICON_16_TEXEDI, ICON_32_TEXEDI)]^C^Cddedit 
+
+**TB_OBJECT_SNAP
+ID_TbOsnap     [Toolbar("对象捕捉", Floating, Hide, 336, 65, 5)]
+ID_OsnapEndp   [Button("端点捕捉", ICON_16_OSNEND, ICON_32_OSNEND)]endp 
+ID_OsnapMidp   [Button("中点捕捉", ICON_16_OSNMID, ICON_32_OSNMID)]mid 
+ID_OsnapInte   [Button("交点捕捉", ICON_16_OSNINT, ICON_32_OSNINT)]int 
+               [--]
+ID_OsnapCent   [Button("中心捕捉", ICON_16_OSNCEN, ICON_32_OSNCEN)]cen 
+ID_OsnapQuad   [Button("四分点捕捉", ICON_16_OSNQUA, ICON_32_OSNQUA)]qua 
+ID_OsnapTang   [Button("切点捕捉", ICON_16_OSNTAN, ICON_32_OSNTAN)]tan 
+               [--]
+ID_OsnapPerp   [Button("垂足捕捉", ICON_16_OSNPER, ICON_32_OSNPER)]per 
+ID_OsnapInse   [Button("插入点捕捉", ICON_16_OSNINS, ICON_32_OSNINS)]ins 
+ID_OsnapNode   [Button("独立点捕捉", ICON_16_OSNNOD, ICON_32_OSNNOD)]nod 
+               [--]
+ID_OsnapNear   [Button("最近点捕捉", ICON_16_OSNNEA, ICON_32_OSNNEA)]nea 
+ID_OsnapQuic   [Button("快速捕捉", ICON_16_OSNQUI, ICON_32_OSNQUI)]quick,^Z
+ID_OsnapNone   [Button("关闭捕捉", ICON_16_OSNNON, ICON_32_OSNNON)]non 
+               [--]
+ID_Osnap       [Button("捕捉设置", ICON_16_OSNAP, ICON_32_OSNAP)]'ddosnap 
+
+**TB_REFERENCE
+ID_TbReferen   [Toolbar("引用", Floating, Hide, 100, 370, 1)]
+ID_Xref        [Button("外部引用", ICON_16_XREATT, ICON_32_XREATT)]^C^Cxref 
+ID_Xattach     [Button("附加外部引用", ICON_16_XREPAT, ICON_32_XREPAT)]^C^C-xref attach 
+ID_Xbind       [Button("绑定外部引用", ICON_16_BIND, ICON_32_BIND)]^C^C-xref bind 
+
+**TB_STANDARD
+ID_TbStandar   [Toolbar("标准工具条", Top, Show, 0, 0, 1)]
+ID_New		   [Button("新建窗口", ICON_16_NEW, ICON_32_NEW)]^C^Cnewdoc 
+ID_Open        [Button("打开新文档", ICON_16_OPEN, ICON_32_OPEN)]^C^Copendoc 
+ID_Save        [Button("保存", ICON_16_SAVE, ICON_32_SAVE)]^C^Cqsave 
+               [--]
+ID_Print       [Button("打印", ICON_16_PRINT, ICON_32_PRINT)]^C^Cplot 
+ID_Preview     [Button("打印预览", ICON_16_PREVEW, ICON_32_PREVEW)]^C^Cpreview 
+               [--]
+ID_Cutclip     [Button("剪切", ICON_16_CUT, ICON_32_CUT)]$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,4),GRIP),cutclip,^C^Ccutclip)
+ID_Copyclip    [Button("复制", ICON_16_COPY, ICON_32_COPY)]$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,4),GRIP),copyclip,^C^Ccopyclip)
+ID_Pasteclip   [Button("粘贴", ICON_16_PASTE, ICON_32_PASTE)]pasteclip 
+ID_MatchProp   [Button("属性匹配", ICON_16_MATCHPROP, ICON_32_MATCHPROP)]^C^Cmatchprop
+               [--]
+ID_Undo        [Button("Undo", ICON_16_UNDO, ICON_32_UNDO)]u 
+ID_Redo        [Button("Redo", ICON_16_REDO, ICON_32_REDO)]^C^Credo 
+               [--]
+ID_Ucs         [Button("UCS", ICON_16_UCS, ICON_32_UCS)]^C^Cucs
+               [--]
+ID_Redraw	   [Button("全部重绘", ICON_16_REDALL, ICON_32_REDALL)]^C^Credraw 
+               [--]
+ID_Dsviewer    [Button("鹰眼窗口", ICON_16_AERIAL, ICON_32_AERIAL)]'dsviewer 
+               [--]
+ID_TbZoom      [Flyout("缩放", ICON_16_ZOOM, ICON_32_ZOOM, OtherIcon, TB_ZOOM)]
+ID_ZoomPrevi   [Button("缩放回退", ICON_16_ZOOPRE, ICON_32_ZOOPRE)]'zoom;p
+ID_Pan		   [Button("平移",ICON_16_PAN,ICON_32_PAN)]'pan
+               [--]
+ID_Help        [Button("帮助", ICON_16_HELP, ICON_32_HELP)]'help 
+
+**TB_OBJECT_PROPERTIES
+ID_TbObjectP   [Toolbar("对象属性", Top, Show, 0, 1, 1)]
+ID_Layer       [Button("图层", ICON_16_LAYERS, ICON_32_LAYERS)]'layer 
+               [--]
+               [Control(Layer)]
+               [--]
+               [Control(Color)]
+               [--]
+ID_Linetype    [Button("线形", ICON_16_LINETY, ICON_32_LINETY)]'linetype 
+               [--]
+               [Control(Linetype)]
+               [--]
+ID_MatchProp   [Button("属性匹配", ICON_16_MATCHPROP, ICON_32_MATCHPROP)]^C^Cmatchprop
+ID_Properties  [Button("修改", ICON_16_MODIFY, ICON_32_MODIFY)]^C^Cddmodify
+ID_ESC		   [Button("取消", ICON_16_CTRLC, ICON_32_CTRLC)]^C^C
+
+**TB_UCS
+ID_TbUcs       [Toolbar("UCS", Floating, Hide, 360, 65, 4)]
+ID_Ucs         [Button("UCS", ICON_16_UCS, ICON_32_UCS)]^C^Cucs 
+ID_Dducs       [Button("命名UCS", ICON_16_DDUCS, ICON_32_DDUCS)]^C^Cdducs 
+               [--]
+ID_UcsPrevio   [Button("前一个UCS", ICON_16_UCSPRE, ICON_32_UCSPRE)]^C^Cucs p 
+               [--]
+ID_UcsWorld    [Button("世界UCS", ICON_16_UCSW, ICON_32_UCSW)]^C^Cucs w 
+ID_UcsOrigin   [Button("原点UCS", ICON_16_UCSORI, ICON_32_UCSORI)]^C^Cucs o 
+ID_UcsZAxRot   [Button("Z轴旋转UCS", ICON_16_UCSZAR, ICON_32_UCSZAR)]^C^Cucs z 
+
+**TB_ZOOM
+ID_TbZoom      [Toolbar("缩放", Floating, Hide, 546, 65, 8)]
+ID_ZoomDynam   [Button("动态缩放", ICON_16_ZOODYN, ICON_32_ZOODYN)]'zoom r 
+ID_ZoomWindo   [Button("窗口型缩放", ICON_16_ZOOWIN, ICON_32_ZOOWIN)]'zoom w 
+ID_ZoomScale   [Button("比例缩放", ICON_16_ZOOSCA, ICON_32_ZOOSCA)]'zoom s 
+ID_ZoomCente   [Button("中心缩放", ICON_16_ZOOCEN, ICON_32_ZOOCEN)]'zoom c 
+               [--]
+ID_ZoomIn      [Button("放大", ICON_16_ZOOIN, ICON_32_ZOOIN)]'zoom 2x 
+ID_ZoomOut     [Button("缩小", ICON_16_ZOOOUT, ICON_32_ZOOOUT)]'zoom .5x 
+               [--]
+ID_ZoomAll     [Button("全景缩放", ICON_16_ZOOALL, ICON_32_ZOOALL)]'zoom all 
+ID_ZoomExten   [Button("图界缩放", ICON_16_ZOOEXT, ICON_32_ZOOEXT)]'zoom e 
+
+**TB_PDA
+ID_TbPda			[Toolbar("参数化", Right, Hide, 1, 0, 1)]
+ID_PdaManageModels	[Button("管理参数化块", ICON_16_PMNGMO, ICON_32_PMNGMO)]^C^Cpmngmodels
+					[--]
+ID_PdaAddEnt		[Button("增加对象", ICON_16_PADDEN, ICON_32_PADDEN)]^C^Cpaddent
+ID_PdaRemoveEnt		[Button("删除对象", ICON_16_PRMVEN, ICON_32_PRMVEN)]^C^Cprmvent
+					[--]
+ID_PdaAddConstraint	[Button("增加约束", ICON_16_PADDCO, ICON_32_PADDCO)]^C^Cpaddcon
+ID_PdaDelConstraint	[Button("显示/删除约束", ICON_16_PDELCO, ICON_32_PDELCO)]^C^Cpdelcon
+					[--]
+ID_PdaMirror		[Button("参数化镜像", ICON_16_PMIRRO , ICON_32_PMIRRO)]^C^Cpmirror
+					[--]
+ID_PdaDrag			[Button("参数化拖动", ICON_16_PDRAG , ICON_32_PDRAG)]^C^Cpdrag
+					[--]
+ID_PdaDimNewVal		[Button("尺寸驱动", ICON_16_PDIMNE, ICON_32_PDIMNE)]^C^Cpdimnewval
+ID_PdaHideDim		[Button("隐藏尺寸", ICON_16_PHIDEDIM, ICON_32_PHIDEDIM]^C^Cphidedim
+ID_PdaManageDimName	[Button("管理尺寸名字", ICON_16_PMNGVA, ICON_32_PMNGVA)]^C^Cpmngdimname
+ID_PdaManageEquation[Button("管理方程", ICON_16_PMNGEQ, ICON_32_PMNGEQ)]^C^Cpmngequ
+					[--]
+ID_PdaRestore		[Button("恢复上一个状态", ICON_16_PRESTO, ICON_32_PRESTO)]^C^Cprestore
+					[--]
+ID_PdaDatabase		[Button("参数化图库", ICON_16_PDATAB, ICON_32_PDATAB)]^C^Cpdatabase
+
+**TB_MDS_DIM
+ID_TbInteDIM [Toolbar("工程标注", Top, Hide, 10, 0, 1)]
+ID_DIMNdim   [Button("智能标注", ICON_16_NDIM, ICON_32_NDIM)]^c^cndim
+ID_CONDIM    [Button("阶梯标注", ICON_16_CDIM, ICON_32_CDIM)]^c^ccdim
+ID_Dimspec   [Button("特殊标注", ICON_16_DIMSPEC, ICON_32_DIMSPEC)]^C^C$S=X $S=InteDIM InteDIM
+ID_Dimtol	 [Button("尺寸公差",ICON_16_TOL,ICON_32_TOL)]^c^c$S=X $S=DRAFT toler
+ID_Dimsp	 [Button("形位公差",ICON_16_SP,ICON_32_SP)]^c^c$S=X $S=DRAFT sp
+ID_Dimroug   [Button("粗糙度",ICON_16_ROUGH,ICON_32_ROUGH)]^c^c$S=X $S=DRAFT rough
+ID_Dimweld	 [Button("焊接符号",ICON_16_WELD,ICON_32_WELD)]^c^c$S=X $S=DRAFT weld
+ID_jsyq    [Button("技术要求", ICON_16_jsyq.bmp, ICON_32_jsyq.bmp)]^c^cjsyq
+ID_hanfen    [Button("焊接角标注", ICON_16_hanfen.bmp, ICON_32_hanfen.bmp)]^c^chanfen
+
+
+**TB_MDS_LAY
+ID_TbCHGLAY   [Toolbar("改变层、改变线宽", Top, Hide, 1, 2, 1)]
+ID_CHGSETL    [Button("设定当前层", ICON_16_CHGSET, ICON_32_CHGSET)]^C^Csetlayer
+ID_CHG01	  [Button("粗实线01层", ICON_16_CHG01, ICON_32_CHG01)]^c^c01
+ID_CHG02	  [Button("细实线02层", ICON_16_CHG02, ICON_32_CHG02)]^c^c02
+ID_CHG04	  [Button("虚线04层", ICON_16_CHG04, ICON_32_CHG04)]^c^c04
+ID_CHG05	  [Button("点划线05层", ICON_16_CHG05, ICON_32_CHG05)]^c^c05
+ID_CHG07	  [Button("双点划线07层", ICON_16_CHG07, ICON_32_CHG07)]^c^c07
+ID_CHG08 	  [Button("尺寸线08层", ICON_16_CHG08, ICON_32_CHG08)]^c^c08
+ID_CHG11      [Button("文字11层", ICON_16_CHG11, ICON_32_CHG11)]^c^c11
+ID_DLP		  [Button("改变指定层线宽", ICON_16_CHGLP, ICON_32_CHGLP)]^c^clp
+ID_CLP		  [Button("改变指定颜色线宽", ICON_16_CHGCLP, ICON_32_CHGCLP)]^c^cclp
+ID_DLP1		  [Button("改变单个实体线宽", ICON_16_CHGL1, ICON_32_CHGL1)]^c^clp1
+
+
+**TB_MDS_LAY_old
+ID_TbCHGLAYo   [Toolbar("改变层、线宽(旧国标)", Top, Hide, 1, 2, 1)]
+ID_CHGSETLo    [Button("设定当前层", icon_16_Chgseto, icon_32_Chgseto)]^C^Csetlayer
+ID_CHG01o	  [Button("粗实线01层", icon_16_Chg01o, icon_32_Chg01o)]^c^c01
+ID_CHG02o	  [Button("细实线02层", icon_16_Chg02o, ICON_32_CHG02o)]^c^c02
+ID_CHG04o	  [Button("虚线04层", icon_16_Chg04o, ICON_32_CHG04o)]^c^c04
+ID_CHG05o	  [Button("点划线05层", icon_16_Chg05o, ICON_32_CHG05o)]^c^c05
+ID_CHG07o	  [Button("双点划线07层", icon_16_Chg07o, ICON_32_CHG07o)]^c^c07
+ID_CHG08o 	  [Button("尺寸线08层", icon_16_Chg08o, ICON_32_CHG08o)]^c^c08
+ID_CHG11o      [Button("文字11层", icon_16_Chg11o, ICON_32_CHG11o)]^c^c11
+ID_DLPo		  [Button("改变指定层线宽", ICON_16_CHGLPo, ICON_32_CHGLPo)]^c^clp
+ID_CLPo		  [Button("改变指定颜色线宽", icon_16_Chgclpo, ICON_32_CHGCLPo)]^c^cclp
+ID_DLP1o		  [Button("改变单个实体线宽", icon_16_Chgl1o, ICON_32_CHGL1o)]^c^clp1
+
+**TB_MDS_BOM
+ID_TbBOM 	  [Toolbar("明细表处理", Right, Hide, 10, 600, 1)]
+ID_BOMlabel   [Button("标注序号", ICON_16_BOMLA, ICON_32_BOMLA)]^c^clabel
+ID_BOMbill	  [Button("明细表内容生成编辑", ICON_16_BOMBILL, ICON_32_BOMBILL)]^c^cbill
+ID_BOMdel	  [Button("删除序号", ICON_16_BOMDEL, ICON_32_BOMDEL)]^c^cdel_item
+ID_BOMCH	  [Button("交换序号", ICON_16_CH_ITEM, ICON_32_CH_ITEM)]^c^cch_item
+ID_BOMoutput  [Button("明细表输出", ICON_16_BOMOUT, ICON_32_BOMOUT)]^c^coutput
+ID_BOMlaybill [Button("明细表重排", ICON_16_BOMLAY, ICON_32_BOMLAY)]^c^claybill
+ID_BOMrebill  [Button("明细表修复", ICON_16_BOMREB, ICON_32_BOMREB)]^c^crebill
+ID_BOMFSH	  [Button("明细表刷新", ICON_16_BOMFSH, ICON_32_BOMFSH)]^c^cfshbill
+ID_BOMmdcode  [Button("明细表屏幕编辑", ICON_16_BOMMDC, ICON_32_BOMMDC)]^c^cmdcode
+ID_BOMstat	  [Button("明细表汇总", ICON_16_BOMSTA, ICON_32_BOMSTA)]^c^cstat
+ID_BOMoldbom  [Button("旧表转换", ICON_16_BOMOLD, ICON_32_BOMOLD)]^c^coldbom
+ID_BOMload    [Button("读入明细表", ICON_16_BOMLOD, ICON_32_BOMLOD)]^c^cloadbom
+ID_BOMerase   [Button("删除明细表内容", ICON_16_BOMER, ICON_32_BOMER)]^c^cebill
+ID_BOMheight  [Button("设定明细表的高度", ICON_16_BOMHEG, ICON_32_BOMHEG)]^c^cbom_height
+ID_bomstatdraw  [Button("绘制汇总表", ICON_16_statdraw, ICON_32_statdraw)]^c^cstatdraw
+ID_BOMpara    [Button("明细表参数设置", ICON_16_PARABOM, ICON_32_PARABOM)]^c^cbompara
+//ID_BOMbomdlg  [Button("明细表格式定义", ICON_16_BOMDLG, ICON_32_BOMDLG)]^c^cbomdlg
+
+
+**TB_MDS_CAED
+ID_TbDRAFT	[Toolbar("制图工具", Top, Hide, 0, 2, 1)]
+ID_DTF		[Button("画图框", ICON_16_DTF, ICON_32_DTF)]^c^ctf
+ID_DFORM	[Button("填写栏框", ICON_16_DFORM, ICON_32_DFORM)]^c^cform
+ID_DHOLE	[Button("画孔", ICON_16_DHOLE, ICON_32_DHOLE)]^c^cnewhole
+ID_DCONCEN  [Button("同心圆", ICON_16_CONCEN, ICON_32_CONCEN)]^c^cconcir
+ID_DTANL	[Button("画指定线的垂线", ICON_16_DTANL, ICON_32_DTANL)]^c^ctanl
+ID_DTANARC	[Button("园上一点画切线", ICON_16_TANAR, ICON_32_TANAR)]^c^ctanarc
+//ID_ALINE  	[Button("三视图辅助线", ICON_16_ALINE, ICON_32_ALINE)]^C^Caline
+ID_ENLARGE	[Button("局部放大", ICON_16_ENLAR, ICON_32_ENLAR)]^C^Cenlarge
+ID_RTHLN	[Button("剖视符号", ICON_16_RTHLN, ICON_32_RTHLN)]^C^Crthln
+ID_DIRLN	[Button("方向符号", ICON_16_DIRLN, ICON_32_DIRLN)]^C^Cdirln
+ID_CROSS	[Button("十字线", ICON_16_CROSS, ICON_32_CROSS)]^C^Ccenter
+ID_CURVE	[Button("两点波浪线", ICON_16_CURVE, ICON_32_CURVE)]^C^Ccurve
+ID_MUTICUR	[Button("任意波浪线", ICON_16_MUTIC, ICON_32_MUTIC)]^C^Cmuticur
+ID_BOX1		[Button("画矩形", ICON_16_DBOX, ICON_32_DBOX)]^C^Cbox
+ID_TRAP		[Button("画梯形", ICON_16_DTRAP, ICON_32_DTRAP)]^C^Ctrap
+ID_SECTOR	[Button("画扇形", ICON_16_DSECT, ICON_32_DSECT)]^C^Csector
+ID_PAPER	[Button("换算图纸实际值", ICON_16_PAPER, ICON_32_PAPER)]'paper
+ID_KEY	[Button("画键槽", ICON_16_key.bmp, ICON_32_key.bmp)]^C^Ckey
+ID_XGX      [Button("相贯线", ICON_16_CYLSE, ICON_32_CYLSE)]^C^Cxgx
+ID_CUTENT   [Button("切断", ICON_16_APPCUT, ICON_32_APPCUT)]^C^CCUT
+ID_OF		[Button("对称线", ICON_16_OF, ICON_32_OF)]^C^COF
+ID_FLT		[Button("倒工艺圆角", flts.bmp, fltl.bmp)]^C^CFLT
+ID_CHS		[Button("孔倒角", chhs.bmp, chhl.bmp)]^C^CCHH
+ID_CHH		[Button("轴倒角", chss.bmp, chsl.bmp)]^C^CCHS
+ID_GY			[Button("工艺槽构造", ICON_16_gy.BMP, ICON_32_gy.BMP)]^C^CGY
+ID_GYZXKDIM			[Button("中心孔标注", ICON_16_zxkdim.bmp, ICON_32_zxkdim.bmp)]^C^Czxkdim //直接用ID_ZXKDIM总是出错，改为用ID_GYZXKDIM
+ID_DCEN		[Button("中分线", ICON_16_dcen.bmp, ICON_32_dcen.bmp)]^C^CDCEN
+ID_EXT		[Button("无边界延伸", ICON_16_ext.bmp, ICON_32_ext.bmp)]^C^Cext
+ID_drawzxx		[Button("中心线", ICON_16_cl.BMP, ICON_32_cl.BMP)]^C^Cdrawzxx
+ID_RL		[Button("截交", ICON_16_rl.bmp, ICON_32_rl.bmp)]^C^CRl
+ID_datcurve		[Button("数据曲线", ICON_16_datcurve.BMP, ICON_32_datcurve.BMP)]^C^Cdatcurve
+ID_djcurve		[Button("带坐标曲线", ICON_16_djcurve.bmp, ICON_32_djcurve.bmp)]^C^Cdjcurve
+
+
+
+**TB_HATCH
+ID_TbHATCH	[Toolbar("填充工具", Top, Hide, 0, 2, 1)]
+ID_Bhatch      [Button("填充", ICON_16_BHATCH, ICON_32_BHATCH)]^C^Cbhatch 
+ID_HATCH452 [Button("45度间距2填充", ICON_16_HATCH452, ICON_32_HATCH452)]^C^CHATCH452
+ID_HATCH455 [Button("45度间距5填充", ICON_16_HATCH455, ICON_32_HATCH455)]^C^CHATCH455
+ID_HAT4510 [Button("45度间距10填充", ICON_16_HATCH4510, ICON_32_HATCH4510)]^C^Chatch4510
+ID_YHATCH455 [Button("45度间距5双向填充", ICON_16_HATCH455Y, ICON_32_HATCH455Y)]^C^CHATCH455Y
+ID_HATCH1352 [Button("135度间距2填充", ICON_16_HATCH1352, ICON_32_HATCH1352)]^C^CHATCH1352
+ID_HATCH1355 [Button("135度间距5填充", ICON_16_HATCH1355, ICON_32_HATCH1355)]^C^CHATCH1355
+ID_HATCH13510 [Button("135度间距10填充", ICON_16_HATCH13510, ICON_32_HATCH13510)]^C^CHATCH13510
+
+**TB_biaoge
+ID_TbBIOAGE	[Toolbar("表格工具", Top, Hide, 0, 2, 1)]
+ID_def      [Button("栏框定义", ICON_16_DEF, ICON_32_DEF)]^C^Cdef
+ID_mb      [Button("模板定义", ICON_16_MB, ICON_32_MB)]^C^Cmb
+ID_cdd      [Button("表格定义", ICON_16_CDD, ICON_32_CDD)]^C^Ccdd
+ID_cds      [Button("表格绘制", ICON_16_CDS, ICON_32_CDS)]^C^Ccds
+ID_cde      [Button("表格编辑", ICON_16_CDE, ICON_32_CDE)]^C^Ccde
+ID_mod      [Button("修改定义栏框", ICON_16_MOD, ICON_32_MOD)]^C^Cmod
+
+**TB_All
+ID_TbAll	[Toolbar("Mds总工具条", Top, Hide, 0, 2, 1)]
+ID_TB_STANDARD      [Flyout("标准", ICON_16_ZOOM, ICON_32_ZOOM, OtherIcon, TB_STANDARD)]
+ID_TbDraw      [Flyout("绘图", ICON_16_ZOOM, ICON_32_ZOOM, OtherIcon, TB_DRAW)]
+ID_TB_MODIFY      [Flyout("修改", ICON_16_ZOOM, ICON_32_ZOOM, OtherIcon, TB_MODIFY)]
+ID_TB_DIMENSION     [Flyout("标注", ICON_16_ZOOM, ICON_32_ZOOM, OtherIcon, TB_DIMENSION)]
+ID_TbZoom      [Flyout("缩放", ICON_16_ZOOM, ICON_32_ZOOM, OtherIcon, TB_ZOOM)]
+ID_TbMds_Bom      [Flyout("明细表编辑", ICON_16_ZOOM, ICON_32_ZOOM, OtherIcon, TB_MDS_BOM)]
+ID_TB_MDS_CAED      [Flyout("制图工具", ICON_16_ZOOM, ICON_32_ZOOM, OtherIcon, TB_MDS_CAED)]
+ID_TB_MDS_LAY      [Flyout("缩放", ICON_16_ZOOM, ICON_32_ZOOM, OtherIcon, TB_MDS_LAY)]
+ID_TB_MDS_DIM      [Flyout("工程标注", ICON_16_ZOOM, ICON_32_ZOOM, OtherIcon, TB_MDS_DIM)]
+ID_TB_PDA      [Flyout("参数化", ICON_16_ZOOM, ICON_32_ZOOM, OtherIcon, TB_PDA)]
+ID_TB_UCS      [Flyout("UCS", ICON_16_ZOOM, ICON_32_ZOOM, OtherIcon, TB_UCS)]
+ID_TB_OBJECT_PROPERTIES      [Flyout("对象属性", ICON_16_ZOOM, ICON_32_ZOOM, OtherIcon, TB_OBJECT_PROPERTIES)]
+ID_TB_REFERENCE      [Flyout("引用", ICON_16_ZOOM, ICON_32_ZOOM, OtherIcon, TB_REFERENCE)]
+ID_TB_OBJECT_SNAP      [Flyout("捕捉", ICON_16_ZOOM, ICON_32_ZOOM, OtherIcon, TB_OBJECT_SNAP)]
+ID_TB_MODIFY_II      [Flyout("修改2", ICON_16_ZOOM, ICON_32_ZOOM, OtherIcon, TB_MODIFY_II)]
+ID_TB_INSERT     [Flyout("插入块", ICON_16_DINSER, ICON_32_DINSER, OtherIcon, TB_INSERT)]
+ID_TB_INQUIRY     [Flyout("查询", ICON_16_ZOOM, ICON_32_ZOOM, OtherIcon, TB_INQUIRY)]
+ID_TB_HATCH			[Flyout("填充", ICON_16_ZOOM, ICON_32_ZOOM, OtherIcon, TB_HATCH)]
+ID_TB_biaoge			[Flyout("表格工具", ICON_16_ZOOM, ICON_16_ZOOM, OtherIcon, TB_biaoge)]
+
+
+
+
+***HELPSTRINGS
+ID_Copy					[复制对象:  COPY]
+ID_Cutclip				[剪切对象到剪贴板:  CUT]
+ID_New					[创建一个新的图文件:  NEW]
+ID_Open					[打开一个存在的图文件:  OPEN]
+ID_Paste				[插入剪贴板中的数据:  PASTE]
+ID_Print				[将图文件打印输出到绘图仪、打印机或者文件:  PLOT]
+ID_Redo					[退回到前一个UNDO或者U命令之前的状态:  REDO]
+ID_Save					[用当前文件名或者指定名字存储图文件:  SAVE]
+ID_Undo					[取消最近一次执行的操作:  UNDO]
+ID_3Points				[根据三点创建圆弧:  ARC]
+ID_Hatch				[使用一种填充模式来填充一个封闭区域:  HATCH]
+ID_Block				[由一组对象来创建块定义:  BLOCK]
+ID_Bpoly				[根据封闭区域创建区域或者多义线:  BPOLY]
+ID_Insert				[插入块或者另一幅图:  INSERT]
+ID_Divide				[在对象的长度或周长方向上均匀放置点或者块:  DIVIDE]
+ID_Donut				[绘制填充圆或者圆环:  DONUT]
+ID_Ellipse				[创建椭圆:  ELLIPSE]	
+ID_EllipseAr			[创建椭圆弧:  ELLIPSE]
+ID_EllipseCe			[根据指定中心点创建椭圆:  ELLIPSE]
+ID_EllipseAx			[根据指定轴创建椭圆:  ELLIPSE]
+ID_Line					[创建直线段:  LINE]
+ID_Measure				[在对象上按照测定的间距放置点对象或块:  MEASURE]
+ID_Text					[创建段落文字:  TEXT]
+ID_Polyline				[创建多义线:  PLINE]
+ID_Point				[创建点对象:  POINT]
+ID_Polygon				[创建等边封闭多边形:  POLYGON]
+ID_Rectang				[用多义线创建长方形:  RECTANG]
+ID_Region				[根据选中的一组对象创建区域对象:  REGION]
+ID_2DSolid				[创建添实的多边形:  SOLID]
+ID_Single-LineText		[创建单行文本:  TEXT]
+ID_Area					[计算对象或者被定义区域的面积和周长:  AREA]
+ID_Dist					[测量两点之间的距离和角度:  DIST]
+ID_LocatePoint			[显示一个位置的坐标:  ID]
+ID_Layer				[管理图层及其属性:  LAYER]
+ID_Linetype				[创建, 装载和设置线形:  LINETYPE]
+ID_List					[显示选中对象的数据库信息:  LIST]
+ID_Help					[显示联机帮助:  HELP]
+ID_ZoomOut				[缩小当前视窗内对象的显示尺寸:  ZOOM]
+ID_ZoomWindo			[缩放到显示指定矩形窗口确定的区域:  ZOOM]
+ID_ZoomIn				[增加当前视口内对象的显示尺寸:  ZOOM]
+ID_Dtext				[文本输入时动态显示在屏幕上:  DTEXT]
+ID_Dsviewer				[打开鹰眼窗口:  DSVIEWER]
+ID_UCS					[管理用户坐标系:  UCS]
+ID_Named_UCS			[管理已经定义的用户坐标系:  DDUCS]
+ID_Preset_UCS			[选择一个预设置的用户坐标系:  DDUCS]
+ID_World_UCS			[将用户坐标系设置成世界坐标系:  UCS]
+ID_Object_UCS			[根据选定的对象来定义新坐标系:  UCS]
+ID_View_UCS				[建立一个XY平面与屏幕平行的新用户坐标系:  UCS]
+ID_Origin_UCS			[通过改变原点来定义新用户坐标系:  UCS]
+ID_Z_Axis_Vector_UCS	[通过Z轴正向拉伸来定义用户坐标系:  UCS]
+ID_3_Point_UCS			[定义新的坐标原点和X、Y轴方向:  UCS]
+ID_X_Axis_Rotate_UCS	[绕X轴旋转当前用户坐标系:  UCS]
+ID_Y_Axis_Rotate_UCS	[绕Y轴旋转当前用户坐标系:  UCS]
+ID_Z_Axis_Rotate_UCS	[绕Z轴旋转当前用户坐标系:  UCS]
+ID_Previous_UCS			[恢复到前一个用户坐标系:  UCS]
+ID_Move					[在指定方向上平移对象到指定距离:  MOVE]
+ID_Erase				[从图中将实体删除:  ERASE]
+ID_Offset				[创建同心圆、平行线和平行曲线:  OFFSET]
+ID_Mirror				[创建对象的镜像复制:  MIRROR]
+ID_PolarArray			[创建圆形阵列:  ARRAY]
+ID_RectangularArray		[创建矩形阵列:  ARRAY]
+ID_Rotate				[绕基点旋转对象:  ROTATE]
+ID_Stretch				[平移或者拉伸对象:  STRETCH]
+ID_Lengthen				[改变对象的长度:  LENGTHEN]
+ID_Scale				[在X、Y方向上等量缩放对象:  SCALE]
+ID_Trim					[将对象沿其他对象定义的切割边截断:  TRIM]
+ID_qTrim					[快速将对象沿其他对象定义的切割边截断:  qTRIM]
+ID_Extend				[延伸对象和其他对象相交:  EXTEND]
+ID_1Point				[在选择点处分割选中对象:  BREAK]
+ID_1PointSelect			[在指定点处分割选中对象:  BREAK]
+ID_2Points				[在选择点和另一个指定点之间分割选中对象:  BREAK]
+ID_2PointsSelect		[在指定的两点之间分割对象:  BREAK]
+ID_Chamfer				[对象的边之间倒角:  CHAMFER]
+ID_Fillet				[对象的边之间倒圆角:  FILLET]
+ID_Explode				[复合对象分离成组成它的各个对象:  EXPLODE]
+ID_Attach				[外部引用Attach:  XREF]
+ID_Overlay				[外部引用Overlay:  XREF]
+ID_Reload				[重新装入一个或者多个外部引用:  XREF]
+ID_Detach				[外部引用Detach:  XREF]
+ID_SnapEndp				[捕捉到最近的圆弧或者线的端点:  OSNAP]
+ID_SnapMidp				[捕捉到最近的圆或者圆弧的中点:  OSNAP]
+ID_SnapInte				[捕捉到线、圆弧、圆的交点:  OSNAP]
+ID_SnapCent				[捕捉到圆或者圆弧的中心:  OSNAP]
+ID_SnapQuad				[捕捉到圆或者圆弧的四分点:  OSNAP]
+ID_SnapPerp				[捕捉到圆弧、直线或圆的垂足:  OSNAP]
+ID_SnapTang				[捕捉到圆或者圆弧的切点:  OSNAP]
+ID_SnapNode				[捕捉到一个点对象:  OSNAP]
+ID_SnapInse				[捕捉到文本、块或者属性的插入点:  OSNAP]
+ID_SnapNear				[捕捉到圆弧、圆、直线或者点上的最近点:  OSNAP]
+ID_SnapQuic				[捕捉到找到的最近点:  OSNAP]
+ID_SnapNone				[关闭对象捕捉模式:  OSNAP]
+ID_Ddosnap				[设置运行的对象捕捉模式，改变捕捉框尺寸:  DDOSNAP]
+ID__.X_					[指定一个.X点过滤:  .X]
+ID__.Y_					[指定一个.Y点过滤:  .Y]
+ID__.XY_				[指定一个.XY点过滤:  .XY]
+ID_RedrawAll			[刷新显示所有视窗:  REDRAW]
+ID_PanPoint				[图形视图移动指定距离:  PAN]
+ID_PanLeft				[图形视图左移: PAN]
+ID_PanRight				[图形视图右移: PAN]
+ID_PanUp				[图形视图上移: PAN]
+ID_PanDown				[图形视图下移: PAN]
+ID_PanUpLeft			[图形视图左上移: PAN]
+ID_PanUpRight			[图形视图右上移: PAN]
+ID_PanDownLeft			[图形视图左下移: PAN]
+ID_PanDownRight			[图形视图右下移: PAN]
+ID_ZoomAll				[缩放到显示当前视窗内全部图形:  ZOOM]
+ID_ZoomPrevi			[缩放到前一个视图:  ZOOM]
+ID_ZoomScale			[根据指定比例进行缩放:  ZOOM]
+ID_ZoomDynam			[缩放到显示图形已经生成的部分:  ZOOM]
+ID_ZoomCente			[按照由指定中心点和高度确定的窗口缩放:  ZOOM]
+ID_ZoomLeft				[按照由指定左下角点和高度确定的窗口缩放:  ZOOM]
+ID_ZoomExten			[按照当前图形范围缩放:  ZOOM]
+ID_ZoomLimits			[按照图形界限缩放:  ZOOM]
+ID_ZoomVmax				[按照可能的最大限度进行放大:  ZOOM]
+ID_Minsert				[按照矩形阵列插入块的多个实例:  MINSERT]
+ID_Oops!				[恢复被删除的对象:  OOPS]
+ID_Trace				[创建轨迹线:  TRACE]
+ID_Preview				[打印预览:  PREVIEW]
+ID_PdaAddConstraint		[增加一个约束:  PADDCON]
+ID_PdaAddEnt			[向当前参数化块中增加实体:  PADDENT]
+ID_PdaDelConstraint		[显示和删除某个实体的相关约束:  PDELCON]
+ID_PdaDrag				[拖动参数化块中的对象:  PDRAG]
+ID_PdaMirror			[参数化镜像变换:  PMIRROR]
+ID_PdaManageEquation	[管理当前参数化块中的方程:  PMNGEQU]
+ID_PdaManageModels		[管理参数化块:  PMNGMODELS]
+ID_PdaManageDimName		[管理当前参数化块中的尺寸名字:  PMNGDIMNAME]
+ID_PdaRemoveEnt			[从参数化块中移去实体:  PRMVENT]
+ID_PdaDimNewVal			[改变当前参数化块中的尺寸值:  PDIMNEWVAL]
+ID_PdaHideDim			[将选定的尺寸隐藏起来:  PHIDEDIM]
+ID_PdaRestore			[将当前参数化块恢复上一个状态:  PRESTORE]
+ID_PdaDatabase			[管理参数化图库:  PDATABASE]
+ID_NewDocument			[新建一个图文档:  NEWDOC]
+ID_CloseDocument		[关闭当前图文档:  CLOSEDOC]
+ID_OpenDocument			[打开一个图文档:  OPENDOC]
+ID_Saveas				[用另外一个文件名保存当前图文件:  SAVEAS]
+ID_Wblock				[将指定块或者指定的实体集合以指定文件名存盘:  WBLOCK]
+ID_Loadwg				[读入一个AutoCAD的DWG格式的图文件:  LOADWG]
+ID_Savedwg				[将图形输出为AutoCAD的DWG格式的图文件:  SAVEDWG]
+ID_Dxfin				[读入一个DXF格式的图文件:  DXFIN]
+ID_Dxfout				[将当前图形输出成为DXF格式的图形文件:  DXFOUT]
+ID_Xattach				[将一个外部引用文件附加到当前图形:  XREF]
+ID_Xdetach				[从当前图形中删除指定的外部引用:  XREF]
+ID_Xpath				[改变外部引用文件的名字或者路径:  XREF]
+ID_Xreload				[从新装载外部引用使之和外部引用文件的最新版本一致:  XREF]
+ID_Xlist				[列出当前图中的外部引用:  XREF]
+ID_Xbind				[将指定的外部引用转换为块，永久存放在当前图形中:  XREF]
+ID_Plotcfg				[配置绘图仪参数:  PLOTCFG]
+ID_PurgeAll				[从图形数据库中清理所有无用的对象:  PURGE]
+ID_PurgeBlk				[从图形数据库中清理无用的块:  PURGE]
+ID_PurgeDim				[从图形数据库中清理无用的标注样式:  PURGE]
+ID_PurgeLay				[从图形数据库中清理无用的层:  PURGE]
+ID_PurgeLin				[从图形数据库中清理无用的线型:  PURGE]
+ID_PurgeShp				[从图形数据库中清理无用的字型:  PURGE]
+ID_PurgeTxt				[从图形数据库中清理无用的字体:  PURGE]
+ID_Quit					[退出系统:	QUIT]
+ID_End					[保存所有打开的文件并退出系统:	End]
+ID_Ctrlc				[撤消当前的操作:  Press ESC key]
+ID_Copylink				[将当前视图的内容复制到剪贴板:  COPYLINK]
+ID_Pasteclip			[从剪贴板插入数据:  PASTECLIP]
+ID_Pastesp				[从剪贴板插入数据并且控制插入数据的格式:  PASTESPEC]
+ID_Delobj				[删除选中的OLE对象:  DELOBJ]
+ID_Regen				[从新生成图形并且刷新当前视图:  REGEN]
+ID_ZoomRealt			[随鼠标移动实时缩放:  ZOOM]
+ID_Pan					[平移当前视图中显示的图形:  PAN]
+ID_PanPick				[根据指定距离平移显示的图形:  -PAN]
+ID_Part					[选取视图构成零件:  PART]
+ID_Above				[定义零件之间的遮挡关系:  ABOVE]
+ID_Hide					[根据零件之间的遮挡关系进行消隐:  HIDE]
+ID_Unpart				[还原构成零件的图形元素:  UNPART]
+ID_HideChar				[字符消隐:	HIDECHAR]
+ID_Unhide				[取消消隐:  UNHIDE]
+ID_UnhideChar			[取消字符消隐:  UNHIDECHAR]
+ID_UcsiconOn			[显示用户坐标系图标:  UCSICON ON]
+ID_UcsiconOff			[不显示用户坐标系图标:  UCSICON OFF]
+ID_UcsiconOr			[控制图标显示在当前坐标系的原点上:  UCSICON ORIGIN]
+ID_UcsiconNoor			[不让图标显示在当前坐标系的原点上:  UCSICON NOORIGIN]
+ID_AttdispNo			[显示可见的属性；隐藏不可见的属性:  ATTDISP]
+ID_AttdispOf			[控制所有的属性都不可见:  ATTDISP OFF]
+ID_AttdispOn			[控制所有的属性都可见:  ATTDISP ON]
+ID_Textscr				[显示文本窗口:  TEXTSCR]
+ID_ScreenMenu			[切换屏幕菜单的显示/隐藏:  SCRMENU]
+ID_Doctab				[切换文档工具条的显示/隐藏:  DOCTAB]
+ID_NavToolbar			[切换导航工具条的显示/隐藏:  NAVTOOL]
+ID_Toolbar				[工具条控制:  TOOLBAR]
+ID_Export				[将图形存为另外的文件格式:  EXPORT]
+ID_Import				[将另外格式的图形文件读进来:  IMPORT]
+ID_LL					[绘制平行线、垂线、角平分线、定长线段等各种直线段的智能画线命令:  LL]
+ID_Circle				[创建一个圆:  CIRCLE]
+ID_CircleTTT			[创建和三个对象相切的圆:  CIRCLE]
+ID_Circle2pt			[根据直径的两个端点创建圆:  CIRCLE]
+ID_Circle3pt			[根据圆周上的三点创建圆:  CIRCLE]
+ID_CircleDia			[根据特定的直径来创建圆:  CIRCLE]
+ID_CircleRad			[根据特定半径来创建圆:  CIRCLE]
+ID_CircleTTR			[指定半径作两对象的公切圆:  CIRCLE]
+ID_Arc					[创建圆弧:  ARC]
+ID_Arc3point			[根据三点创建圆弧:  ARC]
+ID_ArcCeStAn			[根据中心、起点、包含角生成圆弧:  ARC]
+ID_ArcCeStEn			[根据中心、起点、终点生成圆弧:  ARC]
+ID_ArcCeStLe			[根据中心、起点、弦长生成圆弧:  ARC]
+ID_ArcContin			[生成一个与上次绘制的线或者圆弧相切的圆弧:  ARC]
+ID_ArcStCeAn			[根据起点、圆心、包含角生成圆弧:  ARC]
+ID_ArcStCeEn			[根据起点、圆心、终点生成圆弧:  ARC]
+ID_ArcStCeLe			[根据起点、圆心、弦长生成圆弧:  ARC]
+ID_ArcStEnAg			[根据起点、终点、包含角生成圆弧:  ARC]
+ID_ArcStEnDi			[根据起点、终点、起点方向生成圆弧:  ARC]
+ID_ArcStEnRa			[根据起点、终点、半径生成圆弧:  ARC]
+ID_Pline				[生成多义线:  PLINE]
+ID_SPline				[生成样条曲线:  SPLINE]
+ID_Solid				[生成实心填充多边形:  SOLID]
+ID_Insertobj			[插入一个链接或者嵌入的对象:  INSERTOBJ]
+ID_Bhatch				[使用某种填充模式来填充封闭区域或者选定的对象:  BHATCH]
+ID_Mtext				[生成多行文字:  MTEXT]
+ID_Ctext				[根据某条直线、圆、圆弧、椭圆、椭圆弧、多义线生成按照曲线排列的文字:  CTEXT]
+ID_Properties			[修改实体的基本属性和几何属性:  DDMODIFY]
+ID_Pedit				[编辑多义线:  PEDIT]
+ID_Ddatte				[编辑属性实体:  DDATTE]
+ID_Ddedit				[编辑文字和属性定义:  DDEDIT]
+ID_findTxt				[定位文字:  FIND]
+ID_Copyclip				[复制对象到剪贴板:  COPYCLIP]
+ID_Array				[使用某种模式来生成对象的多个复制:  ARRAY]
+ID_Break				[删除对象的一部分或者将对象分割成两个:  BREAK]
+ID_Setlayer				[设置当前的图层:  SETLAYER]
+ID_SetGB			[设置图层国标: SelGB]
+ID_Layer01				[设置当前层为粗实线所在的01层:  01]
+ID_Layer02				[设置当前层为细实线所在的02层:  02]
+ID_Layer04				[设置当前层为虚线所在的04层:  04]
+ID_Layer05				[设置当前层为点划线所在的05层:  05]
+ID_Layer07				[设置当前层为双点划线所在的07层:  07]
+ID_Layer11				[设置当前层为文字所在的11层:  11]
+ID_Layer12				[设置当前层为文字所在的尺寸线层:	12]
+ID_LP1					[指定单个实体的线宽:  LP1]
+ID_LP					[设置指定实体所在层所有实体的线宽:  LP]
+ID_CP					[设置和指定实体颜色相同的所有实体的线宽:  CP]
+ID_Ddcolor				[设置新实体的颜色:  COLOR]
+ID_ZH					[设置文本字号:  ZH]
+ID_Style				[创建或者修改字型以及设置图文件中的当前字型:  STYLE]
+ID_Ddptype				[设置点实体的显示样式和尺寸:  DDPTYPE]
+ID_Ddrmodes				[设置捕捉模式, 栅格, 极坐标等等:  DSETTINGS]
+ID_Ddgrips				[设置预拾取点的颜色和大小:  DDGRIPS]
+ID_Ddunits				[设置系统中的长度和角度单位以及精度:  DDUNITS]
+ID_Grid					[打开或者关闭栅格:  GRID]
+ID_Ortho				[打开或者关闭正交绘图方式:  ORTHO]
+ID_Dducs				[管理已经定义的用户坐标系:  DDUCS]
+ID_UcsPrevio			[恢复前一个用户坐标系:  UCS P]
+ID_UcsWorld				[将用户坐标系设置成世界坐标系:  UCS W]
+ID_UcsEntity			[以实体为轴设置用户坐标系:  UCS E]
+ID_UcsOrigin			[通过平移原点来定义新的用户坐标系:  UCS O]
+ID_UcsZAxRot			[当前用户坐标系绕Z轴旋转:  UCS Z]
+ID_Ltscale				[设置线型比例:  LTSCALE]
+ID_Limits				[设置并控制图形边界:  LIMITS]
+ID_Paper				[进行图纸上的实际尺寸和图形单位下尺寸的换算:  PAPER]
+ID_Ddrename				[改变命名对象的名称:  RENAME]
+ID_Dimstyle				[设置标注的模式:  DDIM]
+ID_Ndim					[根据拾取的实体自动判别标注类型的智能标注:  NDIM]
+ID_Cdim					[作共享标注点的连续标注:  CDIM]
+ID_DimHorizo			[作水平标注:  DIM]
+ID_DimVertic			[作垂直标注:  DIM]
+ID_Dimaligne			[作一个沿线线性标注:  DIM]
+ID_DimRotate			[作旋转标注:  DIM]
+ID_Dimbaseli			[从前一个标注或者选定的标注的基线开始创建一个线性的, 角度的, 或者纵坐标的标注:  DIM]
+ID_Dimdiamet			[为圆或者圆弧作直径标注:  DIM]
+ID_Dimradius			[为圆或者圆弧作半径标注:  DIM]
+ID_Dimcenter			[为圆或者圆弧作圆心标注:  DIM]
+ID_Dimordina			[作测量特征的坐标标注:  DIM]
+ID_Dimordix				[作测量特征的X坐标标注:  DIM]
+ID_Dimordiy				[作测量特征的Y坐标标注:  DIM]
+ID_Dimangula			[作角度标注:  DIM ANGULAR]
+ID_Dimarclen			[作弧长标注:  DIM ZZarclen]
+ID_Leader				[作连接符号到特征的引出线标注:  DIM]
+ID_Intedim				[作某些特殊样式的标注:  INTEDIM]
+ID_Dimnewtex			[更改尺寸文字:  DIM]
+ID_Dimtedit				[平移或者旋转标注文本:  DIM]
+ID_Dimtrota				[旋转尺寸文字:  DIM]
+ID_Dimhome				[尺寸文字归位:  DIM]
+ID_DimUpdate			[更新标注样式:  DIM]
+ID_Tolerance			[标注尺寸公差:  TOLER]
+ID_Sp					[标注形位公差:  SP]
+ID_Rought				[标注表面粗糙度:  ROUGH]
+ID_Weld					[标注焊接符号:  WELD]
+ID_JSYQ					[管理技术要求库:  JSYQ]
+ID_DTF					[选择一个标准的图框或者自定义图框:  TF]
+ID_DFORM				[填写图框标题栏:  FORM]
+ID_DH					[复制代号栏:  DH]
+ID_Datatable			[建立数据表格:  TBL]
+ID_Lhead				[调入预定义的标题栏:  LHEAD]
+ID_Shead				[表格定制:  SHEAD]
+ID_Table				[生成参数化表格:  TABLE]
+ID_Ghtable				[关联参数化表格:  GHTABLE]
+ID_Tabledim				[将尺寸与参数化表格关联起来:  TABLE_DIM]
+ID_Putdim				[设置参数化表格相关的尺寸变量的值:  PUT_DIM]
+ID_Deldim				[删除参数化表格关联的尺寸:  DEL_DIM]
+ID_Adddim				[向参数化表格中添加关联尺寸:  ADD_DIM]
+ID_Moddim				[修改参数化表格关联的尺寸:  MOD_DIM]
+ID_Newdim				[重建参数化表格的关联尺寸:  NEW_DIM]
+ID_Editcell				[参数化表格单元编辑:  EDIT_CELL]
+ID_Copyrow				[复制参数化表格的行:  CPY_ROW]
+ID_Ovrrow				[覆盖参数化表格的行:  OVR_ROW]
+ID_Pasterow				[粘贴复制的参数化表格的一行:  PST_ROW]
+ID_Delrow				[删除参数化表格的一行:  DEL_ROW]
+ID_Insrow				[向参数化表格中插入行:  INS_ROW]
+ID_Cutrow				[剪切参数化表格的行:  CUT_ROW]
+ID_Copycol				[复制参数化表格的列:  CPY_COL]
+ID_Ovrcol				[覆盖参数化表格的列:  OVR_COL]
+ID_Pastecol				[粘贴复制的参数化表格的列:  PST_COL]
+ID_Delcol				[删除参数化表格的列:  DEL_COL]
+ID_Inscol				[向参数化表格中插入列:  INS_COL]
+ID_Cutcol				[剪切参数化表格的列:  CUT_COL]
+ID_DHOLE				[画各种孔,包括光孔,螺纹孔,沉孔等:  NEWHOLE]
+ID_DCONCIR				[画一系列同心圆:  CONCIR]
+ID_DTANARC				[通过圆上一点画圆的切线:  TANARC]
+//ID_ALINE  				[画三视图辅助线:  ALINE]
+ID_ENLARGE				[画选定区域的局部放大图:  ENLARGE]
+ID_RTHLN				[画剖视符号:  RTHLN]
+ID_DIRLN				[画方向符号:  DIRLN]
+ID_CROSS				[画十字线:  CENTER]
+ID_CURVE				[画两点之间的波浪线:  CURVE]
+ID_MUTICUR				[画任意若干点确定的波浪线:  MUTICUR]
+ID_BOX1					[画矩形:  BOX]
+ID_TRAP					[画梯形:  TRAP]
+ID_SECTOR				[画扇形:  SECTOR]
+ID_XGX					[作圆柱的相贯线:  XGX]
+ID_CUTENT				[作长物体的切断线:  CUT]
+ID_XLIST				[数据查询:  XLIST]
+ID_DCURVE				[根据给定数据作曲线:  DATACURVE]
+ID_CURVE				[根据给公式作曲线:  CURVE]
+ID_BOMlabel				[标注零件序号:  LABEL]
+ID_BOMbill				[生成编辑明细表内容:  BILL]
+ID_BOMtextscale		[设置明细表文字宽度系数：BOMtextscale]
+ID_BOMdel				[删除零件序号或者明细表:  DEL_ITEM]
+ID_BOMCH				[交换:  CH_ITEM]
+ID_BOMoutput			[输出明细表内容:  OUTPUT]
+ID_BOMlaybill			[明细表重排:  LAYBILL]
+ID_BOMrebill			[明细表修复:  REBILL]
+ID_BOMFSH				[明细表刷新:  FSHBILL]
+ID_BOMmdcode			[明细表屏幕编辑:  MDCODE]
+ID_BOMintestat			[明细表汇总:  STAT]
+ID_BOMoldbom			[旧明细表转换:  OLDBOM]
+ID_BOMload				[读入明细表:  LOADBOM]
+ID_BOMerase				[删除明细表所有内容:  EBILL]
+ID_BOMheight			[设定明细表的高度:  BOM_HEIGHT]
+ID_BOMpara				[明细表参数设置:  BOMPARA]
+ID_BOMstatdef			[汇总表格式定义:  STATDEF]
+ID_BOMstatdraw			[汇总表绘制:  STATDRAW]
+ID_BOMbomdlg			[明细表格式定义:  BOMDLG]
+ID_Login				[管理员登录:  LOGIN]
+ID_Logout				[管理员注销:  LOGOUT]
+ID_Password				[修改口令:  PASSWORD]
+ID_Userdict				[用户字典维护:  USERDICT]
+ID_Tkopen				[打开图纸:  TKOPEN]
+ID_Tksave				[保存图纸:  TKSAVE]
+ID_Pmanmod				[管理参数化块, 包括创建, 删除和修改:  PMNGMODELS]
+ID_PDRAG				[拖动参数化块:  PDRAG]
+ID_PADD	    			[向参数化块中加入实体:  PADDENT]
+ID_Premove				[将实体从参数化块中移除:  PRMVENT]
+ID_Pmirror				[实体镜像:  PMIRROR]
+ID_PADDCON				[增加实体之间的约束:  PADDCON]
+ID_Delcon				[删除实体之间的约束:  PDELCON]
+ID_PSETPAR				[设置尺寸名称:  PMNGDIMNAME]
+ID_PCHGDIM				[修改尺寸值:  PDIMNEWVAL]
+ID_PEQUAT				[管理变量方程:  PMNGEQU]
+ID_Prestore				[恢复到上次参数化求解之前的状态:  PRESTORE]
+ID_Search				[查找帮助条目:  SEARCH]		
+ID_About				[显示MDS的相关信息:  ABOUT]
+ID_Base					[设置插入基点:  BASE]
+ID_Shaft				[参数化绘制轴类零件:  SHAFT]
+ID_Gear					[参数化绘制圆柱齿轮:  GEAR]
+ID_Zcl					[参数化绘制圆柱齿轮:  ZCL]
+ID_Worm					[参数化绘制蜗轮:  WORM]
+ID_Chain				[参数化绘制链轮:  CHAIN]
+ID_Belt					[参数化绘制皮带轮:  BELT]
+ID_Flange				[参数化绘制法兰盘:  FLANGE]
+ID_Preferences			[路径、窗口颜色字体等系统环境设置:  PREFERENCES]
+ID_TbDimensi			[标注工具条]
+ID_TbDraw				[绘图工具条]
+ID_TbInquiry			[查询工具条]
+ID_TbInsert				[块插入工具条]
+ID_TbModify				[修改工具条]
+ID_TbModifII			[修改工具条II]
+ID_TbOsnap				[对象捕捉工具条]
+ID_TbReferen			[外部引用工具条]
+ID_TbStandar			[标准工具条]
+ID_TbObjectP			[对象属性工具条]
+ID_TbUcs				[用户坐标系工具条]
+ID_TbZoom				[缩放工具条]
+ID_TbDraw				[绘图工具条]
+ID_TbPda				[参数化设计工具条]
+ID_Dimedit				[编辑标注:  DIM]
+ID_Ddim					[设置标注样式:  DDIM]
+ID_Id					[定位点:  ID]
+ID_Ddinsert				[对话框方式插入块:  DDINSERT]
+ID_Xref					[引用外部生成的图文件:  XREF]
+ID_OsnapEndp   			[打开端点捕捉]
+ID_OsnapMidp   			[打开中点捕捉]
+ID_OsnapInte   			[打开交点捕捉]
+ID_OsnapCent   			[打开中心捕捉]
+ID_OsnapQuad   			[打开四分点捕捉]
+ID_OsnapTang   			[打开切点捕捉]
+ID_OsnapPerp   			[打开垂足捕捉]
+ID_OsnapInse   			[打开插入点捕捉]
+ID_OsnapNode   			[打开独立点捕捉]
+ID_OsnapNear   			[打开最近点捕捉]
+ID_OsnapQuic   			[打开快速捕捉]
+ID_OsnapNone   			[关闭捕捉]
+ID_Osnap       			[捕捉设置:  DDOSNAP]
+ID_Redraw				[重新绘制图形区:  REDRAW]
+ID_Appload				[装载、卸载、管理LISP和CDE应用程序:  APPLOAD]
+ID_Script				[运行宏指令文件:  SCRIPT]
+ID_Setvar				[查询和设置系统变量:  SETVAR]		
+ID_Status				[查询系统当前图档的状态:  STATUS]
+ID_NavDim				[根据选中实体自动识别标注类型的智能标注:  NDIM]
+ID_LL					[可以做平行线、垂线、切线、对称线等的智能画线命令:  LL]
+ID_MatchProp			[使目标对象和源对象的属性一致:  MATCHPROP]
+ID_Modify				[修改对象属性:  DDMODIFY]
+ID_DCEN					[绘制平行直线的中线或者相交直线的角平分线:  DCEN]
+ID_CHBAR				[显示特殊符号工具条:  CHBAR]		
+ID_Weight				[根据构成零件的选定实体和材料计算零件的重量:  WEIGHT]
+//the following are help strings of APP toolbars
+ID_DIMNdim      		[能根据拾取实体的类型自动判别标注类型的智能标注:  NDIM]
+ID_CONDIM    			[各种形式的连续阶梯标注:  CDIM]
+ID_Dimspec   			[斜度、锥度等各种形式的特殊标注:  INTEDIM]
+ID_Dimtol	 			[尺寸公差标注:  TOLER]
+ID_Dimsp	 			[形位公差标注:  SP]
+ID_Dimroug   			[表面粗糙度标注:  ROUGH]
+ID_Dimweld	 			[可任意组合的焊接符号标注:  WELD]
+ID_CHGSETL   			[设定当前层:  SETLAYER]
+ID_CHG01	 			[设定当前层为粗实线01层:  C01]
+ID_CHG02	 			[设定当前层为细实线02层:  C02]
+ID_CHG04	 			[设定当前层为虚线04层:  C04]
+ID_CHG05	 			[设定当前层为点划线05层:  C05]
+ID_CHG07	    		[设定当前层为双点划线07层:  C07]
+ID_CHG08 	 			[设定当前层为尺寸线08层:  C08]
+ID_CHG11     			[设定当前层为文字11层:  C11]
+ID_DLP		 			[改变指定层实体的线宽:  LP]
+ID_CLP		 			[改变指定颜色实体的线宽:  CLP]
+ID_DLP1		 			[改变单个实体线宽:  LP1]
+ID_CHGSETLo   			[设定当前层:  SETLAYER]
+ID_CHG01o	 			[设定当前层为粗实线01层:  C01]
+ID_CHG02o	 			[设定当前层为细实线02层:  C02]
+ID_CHG04o	 			[设定当前层为虚线04层:  C04]
+ID_CHG05o	 			[设定当前层为点划线05层:  C05]
+ID_CHG07o	    		[设定当前层为双点划线07层:  C07]
+ID_CHG08o 	 			[设定当前层为尺寸线08层:  C08]
+ID_CHG11o     			[设定当前层为文字11层:  C11]
+ID_DLPo		 			[改变指定层实体的线宽:  LP]
+ID_CLPo		 			[改变指定颜色实体的线宽:  CLP]
+ID_DLP1o		 			[改变单个实体线宽:  LP1]
+ID_BOMlabel  			[标注明细表序号:  LABEL]
+ID_BOMbill	 			[明细表内容生成编辑:  BILL]
+ID_BOMtextscale		[设置明细表文字宽度系数：BOMTEXTSCALE]
+ID_BOMdel	 			[删除明细表序号:  DEL_ITEM]
+ID_BOMCH	 			[删除明细表序号:  CH_ITEM]
+ID_BOMoutput 			[明细表输出:  OUTPUT]
+ID_BOMlaybill			[明细表重排:  LAYBILL]
+ID_BOMrebill 			[明细表修复:  REBILL]
+ID_BOMFSH	 			[明细表刷新:  SHBILL]
+ID_BOMmdcode 			[明细表屏幕编辑:  MDCODE]
+ID_BOMstat	 			[明细表汇总:  STAT]
+ID_BOMoldbom 			[旧明细表转换:  OLDBOM]
+ID_BOMload   			[读入明细表:  LOADBOM]
+ID_BOMerase  			[删除明细表内容:  EBILL]
+ID_BOMheight 			[设定明细表的高度:  BOMHEIGHT]
+ID_BOMbomdlg 			[明细表格式定义:  BOMDLG]
+ID_DTF		 			[画图框:  TF]
+ID_DFORM	 			[填写栏框:  INTETBL]
+ID_DHOLE	 			[画孔:  NEWHOLE]
+ID_DCONCEN   			[画同心圆:  CONCEN]
+ID_DTANL	 			[画指定线的垂线:  TANL]
+ID_DTANARC	 			[园上一点画切线:  TANARC]
+//ID_ALINE  	 			[画三视图辅助线:  ALINE]
+ID_ENLARGE	 			[做选定区域的局部放大图:  ENLARGE]
+ID_RTHLN	 			[标注剖视符号:  RTHLN]
+ID_DIRLN	 			[标注方向符号:  DIRLN]
+ID_CROSS	 			[画十字线:  CROSS]
+ID_CURVE	 			[画两点间波浪线:  CURVE]
+ID_MUTICUR	 			[画任意波浪线:  MUTICUR]
+ID_BOX1		 			[画矩形:  BOX1]
+ID_TRAP		 			[画梯形:  TRAP]
+ID_SECTOR	 			[画扇形:  SECTOR]
+ID_PAPER	 			[换算图纸实际值:  PAPER]
+ID_XGX       			[相贯线:  XGX]
+ID_CUTENT    			[切断:  CUT]
+ID_GY					[工艺槽构造: GY]
+ID_GYZXKDIM					[中心孔标注: ZXKDIM]
+ID_RL					[使两直线相交并切去多余部分:  RL]
+ID_EXT					[将一线段任意延伸至某点:  EXT]
+ID_FLT					[进行平行线、非平行线之间的倒角:  FLT]
+ID_CHS					[一次完成轴类倒角:  CHS]
+ID_CHH					[一次完成孔类倒角:  CHH]
+ID_OF					[生成关于某选定对称轴的对称线:  OF]
+ID_ESC					[退出正在执行的命令：^C]
+ID_IMAGE	       			[光栅图形:  IMAGE]
+ID_IMAGECLIP    			[图形裁剪:  IMAGECLIP]
+ID_SPLINEDIT    			[样条曲线编辑:  SPLINEDIT]
+ID_EditFcurve				[公式曲线编辑: 	EditFCurve]
+ID_ModRough				[粗糙度符号编辑: ModRough]
+ID_ESP					[形位公差编辑: Esp]
+ID_ModWeld				[焊接符号编辑:  ModWeld]
+ID_EditJSYQ				[技术要求编辑：EditJSYQ]
+ID_HUAJIAN				[花键:  HUAJIAN]
+ID_DIMTO08				[是否把标注画到08层:  DIMTO08]
+ID_HIDEDIM				[即时消隐标注： HIDEDIM]
+ID_CHANGEDIMLAYER				[把图中已有标注切换到08层:  CHANGEDIMLAYER]
+ID_EMT				[排列多行文字:  EMT]
+ID_DJCURVE				[带坐标曲线:  DJCURVE]
+ID_SPLTOPL				[样条曲线转换为多义线:  SPLTOPL]
+ID_HANFEN				[画焊缝:  HANFEN]
+ID_HATCH452 [45度间距2填充: HATCH452]
+ID_HATCH455 [45度间距5填充: HATCH455]
+ID_HAT4510 [45度间距10填充: HAT4510]
+ID_YHATCH455 [45度间距5双向填充: YHATCH455]
+ID_HATCH1352 [135度间距2填充: HATCH1352]
+ID_HATCH1355 [135度间距5填充: HATCH1355]
+ID_HATCH13510 [135度间距10填充: HATCH13510]
+ID_DRAWZXX [画中心线: DRAWZXX]
+ID_datcurve		[数据曲线 DatCurve]
+ID_def     [定义表格所需要的栏框： def] 
+ID_mb      [定义表格模板： mb]
+ID_cdd      [表格定义： cdd]
+ID_cds      [创建定义好的表格： cds]
+ID_cde      [编辑绘制完成的表格： cde]
+ID_mod      [修改定义的栏框： mod]

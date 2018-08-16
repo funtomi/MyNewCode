@@ -1,0 +1,26 @@
+<AlConfig>
+  <header name="ID" order="1" visible="True" width="60" />
+  <header name="CLASS" order="2" visible="True" width="60" />
+  <header name="PHASE" order="3" visible="True" width="60" />
+  <header name="STATE" order="4" visible="True" width="60" />
+  <header name="HASFILE" order="5" visible="True" width="60" />
+  <header name="SECURITYLEVEL" order="6" visible="True" width="60" />
+  <header name="INPROCESS" order="7" visible="True" width="60" />
+  <header name="LASTREVISION" order="8" visible="True" width="60" />
+  <header name="REVISION" order="9" visible="True" width="60" />
+  <header name="CREATOR" order="10" visible="True" width="60" />
+  <header name="CREATETIME" order="11" visible="True" width="60" />
+  <header name="LASTITERATION" order="12" visible="True" width="60" />
+  <header name="RELEASER" order="13" visible="True" width="60" />
+  <header name="RELEASETIME" order="14" visible="True" width="60" />
+  <header name="ITERATION.1b4bface-c7a7-9246-9628-1c09d3d550cf" order="15" visible="True" width="60" />
+  <header name="LATESTUPDATOR.3a55b549-6587-874a-981b-7aa39d1e123a" order="16" visible="True" width="60" />
+  <header name="LATESTUPDATETIME.4a151b65-af32-3048-b642-0c46ff0cbed6" order="17" visible="True" width="60" />
+  <header name="NAME.cc0ca036-0da2-ec40-8d87-ee933f282926" order="18" visible="True" width="60" />
+  <header name="ACTIVATIONDATE.dfe21974-c0e4-4247-9741-7f27091b594f" order="19" visible="True" width="60" />
+  <header name="PROCESSINSTANCESTATE.5cde8880-0d4d-e145-bb9e-c01ace379633" order="20" visible="True" width="60" />
+  <header name="DESCRIPTION.b46adf50-1978-cb41-938d-fcd0190be81a" order="21" visible="True" width="60" />
+  <header name="DURATIONUNIT.9334e751-f325-6442-99e1-de849a498faf" order="22" visible="True" width="60" />
+  <header name="DURATION.311395a0-ff3f-474f-94d6-6963f3bdc4d4" order="23" visible="True" width="60" />
+  <header name="TERMINATIONDATE.10001bb9-1dbd-a242-b4f9-12b73cae7381" order="24" visible="True" width="60" />
+</AlConfig>

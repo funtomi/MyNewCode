@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<ArrayOfUILocation xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <UILocation>
+    <UserId>sysadmin</UserId>
+    <SplitValue>264</SplitValue>
+    <FilterPanelHeight>212</FilterPanelHeight>
+    <FilterVisable>false</FilterVisable>
+    <Width>797</Width>
+    <Height>517</Height>
+    <LocationTree>Folder</LocationTree>
+    <LocationPath>个人文件夹###cs001</LocationPath>
+  </UILocation>
+</ArrayOfUILocation>

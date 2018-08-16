@@ -1,0 +1,29 @@
+<AlConfig>
+  <header name="ID" order="1" visible="True" width="364" />
+  <header name="CLASS" order="2" visible="True" width="60" />
+  <header name="ORDER" order="3" visible="True" width="60" />
+  <header name="STATE" order="4" visible="True" width="60" />
+  <header name="HASFILE" order="5" visible="True" width="60" />
+  <header name="SECURITYLEVEL" order="6" visible="True" width="60" />
+  <header name="INPROCESS" order="7" visible="True" width="60" />
+  <header name="LASTREVISION" order="8" visible="True" width="60" />
+  <header name="REVISION" order="9" visible="True" width="60" />
+  <header name="CREATOR" order="10" visible="True" width="60" />
+  <header name="CREATETIME" order="11" visible="True" width="60" />
+  <header name="LASTITERATION" order="12" visible="True" width="60" />
+  <header name="RELEASER" order="13" visible="True" width="60" />
+  <header name="RELEASETIME" order="14" visible="True" width="60" />
+  <header name="CREATOR.f75a1bf2-d9e8-4041-8274-684f67c85f49" order="15" visible="True" width="60" />
+  <header name="RIGHTCLASS.0be92962-04a2-5c41-a84d-39287d55d79d" order="16" visible="True" width="60" />
+  <header name="LEFTCLASS.4da4ebf5-2cc7-4644-958b-9d3eb2adf01a" order="17" visible="True" width="60" />
+  <header name="RIGHTREVISION.1b3e5c01-1f50-9246-a511-7c9403bd8dff" order="18" visible="True" width="60" />
+  <header name="ITERATION.1b4bface-c7a7-9246-9628-1c09d3d550cf" order="19" visible="True" width="60" />
+  <header name="LATESTUPDATOR.3a55b549-6587-874a-981b-7aa39d1e123a" order="20" visible="True" width="60" />
+  <header name="LATESTUPDATETIME.4a151b65-af32-3048-b642-0c46ff0cbed6" order="21" visible="True" width="60" />
+  <header name="NAME.cc0ca036-0da2-ec40-8d87-ee933f282926" order="22" visible="True" width="60" />
+  <header name="CARDSTOCKID.c4e9a0dc-fb6a-4f87-8df0-66912af04846" order="23" visible="True" width="60" />
+  <header name="SEQEQUIREMENT.2612cd0a-2d3a-468d-bced-6efdc017039b" order="24" visible="True" width="60" />
+  <header name="DESC.d7cb7cc5-6b26-451e-a4b1-a92933d1fbc9" order="25" visible="True" width="60" />
+  <header name="SEQNO.2adc2648-e8ea-467a-8195-845ca53d337d" order="26" visible="True" width="60" />
+  <header name="SEQWORKSHOP.c573d9bb-d089-4c0b-9792-c7414902a34a" order="27" visible="True" width="60" />
+</AlConfig>

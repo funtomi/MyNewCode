@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Hosts>
+  <EDBServer>
+    <host>
+    </host>
+    <datasource>
+    </datasource>
+    <user>
+    </user>
+    <password>
+    </password>
+    <dbType>sql</dbType>
+    <isSameDb>true</isSameDb>
+  </EDBServer>
+</Hosts>

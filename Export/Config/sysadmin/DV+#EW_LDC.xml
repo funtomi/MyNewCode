@@ -1,0 +1,25 @@
+<AlConfig>
+  <header name="ID" order="1" visible="True" width="182" />
+  <header name="CLASS" order="2" visible="True" width="60" />
+  <header name="PHASE" order="3" visible="True" width="60" />
+  <header name="STATE" order="4" visible="True" width="60" />
+  <header name="HASFILE" order="5" visible="True" width="60" />
+  <header name="SECURITYLEVEL" order="6" visible="True" width="60" />
+  <header name="INPROCESS" order="7" visible="True" width="60" />
+  <header name="LASTREVISION" order="8" visible="True" width="60" />
+  <header name="REVISION" order="9" visible="True" width="60" />
+  <header name="CREATOR" order="10" visible="True" width="60" />
+  <header name="CREATETIME" order="11" visible="True" width="60" />
+  <header name="LASTITERATION" order="12" visible="True" width="60" />
+  <header name="RELEASER" order="13" visible="True" width="60" />
+  <header name="RELEASETIME" order="14" visible="True" width="60" />
+  <header name="ITERATION.1b4bface-c7a7-9246-9628-1c09d3d550cf" order="15" visible="True" width="60" />
+  <header name="LATESTUPDATOR.3a55b549-6587-874a-981b-7aa39d1e123a" order="16" visible="True" width="60" />
+  <header name="LATESTUPDATETIME.4a151b65-af32-3048-b642-0c46ff0cbed6" order="17" visible="True" width="60" />
+  <header name="NAME.cc0ca036-0da2-ec40-8d87-ee933f282926" order="18" visible="True" width="60" />
+  <header name="BL.953d19de-3f06-4fbd-88f0-53c1198096e0" order="19" visible="True" width="60" />
+  <header name="MJ.96f7a4aa-133a-4b05-8362-3fc65c853b1e" order="20" visible="True" width="60" />
+  <header name="NF.88b0f0cf-f1d4-43b6-a6b4-61a95972882f" order="21" visible="True" width="60" />
+  <header name="TF.52f82b41-b3f4-4e1f-97f6-7a6702d59d07" order="22" visible="True" width="60" />
+  <header name="ZS.3efcc682-5ff9-424b-bbbe-d60f512ed91c" order="23" visible="True" width="60" />
+</AlConfig>

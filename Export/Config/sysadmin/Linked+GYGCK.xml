@@ -1,0 +1,33 @@
+<AlConfig>
+  <header name="ID" order="1" visible="True" width="217" />
+  <header name="CLASS" order="2" visible="True" width="60" />
+  <header name="STATE" order="3" visible="True" width="60" />
+  <header name="HASFILE" order="4" visible="True" width="60" />
+  <header name="SECURITYLEVEL" order="5" visible="True" width="60" />
+  <header name="INPROCESS" order="6" visible="True" width="60" />
+  <header name="LASTREVISION" order="7" visible="True" width="60" />
+  <header name="REVISION" order="8" visible="True" width="60" />
+  <header name="CREATOR" order="9" visible="True" width="60" />
+  <header name="CREATETIME" order="10" visible="True" width="60" />
+  <header name="LASTITERATION" order="11" visible="True" width="60" />
+  <header name="RELEASER" order="12" visible="True" width="60" />
+  <header name="RELEASETIME" order="13" visible="True" width="60" />
+  <header name="ITERATION.1b4bface-c7a7-9246-9628-1c09d3d550cf" order="14" visible="True" width="60" />
+  <header name="LATESTUPDATOR.3a55b549-6587-874a-981b-7aa39d1e123a" order="15" visible="True" width="60" />
+  <header name="LATESTUPDATETIME.4a151b65-af32-3048-b642-0c46ff0cbed6" order="16" visible="True" width="60" />
+  <header name="NAME.cc0ca036-0da2-ec40-8d87-ee933f282926" order="17" visible="True" width="60" />
+  <header name="DESC.d7cb7cc5-6b26-451e-a4b1-a92933d1fbc9" order="18" visible="True" width="60" />
+  <header name="CARDTYPE.6b6ddc35-3c53-4d30-81c7-1d8f31d19eae" order="19" visible="True" width="60" />
+  <header name="TEMPLATEREVISION.65f9c4b8-5c4b-4a8a-9324-21018fc155e2" order="20" visible="True" width="60" />
+  <header name="COUNTOFPAGES.a151edc8-ed3f-4d4f-9123-8c56d08b84fa" order="21" visible="True" width="60" />
+  <header name="VERSIONEFFDATE.cf9c9150-2a25-4fc3-8734-5c464f74f551" order="22" visible="True" width="60" />
+  <header name="VERSIONENDDATE.591556ea-7409-45af-901d-1ca711c1d3a9" order="23" visible="True" width="60" />
+  <header name="VERSIONDESC.374ca62c-727c-4b79-ac98-b19ea92963f7" order="24" visible="True" width="60" />
+  <header name="BOMID.a23bafd5-fb89-4757-9cd7-2b33cbb72a0e" order="25" visible="True" width="60" />
+  <header name="INVCODE.e5858398-84c5-4536-becd-402c62d7adf5" order="26" visible="True" width="60" />
+  <header name="DISTRIBUTEDID.11776b53-9301-40fb-9901-a154d426c68d" order="27" visible="True" width="60" />
+  <header name="PROUTINGID.cd2b4d74-a807-4e9d-9bcb-e143a4c71a4f" order="28" visible="True" width="60" />
+  <header name="CARDID.8171500a-9215-4521-b5e5-de25b3fdcdee" order="29" visible="True" width="60" />
+  <header name="FIRSTPAGE.6fcee1d6-2341-4131-98b9-0376fa606cb2" order="30" visible="True" width="60" />
+  <header name="FILEID.f2a5d1d5-884d-45f5-b463-51e7e8ade33a" order="31" visible="True" width="60" />
+</AlConfig>

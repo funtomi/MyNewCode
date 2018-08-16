@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Configuration>
+  <!--TableName 业务对象表（零件信息表）=Item ，关系表（明细表，子件表）=Bom，源文件信息表=ItemFile-->
+  <!--RowFilter 代号=提取标题名，例如，图号，子件号等根据提取的具体规则定制，like= .net 视图过滤功能提供的函数（**与sql的函数和语法不是完全相同）  -->
+  <不合法数据规则 TableName="Bom" RowFilter="Part Field 2 like '%不焊接%' " />
+  <排序规则 TableName="Bom" OrderBy="Part Field 2"/>
+</Configuration>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<AutoUpgradeProductList>
+	<ProductKey Type="Exactly">TiPLMCLT</ProductKey>
+        <ProductKey Type="Exactly">TiPLMSVR</ProductKey>
+	<ProductKey Type="Exactly">TiBrowser</ProductKey>
+	<ProductKey Type="Like">Integrator</ProductKey>
+</AutoUpgradeProductList>

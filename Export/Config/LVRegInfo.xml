@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LIVEUPDATEREG>
+  <WIN32REG>
+      <PLM_NAME>tsEcmsControll.ocx</PLM_NAME>
+      <PLM_NAME>PLMAutoCadOutput.dll</PLM_NAME>
+      <PLM_NAME>Winsockforcatia.ocx</PLM_NAME>
+      <PLM_NAME>CimatronAddin.dll</PLM_NAME>
+      <PLM_NAME>SEaddin.dll</PLM_NAME>
+      <PLM_NAME>PLM_SldAddin.dll</PLM_NAME>
+      <PLM_NAME>Sw2007Addin.dll</PLM_NAME>
+      <PLM_NAME>AutoVueX.ocx</PLM_NAME>
+      <PLM_NAME>AvCompareX.ocx</PLM_NAME>
+      <PLM_NAME>AVMrkpX.ocx</PLM_NAME>
+      <PLM_NAME>AvPrintX.ocx</PLM_NAME>
+       <PLM_NAME>TiVueComparer.ocx</PLM_NAME>
+      <PLM_NAME>TiVueViewer.ocx</PLM_NAME>
+     <PLM_NAME>WMFV.ocx</PLM_NAME>
+  </WIN32REG>
+  <DOTNETREG>
+      <PLM_NAME>Thyt.TiPLM.CLT.Project2K3Addin.dll</PLM_NAME>
+      <PLM_NAME>PLMINTERGRATION.dll</PLM_NAME>
+      <PLM_NAME>Thyt.TiPLM.Intergration.ItemFile.dll</PLM_NAME>
+  </DOTNETREG>
+   <EXEFILEBEF>
+      <EXEFILE EXENAME='LV_PLM30.exe' EXEPARAM=''/>  
+  </EXEFILEBEF>    
+  <EXEFILEEND>
+      <EXEFILE EXENAME='Lv_UpdateExe.exe' EXEPARAM=''/>  
+      <EXEFILE EXENAME='test1.exe' EXEPARAM='-b'/>
+  </EXEFILEEND>  
+</LIVEUPDATEREG>

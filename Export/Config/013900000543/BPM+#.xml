@@ -1,0 +1,17 @@
+<AlConfig>
+  <header name="ID" order="1" visible="True" width="140" />
+  <header name="CLASS" order="2" visible="True" width="198" />
+  <header name="PHASE" order="3" visible="True" width="60" />
+  <header name="STATE" order="4" visible="True" width="60" />
+  <header name="HASFILE" order="5" visible="True" width="60" />
+  <header name="SECURITYLEVEL" order="6" visible="True" width="60" />
+  <header name="INPROCESS" order="7" visible="True" width="60" />
+  <header name="LASTREVISION" order="8" visible="True" width="60" />
+  <header name="REVISION" order="9" visible="True" width="60" />
+  <header name="CREATOR" order="10" visible="True" width="60" />
+  <header name="CREATETIME" order="11" visible="True" width="60" />
+  <header name="LASTITERATION" order="12" visible="True" width="60" />
+  <header name="RELEASER" order="13" visible="True" width="60" />
+  <header name="RELEASETIME" order="14" visible="True" width="60" />
+  <header name="NAME" order="15" visible="True" width="60" />
+</AlConfig>

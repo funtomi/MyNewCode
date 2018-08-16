@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<ThumbnailSetting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <DisplayStyle>Detail</DisplayStyle>
+  <PreviwWidth>67</PreviwWidth>
+  <IsPreview>false</IsPreview>
+  <IsShowToolBar>true</IsShowToolBar>
+</ThumbnailSetting>

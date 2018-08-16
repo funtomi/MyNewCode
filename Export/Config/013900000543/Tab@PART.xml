@@ -1,0 +1,8 @@
+<AlConfig>
+  <header name="PARTTOPART" order="0" visible="True" width="0" />
+  <header name="CPZCTOSJSC" order="1" visible="True" width="0" />
+  <header name="CPZCTOSJSR" order="2" visible="True" width="0" />
+  <header name="CPZCTOXMWJ" order="3" visible="True" width="0" />
+  <header name="PARTTOEW" order="4" visible="True" width="0" />
+  <header name="PARTTOSWMX" order="5" visible="True" width="0" />
+</AlConfig>

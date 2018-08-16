@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<MainMenu>
+	<Menu Name="&amp;System" zh-CN="系统(&amp;S)" EventHandler="DefaultSelectMenuItem" Shortcut="" Icon="" Checked="False" Radio="False" Enabled="True">
+		<Menu Name="Na&amp;vigater" zh-CN="导航树(&amp;V)" EventHandler="OnNavigatorShow" Shortcut="" Icon="" Checked="False" Radio="False" Enabled="True" />
+		<Menu Name="-" zh-CN="-" EventHandler="DefaultSelectMenuItem" Shortcut="" Icon="  " Checked="  " Radio="  " Enabled="  " />
+		<Menu Name="Set &amp;Password" zh-CN="设置个人信息(&amp;P)" EventHandler="OnSetPassword" Shortcut="" Icon="" Checked="False" Radio="False" Enabled="True" />
+		<Menu Name="-" zh-CN="-" EventHandler="DefaultSelectMenuItem" Shortcut="" Icon="  " Checked="  " Radio="  " Enabled="  " />
+		<Menu Name="E&amp;xit" zh-CN="退出(&amp;X)" EventHandler="OnClose" Shortcut="" Icon="" Checked="False" Radio="False" Enabled="True" />
+	</Menu>
+	<Menu Name="Data Model" zh-CN="数据模型(&amp;D)" EventHandler="DefaultSelectMenuItem" Shortcut="" Icon="" Checked="False" Radio="False" Enabled="True">
+		<Menu Name="New Class" zh-CN="新建类(&amp;C)" EventHandler="OnMenuNewClass" Shortcut="" Icon="  " Checked="False" Radio="False" Enabled="True" />
+		<Menu Name="New Relation" zh-CN="新建关联(&amp;L)" EventHandler="OnMenuNewRelation" Shortcut="" Icon="  " Checked="False" Radio="False" Enabled="True" />
+		<Menu Name="-" zh-CN="-" EventHandler="DefaultSelectMenuItem" Shortcut="" Icon="  " Checked="  " Radio="  " Enabled="  " />
+		<Menu Name="Retrive Model" zh-CN="刷新(&amp;R)" EventHandler="OnMenuRetriveFromDB" Shortcut="" Icon="" Checked="False" Radio="False" Enabled="True" />
+	</Menu>
+	<Menu Name="&amp;Organization" zh-CN="组织模型(&amp;O)" EventHandler="DefaultSelectMenuItem" Shortcut="" Icon="" Checked="False" Radio="False" Enabled="True">
+		<Menu Name="All &amp;Organization" zh-CN="所有组织(&amp;O)" EventHandler="OnAllOrg" Shortcut="" Icon="" Checked="False" Radio="False" Enabled="True" />
+		<Menu Name="-" zh-CN="-" EventHandler="DefaultSelectMenuItem" Shortcut="" Icon="  " Checked="  " Radio="  " Enabled="  " />
+		<Menu Name="All &amp;User" zh-CN="所有用户(&amp;U)" EventHandler="OnAllUser" Shortcut="" Icon="" Checked="False" Radio="False" Enabled="True" />
+		<Menu Name="-" zh-CN="-" EventHandler="DefaultSelectMenuItem" Shortcut="" Icon="  " Checked="  " Radio="  " Enabled="  " />
+		<Menu Name="All &amp;Role" zh-CN="所有角色(&amp;R)" EventHandler="OnAllRole" Shortcut="" Icon="  " Checked="False" Radio="False" Enabled="True" />		
+	</Menu>	
+	<Menu Name="Business Model" zh-CN="业务过程模型(&amp;B)" EventHandler="DefaultSelectMenuItem" Shortcut="" Icon="" Checked="False" Radio="False" Enabled="True">
+		<Menu Name="Operation" zh-CN="配置业务操作(&amp;O)" EventHandler="OnEditOperationForMenu" Shortcut="" Icon=" " Checked="False" Radio="False" Enabled="True"></Menu>
+		<Menu Name="Operation" zh-CN="业务操作模式(&amp;M)" EventHandler="OnOperationModelForMenu" Shortcut="" Icon=" " Checked="False" Radio="False" Enabled="True"></Menu>
+		<Menu Name="Operation" zh-CN="配置移交规则监控人(&amp;M)" EventHandler="OnEditRuleMonitorForMenu" Shortcut="" Icon=" " Checked="False" Radio="False" Enabled="True"></Menu>
+	</Menu>
+	<Menu Name="&amp;Window" zh-CN="窗口(&amp;W)" EventHandler="DefaultSelectMenuItem" Shortcut="" Icon="" Checked="False" Radio="False" Enabled="True">
+	</Menu>
+	<Menu Name="&amp;Help" zh-CN="帮助(&amp;H)" EventHandler="DefaultSelectMenuItem" Shortcut="" Icon="" Checked="False" Radio="False" Enabled="True">
+		<Menu Name="Event Log" zh-CN="日志查看器(&amp;V)" EventHandler="OnTiEventLog" Shortcut="" Icon="TiEventLog" Checked="False"
+			Radio="False" Enabled="True" />
+		<Menu Name="Export Event Log" zh-CN="导出本机日志(&amp;E)" EventHandler="OnExportEventLog" Shortcut="" Icon="" Checked="False"
+			Radio="False" Enabled="True" />
+		<Menu Name="-" zh-CN="-" EventHandler="DefaultSelectMenuItem" Shortcut="" Icon="" Checked="False"
+			Radio="False" Enabled="True" />
+		<Menu Name="About" zh-CN="关于(&amp;A)" EventHandler="OnAbout" Shortcut="" Icon="" Checked="False" Radio="False" Enabled="True"/>
+	</Menu>
+</MainMenu>

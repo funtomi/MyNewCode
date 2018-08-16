@@ -1,0 +1,6 @@
+<AlConfig>
+  <header name="PARTTOEW" order="0" visible="True" width="0" />
+  <header name="PARTTOPART" order="1" visible="True" width="0" />
+  <header name="PARTTOSWMX" order="2" visible="True" width="0" />
+  <header name="PARTTODOC" order="3" visible="True" width="0" />
+</AlConfig>

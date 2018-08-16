@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XML Spy v4.2 U (http://www.xmlspy.com) by xmliao (club) -->
+<MainMenu>
+	<Menu Name="&amp;System" zh-CN="系统(&amp;S)" EventHandler="DefaultSelectMenuItem" Shortcut="" Icon="" Checked="False" Radio="False" Enabled="True">
+		<Menu Name="&amp;Navigater" zh-CN="导航树(&amp;N)" EventHandler="OnNavigatorShow" Shortcut="" Icon="" Checked="False" Radio="False" Enabled="True"/>
+		<Menu Name="-" zh-CN="-" EventHandler="DefaultSelectMenuItem" Shortcut="" Icon="  " Checked="  " Radio="  " Enabled="  "/>
+		<Menu Name="Set &amp;Password" zh-CN="设置个人信息(&amp;P)" EventHandler="OnSetPassword" Shortcut="" Icon="" Checked="False" Radio="False" Enabled="True"/>
+		<Menu Name="-" zh-CN="-" EventHandler="DefaultSelectMenuItem" Shortcut="" Icon="  " Checked="  " Radio="  " Enabled="  "/>
+		<Menu Name="Exit" zh-CN="退出(&amp;X)" EventHandler="OnClose" Shortcut="" Icon="" Checked="False" Radio="False" Enabled="True"/>
+	</Menu>
+	<Menu Name="Ser&amp;ver" zh-CN="服务器(&amp;V)" EventHandler="DefaultSelectMenuItem" Shortcut="" Icon="" Checked="False" Radio="False" Enabled="True">
+		<Menu Name="&amp;DataBase Server" zh-CN="数据库服务器(&amp;D)" EventHandler="OnDataBaseServer" Shortcut="" Icon="" Checked="False" Radio="False" Enabled="True"/>
+		<Menu Name="&amp;File Server" zh-CN="文件服务器(&amp;F)" EventHandler="OnFileServer" Shortcut="" Icon="" Checked="False" Radio="False" Enabled="True"/>
+		<Menu Name="&amp;LU Server" zh-CN="自动升级服务器(&amp;U)" EventHandler="OnLUServer" Shortcut="" Icon="" Checked="False" Radio="False" Enabled="True"/>
+	</Menu>
+	<Menu Name="Data&amp;Manage" zh-CN="数据管理(&amp;M)" EventHandler="DefaultSelectMenuItem" Shortcut="" Icon="" Checked="False" Radio="False" Enabled="True">
+		<Menu Name="Ca&amp;binet" zh-CN="文件柜(&amp;B)" EventHandler="OnFileCabinet" Shortcut="" Icon="" Checked="False" Radio="False" Enabled="True"/>
+	</Menu>
+	<Menu Name="Tools" zh-CN="工具(&amp;T)" EventHandler="DefaultSelectMenuItem" Shortcut="" Icon="" Checked="False" Radio="False" Enabled="True">
+		<Menu Name="Garbage File" zh-CN="垃圾文件清理(&amp;G)" EventHandler="OnClearGarbageFile" Shortcut="" Icon="" Checked="False" Radio="False" Enabled="True"/>
+	</Menu>
+	<Menu Name="&amp;Window" zh-CN="窗口(&amp;W)" EventHandler="DefaultSelectMenuItem" Shortcut="" Icon="" Checked="False" Radio="False" Enabled="True">
+	</Menu>
+	<Menu Name="&amp;Help" zh-CN="帮助(&amp;H)" EventHandler="DefaultSelectMenuItem" Shortcut="" Icon="" Checked="False" Radio="False" Enabled="True">
+		<Menu Name="Event Log" zh-CN="日志查看器(&amp;V)" EventHandler="OnTiEventLog" Shortcut="" Icon="TiEventLog" Checked="False"
+			Radio="False" Enabled="True" />
+		<Menu Name="Export Event Log" zh-CN="导出本机日志(&amp;E)" EventHandler="OnExportEventLog" Shortcut="" Icon="" Checked="False"
+			Radio="False" Enabled="True" />
+		<Menu Name="-" zh-CN="-" EventHandler="DefaultSelectMenuItem" Shortcut="" Icon="" Checked="False"
+			Radio="False" Enabled="True" />
+		<Menu Name="About" zh-CN="关于(&amp;A)" EventHandler="OnAbout" Shortcut="" Icon="" Checked="False" Radio="False" Enabled="True"/>
+	</Menu>
+</MainMenu>

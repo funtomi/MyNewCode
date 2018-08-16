@@ -1,0 +1,28 @@
+<AlConfig>
+  <header name="ID" order="1" visible="True" width="60" />
+  <header name="CLASS" order="2" visible="True" width="60" />
+  <header name="ORDER" order="3" visible="True" width="60" />
+  <header name="STATE" order="4" visible="True" width="60" />
+  <header name="HASFILE" order="5" visible="True" width="60" />
+  <header name="SECURITYLEVEL" order="6" visible="True" width="60" />
+  <header name="INPROCESS" order="7" visible="True" width="60" />
+  <header name="LASTREVISION" order="8" visible="True" width="60" />
+  <header name="REVISION" order="9" visible="True" width="60" />
+  <header name="CREATOR" order="10" visible="True" width="60" />
+  <header name="CREATETIME" order="11" visible="True" width="60" />
+  <header name="LASTITERATION" order="12" visible="True" width="60" />
+  <header name="RELEASER" order="13" visible="True" width="60" />
+  <header name="RELEASETIME" order="14" visible="True" width="60" />
+  <header name="ITERATION.1b4bface-c7a7-9246-9628-1c09d3d550cf" order="15" visible="True" width="60" />
+  <header name="LATESTUPDATOR.3a55b549-6587-874a-981b-7aa39d1e123a" order="16" visible="True" width="60" />
+  <header name="LATESTUPDATETIME.4a151b65-af32-3048-b642-0c46ff0cbed6" order="17" visible="True" width="60" />
+  <header name="NAME.cc0ca036-0da2-ec40-8d87-ee933f282926" order="18" visible="True" width="60" />
+  <header name="CPMC.681df739-a93f-4b62-965b-097f31978d47" order="19" visible="True" width="60" />
+  <header name="CPTH.a17bbf2a-c072-43d4-a424-961826fe5ea8" order="20" visible="True" width="60" />
+  <header name="CPXH.5cf4dcbf-3141-40a0-a13e-b41042b31aca" order="21" visible="True" width="60" />
+  <header name="KFBM.9cb12879-1709-4a9c-a28e-2979ad90ca5e" order="22" visible="True" width="60" />
+  <header name="MJ.96f7a4aa-133a-4b05-8362-3fc65c853b1e" order="23" visible="True" width="60" />
+  <header name="KFBMJC.e1d3a803-58d3-4888-8215-649ac95395ea" order="24" visible="True" width="60" />
+  <header name="NF.88b0f0cf-f1d4-43b6-a6b4-61a95972882f" order="25" visible="True" width="60" />
+  <header name="XMMC.596f299c-88bd-40d9-bd88-c2bd5f1f8d92" order="26" visible="True" width="60" />
+</AlConfig>

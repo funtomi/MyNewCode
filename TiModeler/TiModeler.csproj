@@ -1,0 +1,381 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{ADCB5E52-358F-4130-946F-6A576937CFA6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Thyt.TiPLM.CLT.TiModeler</RootNamespace>
+    <AssemblyName>TiModeler</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Export\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ClientUIFramework">
+      <HintPath>..\..\..\TiModeler\bin\Debug\ClientUIFramework.DLL</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.Data.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v13.2">
+      <HintPath>..\..\..\TiModeler\bin\Debug\DevExpress.Utils.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v13.2">
+      <HintPath>..\..\..\TiModeler\bin\Debug\DevExpress.XtraEditors.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetMagic2005">
+      <HintPath>..\..\..\TiModeler\bin\Debug\DotNetMagic2005.DLL</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Thyt.TiPLM.CLT.Admin.BPM">
+      <HintPath>..\..\..\TiModeler\bin\Debug\Thyt.TiPLM.CLT.Admin.BPM.DLL</HintPath>
+    </Reference>
+    <Reference Include="Thyt.TiPLM.CLT.UIL.DeskLib">
+      <HintPath>..\..\..\TiModeler\bin\Debug\Thyt.TiPLM.CLT.UIL.DeskLib.DLL</HintPath>
+    </Reference>
+    <Reference Include="Thyt.TiPLM.Common">
+      <HintPath>..\..\..\TiModeler\bin\Debug\Thyt.TiPLM.Common.DLL</HintPath>
+    </Reference>
+    <Reference Include="Thyt.TiPLM.Common.Interface">
+      <HintPath>..\..\..\TiModeler\bin\Debug\Thyt.TiPLM.Common.Interface.DLL</HintPath>
+    </Reference>
+    <Reference Include="Thyt.TiPLM.DEL.Addin">
+      <HintPath>..\..\..\TiModeler\bin\Debug\Thyt.TiPLM.DEL.Addin.DLL</HintPath>
+    </Reference>
+    <Reference Include="Thyt.TiPLM.DEL.Admin.BPM">
+      <HintPath>..\..\..\TiModeler\bin\Debug\Thyt.TiPLM.DEL.Admin.BPM.DLL</HintPath>
+    </Reference>
+    <Reference Include="Thyt.TiPLM.DEL.Admin.DataModel">
+      <HintPath>..\..\..\TiModeler\bin\Debug\Thyt.TiPLM.DEL.Admin.DataModel.DLL</HintPath>
+    </Reference>
+    <Reference Include="Thyt.TiPLM.DEL.Admin.NewResponsibility">
+      <HintPath>..\..\..\TiModeler\bin\Debug\Thyt.TiPLM.DEL.Admin.NewResponsibility.DLL</HintPath>
+    </Reference>
+    <Reference Include="Thyt.TiPLM.DEL.Admin.View">
+      <HintPath>..\..\..\TiModeler\bin\Debug\Thyt.TiPLM.DEL.Admin.View.DLL</HintPath>
+    </Reference>
+    <Reference Include="Thyt.TiPLM.DEL.Environment">
+      <HintPath>..\..\..\TiModeler\bin\Debug\Thyt.TiPLM.DEL.Environment.DLL</HintPath>
+    </Reference>
+    <Reference Include="Thyt.TiPLM.DEL.Product">
+      <HintPath>..\..\..\TiModeler\bin\Debug\Thyt.TiPLM.DEL.Product.DLL</HintPath>
+    </Reference>
+    <Reference Include="Thyt.TiPLM.DEL.Utility">
+      <HintPath>..\..\..\TiModeler\bin\Debug\Thyt.TiPLM.DEL.Utility.DLL</HintPath>
+    </Reference>
+    <Reference Include="Thyt.TiPLM.PLL.Addin">
+      <HintPath>..\..\..\TiModeler\bin\Debug\Thyt.TiPLM.PLL.Addin.DLL</HintPath>
+    </Reference>
+    <Reference Include="Thyt.TiPLM.PLL.Admin.BPM">
+      <HintPath>..\..\..\TiModeler\bin\Debug\Thyt.TiPLM.PLL.Admin.BPM.DLL</HintPath>
+    </Reference>
+    <Reference Include="Thyt.TiPLM.PLL.Admin.DataModel">
+      <HintPath>..\..\..\TiModeler\bin\Debug\Thyt.TiPLM.PLL.Admin.DataModel.DLL</HintPath>
+    </Reference>
+    <Reference Include="Thyt.TiPLM.PLL.Admin.NewResponsibility">
+      <HintPath>..\..\..\TiModeler\bin\Debug\Thyt.TiPLM.PLL.Admin.NewResponsibility.DLL</HintPath>
+    </Reference>
+    <Reference Include="Thyt.TiPLM.PLL.Admin.View">
+      <HintPath>..\..\..\TiModeler\bin\Debug\Thyt.TiPLM.PLL.Admin.View.DLL</HintPath>
+    </Reference>
+    <Reference Include="Thyt.TiPLM.PLL.Common">
+      <HintPath>..\..\..\TiModeler\bin\Debug\Thyt.TiPLM.PLL.Common.DLL</HintPath>
+    </Reference>
+    <Reference Include="Thyt.TiPLM.PLL.Environment">
+      <HintPath>..\..\..\TiModeler\bin\Debug\Thyt.TiPLM.PLL.Environment.DLL</HintPath>
+    </Reference>
+    <Reference Include="Thyt.TiPLM.PLL.PPM">
+      <HintPath>..\..\..\TiModeler\bin\Debug\Thyt.TiPLM.PLL.PPM.DLL</HintPath>
+    </Reference>
+    <Reference Include="Thyt.TiPLM.PLL.Product2">
+      <HintPath>..\..\..\TiModeler\bin\Debug\Thyt.TiPLM.PLL.Product2.DLL</HintPath>
+    </Reference>
+    <Reference Include="Thyt.TiPLM.PLL.Project2">
+      <HintPath>..\..\..\TiModeler\bin\Debug\Thyt.TiPLM.PLL.Project2.DLL</HintPath>
+    </Reference>
+    <Reference Include="Thyt.TiPLM.PLL.Utility">
+      <HintPath>..\..\..\TiModeler\bin\Debug\Thyt.TiPLM.PLL.Utility.DLL</HintPath>
+    </Reference>
+    <Reference Include="Thyt.TiPLM.UIL.Addin">
+      <HintPath>..\..\..\TiModeler\bin\Debug\Thyt.TiPLM.UIL.Addin.DLL</HintPath>
+    </Reference>
+    <Reference Include="Thyt.TiPLM.UIL.Admin.BizOperation">
+      <HintPath>..\..\..\TiModeler\bin\Debug\Thyt.TiPLM.UIL.Admin.BizOperation.DLL</HintPath>
+    </Reference>
+    <Reference Include="Thyt.TiPLM.UIL.Admin.DataModel">
+      <HintPath>..\..\..\TiModeler\bin\Debug\Thyt.TiPLM.UIL.Admin.DataModel.DLL</HintPath>
+    </Reference>
+    <Reference Include="Thyt.TiPLM.UIL.Admin.NewResponsibility">
+      <HintPath>..\..\..\TiModeler\bin\Debug\Thyt.TiPLM.UIL.Admin.NewResponsibility.DLL</HintPath>
+    </Reference>
+    <Reference Include="Thyt.TiPLM.UIL.Admin.ViewNetwork">
+      <HintPath>..\..\..\TiModeler\bin\Debug\Thyt.TiPLM.UIL.Admin.ViewNetwork.DLL</HintPath>
+    </Reference>
+    <Reference Include="Thyt.TiPLM.UIL.Common">
+      <HintPath>..\..\..\TiModeler\bin\Debug\Thyt.TiPLM.UIL.Common.DLL</HintPath>
+    </Reference>
+    <Reference Include="Thyt.TiPLM.UIL.Controls">
+      <HintPath>..\..\..\TiModeler\bin\Debug\Thyt.TiPLM.UIL.Controls.DLL</HintPath>
+    </Reference>
+    <Reference Include="Thyt.TiPLM.UIL.Environment">
+      <HintPath>..\..\..\TiModeler\bin\Debug\Thyt.TiPLM.UIL.Environment.DLL</HintPath>
+    </Reference>
+    <Reference Include="Thyt.TiPLM.UIL.Operation">
+      <HintPath>..\..\..\TiModeler\bin\Debug\Thyt.TiPLM.UIL.Operation.DLL</HintPath>
+    </Reference>
+    <Reference Include="Thyt.TiPLM.UIL.PPM.Formula2">
+      <HintPath>..\..\..\TiModeler\bin\Debug\Thyt.TiPLM.UIL.PPM.Formula2.DLL</HintPath>
+    </Reference>
+    <Reference Include="Thyt.TiPLM.UIL.PPM.PPCardModeling">
+      <HintPath>..\..\..\TiModeler\bin\Debug\Thyt.TiPLM.UIL.PPM.PPCardModeling.DLL</HintPath>
+    </Reference>
+    <Reference Include="Thyt.TiPLM.UIL.PPM.PPSignManager">
+      <HintPath>..\..\..\TiModeler\bin\Debug\Thyt.TiPLM.UIL.PPM.PPSignManager.DLL</HintPath>
+    </Reference>
+    <Reference Include="Thyt.TiPLM.UIL.Product">
+      <HintPath>..\..\..\TiModeler\bin\Debug\Thyt.TiPLM.UIL.Product.DLL</HintPath>
+    </Reference>
+    <Reference Include="Thyt.TiPLM.UIL.Product.Common">
+      <HintPath>..\..\..\TiModeler\bin\Debug\Thyt.TiPLM.UIL.Product.Common.DLL</HintPath>
+    </Reference>
+    <Reference Include="Thyt.TiPLM.UIL.Product.DataCheck">
+      <HintPath>..\..\..\TiModeler\bin\Debug\Thyt.TiPLM.UIL.Product.DataCheck.DLL</HintPath>
+    </Reference>
+    <Reference Include="Thyt.TiPLM.UIL.Product.DataView">
+      <HintPath>..\..\..\TiModeler\bin\Debug\Thyt.TiPLM.UIL.Product.DataView.DLL</HintPath>
+    </Reference>
+    <Reference Include="Thyt.TiPLM.UIL.Project2">
+      <HintPath>..\..\..\TiModeler\bin\Debug\Thyt.TiPLM.UIL.Project2.DLL</HintPath>
+    </Reference>
+    <Reference Include="Thyt.TiPLM.UIL.Report">
+      <HintPath>..\..\..\TiModeler\bin\Debug\Thyt.TiPLM.UIL.Report.DLL</HintPath>
+    </Reference>
+    <Reference Include="Thyt.TiPLM.UIL.Report.CustomTemplate">
+      <HintPath>..\..\..\TiModeler\bin\Debug\Thyt.TiPLM.UIL.Report.CustomTemplate.DLL</HintPath>
+    </Reference>
+    <Reference Include="Thyt.TiPLM.UIL.TiMessage">
+      <HintPath>..\..\..\TiModeler\bin\Debug\Thyt.TiPLM.UIL.TiMessage.DLL</HintPath>
+    </Reference>
+    <Reference Include="Thyt.TiPLM.UIL.Utility">
+      <HintPath>..\..\..\TiModeler\bin\Debug\Thyt.TiPLM.UIL.Utility.DLL</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Addin\FrmAddin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Addin\FrmAddin.Designer.cs">
+      <DependentUpon>FrmAddin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppMain.cs" />
+    <Compile Include="BPModel\ReUndo\RULine.cs" />
+    <Compile Include="BPModel\ReUndo\RUMutiShape.cs" />
+    <Compile Include="BPModel\ReUndo\RUObject.cs" />
+    <Compile Include="BPModel\ReUndo\RURouteNode.cs" />
+    <Compile Include="BPModel\ReUndo\RUSENode.cs" />
+    <Compile Include="BPModel\ReUndo\RUTaskNode.cs" />
+    <Compile Include="BPModel\ViewPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BPModel\ViewPanel.Designer.cs">
+      <DependentUpon>ViewPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BPModel\WFTEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BPModel\WFTEditor.Designer.cs">
+      <DependentUpon>WFTEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FileModel\FrmBrowser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FileModel\FrmBrowser.Designer.cs">
+      <DependentUpon>FrmBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FileModel\FrmFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FileModel\FrmFile.Designer.cs">
+      <DependentUpon>FrmFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FileModel\FrmTool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FileModel\FrmTool.Designer.cs">
+      <DependentUpon>FrmTool.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\FrmFolder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Folder\FrmFolder.Designer.cs">
+      <DependentUpon>FrmFolder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBPNavigator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBPNavigator.Designer.cs">
+      <DependentUpon>FrmBPNavigator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNavigator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNavigator.Designer.cs">
+      <DependentUpon>FrmNavigator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OpenAdminRole.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResponsibilityEventInit.cs" />
+    <Compile Include="TagForTiModeler.cs" />
+    <Compile Include="UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModel\FrmViewList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewModel\FrmViewList.Designer.cs">
+      <DependentUpon>FrmViewList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModel\FrmViewModel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewModel\FrmViewModel.Designer.cs">
+      <DependentUpon>FrmViewModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModel\ViewFrameMenuProcess.cs" />
+    <Compile Include="ViewModel\VMFrame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewModel\VMFrame.Designer.cs">
+      <DependentUpon>VMFrame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModel\VMViewPanal.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ViewModel\VMViewPanal.Designer.cs">
+      <DependentUpon>VMViewPanal.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Addin\FrmAddin.resx">
+      <DependentUpon>FrmAddin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BPModel\ViewPanel.resx">
+      <DependentUpon>ViewPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BPModel\WFTEditor.resx">
+      <DependentUpon>WFTEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FileModel\FrmBrowser.resx">
+      <DependentUpon>FrmBrowser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FileModel\FrmFile.resx">
+      <DependentUpon>FrmFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FileModel\FrmTool.resx">
+      <DependentUpon>FrmTool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Folder\FrmFolder.resx">
+      <DependentUpon>FrmFolder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBPNavigator.resx">
+      <DependentUpon>FrmBPNavigator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNavigator.resx">
+      <DependentUpon>FrmNavigator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ViewModel\FrmViewList.resx">
+      <DependentUpon>FrmViewList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewModel\FrmViewModel.resx">
+      <DependentUpon>FrmViewModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewModel\VMFrame.resx">
+      <DependentUpon>VMFrame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewModel\VMViewPanal.resx">
+      <DependentUpon>VMViewPanal.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,36 @@
+<AlConfig>
+  <header name="ID" order="1" visible="True" width="60" />
+  <header name="CLASS" order="2" visible="True" width="60" />
+  <header name="ORDER" order="3" visible="True" width="60" />
+  <header name="STATE" order="4" visible="True" width="60" />
+  <header name="HASFILE" order="5" visible="True" width="60" />
+  <header name="SECURITYLEVEL" order="6" visible="True" width="60" />
+  <header name="INPROCESS" order="7" visible="True" width="60" />
+  <header name="LASTREVISION" order="8" visible="True" width="60" />
+  <header name="REVISION" order="9" visible="True" width="60" />
+  <header name="CREATOR" order="10" visible="True" width="60" />
+  <header name="CREATETIME" order="11" visible="True" width="60" />
+  <header name="LASTITERATION" order="12" visible="True" width="60" />
+  <header name="RELEASER" order="13" visible="True" width="60" />
+  <header name="RELEASETIME" order="14" visible="True" width="60" />
+  <header name="RIGHTREVISION.2618363c-ca62-4120-9b39-32cfbbf9c397" order="15" visible="True" width="60" />
+  <header name="LEFTCLASS.dd0c8341-18b3-4512-9352-4447ae21bfdd" order="16" visible="True" width="60" />
+  <header name="RIGHTCLASS.c78ab58d-03d0-4828-bf8f-707045047609" order="17" visible="True" width="60" />
+  <header name="CREATOR.268de168-58b7-4764-91ee-9b48f45bf8d7" order="18" visible="True" width="60" />
+  <header name="ISDEFAULT.dfd23de4-ad8e-d94a-907c-e939ec47ad5d" order="19" visible="True" width="60" />
+  <header name="ISREVERSED.91dc6dc4-25d0-104b-b438-500c011816ae" order="20" visible="True" width="60" />
+  <header name="ITERATION.1b4bface-c7a7-9246-9628-1c09d3d550cf" order="21" visible="True" width="60" />
+  <header name="LATESTUPDATOR.3a55b549-6587-874a-981b-7aa39d1e123a" order="22" visible="True" width="60" />
+  <header name="LATESTUPDATETIME.4a151b65-af32-3048-b642-0c46ff0cbed6" order="23" visible="True" width="60" />
+  <header name="NAME.cc0ca036-0da2-ec40-8d87-ee933f282926" order="24" visible="True" width="60" />
+  <header name="BOMSFGG.f6b4cac2-0c3c-4302-8a06-b204239696ac" order="25" visible="True" width="60" />
+  <header name="CX.3900b764-687b-4d94-9095-9043fac4c745" order="26" visible="True" width="60" />
+  <header name="TZID.f8383af7-c955-4393-a119-641c47d37efe" order="27" visible="True" width="60" />
+  <header name="TZNAME.201b75d1-9fce-4a10-a4c2-56f25cbed623" order="28" visible="True" width="60" />
+  <header name="CPMC.f74274d6-bdc7-497a-bff4-2272d28f967a" order="29" visible="True" width="60" />
+  <header name="CPTH.54e94abe-fd6a-43b5-99e0-d05352bc718c" order="30" visible="True" width="60" />
+  <header name="TH.ff2ee120-de01-4de4-aab5-e64c9200bf60" order="31" visible="True" width="60" />
+  <header name="ZZYZDW.0ab92fb9-7998-413b-bb56-3858dde53807" order="32" visible="True" width="60" />
+  <header name="BL.953d19de-3f06-4fbd-88f0-53c1198096e0" order="33" visible="True" width="60" />
+  <header name="MJ.6e4351c9-caf6-4184-9653-f81813a8ac2c" order="34" visible="True" width="60" />
+</AlConfig>

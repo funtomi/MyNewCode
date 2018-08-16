@@ -1,0 +1,27 @@
+<AlConfig>
+  <header name="ID" order="1" visible="True" width="60" />
+  <header name="CLASS" order="2" visible="True" width="60" />
+  <header name="ORDER" order="3" visible="True" width="60" />
+  <header name="STATE" order="4" visible="True" width="60" />
+  <header name="HASFILE" order="5" visible="True" width="60" />
+  <header name="SECURITYLEVEL" order="6" visible="True" width="60" />
+  <header name="INPROCESS" order="7" visible="True" width="60" />
+  <header name="LASTREVISION" order="8" visible="True" width="60" />
+  <header name="REVISION" order="9" visible="True" width="60" />
+  <header name="CREATOR" order="10" visible="True" width="60" />
+  <header name="CREATETIME" order="11" visible="True" width="60" />
+  <header name="LASTITERATION" order="12" visible="True" width="60" />
+  <header name="RELEASER" order="13" visible="True" width="60" />
+  <header name="RELEASETIME" order="14" visible="True" width="60" />
+  <header name="CREATOR.dcdfede3-b2ee-9643-8d28-a8292ac006b9" order="15" visible="True" width="60" />
+  <header name="LEFTCLASS.9866bfac-29d9-ca4a-9f4a-5b533fa25e6c" order="16" visible="True" width="60" />
+  <header name="RIGHTCLASS.8b3d528a-417d-9848-91e4-438a06bec470" order="17" visible="True" width="60" />
+  <header name="RIGHTREVISION.82c77a53-6c63-ac4c-8d8c-a5ba7cbd1fd3" order="18" visible="True" width="60" />
+  <header name="ITERATION.1b4bface-c7a7-9246-9628-1c09d3d550cf" order="19" visible="True" width="60" />
+  <header name="LATESTUPDATOR.3a55b549-6587-874a-981b-7aa39d1e123a" order="20" visible="True" width="60" />
+  <header name="LATESTUPDATETIME.4a151b65-af32-3048-b642-0c46ff0cbed6" order="21" visible="True" width="60" />
+  <header name="NAME.cc0ca036-0da2-ec40-8d87-ee933f282926" order="22" visible="True" width="60" />
+  <header name="BL.953d19de-3f06-4fbd-88f0-53c1198096e0" order="23" visible="True" width="60" />
+  <header name="MJ.96f7a4aa-133a-4b05-8362-3fc65c853b1e" order="24" visible="True" width="60" />
+  <header name="NF.88b0f0cf-f1d4-43b6-a6b4-61a95972882f" order="25" visible="True" width="60" />
+</AlConfig>

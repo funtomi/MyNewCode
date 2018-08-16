@@ -1,0 +1,7 @@
+Part Number
+Name
+ERP NUM
+Value
+Description
+Manufacturer
+Manufacturer Part Number

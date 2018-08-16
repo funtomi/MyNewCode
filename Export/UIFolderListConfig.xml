@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfFolderListLayout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <FolderListLayout columnKey="id" columnName="代号" columnWidth="285" />
+  <FolderListLayout columnKey="name" columnName="名称" columnWidth="120" />
+  <FolderListLayout columnKey="classname" columnName="类型" columnWidth="256" />
+  <FolderListLayout columnKey="state" columnName="状态" columnWidth="50" />
+  <FolderListLayout columnKey="version" columnName="版本" columnWidth="40" />
+  <FolderListLayout columnKey="iteration" columnName="迭代" columnWidth="40" />
+  <FolderListLayout columnKey="creator" columnName="创建人" columnWidth="80" />
+  <FolderListLayout columnKey="createtime" columnName="创建时间" columnWidth="120" />
+  <FolderListLayout columnKey="updator" columnName="最近更新人" columnWidth="80" />
+  <FolderListLayout columnKey="updatetime" columnName="最近更新时间" columnWidth="120" />
+  <FolderListLayout columnKey="holder" columnName="持有人" columnWidth="100" />
+  <FolderListLayout columnKey="releasetime" columnName="定版时间" columnWidth="120" />
+  <FolderListLayout columnKey="zhaiyao" columnName="摘要信息" columnWidth="150" />
+  <FolderListLayout columnKey="hasfile" columnName="有源文件" columnWidth="100" />
+  <FolderListLayout columnKey="inflow" columnName="在流程中" columnWidth="80" />
+  <FolderListLayout columnKey="level" columnName="安全级别" columnWidth="100" />
+  <FolderListLayout columnKey="project" columnName="所属项目组" columnWidth="80" />
+</ArrayOfFolderListLayout>

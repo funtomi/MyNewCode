@@ -1,0 +1,486 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="toolBarBunCursor.Name" xml:space="preserve">
+    <value>toolBarBunCursor</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="hsbParent.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="hsbParent.Size" type="System.Drawing.Size, System.Drawing">
+    <value>332, 16</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="panelMam.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;cmiNodeProperty.Name" xml:space="preserve">
+    <value>cmiNodeProperty</value>
+  </data>
+  <data name="&gt;&gt;cmiNodeProperty.Type" xml:space="preserve">
+    <value>Thyt.TiPLM.CLT.UIL.DeskLib.Menus.MenuItemEx, Thyt.TiPLM.CLT.UIL.DeskLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="toolBarBunTaskNode.ImageIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;cmiNodeCopy.Name" xml:space="preserve">
+    <value>cmiNodeCopy</value>
+  </data>
+  <data name="&gt;&gt;cmiNodeCopy.Type" xml:space="preserve">
+    <value>Thyt.TiPLM.CLT.UIL.DeskLib.Menus.MenuItemEx, Thyt.TiPLM.CLT.UIL.DeskLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;hsbParent.Parent" xml:space="preserve">
+    <value>panelMam</value>
+  </data>
+  <data name="hsbParent.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 306</value>
+  </data>
+  <data name="&gt;&gt;saveFileDialog1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SaveFileDialog, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;saveFileDialog1.Name" xml:space="preserve">
+    <value>saveFileDialog1</value>
+  </data>
+  <data name="vsbParent.Location" type="System.Drawing.Point, System.Drawing">
+    <value>332, 0</value>
+  </data>
+  <data name="tbrForWin.ButtonSize" type="System.Drawing.Size, System.Drawing">
+    <value>25, 25</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>工作流模板编辑器</value>
+  </data>
+  <data name="toolBarBunTaskNode.Name" xml:space="preserve">
+    <value>toolBarBunTaskNode</value>
+  </data>
+  <data name="&gt;&gt;cmiSaveToDB.Type" xml:space="preserve">
+    <value>Thyt.TiPLM.CLT.UIL.DeskLib.Menus.MenuItemEx, Thyt.TiPLM.CLT.UIL.DeskLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cmiSaveToDB.Name" xml:space="preserve">
+    <value>cmiSaveToDB</value>
+  </data>
+  <data name="&gt;&gt;toolBarBunUndo.Name" xml:space="preserve">
+    <value>toolBarBunUndo</value>
+  </data>
+  <data name="&gt;&gt;toolBarBunUndo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolBarButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="cmiLineFalse.Text" xml:space="preserve">
+    <value>假</value>
+  </data>
+  <data name="&gt;&gt;toolBarBunTaskNode.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolBarButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolBarBunTaskNode.Name" xml:space="preserve">
+    <value>toolBarBunTaskNode</value>
+  </data>
+  <data name="menuItem3.Text" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="&gt;&gt;cmuLineProperty.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenu, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmuLineProperty.Name" xml:space="preserve">
+    <value>cmuLineProperty</value>
+  </data>
+  <data name="&gt;&gt;vsbParent.Parent" xml:space="preserve">
+    <value>panelMam</value>
+  </data>
+  <data name="menuItem1.Text" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>375, 324</value>
+  </data>
+  <data name="menuItem7.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;toolBarSeprate.Name" xml:space="preserve">
+    <value>toolBarSeprate</value>
+  </data>
+  <data name="&gt;&gt;toolBarSeprate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolBarButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmiLineTrue.Type" xml:space="preserve">
+    <value>Thyt.TiPLM.CLT.UIL.DeskLib.Menus.MenuItemEx, Thyt.TiPLM.CLT.UIL.DeskLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cmiLineTrue.Name" xml:space="preserve">
+    <value>cmiLineTrue</value>
+  </data>
+  <data name="tbrForWin.DropDownArrows" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;panelMam.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="cmiClose.Text" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="&gt;&gt;cmiImageOutput.Type" xml:space="preserve">
+    <value>Thyt.TiPLM.CLT.UIL.DeskLib.Menus.MenuItemEx, Thyt.TiPLM.CLT.UIL.DeskLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cmiImageOutput.Name" xml:space="preserve">
+    <value>cmiImageOutput</value>
+  </data>
+  <data name="$this.AutoScaleBaseSize" type="System.Drawing.Size, System.Drawing">
+    <value>6, 14</value>
+  </data>
+  <data name="cmiVerify.Text" xml:space="preserve">
+    <value>模型验证</value>
+  </data>
+  <data name="&gt;&gt;vsbParent.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;vsbParent.Type" xml:space="preserve">
+    <value>System.Windows.Forms.VScrollBar, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;vsbParent.Name" xml:space="preserve">
+    <value>vsbParent</value>
+  </data>
+  <data name="&gt;&gt;panelMam.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="toolBarBunRedo.Name" xml:space="preserve">
+    <value>toolBarBunRedo</value>
+  </data>
+  <data name="tbrForWin.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="cmiProProperty.Text" xml:space="preserve">
+    <value>过程属性</value>
+  </data>
+  <data name="cmiSaveToDB.Text" xml:space="preserve">
+    <value>保存到数据库</value>
+  </data>
+  <data name="&gt;&gt;toolBarBunCursor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolBarButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolBarBunCursor.Name" xml:space="preserve">
+    <value>toolBarBunCursor</value>
+  </data>
+  <data name="hsbParent.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="panelMam.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 0</value>
+  </data>
+  <data name="&gt;&gt;menuItem3.Type" xml:space="preserve">
+    <value>Thyt.TiPLM.CLT.UIL.DeskLib.Menus.MenuItemEx, Thyt.TiPLM.CLT.UIL.DeskLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;menuItem3.Name" xml:space="preserve">
+    <value>menuItem3</value>
+  </data>
+  <data name="tbrForWin.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="panelMam.Size" type="System.Drawing.Size, System.Drawing">
+    <value>350, 324</value>
+  </data>
+  <data name="panelMam.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="&gt;&gt;menuItem1.Type" xml:space="preserve">
+    <value>Thyt.TiPLM.CLT.UIL.DeskLib.Menus.MenuItemEx, Thyt.TiPLM.CLT.UIL.DeskLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;menuItem1.Name" xml:space="preserve">
+    <value>menuItem1</value>
+  </data>
+  <data name="&gt;&gt;toolBarBunRouteNode.Name" xml:space="preserve">
+    <value>toolBarBunRouteNode</value>
+  </data>
+  <data name="&gt;&gt;toolBarBunRouteNode.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolBarButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmiLineFalse.Type" xml:space="preserve">
+    <value>Thyt.TiPLM.CLT.UIL.DeskLib.Menus.MenuItemEx, Thyt.TiPLM.CLT.UIL.DeskLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cmiLineFalse.Name" xml:space="preserve">
+    <value>cmiLineFalse</value>
+  </data>
+  <data name="tbrForWin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;menuItem7.Type" xml:space="preserve">
+    <value>Thyt.TiPLM.CLT.UIL.DeskLib.Menus.MenuItemEx, Thyt.TiPLM.CLT.UIL.DeskLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;menuItem7.Name" xml:space="preserve">
+    <value>menuItem7</value>
+  </data>
+  <data name="vsbParent.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="toolBarSeprate.Name" xml:space="preserve">
+    <value>toolBarSeprate</value>
+  </data>
+  <data name="&gt;&gt;tbrForWin.Name" xml:space="preserve">
+    <value>tbrForWin</value>
+  </data>
+  <data name="&gt;&gt;tbrForWin.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolBar, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmiSaveToLocal.Type" xml:space="preserve">
+    <value>Thyt.TiPLM.CLT.UIL.DeskLib.Menus.MenuItemEx, Thyt.TiPLM.CLT.UIL.DeskLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cmiSaveToLocal.Name" xml:space="preserve">
+    <value>cmiSaveToLocal</value>
+  </data>
+  <data name="menuItemSeperate.Text" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="&gt;&gt;cmiVerify.Type" xml:space="preserve">
+    <value>Thyt.TiPLM.CLT.UIL.DeskLib.Menus.MenuItemEx, Thyt.TiPLM.CLT.UIL.DeskLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cmiVerify.Name" xml:space="preserve">
+    <value>cmiVerify</value>
+  </data>
+  <data name="cmiSaveToLocal.Text" xml:space="preserve">
+    <value>保存到本地</value>
+  </data>
+  <data name="cmiSaveToLocal.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;toolBarBunRedo.Name" xml:space="preserve">
+    <value>toolBarBunRedo</value>
+  </data>
+  <data name="&gt;&gt;toolBarBunRedo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolBarButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="cmiLineTrue.Text" xml:space="preserve">
+    <value>真</value>
+  </data>
+  <data name="tbrForWin.Appearance" type="System.Windows.Forms.ToolBarAppearance, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="cmiNodeProperty.Text" xml:space="preserve">
+    <value>节点属性</value>
+  </data>
+  <data name="cmiNodeCopy.Text" xml:space="preserve">
+    <value>复制</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>WFTEditor</value>
+  </data>
+  <data name="&gt;&gt;panelMam.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelMam.Name" xml:space="preserve">
+    <value>panelMam</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmiProProperty.Name" xml:space="preserve">
+    <value>cmiProProperty</value>
+  </data>
+  <data name="&gt;&gt;cmiProProperty.Type" xml:space="preserve">
+    <value>Thyt.TiPLM.CLT.UIL.DeskLib.Menus.MenuItemEx, Thyt.TiPLM.CLT.UIL.DeskLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="vsbParent.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tbrForWin.ShowToolTips" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="toolBarBunUndo.Name" xml:space="preserve">
+    <value>toolBarBunUndo</value>
+  </data>
+  <data name="&gt;&gt;cmiClose.Type" xml:space="preserve">
+    <value>Thyt.TiPLM.CLT.UIL.DeskLib.Menus.MenuItemEx, Thyt.TiPLM.CLT.UIL.DeskLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cmiClose.Name" xml:space="preserve">
+    <value>cmiClose</value>
+  </data>
+  <data name="cmiNodePaste.Text" xml:space="preserve">
+    <value>粘贴</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="cmiImageOutput.Text" xml:space="preserve">
+    <value>输出图片</value>
+  </data>
+  <data name="&gt;&gt;menuItemSeperate.Name" xml:space="preserve">
+    <value>menuItemSeperate</value>
+  </data>
+  <data name="&gt;&gt;menuItemSeperate.Type" xml:space="preserve">
+    <value>Thyt.TiPLM.CLT.UIL.DeskLib.Menus.MenuItemEx, Thyt.TiPLM.CLT.UIL.DeskLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cmuProcessProperty.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenu, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmuProcessProperty.Name" xml:space="preserve">
+    <value>cmuProcessProperty</value>
+  </data>
+  <data name="&gt;&gt;cmiNodePaste.Type" xml:space="preserve">
+    <value>Thyt.TiPLM.CLT.UIL.DeskLib.Menus.MenuItemEx, Thyt.TiPLM.CLT.UIL.DeskLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cmiNodePaste.Name" xml:space="preserve">
+    <value>cmiNodePaste</value>
+  </data>
+  <data name="saveFileDialog1.Filter" xml:space="preserve">
+    <value>PNG文件|*.png|JPEG文件|*.jpg</value>
+  </data>
+  <data name="&gt;&gt;tbrForWin.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="vsbParent.Size" type="System.Drawing.Size, System.Drawing">
+    <value>16, 322</value>
+  </data>
+  <data name="&gt;&gt;tbrForWin.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="vsbParent.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="&gt;&gt;hsbParent.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tbrForWin.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="tbrForWin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>25, 324</value>
+  </data>
+  <data name="&gt;&gt;cmuNodeProperty.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenu, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmuNodeProperty.Name" xml:space="preserve">
+    <value>cmuNodeProperty</value>
+  </data>
+  <data name="toolBarBunRouteNode.ImageIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;hsbParent.Name" xml:space="preserve">
+    <value>hsbParent</value>
+  </data>
+  <data name="&gt;&gt;hsbParent.Type" xml:space="preserve">
+    <value>System.Windows.Forms.HScrollBar, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="toolBarSeprate.Style" type="System.Windows.Forms.ToolBarButtonStyle, System.Windows.Forms">
+    <value>Separator</value>
+  </data>
+  <data name="hsbParent.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="toolBarBunRouteNode.Name" xml:space="preserve">
+    <value>toolBarBunRouteNode</value>
+  </data>
+</root>

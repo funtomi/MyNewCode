@@ -1,0 +1,62 @@
+VERSION 120
+EDIT UG_GATEWAY_MAIN_MENUBAR
+
+BEFORE UG_HELP
+CASCADE_BUTTON TiPLM
+LABEL TiPLM集成(&L)
+END_OF_BEFORE
+
+MENU TiPLM
+
+BUTTON TiPLM_SearchPart
+LABEL 检索修改(&M)
+ACTIONS SearchPart
+
+BUTTON TiPLM_AddPart2Assembly
+LABEL 添加子件(&Z)
+ACTIONS AddPart2Assembly
+
+BUTTON TiPLM_PutinCurrent
+LABEL 提交当前文件(&S)
+ACTIONS PutinCurrent
+
+BUTTON TiPLM_PutinMulti
+LABEL 提交多层文件(&D)
+ACTIONS PutinMulti
+
+BUTTON TiPLM_PutinAll
+LABEL 提交所有文件(&A)
+ACTIONS PutinAll
+
+BUTTON TiPLM_ShowDesktop
+LABEL 工作桌面(&T)
+ACTIONS ShowDesktop
+
+SEPARATOR
+
+BUTTON TiPLM_EditAttrCurrent
+LABEL 编辑当前文件(&E)
+ACTIONS EditAttrCurrent
+
+BUTTON TiPLM_EditAttrMulti
+LABEL 编辑多层文件(&B)
+ACTIONS EditAttrMulti
+
+BUTTON TiPLM_EditAttrAll
+LABEL 编辑所有文件(&F)
+ACTIONS EditAttrAll
+
+BUTTON TiPLM_CatchCurrent
+LABEL 提取当前文件(&C)
+ACTIONS CatchCurrent
+
+BUTTON TiPLM_CatchMulti
+LABEL 提取多层文件(&L)
+ACTIONS CatchMulti
+
+BUTTON TiPLM_CatchAll
+LABEL 提取所有文件(&W)
+ACTIONS CatchAll
+
+END_OF_MENU
+

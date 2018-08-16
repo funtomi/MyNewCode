@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<NotifierConfig>
+  <RefreshTime Type="1" IntervalTime="5" />
+  <Addins>
+    <AddinOid>6fd349b2-f796-4f1f-885a-3ccde30e19ae</AddinOid>
+    <AddinOid>f6b36622-1b3e-4f87-921b-05cc52076dfb</AddinOid>
+  </Addins>
+</NotifierConfig>
