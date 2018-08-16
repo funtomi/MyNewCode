@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8E8F4F2F-FB73-4BE3-BF0B-75AADE360932}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>Thyt.TiPLM.PLL.Common</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Export\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>Thyt.TiPLM.PLL</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="Thyt.TiPLM.Common.Interface" />
+    <Reference Include="System.Data" />
+    <Reference Include="Thyt.TiPLM.Common.Helper" />
+    <Reference Include="Thyt.TiPLM.DEL.Environment" />
+    <Reference Include="Thyt.TiPLM.DEL.Product" />
+    <Reference Include="Thyt.TiPLM.Common" />
+    <Reference Include="Interop.CheckLib" />
+    <Reference Include="Interop.SecurityLib" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Thyt.TiPLM.DEL.Project2" />
+    <Reference Include="Thyt.TiPLM.DEL.Report" />
+    <Reference Include="System" />
+    <Reference Include="System.Windows.Forms" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="Common\IProgressCallback.cs" />
+    <Compile Include="Common\ProgressBarCallback.cs" />
+    <Compile Include="Common\PLMCacheObject.cs" />
+    <Compile Include="Common\Performance.cs" />
+    <Compile Include="Common\PLHelper.cs" />
+    <Compile Include="Environment\PLLogger.cs" />
+    <Compile Include="Common\PLSecurityDisk.cs" />
+    <Compile Include="Common\PLSplashImage.cs" />
+    <Compile Include="Environment\PLSystemParam.cs" />
+    <Compile Include="Common\ProcProxy.cs" />
+    <Compile Include="Common\RequestServiceCounter.cs" />
+    <Compile Include="Common\RemoteProxy.cs" />
+    <Compile Include="Common\ServiceSwitches.cs" />
+  </ItemGroup>
+</Project>

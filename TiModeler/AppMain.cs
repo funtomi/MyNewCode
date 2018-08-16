@@ -1,5 +1,4 @@
-﻿namespace Thyt.TiPLM.CLT.TiModeler {
-    using ClientUIFramework;
+﻿    using ClientUIFramework;
     using System;
     using System.Threading;
     using System.Windows.Forms;
@@ -16,6 +15,7 @@
     using Thyt.TiPLM.UIL.Project2;
     using Thyt.TiPLM.UIL.TiMessage;
 
+namespace Thyt.TiPLM.CLT.TiModeler {
     public class AppMain {
         private static void LogOff() {
             try {
