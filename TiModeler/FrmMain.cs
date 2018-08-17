@@ -2252,143 +2252,47 @@ namespace Thyt.TiPLM.CLT.TiModeler
             base.Controls.Add(TiModelerUIContainer.statusBar);
         }
 
-        private void CreateTreeView()
-        {
-            if (ConstCommon.FUNCTION_IORS)
-            {
-                if (PLGrantPerm.CanDoFunctionOperation(ClientData.LogonUser.Oid, "Fun_TiModeler_ECMS_MANAGEMENT") == 1)
-                {
-                    this.allowEcmsDataManagement = true;
-                }
+        private void CreateTreeView() {
+            if (ConstCommon.FUNCTION_IORS) {
+                this.allowEcmsDataManagement = true;
                 PLAdminRole role = new PLAdminRole();
-                if (role.IsExistAdminRoleMember(ClientData.LogonUser.Oid))
-                {
-                    this.allowConfigOrgModel = true;
-                }
-                if (PLGrantPerm.CanDoFunctionOperation(ClientData.LogonUser.Oid, "Fun_TiModeler_CONFIG_PROCESS_DEFINATION") == 1)
-                {
-                    this.allowConfigBPM = true;
-                }
-                if (PLGrantPerm.CanDoClassOperation(ClientData.LogonUser.Oid, "BPM_PROCESS_DEFINITION", Guid.Empty, "ClaRel_DELETE") == 1)
-                {
-                    this.allowDelProcessManagement = true;
-                }
-                if (PLGrantPerm.CanDoClassOperation(ClientData.LogonUser.Oid, "BPM_PROCESS_DEFINITION", Guid.Empty, "ClaRel_CREATE") == 1)
-                {
-                    this.allowCreateProcessManagement = true;
-                }
-                if (PLGrantPerm.CanDoClassOperation(ClientData.LogonUser.Oid, "BPM_PROCESS_DEFINITION", Guid.Empty, "ClaRel_BROWSE") == 1)
-                {
-                    this.allowBrowseProcessManagement = true;
-                }
-                if (PLGrantPerm.CanDoClassOperation(ClientData.LogonUser.Oid, "BPM_PROCESS_DEFINITION", Guid.Empty, "ClaRel_MODIFY") == 1)
-                {
-                    this.allowModifyProcessManagement = true;
-                }
+                this.allowConfigOrgModel = true;
+                this.allowConfigBPM = true;
+                this.allowDelProcessManagement = true;
+                this.allowCreateProcessManagement = true;
+                this.allowBrowseProcessManagement = true;
+                this.allowModifyProcessManagement = true;
+            } else {
+                this.allowConfigDataModel = true;
+                this.allowViewManagement = true;
+                this.allowConfigBrowser = true;
+                this.allowConfigFileType = true;
+                this.allowConfigTool = true;
             }
-            else
-            {
-                if (PLGrantPerm.CanDoFunctionOperation(ClientData.LogonUser.Oid, "Fun_TiModeler_DATAMODEL_CONFIG") == 1)
-                {
-                    this.allowConfigDataModel = true;
-                }
-                if (PLGrantPerm.CanDoFunctionOperation(ClientData.LogonUser.Oid, "Fun_TiModeler_VIEW_MANAGE") == 1)
-                {
-                    this.allowViewManagement = true;
-                }
-                if (PLGrantPerm.CanDoFunctionOperation(ClientData.LogonUser.Oid, "Fun_TiModeler_BROWER_CONFIG") == 1)
-                {
-                    this.allowConfigBrowser = true;
-                }
-                if (PLGrantPerm.CanDoFunctionOperation(ClientData.LogonUser.Oid, "Fun_TiModeler_FILETYPE_CONFIG") == 1)
-                {
-                    this.allowConfigFileType = true;
-                }
-                if (PLGrantPerm.CanDoFunctionOperation(ClientData.LogonUser.Oid, "Fun_TiModeler_TOOL_CONFIG") == 1)
-                {
-                    this.allowConfigTool = true;
-                }
-                if (PLGrantPerm.CanDoFunctionOperation(ClientData.LogonUser.Oid, "Fun_TiModeler_LIFECYCLE_MANAGEMENT") == 1)
-                {
-                    this.allowLifeCycleManage = true;
-                }
-                if (PLGrantPerm.CanDoFunctionOperation(ClientData.LogonUser.Oid, "Fun_TiModeler_EVENT_MANAGEMENT") == 1)
-                {
-                    this.allowEventManagement = true;
-                }
-                if (PLGrantPerm.CanDoFunctionOperation(ClientData.LogonUser.Oid, "Fun_TiCAPP_FORMULA_MANAGEMENT") == 1)
-                {
-                    this.allowFormulaManagement = true;
-                }
-                if (PLGrantPerm.CanDoClassByAdminRole(ClientData.LogonUser.Oid, PLMRootClassName.INTEGRATIONRULE.ToString()))
-                {
-                    this.allowDataIntegrateRule = true;
-                }
-                if (PLGrantPerm.CanDoFunctionOperation(ClientData.LogonUser.Oid, "Fun_TiModeler_ADDIN_MANAGEMENT") == 1)
-                {
-                    this.allowAddinManagement = true;
-                }
-                if (PLGrantPerm.CanDoFunctionOperation(ClientData.LogonUser.Oid, "Fun_TiCAPP_FORM_TEMPLATE") == 1)
-                {
-                    this.allowConfigFormTemplate = true;
-                }
-                if (PLGrantPerm.CanDoFunctionOperation(ClientData.LogonUser.Oid, "Fun_TiCAPP_OUTPUT_TEMPLATE") == 1)
-                {
-                    this.allowConfigOutputTemplate = true;
-                }
-                if (PLGrantPerm.CanDoFunctionOperation(ClientData.LogonUser.Oid, "Fun_TiCAPP_CARD_TEMPLATE") == 1)
-                {
-                    this.allowConfigPPCardTemplate = true;
-                }
-                if (PLGrantPerm.CanDoFunctionOperation(ClientData.LogonUser.Oid, "Fun_TiModeler_CONFIG_PROCESS_DEFINATION") == 1)
-                {
-                    this.allowConfigBPM = true;
-                }
-                if (PLGrantPerm.CanDoClassOperation(ClientData.LogonUser.Oid, "BPM_PROCESS_DEFINITION", Guid.Empty, "ClaRel_DELETE") == 1)
-                {
-                    this.allowDelProcessManagement = true;
-                }
-                if (PLGrantPerm.CanDoClassOperation(ClientData.LogonUser.Oid, "BPM_PROCESS_DEFINITION", Guid.Empty, "ClaRel_CREATE") == 1)
-                {
-                    this.allowCreateProcessManagement = true;
-                }
-                if (PLGrantPerm.CanDoClassOperation(ClientData.LogonUser.Oid, "BPM_PROCESS_DEFINITION", Guid.Empty, "ClaRel_BROWSE") == 1)
-                {
-                    this.allowBrowseProcessManagement = true;
-                }
-                if (PLGrantPerm.CanDoClassOperation(ClientData.LogonUser.Oid, "BPM_PROCESS_DEFINITION", Guid.Empty, "ClaRel_MODIFY") == 1)
-                {
-                    this.allowModifyProcessManagement = true;
-                }
-                if (PLGrantPerm.CanDoFunctionOperation(ClientData.LogonUser.Oid, "Fun_TiModeler_FOLDER_MANAGE") == 1)
-                {
-                    this.allowFolderManagement = true;
-                }
-                if (PLGrantPerm.CanDoFunctionOperation(ClientData.LogonUser.Oid, "Fun_TiModeler_FOLDER_MANAGE") == 1)
-                {
-                    this.allowDataCheckManagement = true;
-                }
-                if (PLGrantPerm.CanDoFunctionOperation(ClientData.LogonUser.Oid, "Fun_TiModeler_BIZOPERATION_DEFINITION") == 1)
-                {
-                    this.allowOperationDefinition = true;
-                }
-                if (ConstCommon.FUNCTION_PLMUSEGCMS && (PLGrantPerm.CanDoFunctionOperation(ClientData.LogonUser.Oid, "Fun_TiModeler_ECMS_MANAGEMENT") == 1))
-                {
-                    this.allowEcmsDataManagement = true;
-                }
-                try
-                {
-                    PLAdminRole role2 = new PLAdminRole();
-                    if (role2.IsExistAdminRoleMember(ClientData.LogonUser.Oid))
-                    {
-                        this.allowConfigOrgModel = true;
-                        this.allowFolderManagement = true;
-                    }
-                }
-                catch
-                {
-                }
+            this.allowLifeCycleManage = true;
+            this.allowEventManagement = true;
+            this.allowFormulaManagement = true;
+            this.allowDataIntegrateRule = true;
+            this.allowAddinManagement = true;
+            this.allowConfigFormTemplate = true;
+            this.allowConfigOutputTemplate = true;
+            this.allowConfigPPCardTemplate = true;
+            this.allowConfigBPM = true;
+            this.allowDelProcessManagement = true;
+            this.allowCreateProcessManagement = true;
+            this.allowBrowseProcessManagement = true;
+            this.allowModifyProcessManagement = true;
+            this.allowFolderManagement = true;
+            this.allowDataCheckManagement = true;
+            this.allowOperationDefinition = true;
+            this.allowEcmsDataManagement = true;
+            try {
+                PLAdminRole role2 = new PLAdminRole();
+                this.allowConfigOrgModel = true;
+                this.allowFolderManagement = true;
+            } catch {
             }
+
             this.tvwNavigator = new TreeView();
             this.tvwNavigator.HideSelection = false;
             this.tvwNavigator.ImageList = ClientData.MyImageList.imageList;
@@ -2397,8 +2301,7 @@ namespace Thyt.TiPLM.CLT.TiModeler
                 Tag = "EnterpriseModel"
             };
             this.tvwNavigator.Nodes.Add(node);
-            if (this.allowConfigDataModel)
-            {
+            if (this.allowConfigDataModel) {
                 iconIndex = ClientData.MyImageList.GetIconIndex("ICO_DMM_DATAMODEL");
                 node = new TreeNode("数据模型定制", iconIndex, iconIndex) {
                     Tag = "DataModel"
@@ -2417,8 +2320,7 @@ namespace Thyt.TiPLM.CLT.TiModeler
                 };
                 node.Nodes.Add(node2);
                 Thyt.TiPLM.CLT.TiModeler.TagForTiModeler.TreeNode_Relation = node2;
-                if (ConstCommon.FUNCTION_CONTEXT)
-                {
+                if (ConstCommon.FUNCTION_CONTEXT) {
                     iconIndex = ClientData.MyImageList.GetIconIndex("ICO_DMM_CLASS");
                     node2 = new TreeNode("上下文", iconIndex, iconIndex) {
                         Tag = "Context"
@@ -2427,8 +2329,7 @@ namespace Thyt.TiPLM.CLT.TiModeler
                     Thyt.TiPLM.CLT.TiModeler.TagForTiModeler.TreeNode_Context = node2;
                 }
             }
-            if (this.allowConfigOrgModel)
-            {
+            if (this.allowConfigOrgModel) {
                 iconIndex = ClientData.MyImageList.GetIconIndex("ICO_RSP_ORGMODEL");
                 node = new TreeNode("组织模型定制", iconIndex, iconIndex) {
                     Tag = "OrgModel"
@@ -2460,8 +2361,7 @@ namespace Thyt.TiPLM.CLT.TiModeler
                 node.Nodes.Add(node3);
                 Thyt.TiPLM.CLT.TiModeler.TagForTiModeler.TreeNode_AdminRole = node3;
             }
-            if (this.allowConfigBPM)
-            {
+            if (this.allowConfigBPM) {
                 iconIndex = ClientData.MyImageList.GetIconIndex("ICO_BPM_DEFROOT");
                 node = new TreeNode("业务过程模型定制", iconIndex, iconIndex) {
                     Tag = "BusinessPro"
@@ -2469,8 +2369,7 @@ namespace Thyt.TiPLM.CLT.TiModeler
                 Thyt.TiPLM.CLT.TiModeler.TagForTiModeler.TreeNode_BPM = node;
                 this.tvwNavigator.Nodes[0].Nodes.Add(node);
             }
-            if (ConstCommon.FUNCTION_BIZOPERATION_DEFINITION && this.allowOperationDefinition)
-            {
+            if (ConstCommon.FUNCTION_BIZOPERATION_DEFINITION && this.allowOperationDefinition) {
                 iconIndex = ClientData.MyImageList.GetIconIndex("ICO_ENV_DATADICTIONARY");
                 node = new TreeNode("业务操作定义", iconIndex, iconIndex) {
                     Tag = "BizOperationDefinition"
@@ -2478,8 +2377,7 @@ namespace Thyt.TiPLM.CLT.TiModeler
                 Thyt.TiPLM.CLT.TiModeler.TagForTiModeler.TreeNode_BizOperation = node;
                 this.tvwNavigator.Nodes[0].Nodes.Add(node);
             }
-            if (ConstCommon.FUNCTION_MUILTIVIEW_MANAGEMENT && this.allowViewManagement)
-            {
+            if (ConstCommon.FUNCTION_MUILTIVIEW_MANAGEMENT && this.allowViewManagement) {
                 iconIndex = ClientData.MyImageList.GetIconIndex("ICO_VIW_VIEWMODEL");
                 node = new TreeNode("多视图管理", iconIndex, iconIndex) {
                     Tag = "ViewManage"
@@ -2487,8 +2385,7 @@ namespace Thyt.TiPLM.CLT.TiModeler
                 this.tvwNavigator.Nodes[0].Nodes.Add(node);
                 Thyt.TiPLM.CLT.TiModeler.TagForTiModeler.TreeNode_ViewNetwork = node;
             }
-            if ((this.allowConfigTool || this.allowConfigBrowser) || this.allowConfigFileType)
-            {
+            if ((this.allowConfigTool || this.allowConfigBrowser) || this.allowConfigFileType) {
                 iconIndex = ClientData.MyImageList.GetIconIndex("ICO_ENV_EXTERNAL_RESOURCE");
                 node = new TreeNode("文件集成工具配置", iconIndex, iconIndex) {
                     Tag = "ExternalResource"
@@ -2496,8 +2393,7 @@ namespace Thyt.TiPLM.CLT.TiModeler
                 this.tvwNavigator.Nodes[0].Nodes.Add(node);
             }
             TreeNode node4 = null;
-            if (this.allowConfigTool)
-            {
+            if (this.allowConfigTool) {
                 iconIndex = ClientData.MyImageList.GetIconIndex("ICO_ENV_TOOL");
                 node4 = new TreeNode("工具软件", iconIndex, iconIndex) {
                     Tag = "Tool"
@@ -2505,8 +2401,7 @@ namespace Thyt.TiPLM.CLT.TiModeler
                 node.Nodes.Add(node4);
                 Thyt.TiPLM.CLT.TiModeler.TagForTiModeler.TreeNode_Tool = node4;
             }
-            if (this.allowConfigBrowser)
-            {
+            if (this.allowConfigBrowser) {
                 iconIndex = ClientData.MyImageList.GetIconIndex("ICO_ENV_BROWER");
                 node4 = new TreeNode("浏览编辑器", iconIndex, iconIndex) {
                     Tag = "Browser"
@@ -2514,8 +2409,7 @@ namespace Thyt.TiPLM.CLT.TiModeler
                 node.Nodes.Add(node4);
                 Thyt.TiPLM.CLT.TiModeler.TagForTiModeler.TreeNode_Browser = node4;
             }
-            if (this.allowConfigFileType)
-            {
+            if (this.allowConfigFileType) {
                 iconIndex = ClientData.MyImageList.GetIconIndex("ICO_ENV_FILETYPE");
                 node4 = new TreeNode("文件类型", iconIndex, iconIndex) {
                     Tag = "File"
@@ -2523,8 +2417,7 @@ namespace Thyt.TiPLM.CLT.TiModeler
                 node.Nodes.Add(node4);
                 Thyt.TiPLM.CLT.TiModeler.TagForTiModeler.TreeNode_FileType = node4;
             }
-            if (this.allowFolderManagement)
-            {
+            if (this.allowFolderManagement) {
                 iconIndex = ClientData.MyImageList.GetIconIndex("ICO_FDL_CLOSE");
                 node = new TreeNode("公共文件夹管理", iconIndex, iconIndex) {
                     Tag = "Folder"
@@ -2532,35 +2425,29 @@ namespace Thyt.TiPLM.CLT.TiModeler
                 this.tvwNavigator.Nodes[0].Nodes.Add(node);
                 Thyt.TiPLM.CLT.TiModeler.TagForTiModeler.TreeNode_Folder = node;
             }
-            if (ConstCommon.FUNCTION_OBJECT_PRINT || ConstCommon.FUNCTION_PPM)
-            {
+            if (ConstCommon.FUNCTION_OBJECT_PRINT || ConstCommon.FUNCTION_PPM) {
                 iconIndex = ClientData.MyImageList.GetIconIndex("ICO_PPM_TMPPACKAGE");
                 node = new TreeNode("企业模板定制", iconIndex, iconIndex) {
                     Tag = "PPROOT"
                 };
                 this.tvwNavigator.Nodes[0].Nodes.Add(node);
-                if (ConstCommon.FUNCTION_OBJECT_PRINT && this.allowConfigFormTemplate)
-                {
+                if (ConstCommon.FUNCTION_OBJECT_PRINT && this.allowConfigFormTemplate) {
                     iconIndex = 0;
                     TreeNode root = new TreeNode("表单输出模板", -1, -1);
                     UIDataModel.FillClassesTree(root, "FORM", 0, iconIndex, iconIndex);
-                    foreach (TreeNode node6 in root.Nodes)
-                    {
+                    foreach (TreeNode node6 in root.Nodes) {
                         node.Nodes.Add(node6);
                         this.SetPrintIcons(node6);
                     }
                 }
-                if (ConstCommon.FUNCTION_PPM && this.allowConfigPPCardTemplate)
-                {
+                ConstCommon.FUNCTION_PPM = allowConfigPPCardTemplate = true;
+                if (ConstCommon.FUNCTION_PPM && this.allowConfigPPCardTemplate) {
                     TreeNode node7 = new TreeNode("工艺卡片输出模板", -1, -1);
                     iconIndex = ClientData.MyImageList.GetIconIndex("ICO_PPM_PPCARDTEMPLATE");
                     UIDataModel.FillClassesTree(node7, "PPCARD", 0, iconIndex, iconIndex);
-                    if (node7.Nodes.Count > 0)
-                    {
-                        foreach (TreeNode node8 in node7.Nodes)
-                        {
-                            if (((DEMetaClass) node8.Tag).Name == "PPCARD")
-                            {
+                    if (node7.Nodes.Count > 0) {
+                        foreach (TreeNode node8 in node7.Nodes) {
+                            if (((DEMetaClass)node8.Tag).Name == "PPCARD") {
                                 node.Nodes.Add(node8);
                                 this.SetPPMIcons(node8);
                                 break;
@@ -2568,24 +2455,21 @@ namespace Thyt.TiPLM.CLT.TiModeler
                         }
                     }
                 }
-                if (ConstCommon.FUNCTION_PPM && this.allowConfigOutputTemplate)
-                {
+                if (ConstCommon.FUNCTION_PPM && this.allowConfigOutputTemplate) {
                     TreeNode node9 = new TreeNode("业务对象输出模板", iconIndex, iconIndex) {
                         Tag = "OUTPUTTEMPLATE"
                     };
                     node.Nodes.Add(node9);
                 }
             }
-            if (ConstCommon.FUNCTION_PPM)
-            {
+            if (ConstCommon.FUNCTION_PPM) {
                 iconIndex = ClientData.MyImageList.GetIconIndex("ICO_RES_SYMBOL");
                 node = new TreeNode("工艺符号模板", iconIndex, iconIndex) {
                     Tag = "PPSIGN_TEMPLATE"
                 };
                 this.tvwNavigator.Nodes[0].Nodes.Add(node);
             }
-            if (this.allowDataIntegrateRule)
-            {
+            if (this.allowDataIntegrateRule) {
                 iconIndex = ClientData.MyImageList.GetIconIndex("ICO_PRJ_TASKSTAREFER");
                 node = new TreeNode("数据集成规则定制", iconIndex, iconIndex) {
                     Tag = "RULE"
@@ -2593,8 +2477,7 @@ namespace Thyt.TiPLM.CLT.TiModeler
                 this.tvwNavigator.Nodes[0].Nodes.Add(node);
                 Thyt.TiPLM.CLT.TiModeler.TagForTiModeler.DEF_NODE_RULE = node;
             }
-            if (this.allowAddinManagement)
-            {
+            if (this.allowAddinManagement) {
                 iconIndex = ClientData.MyImageList.GetIconIndex("ICO_PRJ_TASKSTAREFER");
                 node = new TreeNode("插件管理", iconIndex, iconIndex) {
                     Tag = "Addin"
@@ -2609,8 +2492,7 @@ namespace Thyt.TiPLM.CLT.TiModeler
                 DEExtendedModel[] allExtendedModel = UIExtendedModel.Instance.GetAllExtendedModel();
                 UIExtendedModel.Instance.FillExtendedModes(node, allExtendedModel);
             }
-            if (ConstCommon.FUNCTION_FORMULA && this.allowFormulaManagement)
-            {
+            if (ConstCommon.FUNCTION_FORMULA && this.allowFormulaManagement) {
                 iconIndex = ClientData.MyImageList.GetIconIndex("ICO_RPT_WINRPTTEMPLATE");
                 node = new TreeNode("公式管理", iconIndex, iconIndex) {
                     Tag = "FormulaManagement"
@@ -2618,8 +2500,7 @@ namespace Thyt.TiPLM.CLT.TiModeler
                 this.tvwNavigator.Nodes[0].Nodes.Add(node);
                 Thyt.TiPLM.CLT.TiModeler.TagForTiModeler.TreeNode_Formula = node;
             }
-            if (ServiceSwitches.UseDataView)
-            {
+            if (ServiceSwitches.UseDataView) {
                 iconIndex = ClientData.MyImageList.GetIconIndex("ICO_DMM_DATAVIEW");
                 node = new TreeNode("数据视图定义", iconIndex, iconIndex) {
                     Tag = "DataViewManagement"
@@ -2627,8 +2508,7 @@ namespace Thyt.TiPLM.CLT.TiModeler
                 this.tvwNavigator.Nodes[0].Nodes.Add(node);
                 Thyt.TiPLM.CLT.TiModeler.TagForTiModeler.TreeNode_DataView = node;
             }
-            if (ConstCommon.FUNCTION_CHART)
-            {
+            if (ConstCommon.FUNCTION_CHART) {
                 iconIndex = ClientData.MyImageList.GetIconIndex("ICO_RPT_WINTEMPLATE");
                 node = new TreeNode("统计图表定义", iconIndex, iconIndex) {
                     Tag = "ChartManagement"
@@ -2636,8 +2516,7 @@ namespace Thyt.TiPLM.CLT.TiModeler
                 this.tvwNavigator.Nodes[0].Nodes.Add(node);
                 Thyt.TiPLM.CLT.TiModeler.TagForTiModeler.TreeNode_DataView = node;
             }
-            if (ServiceSwitches.UseDataView && this.allowDataCheckManagement)
-            {
+            if (ServiceSwitches.UseDataView && this.allowDataCheckManagement) {
                 iconIndex = ClientData.MyImageList.GetIconIndex("ICO_DMM_DATAMODEL");
                 node = new TreeNode("数据检查规则定义", iconIndex, iconIndex) {
                     Tag = "DataCheckManagement"
@@ -2645,8 +2524,7 @@ namespace Thyt.TiPLM.CLT.TiModeler
                 this.tvwNavigator.Nodes[0].Nodes.Add(node);
                 Thyt.TiPLM.CLT.TiModeler.TagForTiModeler.TreeNode_DataCheck = node;
             }
-            if (ServiceSwitches.UseClassFormulaDef)
-            {
+            if (ServiceSwitches.UseClassFormulaDef) {
                 iconIndex = ClientData.MyImageList.GetIconIndex("ICO_DMM_DATAVIEW");
                 node = new TreeNode("业务对象公式定义", iconIndex, iconIndex) {
                     Tag = "ClassFormulaManagement"
@@ -2654,8 +2532,7 @@ namespace Thyt.TiPLM.CLT.TiModeler
                 this.tvwNavigator.Nodes[0].Nodes.Add(node);
                 Thyt.TiPLM.CLT.TiModeler.TagForTiModeler.TreeNode_ClassFormula = node;
             }
-            if (this.allowEcmsDataManagement)
-            {
+            if (this.allowEcmsDataManagement) {
                 iconIndex = ClientData.MyImageList.GetIconIndex("ICO_ECMS_MANAGENT");
                 node = new TreeNode("编码管理", iconIndex, iconIndex) {
                     Tag = "EcmsManagement"
@@ -2663,8 +2540,7 @@ namespace Thyt.TiPLM.CLT.TiModeler
                 this.tvwNavigator.Nodes[0].Nodes.Add(node);
                 Thyt.TiPLM.CLT.TiModeler.TagForTiModeler.TreeNode_Ecms = node;
             }
-            if (!ConstCommon.FUNCTION_IORS)
-            {
+            if (!ConstCommon.FUNCTION_IORS) {
                 iconIndex = ClientData.MyImageList.GetIconIndex("ICO_ECMS_MANAGENT");
                 node = new TreeNode("自定义异常管理", iconIndex, iconIndex) {
                     Tag = "CustomException"
@@ -2682,6 +2558,437 @@ namespace Thyt.TiPLM.CLT.TiModeler
             this.tvwNavigator.DragOver += new DragEventHandler(this.tvwNavigator_DragOver);
             this.tvwNavigator.DragDrop += new DragEventHandler(this.tvwNavigator_DragDrop);
         }
+
+        //private void CreateTreeView()
+        //{
+        //    if (ConstCommon.FUNCTION_IORS)
+        //    {
+        //        if (PLGrantPerm.CanDoFunctionOperation(ClientData.LogonUser.Oid, "Fun_TiModeler_ECMS_MANAGEMENT") == 1)
+        //        {
+        //            this.allowEcmsDataManagement = true;
+        //        }
+        //        PLAdminRole role = new PLAdminRole();
+        //        if (role.IsExistAdminRoleMember(ClientData.LogonUser.Oid))
+        //        {
+        //            this.allowConfigOrgModel = true;
+        //        }
+        //        if (PLGrantPerm.CanDoFunctionOperation(ClientData.LogonUser.Oid, "Fun_TiModeler_CONFIG_PROCESS_DEFINATION") == 1)
+        //        {
+        //            this.allowConfigBPM = true;
+        //        }
+        //        if (PLGrantPerm.CanDoClassOperation(ClientData.LogonUser.Oid, "BPM_PROCESS_DEFINITION", Guid.Empty, "ClaRel_DELETE") == 1)
+        //        {
+        //            this.allowDelProcessManagement = true;
+        //        }
+        //        if (PLGrantPerm.CanDoClassOperation(ClientData.LogonUser.Oid, "BPM_PROCESS_DEFINITION", Guid.Empty, "ClaRel_CREATE") == 1)
+        //        {
+        //            this.allowCreateProcessManagement = true;
+        //        }
+        //        if (PLGrantPerm.CanDoClassOperation(ClientData.LogonUser.Oid, "BPM_PROCESS_DEFINITION", Guid.Empty, "ClaRel_BROWSE") == 1)
+        //        {
+        //            this.allowBrowseProcessManagement = true;
+        //        }
+        //        if (PLGrantPerm.CanDoClassOperation(ClientData.LogonUser.Oid, "BPM_PROCESS_DEFINITION", Guid.Empty, "ClaRel_MODIFY") == 1)
+        //        {
+        //            this.allowModifyProcessManagement = true;
+        //        }
+        //    }
+        //    else
+        //    {
+        //        if (PLGrantPerm.CanDoFunctionOperation(ClientData.LogonUser.Oid, "Fun_TiModeler_DATAMODEL_CONFIG") == 1)
+        //        {
+        //            this.allowConfigDataModel = true;
+        //        }
+        //        if (PLGrantPerm.CanDoFunctionOperation(ClientData.LogonUser.Oid, "Fun_TiModeler_VIEW_MANAGE") == 1)
+        //        {
+        //            this.allowViewManagement = true;
+        //        }
+        //        if (PLGrantPerm.CanDoFunctionOperation(ClientData.LogonUser.Oid, "Fun_TiModeler_BROWER_CONFIG") == 1)
+        //        {
+        //            this.allowConfigBrowser = true;
+        //        }
+        //        if (PLGrantPerm.CanDoFunctionOperation(ClientData.LogonUser.Oid, "Fun_TiModeler_FILETYPE_CONFIG") == 1)
+        //        {
+        //            this.allowConfigFileType = true;
+        //        }
+        //        if (PLGrantPerm.CanDoFunctionOperation(ClientData.LogonUser.Oid, "Fun_TiModeler_TOOL_CONFIG") == 1)
+        //        {
+        //            this.allowConfigTool = true;
+        //        }
+        //        if (PLGrantPerm.CanDoFunctionOperation(ClientData.LogonUser.Oid, "Fun_TiModeler_LIFECYCLE_MANAGEMENT") == 1)
+        //        {
+        //            this.allowLifeCycleManage = true;
+        //        }
+        //        if (PLGrantPerm.CanDoFunctionOperation(ClientData.LogonUser.Oid, "Fun_TiModeler_EVENT_MANAGEMENT") == 1)
+        //        {
+        //            this.allowEventManagement = true;
+        //        }
+        //        if (PLGrantPerm.CanDoFunctionOperation(ClientData.LogonUser.Oid, "Fun_TiCAPP_FORMULA_MANAGEMENT") == 1)
+        //        {
+        //            this.allowFormulaManagement = true;
+        //        }
+        //        if (PLGrantPerm.CanDoClassByAdminRole(ClientData.LogonUser.Oid, PLMRootClassName.INTEGRATIONRULE.ToString()))
+        //        {
+        //            this.allowDataIntegrateRule = true;
+        //        }
+        //        if (PLGrantPerm.CanDoFunctionOperation(ClientData.LogonUser.Oid, "Fun_TiModeler_ADDIN_MANAGEMENT") == 1)
+        //        {
+        //            this.allowAddinManagement = true;
+        //        }
+        //        if (PLGrantPerm.CanDoFunctionOperation(ClientData.LogonUser.Oid, "Fun_TiCAPP_FORM_TEMPLATE") == 1)
+        //        {
+        //            this.allowConfigFormTemplate = true;
+        //        }
+        //        if (PLGrantPerm.CanDoFunctionOperation(ClientData.LogonUser.Oid, "Fun_TiCAPP_OUTPUT_TEMPLATE") == 1)
+        //        {
+        //            this.allowConfigOutputTemplate = true;
+        //        }
+        //        if (PLGrantPerm.CanDoFunctionOperation(ClientData.LogonUser.Oid, "Fun_TiCAPP_CARD_TEMPLATE") == 1)
+        //        {
+        //            this.allowConfigPPCardTemplate = true;
+        //        }
+        //        if (PLGrantPerm.CanDoFunctionOperation(ClientData.LogonUser.Oid, "Fun_TiModeler_CONFIG_PROCESS_DEFINATION") == 1)
+        //        {
+        //            this.allowConfigBPM = true;
+        //        }
+        //        if (PLGrantPerm.CanDoClassOperation(ClientData.LogonUser.Oid, "BPM_PROCESS_DEFINITION", Guid.Empty, "ClaRel_DELETE") == 1)
+        //        {
+        //            this.allowDelProcessManagement = true;
+        //        }
+        //        if (PLGrantPerm.CanDoClassOperation(ClientData.LogonUser.Oid, "BPM_PROCESS_DEFINITION", Guid.Empty, "ClaRel_CREATE") == 1)
+        //        {
+        //            this.allowCreateProcessManagement = true;
+        //        }
+        //        if (PLGrantPerm.CanDoClassOperation(ClientData.LogonUser.Oid, "BPM_PROCESS_DEFINITION", Guid.Empty, "ClaRel_BROWSE") == 1)
+        //        {
+        //            this.allowBrowseProcessManagement = true;
+        //        }
+        //        if (PLGrantPerm.CanDoClassOperation(ClientData.LogonUser.Oid, "BPM_PROCESS_DEFINITION", Guid.Empty, "ClaRel_MODIFY") == 1)
+        //        {
+        //            this.allowModifyProcessManagement = true;
+        //        }
+        //        if (PLGrantPerm.CanDoFunctionOperation(ClientData.LogonUser.Oid, "Fun_TiModeler_FOLDER_MANAGE") == 1)
+        //        {
+        //            this.allowFolderManagement = true;
+        //        }
+        //        if (PLGrantPerm.CanDoFunctionOperation(ClientData.LogonUser.Oid, "Fun_TiModeler_FOLDER_MANAGE") == 1)
+        //        {
+        //            this.allowDataCheckManagement = true;
+        //        }
+        //        if (PLGrantPerm.CanDoFunctionOperation(ClientData.LogonUser.Oid, "Fun_TiModeler_BIZOPERATION_DEFINITION") == 1)
+        //        {
+        //            this.allowOperationDefinition = true;
+        //        }
+        //        if (ConstCommon.FUNCTION_PLMUSEGCMS && (PLGrantPerm.CanDoFunctionOperation(ClientData.LogonUser.Oid, "Fun_TiModeler_ECMS_MANAGEMENT") == 1))
+        //        {
+        //            this.allowEcmsDataManagement = true;
+        //        }
+        //        try
+        //        {
+        //            PLAdminRole role2 = new PLAdminRole();
+        //            if (role2.IsExistAdminRoleMember(ClientData.LogonUser.Oid))
+        //            {
+        //                this.allowConfigOrgModel = true;
+        //                this.allowFolderManagement = true;
+        //            }
+        //        }
+        //        catch
+        //        {
+        //        }
+        //    }
+        //    this.tvwNavigator = new TreeView();
+        //    this.tvwNavigator.HideSelection = false;
+        //    this.tvwNavigator.ImageList = ClientData.MyImageList.imageList;
+        //    int iconIndex = ClientData.MyImageList.GetIconIndex("ICO_TIMODELER_ROOT_ICON");
+        //    TreeNode node = new TreeNode(this.Text, iconIndex, iconIndex) {
+        //        Tag = "EnterpriseModel"
+        //    };
+        //    this.tvwNavigator.Nodes.Add(node);
+        //    if (this.allowConfigDataModel)
+        //    {
+        //        iconIndex = ClientData.MyImageList.GetIconIndex("ICO_DMM_DATAMODEL");
+        //        node = new TreeNode("数据模型定制", iconIndex, iconIndex) {
+        //            Tag = "DataModel"
+        //        };
+        //        this.tvwNavigator.Nodes[0].Nodes.Add(node);
+        //        Thyt.TiPLM.CLT.TiModeler.TagForTiModeler.TreeNode_DataModel = node;
+        //        iconIndex = ClientData.MyImageList.GetIconIndex("ICO_DMM_CLASS");
+        //        TreeNode node2 = new TreeNode("类", iconIndex, iconIndex) {
+        //            Tag = "Class"
+        //        };
+        //        node.Nodes.Add(node2);
+        //        Thyt.TiPLM.CLT.TiModeler.TagForTiModeler.TreeNode_Class = node2;
+        //        iconIndex = ClientData.MyImageList.GetIconIndex("ICO_DMM_RELATION");
+        //        node2 = new TreeNode("关联", iconIndex, iconIndex) {
+        //            Tag = "Relation"
+        //        };
+        //        node.Nodes.Add(node2);
+        //        Thyt.TiPLM.CLT.TiModeler.TagForTiModeler.TreeNode_Relation = node2;
+        //        if (ConstCommon.FUNCTION_CONTEXT)
+        //        {
+        //            iconIndex = ClientData.MyImageList.GetIconIndex("ICO_DMM_CLASS");
+        //            node2 = new TreeNode("上下文", iconIndex, iconIndex) {
+        //                Tag = "Context"
+        //            };
+        //            node.Nodes.Add(node2);
+        //            Thyt.TiPLM.CLT.TiModeler.TagForTiModeler.TreeNode_Context = node2;
+        //        }
+        //    }
+        //    if (this.allowConfigOrgModel)
+        //    {
+        //        iconIndex = ClientData.MyImageList.GetIconIndex("ICO_RSP_ORGMODEL");
+        //        node = new TreeNode("组织模型定制", iconIndex, iconIndex) {
+        //            Tag = "OrgModel"
+        //        };
+        //        this.tvwNavigator.Nodes[0].Nodes.Add(node);
+        //        Thyt.TiPLM.CLT.TiModeler.TagForTiModeler.TreeNode_OrgModel = node;
+        //        iconIndex = ClientData.MyImageList.GetIconIndex("ICO_RSP_ORG");
+        //        TreeNode node3 = new TreeNode("组织", iconIndex, iconIndex) {
+        //            Tag = "Organization"
+        //        };
+        //        node.Nodes.Add(node3);
+        //        Thyt.TiPLM.CLT.TiModeler.TagForTiModeler.TreeNode_Organization = node3;
+        //        iconIndex = ClientData.MyImageList.GetIconIndex("ICO_RSP_USER");
+        //        node3 = new TreeNode("人员", iconIndex, iconIndex) {
+        //            Tag = "User"
+        //        };
+        //        node.Nodes.Add(node3);
+        //        Thyt.TiPLM.CLT.TiModeler.TagForTiModeler.TreeNode_User = node3;
+        //        iconIndex = ClientData.MyImageList.GetIconIndex("ICO_RSP_ROLE");
+        //        node3 = new TreeNode("角色", iconIndex, iconIndex) {
+        //            Tag = "Role"
+        //        };
+        //        node.Nodes.Add(node3);
+        //        Thyt.TiPLM.CLT.TiModeler.TagForTiModeler.TreeNode_Role = node3;
+        //        iconIndex = ClientData.MyImageList.GetIconIndex("ICO_RSP_ROLE");
+        //        node3 = new TreeNode("管理角色", iconIndex, iconIndex) {
+        //            Tag = "AdminRole"
+        //        };
+        //        node.Nodes.Add(node3);
+        //        Thyt.TiPLM.CLT.TiModeler.TagForTiModeler.TreeNode_AdminRole = node3;
+        //    }
+        //    if (this.allowConfigBPM)
+        //    {
+        //        iconIndex = ClientData.MyImageList.GetIconIndex("ICO_BPM_DEFROOT");
+        //        node = new TreeNode("业务过程模型定制", iconIndex, iconIndex) {
+        //            Tag = "BusinessPro"
+        //        };
+        //        Thyt.TiPLM.CLT.TiModeler.TagForTiModeler.TreeNode_BPM = node;
+        //        this.tvwNavigator.Nodes[0].Nodes.Add(node);
+        //    }
+        //    if (ConstCommon.FUNCTION_BIZOPERATION_DEFINITION && this.allowOperationDefinition)
+        //    {
+        //        iconIndex = ClientData.MyImageList.GetIconIndex("ICO_ENV_DATADICTIONARY");
+        //        node = new TreeNode("业务操作定义", iconIndex, iconIndex) {
+        //            Tag = "BizOperationDefinition"
+        //        };
+        //        Thyt.TiPLM.CLT.TiModeler.TagForTiModeler.TreeNode_BizOperation = node;
+        //        this.tvwNavigator.Nodes[0].Nodes.Add(node);
+        //    }
+        //    if (ConstCommon.FUNCTION_MUILTIVIEW_MANAGEMENT && this.allowViewManagement)
+        //    {
+        //        iconIndex = ClientData.MyImageList.GetIconIndex("ICO_VIW_VIEWMODEL");
+        //        node = new TreeNode("多视图管理", iconIndex, iconIndex) {
+        //            Tag = "ViewManage"
+        //        };
+        //        this.tvwNavigator.Nodes[0].Nodes.Add(node);
+        //        Thyt.TiPLM.CLT.TiModeler.TagForTiModeler.TreeNode_ViewNetwork = node;
+        //    }
+        //    if ((this.allowConfigTool || this.allowConfigBrowser) || this.allowConfigFileType)
+        //    {
+        //        iconIndex = ClientData.MyImageList.GetIconIndex("ICO_ENV_EXTERNAL_RESOURCE");
+        //        node = new TreeNode("文件集成工具配置", iconIndex, iconIndex) {
+        //            Tag = "ExternalResource"
+        //        };
+        //        this.tvwNavigator.Nodes[0].Nodes.Add(node);
+        //    }
+        //    TreeNode node4 = null;
+        //    if (this.allowConfigTool)
+        //    {
+        //        iconIndex = ClientData.MyImageList.GetIconIndex("ICO_ENV_TOOL");
+        //        node4 = new TreeNode("工具软件", iconIndex, iconIndex) {
+        //            Tag = "Tool"
+        //        };
+        //        node.Nodes.Add(node4);
+        //        Thyt.TiPLM.CLT.TiModeler.TagForTiModeler.TreeNode_Tool = node4;
+        //    }
+        //    if (this.allowConfigBrowser)
+        //    {
+        //        iconIndex = ClientData.MyImageList.GetIconIndex("ICO_ENV_BROWER");
+        //        node4 = new TreeNode("浏览编辑器", iconIndex, iconIndex) {
+        //            Tag = "Browser"
+        //        };
+        //        node.Nodes.Add(node4);
+        //        Thyt.TiPLM.CLT.TiModeler.TagForTiModeler.TreeNode_Browser = node4;
+        //    }
+        //    if (this.allowConfigFileType)
+        //    {
+        //        iconIndex = ClientData.MyImageList.GetIconIndex("ICO_ENV_FILETYPE");
+        //        node4 = new TreeNode("文件类型", iconIndex, iconIndex) {
+        //            Tag = "File"
+        //        };
+        //        node.Nodes.Add(node4);
+        //        Thyt.TiPLM.CLT.TiModeler.TagForTiModeler.TreeNode_FileType = node4;
+        //    }
+        //    if (this.allowFolderManagement)
+        //    {
+        //        iconIndex = ClientData.MyImageList.GetIconIndex("ICO_FDL_CLOSE");
+        //        node = new TreeNode("公共文件夹管理", iconIndex, iconIndex) {
+        //            Tag = "Folder"
+        //        };
+        //        this.tvwNavigator.Nodes[0].Nodes.Add(node);
+        //        Thyt.TiPLM.CLT.TiModeler.TagForTiModeler.TreeNode_Folder = node;
+        //    }
+        //    if (ConstCommon.FUNCTION_OBJECT_PRINT || ConstCommon.FUNCTION_PPM)
+        //    {
+        //        iconIndex = ClientData.MyImageList.GetIconIndex("ICO_PPM_TMPPACKAGE");
+        //        node = new TreeNode("企业模板定制", iconIndex, iconIndex) {
+        //            Tag = "PPROOT"
+        //        };
+        //        this.tvwNavigator.Nodes[0].Nodes.Add(node);
+        //        if (ConstCommon.FUNCTION_OBJECT_PRINT && this.allowConfigFormTemplate)
+        //        {
+        //            iconIndex = 0;
+        //            TreeNode root = new TreeNode("表单输出模板", -1, -1);
+        //            UIDataModel.FillClassesTree(root, "FORM", 0, iconIndex, iconIndex);
+        //            foreach (TreeNode node6 in root.Nodes)
+        //            {
+        //                node.Nodes.Add(node6);
+        //                this.SetPrintIcons(node6);
+        //            }
+        //        }
+        //        if (ConstCommon.FUNCTION_PPM && this.allowConfigPPCardTemplate)
+        //        {
+        //            TreeNode node7 = new TreeNode("工艺卡片输出模板", -1, -1);
+        //            iconIndex = ClientData.MyImageList.GetIconIndex("ICO_PPM_PPCARDTEMPLATE");
+        //            UIDataModel.FillClassesTree(node7, "PPCARD", 0, iconIndex, iconIndex);
+        //            if (node7.Nodes.Count > 0)
+        //            {
+        //                foreach (TreeNode node8 in node7.Nodes)
+        //                {
+        //                    if (((DEMetaClass) node8.Tag).Name == "PPCARD")
+        //                    {
+        //                        node.Nodes.Add(node8);
+        //                        this.SetPPMIcons(node8);
+        //                        break;
+        //                    }
+        //                }
+        //            }
+        //        }
+        //        if (ConstCommon.FUNCTION_PPM && this.allowConfigOutputTemplate)
+        //        {
+        //            TreeNode node9 = new TreeNode("业务对象输出模板", iconIndex, iconIndex) {
+        //                Tag = "OUTPUTTEMPLATE"
+        //            };
+        //            node.Nodes.Add(node9);
+        //        }
+        //    }
+        //    if (ConstCommon.FUNCTION_PPM)
+        //    {
+        //        iconIndex = ClientData.MyImageList.GetIconIndex("ICO_RES_SYMBOL");
+        //        node = new TreeNode("工艺符号模板", iconIndex, iconIndex) {
+        //            Tag = "PPSIGN_TEMPLATE"
+        //        };
+        //        this.tvwNavigator.Nodes[0].Nodes.Add(node);
+        //    }
+        //    if (this.allowDataIntegrateRule)
+        //    {
+        //        iconIndex = ClientData.MyImageList.GetIconIndex("ICO_PRJ_TASKSTAREFER");
+        //        node = new TreeNode("数据集成规则定制", iconIndex, iconIndex) {
+        //            Tag = "RULE"
+        //        };
+        //        this.tvwNavigator.Nodes[0].Nodes.Add(node);
+        //        Thyt.TiPLM.CLT.TiModeler.TagForTiModeler.DEF_NODE_RULE = node;
+        //    }
+        //    if (this.allowAddinManagement)
+        //    {
+        //        iconIndex = ClientData.MyImageList.GetIconIndex("ICO_PRJ_TASKSTAREFER");
+        //        node = new TreeNode("插件管理", iconIndex, iconIndex) {
+        //            Tag = "Addin"
+        //        };
+        //        this.tvwNavigator.Nodes[0].Nodes.Add(node);
+        //        Thyt.TiPLM.CLT.TiModeler.TagForTiModeler.TreeNode_Addin = node;
+        //        iconIndex = ClientData.MyImageList.GetIconIndex("ICO_RES_RES_FENLEI");
+        //        node = new TreeNode("扩展企业模型", iconIndex, iconIndex) {
+        //            Tag = "EXTENDED_MODEL"
+        //        };
+        //        this.tvwNavigator.Nodes[0].Nodes.Add(node);
+        //        DEExtendedModel[] allExtendedModel = UIExtendedModel.Instance.GetAllExtendedModel();
+        //        UIExtendedModel.Instance.FillExtendedModes(node, allExtendedModel);
+        //    }
+        //    if (ConstCommon.FUNCTION_FORMULA && this.allowFormulaManagement)
+        //    {
+        //        iconIndex = ClientData.MyImageList.GetIconIndex("ICO_RPT_WINRPTTEMPLATE");
+        //        node = new TreeNode("公式管理", iconIndex, iconIndex) {
+        //            Tag = "FormulaManagement"
+        //        };
+        //        this.tvwNavigator.Nodes[0].Nodes.Add(node);
+        //        Thyt.TiPLM.CLT.TiModeler.TagForTiModeler.TreeNode_Formula = node;
+        //    }
+        //    if (ServiceSwitches.UseDataView)
+        //    {
+        //        iconIndex = ClientData.MyImageList.GetIconIndex("ICO_DMM_DATAVIEW");
+        //        node = new TreeNode("数据视图定义", iconIndex, iconIndex) {
+        //            Tag = "DataViewManagement"
+        //        };
+        //        this.tvwNavigator.Nodes[0].Nodes.Add(node);
+        //        Thyt.TiPLM.CLT.TiModeler.TagForTiModeler.TreeNode_DataView = node;
+        //    }
+        //    if (ConstCommon.FUNCTION_CHART)
+        //    {
+        //        iconIndex = ClientData.MyImageList.GetIconIndex("ICO_RPT_WINTEMPLATE");
+        //        node = new TreeNode("统计图表定义", iconIndex, iconIndex) {
+        //            Tag = "ChartManagement"
+        //        };
+        //        this.tvwNavigator.Nodes[0].Nodes.Add(node);
+        //        Thyt.TiPLM.CLT.TiModeler.TagForTiModeler.TreeNode_DataView = node;
+        //    }
+        //    if (ServiceSwitches.UseDataView && this.allowDataCheckManagement)
+        //    {
+        //        iconIndex = ClientData.MyImageList.GetIconIndex("ICO_DMM_DATAMODEL");
+        //        node = new TreeNode("数据检查规则定义", iconIndex, iconIndex) {
+        //            Tag = "DataCheckManagement"
+        //        };
+        //        this.tvwNavigator.Nodes[0].Nodes.Add(node);
+        //        Thyt.TiPLM.CLT.TiModeler.TagForTiModeler.TreeNode_DataCheck = node;
+        //    }
+        //    if (ServiceSwitches.UseClassFormulaDef)
+        //    {
+        //        iconIndex = ClientData.MyImageList.GetIconIndex("ICO_DMM_DATAVIEW");
+        //        node = new TreeNode("业务对象公式定义", iconIndex, iconIndex) {
+        //            Tag = "ClassFormulaManagement"
+        //        };
+        //        this.tvwNavigator.Nodes[0].Nodes.Add(node);
+        //        Thyt.TiPLM.CLT.TiModeler.TagForTiModeler.TreeNode_ClassFormula = node;
+        //    }
+        //    if (this.allowEcmsDataManagement)
+        //    {
+        //        iconIndex = ClientData.MyImageList.GetIconIndex("ICO_ECMS_MANAGENT");
+        //        node = new TreeNode("编码管理", iconIndex, iconIndex) {
+        //            Tag = "EcmsManagement"
+        //        };
+        //        this.tvwNavigator.Nodes[0].Nodes.Add(node);
+        //        Thyt.TiPLM.CLT.TiModeler.TagForTiModeler.TreeNode_Ecms = node;
+        //    }
+        //    if (!ConstCommon.FUNCTION_IORS)
+        //    {
+        //        iconIndex = ClientData.MyImageList.GetIconIndex("ICO_ECMS_MANAGENT");
+        //        node = new TreeNode("自定义异常管理", iconIndex, iconIndex) {
+        //            Tag = "CustomException"
+        //        };
+        //        this.tvwNavigator.Nodes[0].Nodes.Add(node);
+        //        Thyt.TiPLM.CLT.TiModeler.TagForTiModeler.TreeNode_CustomException = node;
+        //    }
+        //    this.tvwNavigator.DoubleClick += new EventHandler(this.tvwNavigator_DoubleClick);
+        //    this.tvwNavigator.MouseUp += new MouseEventHandler(this.tvwNavigator_MouseUp);
+        //    this.tvwNavigator.AfterSelect += new TreeViewEventHandler(this.tvwNavigator_AfterSelect);
+        //    this.tvwNavigator.AfterLabelEdit += new NodeLabelEditEventHandler(this.tvwNavigator_AfterLabelEdit);
+        //    this.tvwNavigator.AllowDrop = true;
+        //    this.tvwNavigator.ItemDrag += new ItemDragEventHandler(this.tvwNavigator_ItemDrag);
+        //    this.tvwNavigator.DragEnter += new DragEventHandler(this.tvwNavigator_DragEnter);
+        //    this.tvwNavigator.DragOver += new DragEventHandler(this.tvwNavigator_DragOver);
+        //    this.tvwNavigator.DragDrop += new DragEventHandler(this.tvwNavigator_DragDrop);
+        //}
 
         public void DefaultSelectMenuItem(object sender, EventArgs e)
         {

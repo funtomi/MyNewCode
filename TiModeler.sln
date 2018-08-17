@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TiModeler", "TiModeler\TiMo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thyt.TiPLM.PLL.Common", "Thyt.TiPLM.PLL.Common\Thyt.TiPLM.PLL.Common.csproj", "{8E8F4F2F-FB73-4BE3-BF0B-75AADE360932}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApplication1", "WindowsFormsApplication1\WindowsFormsApplication1.csproj", "{676BC9E1-916D-430A-9511-1C4772BA5465}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,16 +37,6 @@ Global
 		{8E8F4F2F-FB73-4BE3-BF0B-75AADE360932}.Release|Mixed Platforms.Build.0 = Release|x86
 		{8E8F4F2F-FB73-4BE3-BF0B-75AADE360932}.Release|x86.ActiveCfg = Release|x86
 		{8E8F4F2F-FB73-4BE3-BF0B-75AADE360932}.Release|x86.Build.0 = Release|x86
-		{676BC9E1-916D-430A-9511-1C4772BA5465}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{676BC9E1-916D-430A-9511-1C4772BA5465}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{676BC9E1-916D-430A-9511-1C4772BA5465}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
-		{676BC9E1-916D-430A-9511-1C4772BA5465}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
-		{676BC9E1-916D-430A-9511-1C4772BA5465}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{676BC9E1-916D-430A-9511-1C4772BA5465}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{676BC9E1-916D-430A-9511-1C4772BA5465}.Release|Any CPU.Build.0 = Release|Any CPU
-		{676BC9E1-916D-430A-9511-1C4772BA5465}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
-		{676BC9E1-916D-430A-9511-1C4772BA5465}.Release|Mixed Platforms.Build.0 = Release|Any CPU
-		{676BC9E1-916D-430A-9511-1C4772BA5465}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
