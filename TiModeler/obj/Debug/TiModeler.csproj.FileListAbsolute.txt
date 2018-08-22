@@ -43,6 +43,9 @@ E:\TIPLMCode\TiModeler\Export\TiModeler.exe
 E:\TIPLMCode\TiModeler\Export\TiModeler.pdb
 E:\TIPLMCode\TiModeler\TiModeler\obj\Debug\TiModeler.exe
 E:\TIPLMCode\TiModeler\TiModeler\obj\Debug\TiModeler.pdb
+E:\TIPLMCode\MyNewCode\Export\TiModeler.exe.config
+E:\TIPLMCode\MyNewCode\Export\TiModeler.exe
+E:\TIPLMCode\MyNewCode\Export\TiModeler.pdb
 E:\TIPLMCode\MyNewCode\TiModeler\obj\Debug\TiModeler.csprojResolveAssemblyReference.cache
 E:\TIPLMCode\MyNewCode\TiModeler\obj\Debug\Thyt.TiPLM.CLT.TiModeler.Addin.FrmAddin.resources
 E:\TIPLMCode\MyNewCode\TiModeler\obj\Debug\Thyt.TiPLM.CLT.TiModeler.BPModel.ViewPanel.resources
@@ -63,8 +66,5 @@ E:\TIPLMCode\MyNewCode\TiModeler\obj\Debug\Thyt.TiPLM.CLT.TiModeler.ViewModel.Fr
 E:\TIPLMCode\MyNewCode\TiModeler\obj\Debug\Thyt.TiPLM.CLT.TiModeler.ViewModel.VMFrame.resources
 E:\TIPLMCode\MyNewCode\TiModeler\obj\Debug\Thyt.TiPLM.CLT.TiModeler.ViewModel.VMViewPanal.resources
 E:\TIPLMCode\MyNewCode\TiModeler\obj\Debug\TiModeler.csproj.GenerateResource.Cache
-E:\TIPLMCode\MyNewCode\Export\TiModeler.exe.config
-E:\TIPLMCode\MyNewCode\Export\TiModeler.exe
-E:\TIPLMCode\MyNewCode\Export\TiModeler.pdb
 E:\TIPLMCode\MyNewCode\TiModeler\obj\Debug\TiModeler.exe
 E:\TIPLMCode\MyNewCode\TiModeler\obj\Debug\TiModeler.pdb

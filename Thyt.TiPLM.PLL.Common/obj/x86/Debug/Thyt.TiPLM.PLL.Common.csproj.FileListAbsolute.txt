@@ -1,5 +1,0 @@
-E:\TIPLMCode\MyNewCode\Export\Thyt.TiPLM.PLL.Common.dll
-E:\TIPLMCode\MyNewCode\Export\Thyt.TiPLM.PLL.Common.pdb
-E:\TIPLMCode\MyNewCode\Thyt.TiPLM.PLL.Common\obj\x86\Debug\Thyt.TiPLM.PLL.Common.dll
-E:\TIPLMCode\MyNewCode\Thyt.TiPLM.PLL.Common\obj\x86\Debug\Thyt.TiPLM.PLL.Common.pdb
-E:\TIPLMCode\MyNewCode\Thyt.TiPLM.PLL.Common\obj\x86\Debug\Thyt.TiPLM.PLL.Common.csprojResolveAssemblyReference.cache

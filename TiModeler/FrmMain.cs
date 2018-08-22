@@ -70,9 +70,8 @@
     using Thyt.TiPLM.UIL.TiMessage;
     using Thyt.TiPLM.UIL.Utility;
     using Thyt.TiPLM.UIL.Utility.ExtendedModel;
-namespace Thyt.TiPLM.CLT.TiModeler
-{
-    public partial class FrmMain : Form
+namespace Thyt.TiPLM.CLT.TiModeler {
+    public partial class FrmMain : Form {
         public bool adminRoleFirstSelect = true;
         private D_AfterMetaClassCreated AfterMetaClassCreated;
         private D_AfterMetaClassDeleted AfterMetaClassDeleted;

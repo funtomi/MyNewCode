@@ -1,0 +1,644 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DDA9C38B-437B-4BF9-97CA-FF5418D47824}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>Thyt.TiPLM.UIL.Common.UserControl</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Export\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>Thyt.TiPLM.UIL.Common.UserControl</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v13.2, Version=13.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Export\DevExpress.Data.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v13.2, Version=13.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Export\DevExpress.Utils.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v13.2, Version=13.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Export\DevExpress.XtraEditors.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Excel.v10.3, Version=10.3.20103.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\NetAdvantage\NetAdvantage 2010.3\Windows Forms\Bin\Infragistics2.Excel.v10.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Shared.v10.3, Version=10.3.20103.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Export\Infragistics2.Shared.v10.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinEditors.v10.3, Version=10.3.20103.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Export\Infragistics2.Win.UltraWinEditors.v10.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.v10.3, Version=10.3.20103.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Export\Infragistics2.Win.v10.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Thyt.TiPLM.UIL.Common" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System" />
+    <Reference Include="Thyt.TiPLM.DEL.Admin.BPM" />
+    <Reference Include="Thyt.TiPLM.DEL.Admin.DataModel" />
+    <Reference Include="Thyt.TiPLM.CLT.UIL.DeskLib" />
+    <Reference Include="Thyt.TiPLM.DEL.Product" />
+    <Reference Include="Thyt.TiPLM.Common" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="Thyt.TiPLM.Common.Interface" />
+    <Reference Include="Thyt.TiPLM.DEL.Admin.NewResponsibility" />
+    <Reference Include="Thyt.TiPLM.DEL.Environment" />
+    <Reference Include="AxInterop.tiEcmsControll" />
+    <Reference Include="Thyt.TiPLM.PLL.Admin.NewResponsibility" />
+    <Reference Include="System.Data" />
+    <Reference Include="Thyt.TiPLM.DEL.Project2" />
+    <Reference Include="Thyt.TiPLM.UIL.Controls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Export\Thyt.TiPLM.UIL.Controls.DLL</HintPath>
+    </Reference>
+    <Reference Include="Thyt.TiPLM.UIL.Interop.Common" />
+    <Reference Include="Thyt.TiPLM.DEL.Resource" />
+    <Reference Include="Thyt.TiPLM.PLL.Admin.DataModel" />
+    <Reference Include="Thyt.TiPLM.PLL.Admin.BPM" />
+    <Reference Include="Thyt.TiPLM.PLL.Product2" />
+    <Reference Include="Thyt.TiPLM.PLL.PPM" />
+    <Reference Include="Thyt.TiPLM.PLL.Project2" />
+    <Reference Include="Thyt.TiPLM.PLL.Common" />
+    <Reference Include="Thyt.TiPLM.PLL.Admin.View" />
+    <Reference Include="Thyt.TiPLM.PLL.FileService" />
+    <Reference Include="Thyt.TiPLM.UIL.Environment" />
+    <Reference Include="Thyt.TiPLM.DEL.Foundation.FileService" />
+    <Reference Include="Thyt.TiPLM.PLL.Environment" />
+    <Reference Include="Thyt.TiPLM.DEL.FileConvertor" />
+    <Reference Include="Thyt.TiPLM.UIL.Addin" />
+    <Reference Include="Thyt.TiPLM.DEL.Addin" />
+    <Reference Include="System.Management" />
+    <Reference Include="Thyt.TiPLM.PLL.Resource" />
+    <Reference Include="DataFileProvider" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddProjectWorkTime.cs" />
+    <Compile Include="CodeAttrDropListHandler.cs" />
+    <Compile Include="CodeAttrInput.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DisplayStyle.cs" />
+    <Compile Include="DisplayStyleChangedHandler.cs" />
+    <Compile Include="DoubClickClassHandler.cs" />
+    <Compile Include="DropDownTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FrmGetCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGetCode.Designer.cs">
+      <DependentUpon>FrmGetCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMarkupByBrowser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMarkupByBrowser.Designer.cs">
+      <DependentUpon>FrmMarkupByBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNewID.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNewID.Designer.cs">
+      <DependentUpon>FrmNewID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOutputOption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOutputOption.Designer.cs">
+      <DependentUpon>FrmOutputOption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSortDef.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSortDef.Designer.cs">
+      <DependentUpon>FrmSortDef.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmThumOption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmThumOption.Designer.cs">
+      <DependentUpon>FrmThumOption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmViewAllMarkups.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmViewAllMarkups.Designer.cs">
+      <DependentUpon>FrmViewAllMarkups.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmViewFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmViewFile.Designer.cs">
+      <DependentUpon>FrmViewFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDDropListHandler.cs" />
+    <Compile Include="IDInput.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="IDInputPLM.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="IPLMTree.cs" />
+    <Compile Include="IResControl.cs" />
+    <Compile Include="IThumTools.cs" />
+    <Compile Include="LocationResFolder.cs" />
+    <Compile Include="NewAfterNodeSelected.cs" />
+    <Compile Include="PLMBaseTree.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PreviewChangedHandler.cs" />
+    <Compile Include="PreviewStyle.cs" />
+    <Compile Include="ProductFolder\FrmProductTeam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductFolder\FrmProductTeam.Designer.cs">
+      <DependentUpon>FrmProductTeam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductFolder\FrmProuctRole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductFolder\FrmProuctRole.Designer.cs">
+      <DependentUpon>FrmProuctRole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductFolder\frmUserOrgProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductFolder\frmUserOrgProduct.Designer.cs">
+      <DependentUpon>frmUserOrgProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectDropListHandler.cs" />
+    <Compile Include="ProjectInput.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ProjectInputPLM.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ResClsType.cs" />
+    <Compile Include="ResCombo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ResCombo.Designer.cs">
+      <DependentUpon>ResCombo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResComboPLM.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ResDataToExcel.cs" />
+    <Compile Include="ResDropListHandler.cs" />
+    <Compile Include="RuleCombo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RuleCombo.Designer.cs">
+      <DependentUpon>RuleCombo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RuleComboPLM.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RuleComboPLM.Designer.cs">
+      <DependentUpon>RuleComboPLM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RuleDropListHandler.cs" />
+    <Compile Include="SelectCAPPResHandler.cs" />
+    <Compile Include="SelectClassConstraint.cs" />
+    <Compile Include="SelectClassHandler.cs" />
+    <Compile Include="SelectCodeAttrHandler.cs" />
+    <Compile Include="SelectIDHandler.cs" />
+    <Compile Include="SelectPrinHandler.cs" />
+    <Compile Include="SelectProcessTemplateHandler.cs" />
+    <Compile Include="SelectProjectHandler.cs" />
+    <Compile Include="SelectResHandler.cs" />
+    <Compile Include="SelectResNodeHandler.cs" />
+    <Compile Include="SelectRuleHandler.cs" />
+    <Compile Include="SelectSerialHandler.cs" />
+    <Compile Include="SelectTimeHandler.cs" />
+    <Compile Include="SelectTreeViewHandler.cs" />
+    <Compile Include="SerialDropListHandler.cs" />
+    <Compile Include="SerialInput.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ThumbnailListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ThumbnailSetting.cs" />
+    <Compile Include="ThumShowEventArgs.cs" />
+    <Compile Include="ThumToolsBaseCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ThumToolsBaseCtrl.Designer.cs">
+      <DependentUpon>ThumToolsBaseCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThumToolsEventArgs.cs" />
+    <Compile Include="TimeComboInput.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TimeComboInput.Designer.cs">
+      <DependentUpon>TimeComboInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TimeComboInputPLM.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TimeComboInputPLM.Designer.cs">
+      <DependentUpon>TimeComboInputPLM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TimeDropListHandler.cs" />
+    <Compile Include="ToolStripCtrl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ToolStripCtrl.Designer.cs">
+      <DependentUpon>ToolStripCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TreeViewDropListHandler.cs" />
+    <Compile Include="UCAgent.cs" />
+    <Compile Include="UCAttrFilter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCAttrFilter.Designer.cs">
+      <DependentUpon>UCAttrFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCAttrFunction.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCAttrFunction.Designer.cs">
+      <DependentUpon>UCAttrFunction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCAttrTest.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCAttrTest.Designer.cs">
+      <DependentUpon>UCAttrTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCAttrUser2Org.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCAttrUser2Org.Designer.cs">
+      <DependentUpon>UCAttrUser2Org.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCClassTree.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCClassTree.Designer.cs">
+      <DependentUpon>UCClassTree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCClsRelFunction.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCClsRelFunction.Designer.cs">
+      <DependentUpon>UCClsRelFunction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCCodeAttrPicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCCodeAttrPicker.Designer.cs">
+      <DependentUpon>UCCodeAttrPicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCDataViewCondition.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCDataViewCondition.Designer.cs">
+      <DependentUpon>UCDataViewCondition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCHasFile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCHasFile.Designer.cs">
+      <DependentUpon>UCHasFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCHasLinkedObject.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCHasLinkedObject.Designer.cs">
+      <DependentUpon>UCHasLinkedObject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCHasRelObject.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCHasRelObject.Designer.cs">
+      <DependentUpon>UCHasRelObject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCIDPicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCIDPicker.Designer.cs">
+      <DependentUpon>UCIDPicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCOrgs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCOrgs.Designer.cs">
+      <DependentUpon>UCOrgs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCParamMain.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCParamMain.Designer.cs">
+      <DependentUpon>UCParamMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCProcessTemplatePicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCProcessTemplatePicker.Designer.cs">
+      <DependentUpon>UCProcessTemplatePicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCProjectPicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCProjectPicker.Designer.cs">
+      <DependentUpon>UCProjectPicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCResGrid.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCResGrid.Designer.cs">
+      <DependentUpon>UCResGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCResNodeTree.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCResNodeTree.Designer.cs">
+      <DependentUpon>UCResNodeTree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCResTree.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCResTree.Designer.cs">
+      <DependentUpon>UCResTree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCRoles.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCRoles.Designer.cs">
+      <DependentUpon>UCRoles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCSearchInFolder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCSearchInFolder.Designer.cs">
+      <DependentUpon>UCSearchInFolder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCSearchInProject.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCSearchInProject.Designer.cs">
+      <DependentUpon>UCSearchInProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCSelectClass.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UCSelectClass.Designer.cs">
+      <DependentUpon>UCSelectClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCSelectClassPLM.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UCSelectClassPLM.Designer.cs">
+      <DependentUpon>UCSelectClassPLM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCSelectPrin.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UCSelectPrin.Designer.cs">
+      <DependentUpon>UCSelectPrin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCSelectPrinPLM.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UCSelectPrinPLM.Designer.cs">
+      <DependentUpon>UCSelectPrinPLM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCSelectProcessTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UCSelectProcessTemplate.Designer.cs">
+      <DependentUpon>UCSelectProcessTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCSelectProcessTemplatePLM.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UCSelectProcessTemplatePLM.Designer.cs">
+      <DependentUpon>UCSelectProcessTemplatePLM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCSerialPicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCSerialPicker.Designer.cs">
+      <DependentUpon>UCSerialPicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCThumbnail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCThumbnail.Designer.cs">
+      <DependentUpon>UCThumbnail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCTimePicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCTimePicker.Designer.cs">
+      <DependentUpon>UCTimePicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCTreeViewPicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCTreeViewPicker.Designer.cs">
+      <DependentUpon>UCTreeViewPicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCUsers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCUsers.Designer.cs">
+      <DependentUpon>UCUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIThumbnailHelper.cs" />
+    <Compile Include="UITreeHelper.cs" />
+    <Compile Include="ViewFileHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmGetCode.resx">
+      <DependentUpon>FrmGetCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMarkupByBrowser.resx">
+      <DependentUpon>FrmMarkupByBrowser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNewID.resx">
+      <DependentUpon>FrmNewID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOutputOption.resx">
+      <DependentUpon>FrmOutputOption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSortDef.resx">
+      <DependentUpon>FrmSortDef.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmThumOption.resx">
+      <DependentUpon>FrmThumOption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmViewAllMarkups.resx">
+      <DependentUpon>FrmViewAllMarkups.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmViewFile.resx">
+      <DependentUpon>FrmViewFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductFolder\FrmProductTeam.resx">
+      <DependentUpon>FrmProductTeam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductFolder\FrmProuctRole.resx">
+      <DependentUpon>FrmProuctRole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductFolder\frmUserOrgProduct.resx">
+      <DependentUpon>frmUserOrgProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <DependentUpon>Resources.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResCombo.resx">
+      <DependentUpon>ResCombo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RuleCombo.resx">
+      <DependentUpon>RuleCombo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RuleComboPLM.resx">
+      <DependentUpon>RuleComboPLM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThumToolsBaseCtrl.resx">
+      <DependentUpon>ThumToolsBaseCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCAttrFilter.resx">
+      <DependentUpon>UCAttrFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCAttrFunction.resx">
+      <DependentUpon>UCAttrFunction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCAttrTest.resx">
+      <DependentUpon>UCAttrTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCAttrUser2Org.resx">
+      <DependentUpon>UCAttrUser2Org.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCClassTree.resx">
+      <DependentUpon>UCClassTree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCClsRelFunction.resx">
+      <DependentUpon>UCClsRelFunction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCCodeAttrPicker.resx">
+      <DependentUpon>UCCodeAttrPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCDataViewCondition.resx">
+      <DependentUpon>UCDataViewCondition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCHasFile.resx">
+      <DependentUpon>UCHasFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCHasLinkedObject.resx">
+      <DependentUpon>UCHasLinkedObject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCHasRelObject.resx">
+      <DependentUpon>UCHasRelObject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCIDPicker.resx">
+      <DependentUpon>UCIDPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCOrgs.resx">
+      <DependentUpon>UCOrgs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCParamMain.resx">
+      <DependentUpon>UCParamMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCProcessTemplatePicker.resx">
+      <DependentUpon>UCProcessTemplatePicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCProjectPicker.resx">
+      <DependentUpon>UCProjectPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCResGrid.resx">
+      <DependentUpon>UCResGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCResNodeTree.resx">
+      <DependentUpon>UCResNodeTree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCResTree.resx">
+      <DependentUpon>UCResTree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCRoles.resx">
+      <DependentUpon>UCRoles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCSearchInFolder.resx">
+      <DependentUpon>UCSearchInFolder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCSearchInProject.resx">
+      <DependentUpon>UCSearchInProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCSelectClass.resx">
+      <DependentUpon>UCSelectClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCSelectClassPLM.resx">
+      <DependentUpon>UCSelectClassPLM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCSelectPrin.resx">
+      <DependentUpon>UCSelectPrin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCSelectPrinPLM.resx">
+      <DependentUpon>UCSelectPrinPLM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCSelectProcessTemplate.resx">
+      <DependentUpon>UCSelectProcessTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCSelectProcessTemplatePLM.resx">
+      <DependentUpon>UCSelectProcessTemplatePLM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCSerialPicker.resx">
+      <DependentUpon>UCSerialPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCThumbnail.resx">
+      <DependentUpon>UCThumbnail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCTimePicker.resx">
+      <DependentUpon>UCTimePicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCTreeViewPicker.resx">
+      <DependentUpon>UCTreeViewPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCUsers.resx">
+      <DependentUpon>UCUsers.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Properties\ICO_SCH_EXPORTEXCEL.ico" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,398 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B8C6E883-25F0-4C53-A5D8-E59C42894CB1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Thyt.TiPLM.UIL.PPM.PPCardModeling</RootNamespace>
+    <AssemblyName>Thyt.TiPLM.UIL.PPM.PPCardModeling</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Export\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.OWC, Version=1.0.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Export\AxInterop.OWC.DLL</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="DevExpress.Data.v13.2, Version=13.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Export\DevExpress.Data.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v13.2, Version=13.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Export\DevExpress.Utils.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v13.2, Version=13.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Export\DevExpress.XtraEditors.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetMagic2005, Version=5.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Export\DotNetMagic2005.DLL</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Shared.v10.3, Version=10.3.20103.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Export\Infragistics2.Shared.v10.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinEditors.v10.3, Version=10.3.20103.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Export\Infragistics2.Win.UltraWinEditors.v10.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinGrid.v10.3, Version=10.3.20103.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Export\Infragistics2.Win.UltraWinGrid.v10.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.v10.3, Version=10.3.20103.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Export\Infragistics2.Win.v10.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.OWC, Version=1.0.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\Export\Interop.OWC.DLL</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Thyt.TiPLM.CLT.UIL.DeskLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Export\Thyt.TiPLM.CLT.UIL.DeskLib.DLL</HintPath>
+    </Reference>
+    <Reference Include="Thyt.TiPLM.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Export\Thyt.TiPLM.Common.DLL</HintPath>
+    </Reference>
+    <Reference Include="Thyt.TiPLM.Common.Interface, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Export\Thyt.TiPLM.Common.Interface.DLL</HintPath>
+    </Reference>
+    <Reference Include="Thyt.TiPLM.DEL.Admin.DataModel, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Export\Thyt.TiPLM.DEL.Admin.DataModel.DLL</HintPath>
+    </Reference>
+    <Reference Include="Thyt.TiPLM.DEL.Admin.NewResponsibility, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Export\Thyt.TiPLM.DEL.Admin.NewResponsibility.DLL</HintPath>
+    </Reference>
+    <Reference Include="Thyt.TiPLM.DEL.Product, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Export\Thyt.TiPLM.DEL.Product.DLL</HintPath>
+    </Reference>
+    <Reference Include="Thyt.TiPLM.DEL.Resource, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Export\Thyt.TiPLM.DEL.Resource.DLL</HintPath>
+    </Reference>
+    <Reference Include="Thyt.TiPLM.PLL.Admin.DataModel, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Export\Thyt.TiPLM.PLL.Admin.DataModel.DLL</HintPath>
+    </Reference>
+    <Reference Include="Thyt.TiPLM.PLL.Admin.NewResponsibility, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Export\Thyt.TiPLM.PLL.Admin.NewResponsibility.DLL</HintPath>
+    </Reference>
+    <Reference Include="Thyt.TiPLM.PLL.Common, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Export\Thyt.TiPLM.PLL.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Thyt.TiPLM.PLL.Environment, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Export\Thyt.TiPLM.PLL.Environment.DLL</HintPath>
+    </Reference>
+    <Reference Include="Thyt.TiPLM.PLL.PPM, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Export\Thyt.TiPLM.PLL.PPM.DLL</HintPath>
+    </Reference>
+    <Reference Include="Thyt.TiPLM.PLL.Product2, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Export\Thyt.TiPLM.PLL.Product2.DLL</HintPath>
+    </Reference>
+    <Reference Include="Thyt.TiPLM.PLL.Utility, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Export\Thyt.TiPLM.PLL.Utility.DLL</HintPath>
+    </Reference>
+    <Reference Include="Thyt.TiPLM.UIL.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Export\Thyt.TiPLM.UIL.Common.DLL</HintPath>
+    </Reference>
+    <Reference Include="Thyt.TiPLM.UIL.Common.UserControl, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Export\Thyt.TiPLM.UIL.Common.UserControl.DLL</HintPath>
+    </Reference>
+    <Reference Include="Thyt.TiPLM.UIL.Controls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Export\Thyt.TiPLM.UIL.Controls.DLL</HintPath>
+    </Reference>
+    <Reference Include="Thyt.TiPLM.UIL.Product, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Export\Thyt.TiPLM.UIL.Product.DLL</HintPath>
+    </Reference>
+    <Reference Include="Thyt.TiPLM.UIL.Product.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Export\Thyt.TiPLM.UIL.Product.Common.DLL</HintPath>
+    </Reference>
+    <Reference Include="Thyt.TiPLM.UIL.Resource.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Export\Thyt.TiPLM.UIL.Resource.Common.DLL</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DlgAutoNumber.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DlgAutoNumber.Designer.cs">
+      <DependentUpon>DlgAutoNumber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DlgBarcode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DlgBarcode.Designer.cs">
+      <DependentUpon>DlgBarcode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DlgChangeHeadMainItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DlgChangeHeadMainItem.Designer.cs">
+      <DependentUpon>DlgChangeHeadMainItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DlgChar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DlgChar.Designer.cs">
+      <DependentUpon>DlgChar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DlgDataHiddenCol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DlgDataHiddenCol.Designer.cs">
+      <DependentUpon>DlgDataHiddenCol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DlgFormSignature.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DlgFormSignature.Designer.cs">
+      <DependentUpon>DlgFormSignature.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DlgFunction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DlgFunction.Designer.cs">
+      <DependentUpon>DlgFunction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DlgHistoryList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DlgHistoryList.Designer.cs">
+      <DependentUpon>DlgHistoryList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DlgHistoryProperty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DlgHistoryProperty.Designer.cs">
+      <DependentUpon>DlgHistoryProperty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DlgNewGuid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DlgNewGuid.Designer.cs">
+      <DependentUpon>DlgNewGuid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DlgOption2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DlgOption2.Designer.cs">
+      <DependentUpon>DlgOption2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DlgPageIndex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DlgPageIndex.Designer.cs">
+      <DependentUpon>DlgPageIndex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DlgPageSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DlgPageSetup.Designer.cs">
+      <DependentUpon>DlgPageSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DlgPicture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DlgPicture.Designer.cs">
+      <DependentUpon>DlgPicture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DlgProcessList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DlgProcessList.Designer.cs">
+      <DependentUpon>DlgProcessList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DlgProcessProperty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DlgProcessProperty.Designer.cs">
+      <DependentUpon>DlgProcessProperty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBrowse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBrowse.Designer.cs">
+      <DependentUpon>FrmBrowse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmModeling.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmModeling.Designer.cs">
+      <DependentUpon>FrmModeling.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProperty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProperty.Designer.cs">
+      <DependentUpon>FrmProperty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTmpCompare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTmpCompare.Designer.cs">
+      <DependentUpon>FrmTmpCompare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HeadMainItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HeadMainItem.Designer.cs">
+      <DependentUpon>HeadMainItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OpenTemplateUtil.cs" />
+    <Compile Include="PPTmpControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PPTmpControl.Designer.cs">
+      <DependentUpon>PPTmpControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PPTmpPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PPTmpPage.Designer.cs">
+      <DependentUpon>PPTmpPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PropertyPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PropertyPanel.Designer.cs">
+      <DependentUpon>PropertyPanel.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DlgAutoNumber.resx">
+      <DependentUpon>DlgAutoNumber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DlgBarcode.resx">
+      <DependentUpon>DlgBarcode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DlgChangeHeadMainItem.resx">
+      <DependentUpon>DlgChangeHeadMainItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DlgChar.resx">
+      <DependentUpon>DlgChar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DlgDataHiddenCol.resx">
+      <DependentUpon>DlgDataHiddenCol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DlgFormSignature.resx">
+      <DependentUpon>DlgFormSignature.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DlgFunction.resx">
+      <DependentUpon>DlgFunction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DlgHistoryList.resx">
+      <DependentUpon>DlgHistoryList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DlgHistoryProperty.resx">
+      <DependentUpon>DlgHistoryProperty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DlgNewGuid.resx">
+      <DependentUpon>DlgNewGuid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DlgOption2.resx">
+      <DependentUpon>DlgOption2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DlgPageIndex.resx">
+      <DependentUpon>DlgPageIndex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DlgPageSetup.resx">
+      <DependentUpon>DlgPageSetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DlgPicture.resx">
+      <DependentUpon>DlgPicture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DlgProcessList.resx">
+      <DependentUpon>DlgProcessList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DlgProcessProperty.resx">
+      <DependentUpon>DlgProcessProperty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBrowse.resx">
+      <DependentUpon>FrmBrowse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmModeling.resx">
+      <DependentUpon>FrmModeling.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProperty.resx">
+      <DependentUpon>FrmProperty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTmpCompare.resx">
+      <DependentUpon>FrmTmpCompare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeadMainItem.resx">
+      <DependentUpon>HeadMainItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PPTmpControl.resx">
+      <DependentUpon>PPTmpControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PPTmpPage.resx">
+      <DependentUpon>PPTmpPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="PropertyPanel.resx">
+      <DependentUpon>PropertyPanel.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

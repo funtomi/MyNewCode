@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8DEE23D4-CF48-4767-8DA4-A5212A4C16AB}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>Thyt.TiPLM.UIL.Resource.Common</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Export\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>Thyt.TiPLM.UIL.Resource.Common</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Compile Include="FrmGetCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGetCode.Designer.cs">
+      <DependentUpon>FrmGetCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNewID.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNewID.Designer.cs">
+      <DependentUpon>FrmNewID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPicProperty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPicProperty.Designer.cs">
+      <DependentUpon>FrmPicProperty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRESPicture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRESPicture.Designer.cs">
+      <DependentUpon>FrmRESPicture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NEWUC\CRefSet.cs" />
+    <Compile Include="NEWUC\DEBoxObject.cs" />
+    <Compile Include="NEWUC\DECusRelation.cs" />
+    <Compile Include="NEWUC\DECusRelationLst.cs" />
+    <Compile Include="NEWUC\SelectResHandler.cs" />
+    <Compile Include="NEWUC\UCResGrid.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NEWUC\UCResGrid.Designer.cs">
+      <DependentUpon>UCResGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NEWUC\UCResRelation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NEWUC\UCResRelation.Designer.cs">
+      <DependentUpon>UCResRelation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NEWUC\UCResSelect.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NEWUC\UCResSelect.Designer.cs">
+      <DependentUpon>UCResSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NEWUC\UCResTree.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NEWUC\UCResTree.Designer.cs">
+      <DependentUpon>UCResTree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OuterResource\FrmDisplayOuterResource.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OuterResource\FrmDisplayOuterResource.Designer.cs">
+      <DependentUpon>FrmDisplayOuterResource.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OuterResource\FrmSelAddin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OuterResource\FrmSelAddin.Designer.cs">
+      <DependentUpon>FrmSelAddin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OuterResource\OuterResourceCreatedEventArgs.cs" />
+    <Compile Include="ResCombo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ResCommon\FrmFilterData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResCommon\FrmFilterData.Designer.cs">
+      <DependentUpon>FrmFilterData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResCommon\FrmModelDef.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResCommon\FrmModelDef.Designer.cs">
+      <DependentUpon>FrmModelDef.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResCommon\FrmModifyFilter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResCommon\FrmModifyFilter.Designer.cs">
+      <DependentUpon>FrmModifyFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResCommon\FrmSortDef.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResCommon\FrmSortDef.Designer.cs">
+      <DependentUpon>FrmSortDef.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectResHandler.cs" />
+    <Compile Include="UCCusResource.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCCusResource.Designer.cs">
+      <DependentUpon>UCCusResource.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCCusSPL.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCCusSPL.Designer.cs">
+      <DependentUpon>UCCusSPL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCCusTabControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UCCusTxtBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCCusTxtBox.Designer.cs">
+      <DependentUpon>UCCusTxtBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\SelectResHandler.cs" />
+    <Compile Include="UserControl\UCRes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\UCRes.Designer.cs">
+      <DependentUpon>UCRes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UCResBanding.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\UCResBanding.Designer.cs">
+      <DependentUpon>UCResBanding.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UCselRes.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControl\UCselRes.Designer.cs">
+      <DependentUpon>UCselRes.cs</DependentUpon>
+    </Compile>
+    <Reference Include="AxInterop.tiEcmsControll, Version=1.19.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\SysWOW64\AxInterop.tiEcmsControll.DLL</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v13.2, Version=13.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Export\DevExpress.Data.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v13.2, Version=13.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Export\DevExpress.Utils.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v13.2, Version=13.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Export\DevExpress.XtraEditors.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Shared.v10.3, Version=10.3.20103.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Export\Infragistics2.Shared.v10.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinEditors.v10.3, Version=10.3.20103.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Export\Infragistics2.Win.UltraWinEditors.v10.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinGrid.v10.3, Version=10.3.20103.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Export\Infragistics2.Win.UltraWinGrid.v10.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.v10.3, Version=10.3.20103.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Export\Infragistics2.Win.v10.3.dll</HintPath>
+    </Reference>
+    <Reference Include="System.XML" />
+    <Reference Include="Thyt.TiPLM.UIL.Controls" />
+    <Reference Include="Thyt.TiPLM.UIL.Common.UserControl" />
+    <Reference Include="Thyt.TiPLM.Common" />
+    <Reference Include="System" />
+    <Reference Include="Thyt.TiPLM.DEL.Product" />
+    <Reference Include="Thyt.TiPLM.DEL.Resource" />
+    <Reference Include="Thyt.TiPLM.UIL.Common" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="Thyt.TiPLM.CLT.UIL.DeskLib" />
+    <Reference Include="DotNetMagic2005" />
+    <Reference Include="System.Data" />
+    <Reference Include="Thyt.TiPLM.DEL.Admin.DataModel" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="Thyt.TiPLM.DEL.Admin.NewResponsibility" />
+    <Reference Include="Thyt.TiPLM.PLL.Common" />
+    <Reference Include="Thyt.TiPLM.PLL.Admin.DataModel" />
+    <Reference Include="Thyt.TiPLM.PLL.Admin.NewResponsibility" />
+    <Reference Include="Thyt.TiPLM.PLL.Product2" />
+    <Reference Include="Thyt.TiPLM.PLL.Resource" />
+    <Reference Include="Thyt.TiPLM.PLL.FileService" />
+    <Reference Include="Thyt.TiPLM.Common.Interface" />
+    <Reference Include="Thyt.TiPLM.DEL.Addin" />
+    <Reference Include="Thyt.TiPLM.UIL.Addin" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmGetCode.resx">
+      <DependentUpon>FrmGetCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNewID.resx">
+      <DependentUpon>FrmNewID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPicProperty.resx">
+      <DependentUpon>FrmPicProperty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRESPicture.resx">
+      <DependentUpon>FrmRESPicture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NEWUC\UCResGrid.resx">
+      <DependentUpon>UCResGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NEWUC\UCResRelation.resx">
+      <DependentUpon>UCResRelation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NEWUC\UCResSelect.resx">
+      <DependentUpon>UCResSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NEWUC\UCResTree.resx">
+      <DependentUpon>UCResTree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OuterResource\FrmDisplayOuterResource.resx">
+      <DependentUpon>FrmDisplayOuterResource.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OuterResource\FrmSelAddin.resx">
+      <DependentUpon>FrmSelAddin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="ResCombo.resx">
+      <DependentUpon>ResCombo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResCommon\FrmFilterData.resx">
+      <DependentUpon>FrmFilterData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResCommon\FrmModelDef.resx">
+      <DependentUpon>FrmModelDef.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResCommon\FrmModifyFilter.resx">
+      <DependentUpon>FrmModifyFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResCommon\FrmSortDef.resx">
+      <DependentUpon>FrmSortDef.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCCusResource.resx">
+      <DependentUpon>UCCusResource.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCCusSPL.resx">
+      <DependentUpon>UCCusSPL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCCusTabControl.resx">
+      <DependentUpon>UCCusTabControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCCusTxtBox.resx">
+      <DependentUpon>UCCusTxtBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\UCResBanding.resx">
+      <DependentUpon>UCResBanding.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\UCselRes.resx">
+      <DependentUpon>UCselRes.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup />
+</Project>

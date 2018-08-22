@@ -1,7 +1,7 @@
 <XtraSerializer version="1.0" application="UIBarManager">
   <property name="$BarManager" iskey="true" value="BarManager">
     <property name="#LayoutVersion" />
-    <property name="Items" iskey="true" value="18">
+    <property name="Items" iskey="true" value="16">
       <property name="Item1" isnull="true" iskey="true">
         <property name="ItemLinks" iskey="true" value="5">
           <property name="Item1" isnull="true" iskey="true">
@@ -327,16 +327,6 @@
             <property name="Down">False</property>
             <property name="Down">False</property>
             <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
           </property>
           <property name="Item7" isnull="true" iskey="true">
             <property name="UserRibbonStyle">Default</property>
@@ -361,16 +351,6 @@
             <property name="GalleryBarItemName" />
             <property name="PageGroupName" />
             <property name="UserDefine">None</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
             <property name="Down">False</property>
             <property name="Down">False</property>
             <property name="Down">False</property>
@@ -489,16 +469,6 @@
             <property name="Down">False</property>
             <property name="Down">False</property>
             <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
           </property>
           <property name="Item9" isnull="true" iskey="true">
             <property name="UserRibbonStyle">Default</property>
@@ -523,16 +493,6 @@
             <property name="GalleryBarItemName" />
             <property name="PageGroupName" />
             <property name="UserDefine">None</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
             <property name="Down">False</property>
             <property name="Down">False</property>
             <property name="Down">False</property>
@@ -651,16 +611,6 @@
             <property name="Down">False</property>
             <property name="Down">False</property>
             <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
           </property>
           <property name="Item11" isnull="true" iskey="true">
             <property name="UserRibbonStyle">Default</property>
@@ -685,16 +635,6 @@
             <property name="GalleryBarItemName" />
             <property name="PageGroupName" />
             <property name="UserDefine">None</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
             <property name="Down">False</property>
             <property name="Down">False</property>
             <property name="Down">False</property>
@@ -813,16 +753,6 @@
             <property name="Down">False</property>
             <property name="Down">False</property>
             <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
           </property>
           <property name="Item13" isnull="true" iskey="true">
             <property name="UserRibbonStyle">Default</property>
@@ -847,16 +777,6 @@
             <property name="GalleryBarItemName" />
             <property name="PageGroupName" />
             <property name="UserDefine">None</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
             <property name="Down">False</property>
             <property name="Down">False</property>
             <property name="Down">False</property>
@@ -975,16 +895,6 @@
             <property name="Down">False</property>
             <property name="Down">False</property>
             <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
           </property>
           <property name="Item15" isnull="true" iskey="true">
             <property name="UserRibbonStyle">Default</property>
@@ -1009,16 +919,6 @@
             <property name="GalleryBarItemName" />
             <property name="PageGroupName" />
             <property name="UserDefine">None</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
             <property name="Down">False</property>
             <property name="Down">False</property>
             <property name="Down">False</property>
@@ -1137,16 +1037,6 @@
             <property name="Down">False</property>
             <property name="Down">False</property>
             <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
           </property>
           <property name="Item17" isnull="true" iskey="true">
             <property name="UserRibbonStyle">Default</property>
@@ -1171,16 +1061,6 @@
             <property name="GalleryBarItemName" />
             <property name="PageGroupName" />
             <property name="UserDefine">None</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
             <property name="Down">False</property>
             <property name="Down">False</property>
             <property name="Down">False</property>
@@ -1299,16 +1179,6 @@
             <property name="Down">False</property>
             <property name="Down">False</property>
             <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
           </property>
           <property name="Item19" isnull="true" iskey="true">
             <property name="UserRibbonStyle">Default</property>
@@ -1333,16 +1203,6 @@
             <property name="GalleryBarItemName" />
             <property name="PageGroupName" />
             <property name="UserDefine">None</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
             <property name="Down">False</property>
             <property name="Down">False</property>
             <property name="Down">False</property>
@@ -1461,16 +1321,6 @@
             <property name="Down">False</property>
             <property name="Down">False</property>
             <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
           </property>
           <property name="Item21" isnull="true" iskey="true">
             <property name="UserRibbonStyle">Default</property>
@@ -1495,16 +1345,6 @@
             <property name="GalleryBarItemName" />
             <property name="PageGroupName" />
             <property name="UserDefine">None</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
             <property name="Down">False</property>
             <property name="Down">False</property>
             <property name="Down">False</property>
@@ -1623,16 +1463,6 @@
             <property name="Down">False</property>
             <property name="Down">False</property>
             <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
           </property>
           <property name="Item23" isnull="true" iskey="true">
             <property name="UserRibbonStyle">Default</property>
@@ -1657,16 +1487,6 @@
             <property name="GalleryBarItemName" />
             <property name="PageGroupName" />
             <property name="UserDefine">None</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
             <property name="Down">False</property>
             <property name="Down">False</property>
             <property name="Down">False</property>
@@ -1785,16 +1605,6 @@
             <property name="Down">False</property>
             <property name="Down">False</property>
             <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
           </property>
           <property name="Item25" isnull="true" iskey="true">
             <property name="UserRibbonStyle">Default</property>
@@ -1819,16 +1629,6 @@
             <property name="GalleryBarItemName" />
             <property name="PageGroupName" />
             <property name="UserDefine">None</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
             <property name="Down">False</property>
             <property name="Down">False</property>
             <property name="Down">False</property>
@@ -1947,16 +1747,6 @@
             <property name="Down">False</property>
             <property name="Down">False</property>
             <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
           </property>
           <property name="Item27" isnull="true" iskey="true">
             <property name="UserRibbonStyle">Default</property>
@@ -1981,16 +1771,6 @@
             <property name="GalleryBarItemName" />
             <property name="PageGroupName" />
             <property name="UserDefine">None</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
             <property name="Down">False</property>
             <property name="Down">False</property>
             <property name="Down">False</property>
@@ -2109,16 +1889,6 @@
             <property name="Down">False</property>
             <property name="Down">False</property>
             <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
           </property>
           <property name="Item29" isnull="true" iskey="true">
             <property name="UserRibbonStyle">Default</property>
@@ -2143,16 +1913,6 @@
             <property name="GalleryBarItemName" />
             <property name="PageGroupName" />
             <property name="UserDefine">None</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
             <property name="Down">False</property>
             <property name="Down">False</property>
             <property name="Down">False</property>
@@ -2271,16 +2031,6 @@
             <property name="Down">False</property>
             <property name="Down">False</property>
             <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
           </property>
           <property name="Item31" isnull="true" iskey="true">
             <property name="UserRibbonStyle">Default</property>
@@ -2305,16 +2055,6 @@
             <property name="GalleryBarItemName" />
             <property name="PageGroupName" />
             <property name="UserDefine">None</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
             <property name="Down">False</property>
             <property name="Down">False</property>
             <property name="Down">False</property>
@@ -2433,16 +2173,6 @@
             <property name="Down">False</property>
             <property name="Down">False</property>
             <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
           </property>
           <property name="Item33" isnull="true" iskey="true">
             <property name="UserRibbonStyle">Default</property>
@@ -2467,16 +2197,6 @@
             <property name="GalleryBarItemName" />
             <property name="PageGroupName" />
             <property name="UserDefine">None</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
             <property name="Down">False</property>
             <property name="Down">False</property>
             <property name="Down">False</property>
@@ -2595,16 +2315,6 @@
             <property name="Down">False</property>
             <property name="Down">False</property>
             <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
           </property>
           <property name="Item35" isnull="true" iskey="true">
             <property name="UserRibbonStyle">Default</property>
@@ -2629,16 +2339,6 @@
             <property name="GalleryBarItemName" />
             <property name="PageGroupName" />
             <property name="UserDefine">None</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
             <property name="Down">False</property>
             <property name="Down">False</property>
             <property name="Down">False</property>
@@ -2757,16 +2457,6 @@
             <property name="Down">False</property>
             <property name="Down">False</property>
             <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
           </property>
           <property name="Item37" isnull="true" iskey="true">
             <property name="UserRibbonStyle">Default</property>
@@ -2791,16 +2481,6 @@
             <property name="GalleryBarItemName" />
             <property name="PageGroupName" />
             <property name="UserDefine">None</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
             <property name="Down">False</property>
             <property name="Down">False</property>
             <property name="Down">False</property>
@@ -2919,16 +2599,6 @@
             <property name="Down">False</property>
             <property name="Down">False</property>
             <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
           </property>
           <property name="Item39" isnull="true" iskey="true">
             <property name="UserRibbonStyle">Default</property>
@@ -2953,16 +2623,6 @@
             <property name="GalleryBarItemName" />
             <property name="PageGroupName" />
             <property name="UserDefine">None</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
             <property name="Down">False</property>
             <property name="Down">False</property>
             <property name="Down">False</property>
@@ -3081,16 +2741,6 @@
             <property name="Down">False</property>
             <property name="Down">False</property>
             <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
           </property>
           <property name="Item41" isnull="true" iskey="true">
             <property name="UserRibbonStyle">Default</property>
@@ -3115,16 +2765,6 @@
             <property name="GalleryBarItemName" />
             <property name="PageGroupName" />
             <property name="UserDefine">None</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
             <property name="Down">False</property>
             <property name="Down">False</property>
             <property name="Down">False</property>
@@ -3243,16 +2883,6 @@
             <property name="Down">False</property>
             <property name="Down">False</property>
             <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
           </property>
           <property name="Item43" isnull="true" iskey="true">
             <property name="UserRibbonStyle">Default</property>
@@ -3277,16 +2907,6 @@
             <property name="GalleryBarItemName" />
             <property name="PageGroupName" />
             <property name="UserDefine">None</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
             <property name="Down">False</property>
             <property name="Down">False</property>
             <property name="Down">False</property>
@@ -3405,16 +3025,6 @@
             <property name="Down">False</property>
             <property name="Down">False</property>
             <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
           </property>
           <property name="Item45" isnull="true" iskey="true">
             <property name="UserRibbonStyle">Default</property>
@@ -3439,16 +3049,6 @@
             <property name="GalleryBarItemName" />
             <property name="PageGroupName" />
             <property name="UserDefine">None</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
             <property name="Down">False</property>
             <property name="Down">False</property>
             <property name="Down">False</property>
@@ -3567,16 +3167,6 @@
             <property name="Down">False</property>
             <property name="Down">False</property>
             <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
           </property>
           <property name="Item47" isnull="true" iskey="true">
             <property name="UserRibbonStyle">Default</property>
@@ -3601,16 +3191,6 @@
             <property name="GalleryBarItemName" />
             <property name="PageGroupName" />
             <property name="UserDefine">None</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
             <property name="Down">False</property>
             <property name="Down">False</property>
             <property name="Down">False</property>
@@ -3729,16 +3309,6 @@
             <property name="Down">False</property>
             <property name="Down">False</property>
             <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
           </property>
           <property name="Item49" isnull="true" iskey="true">
             <property name="UserRibbonStyle">Default</property>
@@ -3763,16 +3333,6 @@
             <property name="GalleryBarItemName" />
             <property name="PageGroupName" />
             <property name="UserDefine">None</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
             <property name="Down">False</property>
             <property name="Down">False</property>
             <property name="Down">False</property>
@@ -3891,16 +3451,6 @@
             <property name="Down">False</property>
             <property name="Down">False</property>
             <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
           </property>
           <property name="Item51" isnull="true" iskey="true">
             <property name="UserRibbonStyle">Default</property>
@@ -3972,16 +3522,6 @@
             <property name="Down">False</property>
             <property name="Down">False</property>
             <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
           </property>
           <property name="Item52" isnull="true" iskey="true">
             <property name="UserRibbonStyle">Default</property>
@@ -4006,16 +3546,6 @@
             <property name="GalleryBarItemName" />
             <property name="PageGroupName" />
             <property name="UserDefine">None</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
             <property name="Down">False</property>
             <property name="Down">False</property>
             <property name="Down">False</property>
@@ -5316,7 +4846,7 @@
         <property name="Id">20032</property>
       </property>
       <property name="Item14" isnull="true" iskey="true">
-        <property name="ItemLinks" iskey="true" value="1">
+        <property name="ItemLinks" iskey="true" value="2">
           <property name="Item1" isnull="true" iskey="true">
             <property name="UserRibbonStyle">Default</property>
             <property name="UserAlignment">Default</property>
@@ -5340,51 +4870,6 @@
             <property name="GalleryBarItemName" />
             <property name="PageGroupName" />
             <property name="UserDefine">None</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-          </property>
-        </property>
-        <property name="Id">20013</property>
-      </property>
-      <property name="Item15" isnull="true" iskey="true">
-        <property name="ItemLinks" iskey="true" value="8">
-          <property name="Item1" isnull="true" iskey="true">
-            <property name="UserRibbonStyle">Default</property>
-            <property name="UserAlignment">Default</property>
-            <property name="UserPaintStyle">Standard</property>
-            <property name="UserCaption" />
-            <property name="ItemId">20000</property>
-            <property name="ClickCount">0</property>
-            <property name="UserWidth">0</property>
-            <property name="ImageIndex">-1</property>
-            <property name="BeginGroup">true</property>
-            <property name="ActAsButtonGroup">false</property>
-            <property name="MostRecentlyUsed">true</property>
-            <property name="KeyTip" />
-            <property name="RecentIndex">-1</property>
-            <property name="Visible">true</property>
-            <property name="IsPageGroupContentToolbarButtonLink">false</property>
-            <property name="DropDownKeyTip" />
-            <property name="IsMerged">false</property>
-            <property name="GalleryLinkIndex">-1</property>
-            <property name="IsGalleryToolbarItemLink">false</property>
-            <property name="GalleryBarItemName" />
-            <property name="PageGroupName" />
-            <property name="UserDefine">None</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
             <property name="Down">False</property>
             <property name="Down">False</property>
           </property>
@@ -5413,217 +4898,12 @@
             <property name="UserDefine">None</property>
             <property name="Down">False</property>
             <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-          </property>
-          <property name="Item3" isnull="true" iskey="true">
-            <property name="UserRibbonStyle">Default</property>
-            <property name="UserAlignment">Default</property>
-            <property name="UserPaintStyle">Standard</property>
-            <property name="UserCaption" />
-            <property name="ItemId">20000</property>
-            <property name="ClickCount">0</property>
-            <property name="UserWidth">0</property>
-            <property name="ImageIndex">-1</property>
-            <property name="BeginGroup">false</property>
-            <property name="ActAsButtonGroup">false</property>
-            <property name="MostRecentlyUsed">true</property>
-            <property name="KeyTip" />
-            <property name="RecentIndex">-1</property>
-            <property name="Visible">true</property>
-            <property name="IsPageGroupContentToolbarButtonLink">false</property>
-            <property name="DropDownKeyTip" />
-            <property name="IsMerged">false</property>
-            <property name="GalleryLinkIndex">-1</property>
-            <property name="IsGalleryToolbarItemLink">false</property>
-            <property name="GalleryBarItemName" />
-            <property name="PageGroupName" />
-            <property name="UserDefine">None</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-          </property>
-          <property name="Item4" isnull="true" iskey="true">
-            <property name="UserRibbonStyle">Default</property>
-            <property name="UserAlignment">Default</property>
-            <property name="UserPaintStyle">Standard</property>
-            <property name="UserCaption" />
-            <property name="ItemId">20000</property>
-            <property name="ClickCount">0</property>
-            <property name="UserWidth">0</property>
-            <property name="ImageIndex">-1</property>
-            <property name="BeginGroup">false</property>
-            <property name="ActAsButtonGroup">false</property>
-            <property name="MostRecentlyUsed">true</property>
-            <property name="KeyTip" />
-            <property name="RecentIndex">-1</property>
-            <property name="Visible">true</property>
-            <property name="IsPageGroupContentToolbarButtonLink">false</property>
-            <property name="DropDownKeyTip" />
-            <property name="IsMerged">false</property>
-            <property name="GalleryLinkIndex">-1</property>
-            <property name="IsGalleryToolbarItemLink">false</property>
-            <property name="GalleryBarItemName" />
-            <property name="PageGroupName" />
-            <property name="UserDefine">None</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-          </property>
-          <property name="Item5" isnull="true" iskey="true">
-            <property name="UserRibbonStyle">Default</property>
-            <property name="UserAlignment">Default</property>
-            <property name="UserPaintStyle">Standard</property>
-            <property name="UserCaption" />
-            <property name="ItemId">20000</property>
-            <property name="ClickCount">0</property>
-            <property name="UserWidth">0</property>
-            <property name="ImageIndex">-1</property>
-            <property name="BeginGroup">false</property>
-            <property name="ActAsButtonGroup">false</property>
-            <property name="MostRecentlyUsed">true</property>
-            <property name="KeyTip" />
-            <property name="RecentIndex">-1</property>
-            <property name="Visible">true</property>
-            <property name="IsPageGroupContentToolbarButtonLink">false</property>
-            <property name="DropDownKeyTip" />
-            <property name="IsMerged">false</property>
-            <property name="GalleryLinkIndex">-1</property>
-            <property name="IsGalleryToolbarItemLink">false</property>
-            <property name="GalleryBarItemName" />
-            <property name="PageGroupName" />
-            <property name="UserDefine">None</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-          </property>
-          <property name="Item6" isnull="true" iskey="true">
-            <property name="UserRibbonStyle">Default</property>
-            <property name="UserAlignment">Default</property>
-            <property name="UserPaintStyle">Standard</property>
-            <property name="UserCaption" />
-            <property name="ItemId">20000</property>
-            <property name="ClickCount">0</property>
-            <property name="UserWidth">0</property>
-            <property name="ImageIndex">-1</property>
-            <property name="BeginGroup">false</property>
-            <property name="ActAsButtonGroup">false</property>
-            <property name="MostRecentlyUsed">true</property>
-            <property name="KeyTip" />
-            <property name="RecentIndex">-1</property>
-            <property name="Visible">true</property>
-            <property name="IsPageGroupContentToolbarButtonLink">false</property>
-            <property name="DropDownKeyTip" />
-            <property name="IsMerged">false</property>
-            <property name="GalleryLinkIndex">-1</property>
-            <property name="IsGalleryToolbarItemLink">false</property>
-            <property name="GalleryBarItemName" />
-            <property name="PageGroupName" />
-            <property name="UserDefine">None</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-          </property>
-          <property name="Item7" isnull="true" iskey="true">
-            <property name="UserRibbonStyle">Default</property>
-            <property name="UserAlignment">Default</property>
-            <property name="UserPaintStyle">Standard</property>
-            <property name="UserCaption" />
-            <property name="ItemId">20000</property>
-            <property name="ClickCount">0</property>
-            <property name="UserWidth">0</property>
-            <property name="ImageIndex">-1</property>
-            <property name="BeginGroup">false</property>
-            <property name="ActAsButtonGroup">false</property>
-            <property name="MostRecentlyUsed">true</property>
-            <property name="KeyTip" />
-            <property name="RecentIndex">-1</property>
-            <property name="Visible">true</property>
-            <property name="IsPageGroupContentToolbarButtonLink">false</property>
-            <property name="DropDownKeyTip" />
-            <property name="IsMerged">false</property>
-            <property name="GalleryLinkIndex">-1</property>
-            <property name="IsGalleryToolbarItemLink">false</property>
-            <property name="GalleryBarItemName" />
-            <property name="PageGroupName" />
-            <property name="UserDefine">None</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-          </property>
-          <property name="Item8" isnull="true" iskey="true">
-            <property name="UserRibbonStyle">Default</property>
-            <property name="UserAlignment">Default</property>
-            <property name="UserPaintStyle">Standard</property>
-            <property name="UserCaption" />
-            <property name="ItemId">20000</property>
-            <property name="ClickCount">0</property>
-            <property name="UserWidth">0</property>
-            <property name="ImageIndex">-1</property>
-            <property name="BeginGroup">false</property>
-            <property name="ActAsButtonGroup">false</property>
-            <property name="MostRecentlyUsed">true</property>
-            <property name="KeyTip" />
-            <property name="RecentIndex">-1</property>
-            <property name="Visible">true</property>
-            <property name="IsPageGroupContentToolbarButtonLink">false</property>
-            <property name="DropDownKeyTip" />
-            <property name="IsMerged">false</property>
-            <property name="GalleryLinkIndex">-1</property>
-            <property name="IsGalleryToolbarItemLink">false</property>
-            <property name="GalleryBarItemName" />
-            <property name="PageGroupName" />
-            <property name="UserDefine">None</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
           </property>
         </property>
         <property name="Id">20044</property>
       </property>
-      <property name="Item16" isnull="true" iskey="true">
-        <property name="ItemLinks" iskey="true" value="3">
+      <property name="Item15" isnull="true" iskey="true">
+        <property name="ItemLinks" iskey="true" value="2">
           <property name="Item1" isnull="true" iskey="true">
             <property name="UserRibbonStyle">Default</property>
             <property name="UserAlignment">Default</property>
@@ -5655,29 +4935,6 @@
             <property name="UserAlignment">Default</property>
             <property name="UserWidth">0</property>
             <property name="GalleryBarItemName" />
-            <property name="ItemId">20013</property>
-            <property name="ClickCount">0</property>
-            <property name="MostRecentlyUsed">true</property>
-            <property name="Visible">true</property>
-            <property name="RecentIndex">-1</property>
-            <property name="ImageIndex">-1</property>
-            <property name="UserPaintStyle">Standard</property>
-            <property name="ActAsButtonGroup">false</property>
-            <property name="BeginGroup">false</property>
-            <property name="IsPageGroupContentToolbarButtonLink">false</property>
-            <property name="IsMerged">false</property>
-            <property name="KeyTip" />
-            <property name="PageGroupName" />
-            <property name="IsGalleryToolbarItemLink">false</property>
-            <property name="GalleryLinkIndex">-1</property>
-            <property name="UserDefine">None</property>
-          </property>
-          <property name="Item3" isnull="true" iskey="true">
-            <property name="UserCaption" />
-            <property name="UserRibbonStyle">Default</property>
-            <property name="UserAlignment">Default</property>
-            <property name="UserWidth">0</property>
-            <property name="GalleryBarItemName" />
             <property name="ItemId">20044</property>
             <property name="ClickCount">0</property>
             <property name="MostRecentlyUsed">true</property>
@@ -5700,7 +4957,7 @@
         </property>
         <property name="Id">20011</property>
       </property>
-      <property name="Item17" isnull="true" iskey="true">
+      <property name="Item16" isnull="true" iskey="true">
         <property name="ItemLinks" iskey="true" value="1">
           <property name="Item1" isnull="true" iskey="true">
             <property name="UserRibbonStyle">Default</property>
@@ -5716,7 +4973,7 @@
             <property name="MostRecentlyUsed">true</property>
             <property name="KeyTip" />
             <property name="RecentIndex">-1</property>
-            <property name="Visible">false</property>
+            <property name="Visible">true</property>
             <property name="IsPageGroupContentToolbarButtonLink">false</property>
             <property name="DropDownKeyTip" />
             <property name="IsMerged">false</property>
@@ -5729,821 +4986,6 @@
           </property>
         </property>
         <property name="Id">20046</property>
-      </property>
-      <property name="Item18" isnull="true" iskey="true">
-        <property name="ItemLinks" iskey="true" value="10">
-          <property name="Item1" isnull="true" iskey="true">
-            <property name="UserRibbonStyle">Default</property>
-            <property name="UserAlignment">Default</property>
-            <property name="UserPaintStyle">Standard</property>
-            <property name="UserCaption" />
-            <property name="ItemId">-1</property>
-            <property name="ClickCount">20</property>
-            <property name="UserWidth">0</property>
-            <property name="ImageIndex">-1</property>
-            <property name="BeginGroup">false</property>
-            <property name="ActAsButtonGroup">false</property>
-            <property name="MostRecentlyUsed">true</property>
-            <property name="KeyTip" />
-            <property name="RecentIndex">9</property>
-            <property name="Visible">true</property>
-            <property name="IsPageGroupContentToolbarButtonLink">false</property>
-            <property name="DropDownKeyTip" />
-            <property name="IsMerged">false</property>
-            <property name="GalleryLinkIndex">-1</property>
-            <property name="IsGalleryToolbarItemLink">false</property>
-            <property name="GalleryBarItemName" />
-            <property name="PageGroupName" />
-            <property name="UserDefine">None</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-          </property>
-          <property name="Item2" isnull="true" iskey="true">
-            <property name="UserRibbonStyle">Default</property>
-            <property name="UserAlignment">Default</property>
-            <property name="UserPaintStyle">Standard</property>
-            <property name="UserCaption" />
-            <property name="ItemId">-1</property>
-            <property name="ClickCount">20</property>
-            <property name="UserWidth">0</property>
-            <property name="ImageIndex">-1</property>
-            <property name="BeginGroup">false</property>
-            <property name="ActAsButtonGroup">false</property>
-            <property name="MostRecentlyUsed">true</property>
-            <property name="KeyTip" />
-            <property name="RecentIndex">8</property>
-            <property name="Visible">true</property>
-            <property name="IsPageGroupContentToolbarButtonLink">false</property>
-            <property name="DropDownKeyTip" />
-            <property name="IsMerged">false</property>
-            <property name="GalleryLinkIndex">-1</property>
-            <property name="IsGalleryToolbarItemLink">false</property>
-            <property name="GalleryBarItemName" />
-            <property name="PageGroupName" />
-            <property name="UserDefine">None</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-          </property>
-          <property name="Item3" isnull="true" iskey="true">
-            <property name="UserRibbonStyle">Default</property>
-            <property name="UserAlignment">Default</property>
-            <property name="UserPaintStyle">Standard</property>
-            <property name="UserCaption" />
-            <property name="ItemId">-1</property>
-            <property name="ClickCount">20</property>
-            <property name="UserWidth">0</property>
-            <property name="ImageIndex">-1</property>
-            <property name="BeginGroup">false</property>
-            <property name="ActAsButtonGroup">false</property>
-            <property name="MostRecentlyUsed">true</property>
-            <property name="KeyTip" />
-            <property name="RecentIndex">7</property>
-            <property name="Visible">true</property>
-            <property name="IsPageGroupContentToolbarButtonLink">false</property>
-            <property name="DropDownKeyTip" />
-            <property name="IsMerged">false</property>
-            <property name="GalleryLinkIndex">-1</property>
-            <property name="IsGalleryToolbarItemLink">false</property>
-            <property name="GalleryBarItemName" />
-            <property name="PageGroupName" />
-            <property name="UserDefine">None</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-          </property>
-          <property name="Item4" isnull="true" iskey="true">
-            <property name="UserRibbonStyle">Default</property>
-            <property name="UserAlignment">Default</property>
-            <property name="UserPaintStyle">Standard</property>
-            <property name="UserCaption" />
-            <property name="ItemId">-1</property>
-            <property name="ClickCount">20</property>
-            <property name="UserWidth">0</property>
-            <property name="ImageIndex">-1</property>
-            <property name="BeginGroup">false</property>
-            <property name="ActAsButtonGroup">false</property>
-            <property name="MostRecentlyUsed">true</property>
-            <property name="KeyTip" />
-            <property name="RecentIndex">6</property>
-            <property name="Visible">true</property>
-            <property name="IsPageGroupContentToolbarButtonLink">false</property>
-            <property name="DropDownKeyTip" />
-            <property name="IsMerged">false</property>
-            <property name="GalleryLinkIndex">-1</property>
-            <property name="IsGalleryToolbarItemLink">false</property>
-            <property name="GalleryBarItemName" />
-            <property name="PageGroupName" />
-            <property name="UserDefine">None</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-          </property>
-          <property name="Item5" isnull="true" iskey="true">
-            <property name="UserRibbonStyle">Default</property>
-            <property name="UserAlignment">Default</property>
-            <property name="UserPaintStyle">Standard</property>
-            <property name="UserCaption" />
-            <property name="ItemId">-1</property>
-            <property name="ClickCount">20</property>
-            <property name="UserWidth">0</property>
-            <property name="ImageIndex">-1</property>
-            <property name="BeginGroup">false</property>
-            <property name="ActAsButtonGroup">false</property>
-            <property name="MostRecentlyUsed">true</property>
-            <property name="KeyTip" />
-            <property name="RecentIndex">5</property>
-            <property name="Visible">true</property>
-            <property name="IsPageGroupContentToolbarButtonLink">false</property>
-            <property name="DropDownKeyTip" />
-            <property name="IsMerged">false</property>
-            <property name="GalleryLinkIndex">-1</property>
-            <property name="IsGalleryToolbarItemLink">false</property>
-            <property name="GalleryBarItemName" />
-            <property name="PageGroupName" />
-            <property name="UserDefine">None</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-          </property>
-          <property name="Item6" isnull="true" iskey="true">
-            <property name="UserRibbonStyle">Default</property>
-            <property name="UserAlignment">Default</property>
-            <property name="UserPaintStyle">Standard</property>
-            <property name="UserCaption" />
-            <property name="ItemId">-1</property>
-            <property name="ClickCount">20</property>
-            <property name="UserWidth">0</property>
-            <property name="ImageIndex">-1</property>
-            <property name="BeginGroup">false</property>
-            <property name="ActAsButtonGroup">false</property>
-            <property name="MostRecentlyUsed">true</property>
-            <property name="KeyTip" />
-            <property name="RecentIndex">4</property>
-            <property name="Visible">true</property>
-            <property name="IsPageGroupContentToolbarButtonLink">false</property>
-            <property name="DropDownKeyTip" />
-            <property name="IsMerged">false</property>
-            <property name="GalleryLinkIndex">-1</property>
-            <property name="IsGalleryToolbarItemLink">false</property>
-            <property name="GalleryBarItemName" />
-            <property name="PageGroupName" />
-            <property name="UserDefine">None</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-          </property>
-          <property name="Item7" isnull="true" iskey="true">
-            <property name="UserRibbonStyle">Default</property>
-            <property name="UserAlignment">Default</property>
-            <property name="UserPaintStyle">Standard</property>
-            <property name="UserCaption" />
-            <property name="ItemId">-1</property>
-            <property name="ClickCount">20</property>
-            <property name="UserWidth">0</property>
-            <property name="ImageIndex">-1</property>
-            <property name="BeginGroup">false</property>
-            <property name="ActAsButtonGroup">false</property>
-            <property name="MostRecentlyUsed">true</property>
-            <property name="KeyTip" />
-            <property name="RecentIndex">3</property>
-            <property name="Visible">true</property>
-            <property name="IsPageGroupContentToolbarButtonLink">false</property>
-            <property name="DropDownKeyTip" />
-            <property name="IsMerged">false</property>
-            <property name="GalleryLinkIndex">-1</property>
-            <property name="IsGalleryToolbarItemLink">false</property>
-            <property name="GalleryBarItemName" />
-            <property name="PageGroupName" />
-            <property name="UserDefine">None</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-          </property>
-          <property name="Item8" isnull="true" iskey="true">
-            <property name="UserRibbonStyle">Default</property>
-            <property name="UserAlignment">Default</property>
-            <property name="UserPaintStyle">Standard</property>
-            <property name="UserCaption" />
-            <property name="ItemId">-1</property>
-            <property name="ClickCount">20</property>
-            <property name="UserWidth">0</property>
-            <property name="ImageIndex">-1</property>
-            <property name="BeginGroup">false</property>
-            <property name="ActAsButtonGroup">false</property>
-            <property name="MostRecentlyUsed">true</property>
-            <property name="KeyTip" />
-            <property name="RecentIndex">2</property>
-            <property name="Visible">true</property>
-            <property name="IsPageGroupContentToolbarButtonLink">false</property>
-            <property name="DropDownKeyTip" />
-            <property name="IsMerged">false</property>
-            <property name="GalleryLinkIndex">-1</property>
-            <property name="IsGalleryToolbarItemLink">false</property>
-            <property name="GalleryBarItemName" />
-            <property name="PageGroupName" />
-            <property name="UserDefine">None</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-          </property>
-          <property name="Item9" isnull="true" iskey="true">
-            <property name="UserRibbonStyle">Default</property>
-            <property name="UserAlignment">Default</property>
-            <property name="UserPaintStyle">Standard</property>
-            <property name="UserCaption" />
-            <property name="ItemId">-1</property>
-            <property name="ClickCount">20</property>
-            <property name="UserWidth">0</property>
-            <property name="ImageIndex">-1</property>
-            <property name="BeginGroup">false</property>
-            <property name="ActAsButtonGroup">false</property>
-            <property name="MostRecentlyUsed">true</property>
-            <property name="KeyTip" />
-            <property name="RecentIndex">1</property>
-            <property name="Visible">true</property>
-            <property name="IsPageGroupContentToolbarButtonLink">false</property>
-            <property name="DropDownKeyTip" />
-            <property name="IsMerged">false</property>
-            <property name="GalleryLinkIndex">-1</property>
-            <property name="IsGalleryToolbarItemLink">false</property>
-            <property name="GalleryBarItemName" />
-            <property name="PageGroupName" />
-            <property name="UserDefine">None</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-          </property>
-          <property name="Item10" isnull="true" iskey="true">
-            <property name="UserRibbonStyle">Default</property>
-            <property name="UserAlignment">Default</property>
-            <property name="UserPaintStyle">Standard</property>
-            <property name="UserCaption" />
-            <property name="ItemId">-1</property>
-            <property name="ClickCount">20</property>
-            <property name="UserWidth">0</property>
-            <property name="ImageIndex">-1</property>
-            <property name="BeginGroup">false</property>
-            <property name="ActAsButtonGroup">false</property>
-            <property name="MostRecentlyUsed">true</property>
-            <property name="KeyTip" />
-            <property name="RecentIndex">0</property>
-            <property name="Visible">true</property>
-            <property name="IsPageGroupContentToolbarButtonLink">false</property>
-            <property name="DropDownKeyTip" />
-            <property name="IsMerged">false</property>
-            <property name="GalleryLinkIndex">-1</property>
-            <property name="IsGalleryToolbarItemLink">false</property>
-            <property name="GalleryBarItemName" />
-            <property name="PageGroupName" />
-            <property name="UserDefine">None</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-          </property>
-        </property>
-        <property name="Id">-1</property>
       </property>
     </property>
     <property name="ShowScreenTipsInToolbars">true</property>
@@ -6580,7 +5022,7 @@
         </property>
         <property name="DockStyle">Top</property>
         <property name="Visible">true</property>
-        <property name="ItemLinks" iskey="true" value="11">
+        <property name="ItemLinks" iskey="true" value="10">
           <property name="Item1" isnull="true" iskey="true">
             <property name="UserCaption" />
             <property name="UserRibbonStyle">Default</property>
@@ -6610,86 +5052,6 @@
             <property name="UserAlignment">Default</property>
             <property name="UserWidth">0</property>
             <property name="GalleryBarItemName" />
-            <property name="ItemId">-1</property>
-            <property name="ClickCount">0</property>
-            <property name="MostRecentlyUsed">true</property>
-            <property name="Visible">true</property>
-            <property name="RecentIndex">-1</property>
-            <property name="ImageIndex">-1</property>
-            <property name="UserPaintStyle">Standard</property>
-            <property name="ActAsButtonGroup">false</property>
-            <property name="BeginGroup">false</property>
-            <property name="IsPageGroupContentToolbarButtonLink">false</property>
-            <property name="IsMerged">false</property>
-            <property name="KeyTip" />
-            <property name="PageGroupName" />
-            <property name="IsGalleryToolbarItemLink">false</property>
-            <property name="GalleryLinkIndex">-1</property>
-            <property name="UserDefine">None</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-            <property name="Down">False</property>
-          </property>
-          <property name="Item3" isnull="true" iskey="true">
-            <property name="UserCaption" />
-            <property name="UserRibbonStyle">Default</property>
-            <property name="UserAlignment">Default</property>
-            <property name="UserWidth">0</property>
-            <property name="GalleryBarItemName" />
             <property name="ItemId">20008</property>
             <property name="ClickCount">0</property>
             <property name="MostRecentlyUsed">true</property>
@@ -6707,7 +5069,7 @@
             <property name="GalleryLinkIndex">-1</property>
             <property name="UserDefine">None</property>
           </property>
-          <property name="Item4" isnull="true" iskey="true">
+          <property name="Item3" isnull="true" iskey="true">
             <property name="UserCaption" />
             <property name="UserRibbonStyle">Default</property>
             <property name="UserAlignment">Default</property>
@@ -6730,7 +5092,7 @@
             <property name="GalleryLinkIndex">-1</property>
             <property name="UserDefine">None</property>
           </property>
-          <property name="Item5" isnull="true" iskey="true">
+          <property name="Item4" isnull="true" iskey="true">
             <property name="UserCaption" />
             <property name="UserRibbonStyle">Default</property>
             <property name="UserAlignment">Default</property>
@@ -6753,7 +5115,7 @@
             <property name="GalleryLinkIndex">-1</property>
             <property name="UserDefine">None</property>
           </property>
-          <property name="Item6" isnull="true" iskey="true">
+          <property name="Item5" isnull="true" iskey="true">
             <property name="UserCaption" />
             <property name="UserRibbonStyle">Default</property>
             <property name="UserAlignment">Default</property>
@@ -6776,7 +5138,7 @@
             <property name="GalleryLinkIndex">-1</property>
             <property name="UserDefine">None</property>
           </property>
-          <property name="Item7" isnull="true" iskey="true">
+          <property name="Item6" isnull="true" iskey="true">
             <property name="UserCaption" />
             <property name="UserRibbonStyle">Default</property>
             <property name="UserAlignment">Default</property>
@@ -6799,7 +5161,7 @@
             <property name="GalleryLinkIndex">-1</property>
             <property name="UserDefine">None</property>
           </property>
-          <property name="Item8" isnull="true" iskey="true">
+          <property name="Item7" isnull="true" iskey="true">
             <property name="UserCaption" />
             <property name="UserRibbonStyle">Default</property>
             <property name="UserAlignment">Default</property>
@@ -6808,7 +5170,7 @@
             <property name="ItemId">20046</property>
             <property name="ClickCount">0</property>
             <property name="MostRecentlyUsed">true</property>
-            <property name="Visible">false</property>
+            <property name="Visible">true</property>
             <property name="RecentIndex">-1</property>
             <property name="ImageIndex">-1</property>
             <property name="UserPaintStyle">Standard</property>
@@ -6823,7 +5185,7 @@
             <property name="UserDefine">None</property>
             <property name="Down">False</property>
           </property>
-          <property name="Item9" isnull="true" iskey="true">
+          <property name="Item8" isnull="true" iskey="true">
             <property name="UserCaption" />
             <property name="UserRibbonStyle">Default</property>
             <property name="UserAlignment">Default</property>
@@ -6846,7 +5208,7 @@
             <property name="GalleryLinkIndex">-1</property>
             <property name="UserDefine">None</property>
           </property>
-          <property name="Item10" isnull="true" iskey="true">
+          <property name="Item9" isnull="true" iskey="true">
             <property name="UserCaption" />
             <property name="UserRibbonStyle">Default</property>
             <property name="UserAlignment">Default</property>
@@ -6869,7 +5231,7 @@
             <property name="GalleryLinkIndex">-1</property>
             <property name="UserDefine">None</property>
           </property>
-          <property name="Item11" isnull="true" iskey="true">
+          <property name="Item10" isnull="true" iskey="true">
             <property name="UserCaption" />
             <property name="UserRibbonStyle">Default</property>
             <property name="UserAlignment">Default</property>
@@ -7162,7 +5524,7 @@
             <property name="MostRecentlyUsed">true</property>
             <property name="KeyTip" />
             <property name="RecentIndex">-1</property>
-            <property name="Visible">true</property>
+            <property name="Visible">false</property>
             <property name="IsPageGroupContentToolbarButtonLink">false</property>
             <property name="DropDownKeyTip" />
             <property name="IsMerged">false</property>
@@ -7507,7 +5869,7 @@
   <property name="$DockManager" iskey="true" value="DockManager">
     <property name="#LayoutVersion" />
     <property name="AllowGlyphSkinning">false</property>
-    <property name="ActivePanelID">1</property>
+    <property name="ActivePanelID">10</property>
     <property name="AutoHiddenPanelCaptionShowMode">ShowForAllPanels</property>
     <property name="TopZIndexControls" iskey="true" value="2">
       <property name="Item1">DevExpress.XtraBars.BarDockControl</property>

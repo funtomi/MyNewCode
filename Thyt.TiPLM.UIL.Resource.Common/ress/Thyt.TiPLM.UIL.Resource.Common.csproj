@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>213e6f01-ce4f-4e28-b2c5-6ec38a15c736</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>Thyt.TiPLM.UIL.Resource.Common</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="Thyt.TiPLM.UIL.Controls" />
+    <Reference Include="Infragistics.Win.UltraWinGrid.v3" />
+    <Reference Include="Thyt.TiPLM.UIL.Common.UserControl" />
+    <Reference Include="Infragistics.Win.UltraWinEditors.v3" />
+    <Reference Include="Thyt.TiPLM.Common" />
+    <Reference Include="AxInterop.tiEcmsControll" />
+    <Reference Include="System" />
+    <Reference Include="Thyt.TiPLM.DEL.Product" />
+    <Reference Include="Thyt.TiPLM.DEL.Resource" />
+    <Reference Include="Thyt.TiPLM.UIL.Common" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="Thyt.TiPLM.CLT.UIL.DeskLib" />
+    <Reference Include="DotNetMagic2005" />
+    <Reference Include="System.Data" />
+    <Reference Include="Thyt.TiPLM.DEL.Admin.DataModel" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="Thyt.TiPLM.DEL.Admin.NewResponsibility" />
+    <Reference Include="Thyt.TiPLM.PLL.Common" />
+    <Reference Include="Thyt.TiPLM.PLL.Admin.DataModel" />
+    <Reference Include="DevExpress.XtraEditors.v13.2" />
+    <Reference Include="Thyt.TiPLM.PLL.Admin.NewResponsibility" />
+    <Reference Include="DevExpress.Utils.v13.2" />
+    <Reference Include="Thyt.TiPLM.PLL.Product2" />
+    <Reference Include="Thyt.TiPLM.PLL.Resource" />
+    <Reference Include="Thyt.TiPLM.PLL.FileService" />
+    <Reference Include="Thyt.TiPLM.Common.Interface" />
+    <Reference Include="Infragistics.Win.v3" />
+    <Reference Include="Infragistics.Shared.v3" />
+    <Reference Include="Thyt.TiPLM.DEL.Addin" />
+    <Reference Include="Thyt.TiPLM.UIL.Addin" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="Thyt\TiPLM\UIL\Resource\Common\FrmGetCode.cs" />
+    <Compile Include="Thyt\TiPLM\UIL\Resource\Common\FrmNewID.cs" />
+    <Compile Include="Thyt\TiPLM\UIL\Resource\Common\FrmPicProperty.cs" />
+    <Compile Include="Thyt\TiPLM\UIL\Resource\Common\FrmRESPicture.cs" />
+    <Compile Include="Thyt\TiPLM\UIL\Resource\Common\NEWUC\CRefSet.cs" />
+    <Compile Include="Thyt\TiPLM\UIL\Resource\Common\NEWUC\DEBoxObject.cs" />
+    <Compile Include="Thyt\TiPLM\UIL\Resource\Common\NEWUC\DECusRelation.cs" />
+    <Compile Include="Thyt\TiPLM\UIL\Resource\Common\NEWUC\DECusRelationLst.cs" />
+    <Compile Include="Thyt\TiPLM\UIL\Resource\Common\NEWUC\UCResGrid.cs" />
+    <Compile Include="Thyt\TiPLM\UIL\Resource\Common\NEWUC\UCResRelation.cs" />
+    <Compile Include="Thyt\TiPLM\UIL\Resource\Common\NEWUC\SelectResHandler.cs" />
+    <Compile Include="Thyt\TiPLM\UIL\Resource\Common\NEWUC\UCResSelect.cs" />
+    <Compile Include="Thyt\TiPLM\UIL\Resource\Common\NEWUC\UCResTree.cs" />
+    <Compile Include="Thyt\TiPLM\UIL\Resource\Common\OuterResource\FrmDisplayOuterResource.cs" />
+    <Compile Include="Thyt\TiPLM\UIL\Resource\Common\OuterResource\FrmSelAddin.cs" />
+    <Compile Include="Thyt\TiPLM\UIL\Resource\Common\OuterResource\OuterResourceCreatedEventArgs.cs" />
+    <Compile Include="Thyt\TiPLM\UIL\Resource\Common\SelectResHandler.cs" />
+    <Compile Include="Thyt\TiPLM\UIL\Resource\Common\ResCombo.cs" />
+    <Compile Include="Thyt\TiPLM\UIL\Resource\Common\ResCommon\FrmFilterData.cs" />
+    <Compile Include="Thyt\TiPLM\UIL\Resource\Common\ResCommon\FrmModelDef.cs" />
+    <Compile Include="Thyt\TiPLM\UIL\Resource\Common\ResCommon\FrmModifyFilter.cs" />
+    <Compile Include="Thyt\TiPLM\UIL\Resource\Common\ResCommon\FrmSortDef.cs" />
+    <Compile Include="Thyt\TiPLM\UIL\Resource\Common\UCCusResource.cs" />
+    <Compile Include="Thyt\TiPLM\UIL\Resource\Common\UCCusSPL.cs" />
+    <Compile Include="Thyt\TiPLM\UIL\Resource\Common\UCCusTabControl.cs" />
+    <Compile Include="Thyt\TiPLM\UIL\Resource\Common\UCCusTxtBox.cs" />
+    <Compile Include="Thyt\TiPLM\UIL\Resource\Common\UserControl\SelectResHandler.cs" />
+    <Compile Include="Thyt\TiPLM\UIL\Resource\Common\UserControl\UCRes.cs" />
+    <Compile Include="Thyt\TiPLM\UIL\Resource\Common\UserControl\UCResBanding.cs" />
+    <Compile Include="Thyt\TiPLM\UIL\Resource\Common\UserControl\UCselRes.cs" />
+    <EmbeddedResource Include="Thyt.TiPLM.UIL.Resource.Common.FrmGetCode.resources" />
+    <EmbeddedResource Include="Thyt.TiPLM.UIL.Resource.Common.FrmNewID.resources" />
+    <EmbeddedResource Include="Thyt.TiPLM.UIL.Resource.Common.FrmPicProperty.resources" />
+    <EmbeddedResource Include="Thyt.TiPLM.UIL.Resource.Common.FrmRESPicture.resources" />
+    <EmbeddedResource Include="Thyt.TiPLM.UIL.Resource.Common.NEWUC.UCResGrid.resources" />
+    <EmbeddedResource Include="Thyt.TiPLM.UIL.Resource.Common.NEWUC.UCResRelation.resources" />
+    <EmbeddedResource Include="Thyt.TiPLM.UIL.Resource.Common.NEWUC.UCResSelect.resources" />
+    <EmbeddedResource Include="Thyt.TiPLM.UIL.Resource.Common.NEWUC.UCResTree.resources" />
+    <EmbeddedResource Include="Thyt.TiPLM.UIL.Resource.Common.OuterResource.FrmDisplayOuterResource.resources" />
+    <EmbeddedResource Include="Thyt.TiPLM.UIL.Resource.Common.OuterResource.FrmSelAddin.resources" />
+    <EmbeddedResource Include="Thyt.TiPLM.UIL.Resource.Common.ResCombo.resources" />
+    <EmbeddedResource Include="Thyt.TiPLM.UIL.Resource.Common.ResCommon.FrmFilterData.resources" />
+    <EmbeddedResource Include="Thyt.TiPLM.UIL.Resource.Common.ResCommon.FrmModelDef.resources" />
+    <EmbeddedResource Include="Thyt.TiPLM.UIL.Resource.Common.ResCommon.FrmModifyFilter.resources" />
+    <EmbeddedResource Include="Thyt.TiPLM.UIL.Resource.Common.ResCommon.FrmSortDef.resources" />
+    <EmbeddedResource Include="Thyt.TiPLM.UIL.Resource.Common.UCCusResource.resources" />
+    <EmbeddedResource Include="Thyt.TiPLM.UIL.Resource.Common.UCCusSPL.resources" />
+    <EmbeddedResource Include="Thyt.TiPLM.UIL.Resource.Common.UCCusTabControl.resources" />
+    <EmbeddedResource Include="Thyt.TiPLM.UIL.Resource.Common.UCCusTxtBox.resources" />
+    <EmbeddedResource Include="Thyt.TiPLM.UIL.Resource.Common.UserControl.UCRes.resources" />
+    <EmbeddedResource Include="Thyt.TiPLM.UIL.Resource.Common.UserControl.UCResBanding.resources" />
+    <EmbeddedResource Include="Thyt.TiPLM.UIL.Resource.Common.UserControl.UCselRes.resources" />
+  </ItemGroup>
+</Project>

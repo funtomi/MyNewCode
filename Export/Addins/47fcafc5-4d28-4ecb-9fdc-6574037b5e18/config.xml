@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ERPIntegratorConfig Ver="1.0">
+	<config>
+		<EAIAddress>http://192.168.0.110/u8eai/import.asp</EAIAddress>
+	</config>
+</ERPIntegratorConfig>
