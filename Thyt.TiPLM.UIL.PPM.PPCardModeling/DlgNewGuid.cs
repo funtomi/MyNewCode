@@ -161,8 +161,7 @@ namespace Thyt.TiPLM.UIL.PPM.PPCardModeling {
             if (ModelContext.MetaModel.IsForm(templateType)) {
                 this.tvHeadItem.SetValue(templateType);
                 this.tvHeadItem.Enabled = false;
-                //20180823 modified by kexp 添加过程流程图
-            } else if (ModelContext.MetaModel.IsCard(templateType) || ModelContext.MetaModel.IsChild("PROFLOWCHART", templateType)) {
+            } else if (ModelContext.MetaModel.IsCard(templateType)) {
                 this.tvHeadItem.SetValue(templateType);
                 this.tvHeadItem.Enabled = false;
             } else {
