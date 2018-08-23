@@ -24,8 +24,6 @@
         /// </summary> 
         ///     
         private void InitializeComponent() {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DlgOption2));
-            Infragistics.Win.Appearance appearance = new Infragistics.Win.Appearance();
             this.tbcData = new System.Windows.Forms.TabControl();
             this.tabBinding = new System.Windows.Forms.TabPage();
             this.grpArea = new System.Windows.Forms.GroupBox();
@@ -36,6 +34,13 @@
             this.rbtMid = new System.Windows.Forms.RadioButton();
             this.rbtHead = new System.Windows.Forms.RadioButton();
             this.grpBinding = new System.Windows.Forms.GroupBox();
+            this.pnlString = new System.Windows.Forms.Panel();
+            this.cmbTemplate = new System.Windows.Forms.ComboBox();
+            this.chkBarcode = new System.Windows.Forms.CheckBox();
+            this.numReturnRows = new System.Windows.Forms.NumericUpDown();
+            this.chkReturn = new System.Windows.Forms.CheckBox();
+            this.numJumpPage = new System.Windows.Forms.NumericUpDown();
+            this.label11 = new System.Windows.Forms.Label();
             this.ultraEditor = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
             this.label12 = new System.Windows.Forms.Label();
             this.btnSmartConfig = new System.Windows.Forms.Button();
@@ -53,74 +58,115 @@
             this.pnlBool = new System.Windows.Forms.Panel();
             this.cobBool = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.pnlString = new System.Windows.Forms.Panel();
-            this.numReturnRows = new System.Windows.Forms.NumericUpDown();
-            this.chkReturn = new System.Windows.Forms.CheckBox();
-            this.numJumpPage = new System.Windows.Forms.NumericUpDown();
-            this.label11 = new System.Windows.Forms.Label();
             this.tvwType = new System.Windows.Forms.TreeView();
             this.tabScript = new System.Windows.Forms.TabPage();
             this.rtxScript = new System.Windows.Forms.RichTextBox();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnOK = new System.Windows.Forms.Button();
-            this.cmbTemplate = new System.Windows.Forms.ComboBox();
-            this.chkBarcode = new System.Windows.Forms.CheckBox();
             this.tbcData.SuspendLayout();
             this.tabBinding.SuspendLayout();
             this.grpArea.SuspendLayout();
             this.grpBinding.SuspendLayout();
+            this.pnlString.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numReturnRows)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numJumpPage)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ultraEditor)).BeginInit();
             this.pnlGrid.SuspendLayout();
             this.pnlBool.SuspendLayout();
-            this.pnlString.SuspendLayout();
-            this.numReturnRows.BeginInit();
-            this.numJumpPage.BeginInit();
             this.tabScript.SuspendLayout();
-            base.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // tbcData
+            // 
             this.tbcData.Controls.Add(this.tabBinding);
             this.tbcData.Controls.Add(this.tabScript);
-            resources.ApplyResources(this.tbcData, "tbcData");
+            this.tbcData.Location = new System.Drawing.Point(0, 0);
             this.tbcData.Multiline = true;
             this.tbcData.Name = "tbcData";
             this.tbcData.SelectedIndex = 0;
+            this.tbcData.Size = new System.Drawing.Size(200, 100);
+            this.tbcData.TabIndex = 1;
             this.tbcData.Tag = "";
             this.tbcData.SelectedIndexChanged += new System.EventHandler(this.tbcData_SelectedIndexChanged);
+            // 
+            // tabBinding
+            // 
             this.tabBinding.Controls.Add(this.grpArea);
             this.tabBinding.Controls.Add(this.grpBinding);
             this.tabBinding.Controls.Add(this.tvwType);
-            resources.ApplyResources(this.tabBinding, "tabBinding");
+            this.tabBinding.Location = new System.Drawing.Point(4, 25);
             this.tabBinding.Name = "tabBinding";
+            this.tabBinding.Size = new System.Drawing.Size(192, 71);
+            this.tabBinding.TabIndex = 0;
             this.tabBinding.Tag = "Binding";
-            resources.ApplyResources(this.grpArea, "grpArea");
+            // 
+            // grpArea
+            // 
             this.grpArea.Controls.Add(this.btnSubKeyExplain);
             this.grpArea.Controls.Add(this.chkSubKey);
             this.grpArea.Controls.Add(this.chkKey);
             this.grpArea.Controls.Add(this.rbtTail);
             this.grpArea.Controls.Add(this.rbtMid);
             this.grpArea.Controls.Add(this.rbtHead);
+            this.grpArea.Location = new System.Drawing.Point(0, 0);
             this.grpArea.Name = "grpArea";
+            this.grpArea.Size = new System.Drawing.Size(200, 100);
+            this.grpArea.TabIndex = 0;
             this.grpArea.TabStop = false;
+            // 
+            // btnSubKeyExplain
+            // 
             this.btnSubKeyExplain.ForeColor = System.Drawing.Color.Black;
-            resources.ApplyResources(this.btnSubKeyExplain, "btnSubKeyExplain");
+            this.btnSubKeyExplain.Location = new System.Drawing.Point(0, 0);
             this.btnSubKeyExplain.Name = "btnSubKeyExplain";
+            this.btnSubKeyExplain.Size = new System.Drawing.Size(75, 23);
+            this.btnSubKeyExplain.TabIndex = 0;
             this.btnSubKeyExplain.UseVisualStyleBackColor = true;
             this.btnSubKeyExplain.Click += new System.EventHandler(this.btnSubKeyExplain_Click);
-            resources.ApplyResources(this.chkSubKey, "chkSubKey");
+            // 
+            // chkSubKey
+            // 
             this.chkSubKey.ForeColor = System.Drawing.Color.Black;
+            this.chkSubKey.Location = new System.Drawing.Point(0, 0);
             this.chkSubKey.Name = "chkSubKey";
+            this.chkSubKey.Size = new System.Drawing.Size(104, 24);
+            this.chkSubKey.TabIndex = 1;
             this.chkSubKey.CheckedChanged += new System.EventHandler(this.chkSubKey_CheckedChanged);
-            resources.ApplyResources(this.chkKey, "chkKey");
+            // 
+            // chkKey
+            // 
             this.chkKey.ForeColor = System.Drawing.Color.Red;
+            this.chkKey.Location = new System.Drawing.Point(0, 0);
             this.chkKey.Name = "chkKey";
+            this.chkKey.Size = new System.Drawing.Size(104, 24);
+            this.chkKey.TabIndex = 2;
             this.chkKey.CheckedChanged += new System.EventHandler(this.chkKey_CheckedChanged);
-            resources.ApplyResources(this.rbtTail, "rbtTail");
+            // 
+            // rbtTail
+            // 
+            this.rbtTail.Location = new System.Drawing.Point(0, 0);
             this.rbtTail.Name = "rbtTail";
-            resources.ApplyResources(this.rbtMid, "rbtMid");
+            this.rbtTail.Size = new System.Drawing.Size(104, 24);
+            this.rbtTail.TabIndex = 3;
+            // 
+            // rbtMid
+            // 
             this.rbtMid.Checked = true;
+            this.rbtMid.Location = new System.Drawing.Point(0, 0);
             this.rbtMid.Name = "rbtMid";
+            this.rbtMid.Size = new System.Drawing.Size(104, 24);
+            this.rbtMid.TabIndex = 4;
             this.rbtMid.TabStop = true;
-            resources.ApplyResources(this.rbtHead, "rbtHead");
+            // 
+            // rbtHead
+            // 
+            this.rbtHead.Location = new System.Drawing.Point(0, 0);
             this.rbtHead.Name = "rbtHead";
-            resources.ApplyResources(this.grpBinding, "grpBinding");
+            this.rbtHead.Size = new System.Drawing.Size(104, 24);
+            this.rbtHead.TabIndex = 5;
+            // 
+            // grpBinding
+            // 
             this.grpBinding.Controls.Add(this.pnlString);
             this.grpBinding.Controls.Add(this.ultraEditor);
             this.grpBinding.Controls.Add(this.label12);
@@ -133,144 +179,300 @@
             this.grpBinding.Controls.Add(this.label5);
             this.grpBinding.Controls.Add(this.pnlGrid);
             this.grpBinding.Controls.Add(this.pnlBool);
+            this.grpBinding.Location = new System.Drawing.Point(0, 0);
             this.grpBinding.Name = "grpBinding";
+            this.grpBinding.Size = new System.Drawing.Size(200, 100);
+            this.grpBinding.TabIndex = 1;
             this.grpBinding.TabStop = false;
-            this.ultraEditor.AlwaysInEditMode = true;
-            resources.ApplyResources(this.ultraEditor, "ultraEditor");
-            appearance.FontData.Bold = (Infragistics.Win.DefaultableBoolean)resources.GetObject("resource.Bold");
-            appearance.FontData.Italic = (Infragistics.Win.DefaultableBoolean)resources.GetObject("resource.Italic");
-            appearance.FontData.Name = resources.GetString("resource.Name");
-            appearance.FontData.SizeInPoints = (float)resources.GetObject("resource.SizeInPoints");
-            appearance.FontData.Strikeout = (Infragistics.Win.DefaultableBoolean)resources.GetObject("resource.Strikeout");
-            appearance.FontData.Underline = (Infragistics.Win.DefaultableBoolean)resources.GetObject("resource.Underline");
-            this.ultraEditor.Appearance = appearance;
-            this.ultraEditor.HideSelection = false;
-            this.ultraEditor.MaxLength = 0x80;
-            this.ultraEditor.Name = "ultraEditor";
-            this.ultraEditor.ReadOnly = true;
-            this.ultraEditor.SupportThemes = false;
-            resources.ApplyResources(this.label12, "label12");
-            this.label12.Name = "label12";
-            resources.ApplyResources(this.btnSmartConfig, "btnSmartConfig");
-            this.btnSmartConfig.Name = "btnSmartConfig";
-            this.cobAttrList.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.cobAttrList, "cobAttrList");
-            this.cobAttrList.Name = "cobAttrList";
-            this.cobAttrList.SelectionChangeCommitted += new System.EventHandler(this.cobAttrList_SelectionChangeCommitted);
-            resources.ApplyResources(this.txtType, "txtType");
-            this.txtType.Name = "txtType";
-            this.txtType.ReadOnly = true;
-            resources.ApplyResources(this.label7, "label7");
-            this.label7.Name = "label7";
-            resources.ApplyResources(this.label6, "label6");
-            this.label6.Name = "label6";
-            resources.ApplyResources(this.txtField, "txtField");
-            this.txtField.Name = "txtField";
-            this.txtField.ReadOnly = true;
-            resources.ApplyResources(this.label5, "label5");
-            this.label5.Name = "label5";
-            this.pnlGrid.Controls.Add(this.chkGridReturn);
-            this.pnlGrid.Controls.Add(this.txtGridEnd);
-            this.pnlGrid.Controls.Add(this.txtGridStart);
-            this.pnlGrid.Controls.Add(this.label3);
-            resources.ApplyResources(this.pnlGrid, "pnlGrid");
-            this.pnlGrid.Name = "pnlGrid";
-            resources.ApplyResources(this.chkGridReturn, "chkGridReturn");
-            this.chkGridReturn.Name = "chkGridReturn";
-            this.txtGridEnd.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.txtGridEnd, "txtGridEnd");
-            this.txtGridEnd.Name = "txtGridEnd";
-            this.txtGridStart.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.txtGridStart, "txtGridStart");
-            this.txtGridStart.Name = "txtGridStart";
-            this.txtGridStart.ReadOnly = true;
-            resources.ApplyResources(this.label3, "label3");
-            this.label3.Name = "label3";
-            this.pnlBool.Controls.Add(this.cobBool);
-            this.pnlBool.Controls.Add(this.label2);
-            resources.ApplyResources(this.pnlBool, "pnlBool");
-            this.pnlBool.Name = "pnlBool";
-            this.cobBool.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.cobBool, "cobBool");
-            this.cobBool.Name = "cobBool";
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.Name = "label2";
+            // 
+            // pnlString
+            // 
             this.pnlString.Controls.Add(this.cmbTemplate);
             this.pnlString.Controls.Add(this.chkBarcode);
             this.pnlString.Controls.Add(this.numReturnRows);
             this.pnlString.Controls.Add(this.chkReturn);
             this.pnlString.Controls.Add(this.numJumpPage);
             this.pnlString.Controls.Add(this.label11);
-            resources.ApplyResources(this.pnlString, "pnlString");
+            this.pnlString.Location = new System.Drawing.Point(0, 0);
             this.pnlString.Name = "pnlString";
-            resources.ApplyResources(this.numReturnRows, "numReturnRows");
-            int[] bits = new int[4];
-            bits[0] = 200;
-            this.numReturnRows.Maximum = new decimal(bits);
-            int[] numArray2 = new int[4];
-            numArray2[0] = 1;
-            this.numReturnRows.Minimum = new decimal(numArray2);
+            this.pnlString.Size = new System.Drawing.Size(200, 100);
+            this.pnlString.TabIndex = 0;
+            // 
+            // cmbTemplate
+            // 
+            this.cmbTemplate.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbTemplate.Location = new System.Drawing.Point(0, 0);
+            this.cmbTemplate.Name = "cmbTemplate";
+            this.cmbTemplate.Size = new System.Drawing.Size(121, 23);
+            this.cmbTemplate.TabIndex = 0;
+            // 
+            // chkBarcode
+            // 
+            this.chkBarcode.Location = new System.Drawing.Point(0, 0);
+            this.chkBarcode.Name = "chkBarcode";
+            this.chkBarcode.Size = new System.Drawing.Size(104, 24);
+            this.chkBarcode.TabIndex = 1;
+            this.chkBarcode.CheckedChanged += new System.EventHandler(this.chkBarcode_CheckedChanged);
+            // 
+            // numReturnRows
+            // 
+            this.numReturnRows.Location = new System.Drawing.Point(0, 0);
+            this.numReturnRows.Maximum = new decimal(new int[] {
+            200,
+            0,
+            0,
+            0});
+            this.numReturnRows.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numReturnRows.Name = "numReturnRows";
-            int[] numArray3 = new int[4];
-            numArray3[0] = 1;
-            this.numReturnRows.Value = new decimal(numArray3);
-            resources.ApplyResources(this.chkReturn, "chkReturn");
+            this.numReturnRows.Size = new System.Drawing.Size(120, 25);
+            this.numReturnRows.TabIndex = 2;
+            this.numReturnRows.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // chkReturn
+            // 
+            this.chkReturn.Location = new System.Drawing.Point(0, 0);
             this.chkReturn.Name = "chkReturn";
+            this.chkReturn.Size = new System.Drawing.Size(104, 24);
+            this.chkReturn.TabIndex = 3;
             this.chkReturn.CheckedChanged += new System.EventHandler(this.chkReturn_CheckedChanged);
-            resources.ApplyResources(this.numJumpPage, "numJumpPage");
-            int[] numArray4 = new int[4];
-            numArray4[0] = 200;
-            this.numJumpPage.Maximum = new decimal(numArray4);
+            // 
+            // numJumpPage
+            // 
+            this.numJumpPage.Location = new System.Drawing.Point(0, 0);
+            this.numJumpPage.Maximum = new decimal(new int[] {
+            200,
+            0,
+            0,
+            0});
             this.numJumpPage.Name = "numJumpPage";
-            resources.ApplyResources(this.label11, "label11");
+            this.numJumpPage.Size = new System.Drawing.Size(120, 25);
+            this.numJumpPage.TabIndex = 4;
+            // 
+            // label11
+            // 
+            this.label11.Location = new System.Drawing.Point(0, 0);
             this.label11.Name = "label11";
-            resources.ApplyResources(this.tvwType, "tvwType");
+            this.label11.Size = new System.Drawing.Size(100, 23);
+            this.label11.TabIndex = 5;
+            // 
+            // ultraEditor
+            // 
+            this.ultraEditor.AlwaysInEditMode = true;
+            this.ultraEditor.HideSelection = false;
+            this.ultraEditor.Location = new System.Drawing.Point(0, 0);
+            this.ultraEditor.MaxLength = 128;
+            this.ultraEditor.Name = "ultraEditor";
+            this.ultraEditor.ReadOnly = true;
+            this.ultraEditor.Size = new System.Drawing.Size(100, 24);
+            this.ultraEditor.TabIndex = 1;
+            this.ultraEditor.UseOsThemes = Infragistics.Win.DefaultableBoolean.False;
+            // 
+            // label12
+            // 
+            this.label12.Location = new System.Drawing.Point(0, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(100, 23);
+            this.label12.TabIndex = 2;
+            // 
+            // btnSmartConfig
+            // 
+            this.btnSmartConfig.Location = new System.Drawing.Point(0, 0);
+            this.btnSmartConfig.Name = "btnSmartConfig";
+            this.btnSmartConfig.Size = new System.Drawing.Size(75, 23);
+            this.btnSmartConfig.TabIndex = 3;
+            // 
+            // cobAttrList
+            // 
+            this.cobAttrList.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cobAttrList.Location = new System.Drawing.Point(0, 0);
+            this.cobAttrList.Name = "cobAttrList";
+            this.cobAttrList.Size = new System.Drawing.Size(121, 23);
+            this.cobAttrList.TabIndex = 4;
+            this.cobAttrList.SelectionChangeCommitted += new System.EventHandler(this.cobAttrList_SelectionChangeCommitted);
+            // 
+            // txtType
+            // 
+            this.txtType.Location = new System.Drawing.Point(0, 0);
+            this.txtType.Name = "txtType";
+            this.txtType.ReadOnly = true;
+            this.txtType.Size = new System.Drawing.Size(100, 25);
+            this.txtType.TabIndex = 5;
+            // 
+            // label7
+            // 
+            this.label7.Location = new System.Drawing.Point(0, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(100, 23);
+            this.label7.TabIndex = 6;
+            // 
+            // label6
+            // 
+            this.label6.Location = new System.Drawing.Point(0, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(100, 23);
+            this.label6.TabIndex = 7;
+            // 
+            // txtField
+            // 
+            this.txtField.Location = new System.Drawing.Point(0, 0);
+            this.txtField.Name = "txtField";
+            this.txtField.ReadOnly = true;
+            this.txtField.Size = new System.Drawing.Size(100, 25);
+            this.txtField.TabIndex = 8;
+            // 
+            // label5
+            // 
+            this.label5.Location = new System.Drawing.Point(0, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(100, 23);
+            this.label5.TabIndex = 9;
+            // 
+            // pnlGrid
+            // 
+            this.pnlGrid.Controls.Add(this.chkGridReturn);
+            this.pnlGrid.Controls.Add(this.txtGridEnd);
+            this.pnlGrid.Controls.Add(this.txtGridStart);
+            this.pnlGrid.Controls.Add(this.label3);
+            this.pnlGrid.Location = new System.Drawing.Point(0, 0);
+            this.pnlGrid.Name = "pnlGrid";
+            this.pnlGrid.Size = new System.Drawing.Size(200, 100);
+            this.pnlGrid.TabIndex = 10;
+            // 
+            // chkGridReturn
+            // 
+            this.chkGridReturn.Location = new System.Drawing.Point(0, 0);
+            this.chkGridReturn.Name = "chkGridReturn";
+            this.chkGridReturn.Size = new System.Drawing.Size(104, 24);
+            this.chkGridReturn.TabIndex = 0;
+            // 
+            // txtGridEnd
+            // 
+            this.txtGridEnd.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtGridEnd.Location = new System.Drawing.Point(0, 0);
+            this.txtGridEnd.Name = "txtGridEnd";
+            this.txtGridEnd.Size = new System.Drawing.Size(100, 25);
+            this.txtGridEnd.TabIndex = 1;
+            // 
+            // txtGridStart
+            // 
+            this.txtGridStart.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtGridStart.Location = new System.Drawing.Point(0, 0);
+            this.txtGridStart.Name = "txtGridStart";
+            this.txtGridStart.ReadOnly = true;
+            this.txtGridStart.Size = new System.Drawing.Size(100, 25);
+            this.txtGridStart.TabIndex = 2;
+            // 
+            // label3
+            // 
+            this.label3.Location = new System.Drawing.Point(0, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(100, 23);
+            this.label3.TabIndex = 3;
+            // 
+            // pnlBool
+            // 
+            this.pnlBool.Controls.Add(this.cobBool);
+            this.pnlBool.Controls.Add(this.label2);
+            this.pnlBool.Location = new System.Drawing.Point(0, 0);
+            this.pnlBool.Name = "pnlBool";
+            this.pnlBool.Size = new System.Drawing.Size(200, 100);
+            this.pnlBool.TabIndex = 11;
+            // 
+            // cobBool
+            // 
+            this.cobBool.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cobBool.Location = new System.Drawing.Point(0, 0);
+            this.cobBool.Name = "cobBool";
+            this.cobBool.Size = new System.Drawing.Size(121, 23);
+            this.cobBool.TabIndex = 0;
+            // 
+            // label2
+            // 
+            this.label2.Location = new System.Drawing.Point(0, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(100, 23);
+            this.label2.TabIndex = 1;
+            // 
+            // tvwType
+            // 
             this.tvwType.ItemHeight = 14;
+            this.tvwType.Location = new System.Drawing.Point(0, 0);
             this.tvwType.Name = "tvwType";
+            this.tvwType.Size = new System.Drawing.Size(121, 97);
+            this.tvwType.TabIndex = 2;
             this.tvwType.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.tvwType_AfterSelect);
+            // 
+            // tabScript
+            // 
             this.tabScript.Controls.Add(this.rtxScript);
-            resources.ApplyResources(this.tabScript, "tabScript");
+            this.tabScript.Location = new System.Drawing.Point(4, 25);
             this.tabScript.Name = "tabScript";
+            this.tabScript.Size = new System.Drawing.Size(192, 71);
+            this.tabScript.TabIndex = 1;
             this.tabScript.Tag = "Script";
-            resources.ApplyResources(this.rtxScript, "rtxScript");
+            // 
+            // rtxScript
+            // 
+            this.rtxScript.Location = new System.Drawing.Point(0, 0);
             this.rtxScript.Name = "rtxScript";
             this.rtxScript.ReadOnly = true;
-            resources.ApplyResources(this.btnCancel, "btnCancel");
+            this.rtxScript.Size = new System.Drawing.Size(100, 96);
+            this.rtxScript.TabIndex = 0;
+            this.rtxScript.Text = "";
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnCancel.Location = new System.Drawing.Point(0, 0);
             this.btnCancel.Name = "btnCancel";
-            resources.ApplyResources(this.btnOK, "btnOK");
+            this.btnCancel.Size = new System.Drawing.Size(75, 23);
+            this.btnCancel.TabIndex = 2;
+            // 
+            // btnOK
+            // 
+            this.btnOK.Location = new System.Drawing.Point(0, 0);
             this.btnOK.Name = "btnOK";
+            this.btnOK.Size = new System.Drawing.Size(75, 23);
+            this.btnOK.TabIndex = 0;
             this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
-            this.cmbTemplate.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.cmbTemplate, "cmbTemplate");
-            this.cmbTemplate.Name = "cmbTemplate";
-            resources.ApplyResources(this.chkBarcode, "chkBarcode");
-            this.chkBarcode.Name = "chkBarcode";
-            this.chkBarcode.CheckedChanged += new System.EventHandler(this.chkBarcode_CheckedChanged);
-            resources.ApplyResources(this, "$this");
-            base.Controls.Add(this.btnOK);
-            base.Controls.Add(this.tbcData);
-            base.Controls.Add(this.btnCancel);
-            base.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            base.MaximizeBox = false;
-            base.MinimizeBox = false;
-            base.Name = "DlgOption2";
-            base.ShowInTaskbar = false;
-            base.Load += new System.EventHandler(this.DlgOption2_Load);
+            // 
+            // DlgOption2
+            // 
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
+            this.ClientSize = new System.Drawing.Size(282, 254);
+            this.Controls.Add(this.btnOK);
+            this.Controls.Add(this.tbcData);
+            this.Controls.Add(this.btnCancel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "DlgOption2";
+            this.ShowInTaskbar = false;
+            this.Load += new System.EventHandler(this.DlgOption2_Load);
             this.tbcData.ResumeLayout(false);
             this.tabBinding.ResumeLayout(false);
             this.grpArea.ResumeLayout(false);
-            this.grpArea.PerformLayout();
             this.grpBinding.ResumeLayout(false);
             this.grpBinding.PerformLayout();
+            this.pnlString.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.numReturnRows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numJumpPage)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ultraEditor)).EndInit();
             this.pnlGrid.ResumeLayout(false);
             this.pnlGrid.PerformLayout();
             this.pnlBool.ResumeLayout(false);
-            this.pnlString.ResumeLayout(false);
-            this.numReturnRows.EndInit();
-            this.numJumpPage.EndInit();
             this.tabScript.ResumeLayout(false);
-            base.ResumeLayout(false);
+            this.ResumeLayout(false);
+
         }
         #endregion      
         private System.Windows.Forms.Button btnCancel;
