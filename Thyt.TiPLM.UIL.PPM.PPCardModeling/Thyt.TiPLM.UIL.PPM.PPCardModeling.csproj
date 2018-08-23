@@ -144,7 +144,7 @@
     </Reference>
     <Reference Include="Thyt.TiPLM.UIL.Common.UserControl, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Export\Thyt.TiPLM.UIL.Common.UserControl.DLL</HintPath>
+      <HintPath>..\Export\Thyt.TiPLM.UIL.Common.UserControl.dll</HintPath>
     </Reference>
     <Reference Include="Thyt.TiPLM.UIL.Controls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -158,7 +158,7 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Export\Thyt.TiPLM.UIL.Product.Common.DLL</HintPath>
     </Reference>
-    <Reference Include="Thyt.TiPLM.UIL.Resource.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Thyt.TiPLM.UIL.Resource.Common, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Export\Thyt.TiPLM.UIL.Resource.Common.DLL</HintPath>
     </Reference>

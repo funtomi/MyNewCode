@@ -159,9 +159,6 @@
     <Reference Include="Thyt.TiPLM.UIL.PPM.Formula2">
       <HintPath>..\..\..\TiModeler\bin\Debug\Thyt.TiPLM.UIL.PPM.Formula2.DLL</HintPath>
     </Reference>
-    <Reference Include="Thyt.TiPLM.UIL.PPM.PPCardModeling">
-      <HintPath>..\..\..\TiModeler\bin\Debug\Thyt.TiPLM.UIL.PPM.PPCardModeling.DLL</HintPath>
-    </Reference>
     <Reference Include="Thyt.TiPLM.UIL.PPM.PPSignManager">
       <HintPath>..\..\..\TiModeler\bin\Debug\Thyt.TiPLM.UIL.PPM.PPSignManager.DLL</HintPath>
     </Reference>
@@ -361,7 +358,12 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Thyt.TiPLM.UIL.PPM.PPCardModeling\Thyt.TiPLM.UIL.PPM.PPCardModeling.csproj">
+      <Project>{b8c6e883-25f0-4c53-a5d8-e59c42894cb1}</Project>
+      <Name>Thyt.TiPLM.UIL.PPM.PPCardModeling</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

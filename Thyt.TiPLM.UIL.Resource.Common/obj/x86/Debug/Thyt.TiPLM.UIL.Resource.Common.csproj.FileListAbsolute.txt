@@ -25,3 +25,4 @@ E:\TIPLMCode\MyNewCode\Thyt.TiPLM.UIL.Resource.Common\obj\x86\Debug\Thyt.TiPLM.U
 E:\TIPLMCode\MyNewCode\Thyt.TiPLM.UIL.Resource.Common\obj\x86\Debug\Thyt.TiPLM.UIL.Resource.Common.dll.licenses
 E:\TIPLMCode\MyNewCode\Thyt.TiPLM.UIL.Resource.Common\obj\x86\Debug\Thyt.TiPLM.UIL.Resource.Common.dll
 E:\TIPLMCode\MyNewCode\Thyt.TiPLM.UIL.Resource.Common\obj\x86\Debug\Thyt.TiPLM.UIL.Resource.Common.pdb
+E:\TIPLMCode\MyNewCode\Thyt.TiPLM.UIL.Resource.Common\obj\x86\Debug\Thyt.TiPLM.UIL.Resource.Common.csprojResolveAssemblyReference.cache

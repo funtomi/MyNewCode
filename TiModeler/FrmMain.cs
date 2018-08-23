@@ -6701,6 +6701,8 @@ namespace Thyt.TiPLM.CLT.TiModeler {
                             Cursor.Current = Cursors.Default;
                             goto Label_0FFF;
                         }
+                        //2018/08/23 added by kexp 添加APQP模板
+                    case "APQPROOT":
                     case "PPROOT":
                         flag = true;
                         goto Label_0FFF;
@@ -6879,7 +6881,8 @@ namespace Thyt.TiPLM.CLT.TiModeler {
                     }
                     this.SearchTemplates(null, null);
                 }
-                if (parent.Tag.Equals("PRINTROOT")) {
+                //20180823 modified by kexp 添加APQP模块
+                if (parent.Tag.Equals("PRINTROOT") || parent.Tag.Equals("APQPROOT")) {
                     this.SearchTemplates(null, null);
                 }
             } else if (e.Node.Tag is DEMetaRelation) {
